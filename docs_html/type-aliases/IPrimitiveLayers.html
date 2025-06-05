@@ -1,0 +1,861 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>react-native-webmap3d开发文档开发文档</title>
+
+    <style type="text/css">
+
+      /* BODY
+      =============================================================================*/
+
+      html {
+        font-family: Helvetica, arial, freesans, clean, sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #333;
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        overflow: hidden;
+      }
+
+      body {
+        font-family: Helvetica, arial, freesans, clean, sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #333;
+        background-color: #fff;
+        margin: 0;
+        padding: 20px;
+        border: 0;
+        overflow: auto;
+        height: calc(100vh - 40px);
+      }
+
+      body>*:first-child {
+        margin-top: 0 !important;
+      }
+
+      body>*:last-child {
+        margin-bottom: 0 !important;
+      }
+
+      /* BLOCKS
+      =============================================================================*/
+
+      p, blockquote, ul, ol, dl, table, pre {
+        margin: 15px 0;
+      }
+
+      /* HEADERS
+      =============================================================================*/
+
+      h1, h2, h3, h4, h5, h6 {
+        margin: 20px 0 10px;
+        padding: 0;
+        font-weight: bold;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+        font-size: inherit;
+      }
+
+      h1 {
+        font-size: 28px;
+        color: #000;
+      }
+
+      h2 {
+        font-size: 24px;
+        border-bottom: 1px solid #ccc;
+        color: #000;
+      }
+
+      h3 {
+        font-size: 18px;
+      }
+
+      h4 {
+        font-size: 16px;
+      }
+
+      h5 {
+        font-size: 14px;
+      }
+
+      h6 {
+        color: #777;
+        font-size: 14px;
+      }
+
+      body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+        margin-top: 0;
+        padding-top: 0;
+      }
+
+      a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+        margin-top: 0;
+        padding-top: 0;
+      }
+
+      h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+        margin-top: 10px;
+      }
+
+      /* LINKS
+      =============================================================================*/
+
+      a {
+        color: #4183C4;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      .strikethrough {
+          text-decoration: line-through;
+      }
+
+      /* LISTS
+      =============================================================================*/
+
+      ul, ol {
+        padding-left: 30px;
+      }
+
+      ul li > :first-child,
+      ol li > :first-child,
+      ul li ul:first-of-type,
+      ol li ol:first-of-type,
+      ul li ol:first-of-type,
+      ol li ul:first-of-type {
+        margin-top: 0px;
+      }
+
+      ul ul, ul ol, ol ol, ol ul {
+        margin-bottom: 0;
+      }
+
+      dl {
+        padding: 0;
+      }
+
+      dl dt {
+        font-size: 14px;
+        font-weight: bold;
+        font-style: italic;
+        padding: 0;
+        margin: 15px 0 5px;
+      }
+
+      dl dt:first-child {
+        padding: 0;
+      }
+
+      dl dt>:first-child {
+        margin-top: 0px;
+      }
+
+      dl dt>:last-child {
+        margin-bottom: 0px;
+      }
+
+      dl dd {
+        margin: 0 0 15px;
+        padding: 0 15px;
+      }
+
+      dl dd>:first-child {
+        margin-top: 0px;
+      }
+
+      dl dd>:last-child {
+        margin-bottom: 0px;
+      }
+
+      /* CODE
+      =============================================================================*/
+
+      pre, code, tt {
+        font-size: 12px;
+        font-family: Consolas, "Liberation Mono", Courier, monospace;
+      }
+
+      code, tt {
+        margin: 0 0px;
+        padding: 0px 0px;
+        white-space: nowrap;
+        border: 1px solid #eaeaea;
+        background-color: #f8f8f8;
+        border-radius: 3px;
+      }
+
+      pre>code {
+        margin: 0;
+        padding: 0;
+        white-space: pre;
+        border: none;
+        background: transparent;
+      }
+
+      pre {
+        background-color: #f8f8f8;
+        border: 1px solid #ccc;
+        font-size: 13px;
+        line-height: 19px;
+        overflow: auto;
+        padding: 6px 10px;
+        border-radius: 3px;
+      }
+
+      pre code, pre tt {
+        background-color: transparent;
+        border: none;
+      }
+
+      kbd {
+          -moz-border-bottom-colors: none;
+          -moz-border-left-colors: none;
+          -moz-border-right-colors: none;
+          -moz-border-top-colors: none;
+          background-color: #DDDDDD;
+          background-image: linear-gradient(#F1F1F1, #DDDDDD);
+          background-repeat: repeat-x;
+          border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+          border-image: none;
+          border-radius: 2px 2px 2px 2px;
+          border-style: solid;
+          border-width: 1px;
+          font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+          line-height: 10px;
+          padding: 1px 4px;
+      }
+
+      /* QUOTES
+      =============================================================================*/
+
+      blockquote {
+        border-left: 4px solid #DDD;
+        padding: 0 15px;
+        color: #777;
+      }
+
+      blockquote>:first-child {
+        margin-top: 0px;
+      }
+
+      blockquote>:last-child {
+        margin-bottom: 0px;
+      }
+
+      /* HORIZONTAL RULES
+      =============================================================================*/
+
+      hr {
+        clear: both;
+        margin: 15px 0;
+        height: 0px;
+        overflow: hidden;
+        border: none;
+        background: transparent;
+        border-bottom: 4px solid #ddd;
+        padding: 0;
+      }
+
+      /* TABLES
+      =============================================================================*/
+
+      table th {
+        font-weight: bold;
+      }
+
+      table th, table td {
+        border: 1px solid #ccc;
+        padding: 6px 13px;
+      }
+
+      table tr {
+        border-top: 1px solid #ccc;
+        background-color: #fff;
+      }
+
+      table tr:nth-child(2n) {
+        background-color: #f8f8f8;
+      }
+
+      /* IMAGES
+      =============================================================================*/
+
+      img {
+        max-width: 100%
+      }
+    </style>
+  </head>
+  <body>
+
+
+
+
+<h1>Type Alias: IPrimitiveLayers</h1>
+<blockquote>
+<p><strong>IPrimitiveLayers</strong> = <code>object</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4502</p>
+<p>矢量图层</p>
+<p>拥有统一风格，每个图层只能存放一种类型的对象（点、线、面）</p>
+<p>拥有属性表，每个对象都能存放不同的信息</p>
+<h2>Properties</h2>
+<h3>addLayerPrimitivePropertyInfo()</h3>
+<blockquote>
+<p><strong>addLayerPrimitivePropertyInfo</strong>: (<code>layerName</code>, <code>info</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4602</p>
+<p>添加一条属性</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<h5>info</h5>
+<p><a href="../interfaces/PropertyInfo.html"><code>PropertyInfo</code></a></p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<p>同名存在添加失败</p>
+<hr>
+<h3>addPrimitiveLayer()</h3>
+<blockquote>
+<p><strong>addPrimitiveLayer</strong>: (<code>name</code>, <code>uniform?</code>, <code>propertyInfos?</code>, <code>uniformPrimitiveDataPropertyMap?</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4511</p>
+<p>添加图层（已有同名图层添加失败）</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h5>uniform?</h5>
+<p><a href="PrimitiveUniform.html"><code>PrimitiveUniform</code></a></p>
+<p>统一风格 默认undefined</p>
+<h5>propertyInfos?</h5>
+<p><a href="../interfaces/PropertyInfo.html"><code>PropertyInfo</code></a>[]</p>
+<p>属性表</p>
+<h5>uniformPrimitiveDataPropertyMap?</h5>
+<p><a href="UniformPrimitiveDataPropertyMap.html"><code>UniformPrimitiveDataPropertyMap</code></a></p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<p>成功/失败</p>
+<hr>
+<h3>addPrimitivesFromEntities()</h3>
+<blockquote>
+<p><strong>addPrimitivesFromEntities</strong>: (<code>layerName</code>, <code>entities</code>, <code>option?</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4684</p>
+<p>从Entities添加对象</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<h5>entities</h5>
+<p><a href="../interfaces/Entity.html"><code>Entity</code></a>[]</p>
+<h5>option?</h5>
+<h6>columnModelHeightRange?</h6>
+<p>{ <code>max?</code>: <code>number</code>; <code>min?</code>: <code>number</code>; }</p>
+<h6>columnModelHeightRange.max?</h6>
+<p><code>number</code></p>
+<h6>columnModelHeightRange.min?</h6>
+<p><code>number</code></p>
+<h6>uniform?</h6>
+<p><a href="PrimitiveUniform.html"><code>PrimitiveUniform</code></a></p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<hr>
+<h3>addPrimitivesFromGeojson()</h3>
+<blockquote>
+<p><strong>addPrimitivesFromGeojson</strong>: (<code>layerName</code>, <code>featureCollection</code>, <code>option?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:4692</p>
+<p>导入geojson</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<h5>featureCollection</h5>
+<p><a href="../interfaces/FeatureCollection.html"><code>FeatureCollection</code></a></p>
+<h5>option?</h5>
+<h6>autoNamedIfEmpty?</h6>
+<p><code>boolean</code></p>
+<h6>uniform?</h6>
+<p><a href="PrimitiveUniform.html"><code>PrimitiveUniform</code></a></p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<hr>
+<h3>addPrimitivesFromKml()</h3>
+<blockquote>
+<p><strong>addPrimitivesFromKml</strong>: (<code>layerName</code>, <code>kmlContent</code>, <code>option?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:4665</p>
+<p>导入kml</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<h5>kmlContent</h5>
+<p><code>string</code></p>
+<h5>option?</h5>
+<h6>autoNamedIfEmpty?</h6>
+<p><code>boolean</code></p>
+<h6>clampToGround?</h6>
+<p><code>boolean</code></p>
+<h6>columnModelHeightRange?</h6>
+<p>{ <code>max?</code>: <code>number</code>; <code>min?</code>: <code>number</code>; }</p>
+<h6>columnModelHeightRange.max?</h6>
+<p><code>number</code></p>
+<h6>columnModelHeightRange.min?</h6>
+<p><code>number</code></p>
+<h6>uniform?</h6>
+<p><a href="PrimitiveUniform.html"><code>PrimitiveUniform</code></a></p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<hr>
+<h3>addPrimitivesFromKmlURI()</h3>
+<blockquote>
+<p><strong>addPrimitivesFromKmlURI</strong>: (<code>layerName</code>, <code>kmluri</code>, <code>option?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:4674</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<h5>kmluri</h5>
+<p><code>string</code></p>
+<h5>option?</h5>
+<h6>autoNamedIfEmpty?</h6>
+<p><code>boolean</code></p>
+<h6>clampToGround?</h6>
+<p><code>boolean</code></p>
+<h6>columnModelHeightRange?</h6>
+<p>{ <code>max?</code>: <code>number</code>; <code>min?</code>: <code>number</code>; }</p>
+<h6>columnModelHeightRange.max?</h6>
+<p><code>number</code></p>
+<h6>columnModelHeightRange.min?</h6>
+<p><code>number</code></p>
+<h6>uniform?</h6>
+<p><a href="PrimitiveUniform.html"><code>PrimitiveUniform</code></a></p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<hr>
+<h3>clearPrimitiveLayer()</h3>
+<blockquote>
+<p><strong>clearPrimitiveLayer</strong>: (<code>name</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4528</p>
+<p>清空图层</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<p>成功/失败</p>
+<hr>
+<h3>exportPrimitivesAsEntities()</h3>
+<blockquote>
+<p><strong>exportPrimitivesAsEntities</strong>: (<code>primitives</code>) =&gt; <a href="../interfaces/Entity.html"><code>Entity</code></a>[]</p>
+</blockquote>
+<p>Defined in: index.d.ts:4653</p>
+<p>导出</p>
+<h4>Parameters</h4>
+<h5>primitives</h5>
+<p><a href="Primitive.html"><code>Primitive</code></a> &amp; <code>object</code>[]</p>
+<h4>Returns</h4>
+<p><a href="../interfaces/Entity.html"><code>Entity</code></a>[]</p>
+<hr>
+<h3>exportPrimitivesAsGeojson()</h3>
+<blockquote>
+<p><strong>exportPrimitivesAsGeojson</strong>: (<code>primitives</code>) =&gt; <a href="../interfaces/FeatureCollection.html"><code>FeatureCollection</code></a></p>
+</blockquote>
+<p>Defined in: index.d.ts:4661</p>
+<p>导出Geojson</p>
+<h4>Parameters</h4>
+<h5>primitives</h5>
+<p><a href="Primitive.html"><code>Primitive</code></a> &amp; <code>object</code>[]</p>
+<h4>Returns</h4>
+<p><a href="../interfaces/FeatureCollection.html"><code>FeatureCollection</code></a></p>
+<hr>
+<h3>exportPrimitivesAsKml()</h3>
+<blockquote>
+<p><strong>exportPrimitivesAsKml</strong>: (<code>primitives</code>) =&gt; <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:4657</p>
+<p>导出kml</p>
+<h4>Parameters</h4>
+<h5>primitives</h5>
+<p><a href="Primitive.html"><code>Primitive</code></a> &amp; <code>object</code>[]</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<hr>
+<h3>getAllCount()</h3>
+<blockquote>
+<p><strong>getAllCount</strong>: () =&gt; <code>number</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4651</p>
+<p>获取所有对象个数</p>
+<h4>Returns</h4>
+<p><code>number</code></p>
+<hr>
+<h3>getAvailableName()</h3>
+<blockquote>
+<p><strong>getAvailableName</strong>: (<code>layerName</code>, <code>name</code>) =&gt; <code>string</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4639</p>
+<p>获取指定图层中可用对象名称</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<h5>name</h5>
+<p><code>string</code></p>
+<h4>Returns</h4>
+<p><code>string</code></p>
+<hr>
+<h3>getLayerPrimitivePropertyInfo()</h3>
+<blockquote>
+<p><strong>getLayerPrimitivePropertyInfo</strong>: (<code>layerName</code>, <code>infoName</code>) =&gt; <a href="../interfaces/PropertyInfo.html"><code>PropertyInfo</code></a> | <code>undefined</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4597</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<h5>infoName</h5>
+<p><code>string</code></p>
+<h4>Returns</h4>
+<p><a href="../interfaces/PropertyInfo.html"><code>PropertyInfo</code></a> | <code>undefined</code></p>
+<hr>
+<h3>getLayerPrimitivePropertyInfoNames()</h3>
+<blockquote>
+<p><strong>getLayerPrimitivePropertyInfoNames</strong>: (<code>layerName</code>) =&gt; <code>string</code>[]</p>
+</blockquote>
+<p>Defined in: index.d.ts:4596</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<h4>Returns</h4>
+<p><code>string</code>[]</p>
+<hr>
+<h3>getLayerPrimitivePropertyInfos()</h3>
+<blockquote>
+<p><strong>getLayerPrimitivePropertyInfos</strong>: (<code>layerName</code>) =&gt; <a href="../interfaces/PropertyInfo.html"><code>PropertyInfo</code></a>[]</p>
+</blockquote>
+<p>Defined in: index.d.ts:4595</p>
+<p>属性表头</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<h4>Returns</h4>
+<p><a href="../interfaces/PropertyInfo.html"><code>PropertyInfo</code></a>[]</p>
+<hr>
+<h3>getLayerPrimitiveUniform()</h3>
+<blockquote>
+<p><strong>getLayerPrimitiveUniform</strong>: (<code>layerName</code>) =&gt; <a href="PrimitiveUniform.html"><code>PrimitiveUniform</code></a> | <code>undefined</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4586</p>
+<p>获取图层统一风格</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<h4>Returns</h4>
+<p><a href="PrimitiveUniform.html"><code>PrimitiveUniform</code></a> | <code>undefined</code></p>
+<hr>
+<h3>getLayerUniformPrimitiveDataPropertyMap()</h3>
+<blockquote>
+<p><strong>getLayerUniformPrimitiveDataPropertyMap</strong>: (<code>layerName</code>) =&gt; <a href="UniformPrimitiveDataPropertyMap.html"><code>UniformPrimitiveDataPropertyMap</code></a></p>
+</blockquote>
+<p>Defined in: index.d.ts:4606</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<h4>Returns</h4>
+<p><a href="UniformPrimitiveDataPropertyMap.html"><code>UniformPrimitiveDataPropertyMap</code></a></p>
+<hr>
+<h3>getPrimitive()</h3>
+<blockquote>
+<p><strong>getPrimitive</strong>: (<code>layerName</code>, <code>id</code>) =&gt; <a href="Primitive.html"><code>Primitive</code></a> &amp; <code>object</code> | <code>undefined</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4623</p>
+<p>获取指定的对象</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h5>id</h5>
+<p><code>string</code></p>
+<h4>Returns</h4>
+<p><a href="Primitive.html"><code>Primitive</code></a> &amp; <code>object</code> | <code>undefined</code></p>
+<hr>
+<h3>getPrimitiveCount()</h3>
+<blockquote>
+<p><strong>getPrimitiveCount</strong>: (<code>layerName</code>) =&gt; <code>number</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4649</p>
+<p>获取图层对象个数</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<h4>Returns</h4>
+<p><code>number</code></p>
+<hr>
+<h3>getPrimitiveLayerNames()</h3>
+<blockquote>
+<p><strong>getPrimitiveLayerNames</strong>: () =&gt; <code>string</code>[]</p>
+</blockquote>
+<p>Defined in: index.d.ts:4545</p>
+<p>获取所有粒子图层名</p>
+<h4>Returns</h4>
+<p><code>string</code>[]</p>
+<p>图层名数组</p>
+<hr>
+<h3>getPrimitiveProperties()</h3>
+<blockquote>
+<p><strong>getPrimitiveProperties</strong>: (<code>layerName</code>, <code>id</code>) =&gt; {[<code>_</code>: <code>string</code>]: <code>unknown</code>; } | <code>undefined</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4631</p>
+<p>获取指定的对象属性</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h5>id</h5>
+<p><code>string</code></p>
+<h4>Returns</h4>
+<p>{[<code>_</code>: <code>string</code>]: <code>unknown</code>; } | <code>undefined</code></p>
+<hr>
+<h3>isPrimitiveLayerVisible()</h3>
+<blockquote>
+<p><strong>isPrimitiveLayerVisible</strong>: (<code>name</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4534</p>
+<p>图层是否可见</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<p>成功/失败</p>
+<hr>
+<h3>layerAddPrimitive()</h3>
+<blockquote>
+<p><strong>layerAddPrimitive</strong>: (<code>layerName</code>, <code>primitive</code>) =&gt; <code>string</code> | <code>undefined</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4559</p>
+<p>图层添加对象</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h5>primitive</h5>
+<p><a href="Primitive.html"><code>Primitive</code></a> | <code>Partial</code>&lt;<a href="../interfaces/UniformPrimitiveData.html"><code>UniformPrimitiveData</code></a>&gt; &amp; <code>object</code></p>
+<p>对象参数（若id不为undefined，会查重）</p>
+<h4>Returns</h4>
+<p><code>string</code> | <code>undefined</code></p>
+<p>对象id (undefined表示添加失败)</p>
+<hr>
+<h3>layerModifyPrimitive()</h3>
+<blockquote>
+<p><strong>layerModifyPrimitive</strong>: (<code>layerName</code>, <code>primitive</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4615</p>
+<p>更新图层对象</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h5>primitive</h5>
+<p><code>Partial</code>&lt;<a href="Primitive.html"><code>Primitive</code></a>&gt; &amp; <code>object</code></p>
+<p>参数</p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<p>成功/失败</p>
+<hr>
+<h3>layerPrimitives()</h3>
+<blockquote>
+<p><strong>layerPrimitives</strong>: (<code>layerName</code>, <code>indexRange?</code>) =&gt; <a href="Primitive.html"><code>Primitive</code></a> &amp; <code>object</code>[]</p>
+</blockquote>
+<p>Defined in: index.d.ts:4575</p>
+<p>获取图层所有对象</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<h5>indexRange?</h5>
+<p>数据索引范围默认所有 start默认0 end(不含)默认到最后+1</p>
+<h6>end?</h6>
+<p><code>number</code></p>
+<h6>start?</h6>
+<p><code>number</code></p>
+<h4>Returns</h4>
+<p><a href="Primitive.html"><code>Primitive</code></a> &amp; <code>object</code>[]</p>
+<p>对象数组</p>
+<hr>
+<h3>layerRemovePrimitive()</h3>
+<blockquote>
+<p><strong>layerRemovePrimitive</strong>: (<code>layerName</code>, <code>primitiveId</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4568</p>
+<p>图层删除对象</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<h5>primitiveId</h5>
+<p><code>string</code></p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<p>成功/失败</p>
+<hr>
+<h3>loadLayerUniformPrimitiveDataPropertyMap()</h3>
+<blockquote>
+<p><strong>loadLayerUniformPrimitiveDataPropertyMap</strong>: (<code>layerName</code>, <code>map</code>) =&gt; <code>void</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4607</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<h5>map</h5>
+<p><a href="UniformPrimitiveDataPropertyMap.html"><code>UniformPrimitiveDataPropertyMap</code></a></p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>modifyLayerPrimitivePropertyInfo()</h3>
+<blockquote>
+<p><strong>modifyLayerPrimitivePropertyInfo</strong>: (<code>layerName</code>, <code>info</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4605</p>
+<p>propertyName valueType 不能改</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<h5>info</h5>
+<p><code>Omit</code>&lt;<a href="../interfaces/PropertyInfo.html"><code>PropertyInfo</code></a>, <code>&quot;valueType&quot;</code>&gt;</p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<hr>
+<h3>removeAllPrimitiveLayers()</h3>
+<blockquote>
+<p><strong>removeAllPrimitiveLayers</strong>: () =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4522</p>
+<p>删除所有图层</p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<p>成功/失败</p>
+<hr>
+<h3>removeLayerPrimitivePropertyInfo()</h3>
+<blockquote>
+<p><strong>removeLayerPrimitivePropertyInfo</strong>: (<code>layerName</code>, <code>infoName</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4603</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<h5>infoName</h5>
+<p><code>string</code></p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<hr>
+<h3>removePrimitiveLayer()</h3>
+<blockquote>
+<p><strong>removePrimitiveLayer</strong>: (<code>name</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4517</p>
+<p>删除图层</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<p>成功/失败</p>
+<hr>
+<h3>renamePrimitiveLayer()</h3>
+<blockquote>
+<p><strong>renamePrimitiveLayer</strong>: (<code>oldName</code>, <code>newName</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4552</p>
+<p>重命名</p>
+<h4>Parameters</h4>
+<h5>oldName</h5>
+<p><code>string</code></p>
+<p>原图层名</p>
+<h5>newName</h5>
+<p><code>string</code></p>
+<p>新图层名</p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<p>成功/失败</p>
+<hr>
+<h3>setLayerPrimitiveUniform()</h3>
+<blockquote>
+<p><strong>setLayerPrimitiveUniform</strong>: (<code>layerName</code>, <code>uniform</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4593</p>
+<p>设置图层统一风格</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<h5>uniform</h5>
+<p><a href="PrimitiveUniform.html"><code>PrimitiveUniform</code></a></p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<p>设置是否成功</p>
+<hr>
+<h3>setLayerUniformPrimitiveDataFromProperty()</h3>
+<blockquote>
+<p><strong>setLayerUniformPrimitiveDataFromProperty</strong>: (<code>layerName</code>, <code>dataType</code>, <code>value</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4608</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<h5>dataType</h5>
+<p>keyof <a href="UniformPrimitiveDataPropertyMap.html"><code>UniformPrimitiveDataPropertyMap</code></a></p>
+<h5>value</h5>
+<p><code>unknown</code></p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<hr>
+<h3>setPrimitiveLayerVisible()</h3>
+<blockquote>
+<p><strong>setPrimitiveLayerVisible</strong>: (<code>name</code>, <code>isVisible</code>) =&gt; <code>void</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4540</p>
+<p>设置图层是否可见</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h5>isVisible</h5>
+<p><code>boolean</code></p>
+<p>是否可见</p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>viewEntirePrimitive()</h3>
+<blockquote>
+<p><strong>viewEntirePrimitive</strong>: (<code>layerName</code>, <code>primitiveId</code>, <code>duration</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:4647</p>
+<p>全幅primitive矢量</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<h5>primitiveId</h5>
+<p><code>string</code></p>
+<h5>duration</h5>
+<p><code>number</code></p>
+<p>动画时间</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>设置是否成功</p>
+
+
+</body>
+</html>

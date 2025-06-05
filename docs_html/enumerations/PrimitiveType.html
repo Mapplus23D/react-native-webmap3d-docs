@@ -1,0 +1,452 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>react-native-webmap3d开发文档开发文档</title>
+
+    <style type="text/css">
+
+      /* BODY
+      =============================================================================*/
+
+      html {
+        font-family: Helvetica, arial, freesans, clean, sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #333;
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        overflow: hidden;
+      }
+
+      body {
+        font-family: Helvetica, arial, freesans, clean, sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #333;
+        background-color: #fff;
+        margin: 0;
+        padding: 20px;
+        border: 0;
+        overflow: auto;
+        height: calc(100vh - 40px);
+      }
+
+      body>*:first-child {
+        margin-top: 0 !important;
+      }
+
+      body>*:last-child {
+        margin-bottom: 0 !important;
+      }
+
+      /* BLOCKS
+      =============================================================================*/
+
+      p, blockquote, ul, ol, dl, table, pre {
+        margin: 15px 0;
+      }
+
+      /* HEADERS
+      =============================================================================*/
+
+      h1, h2, h3, h4, h5, h6 {
+        margin: 20px 0 10px;
+        padding: 0;
+        font-weight: bold;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+        font-size: inherit;
+      }
+
+      h1 {
+        font-size: 28px;
+        color: #000;
+      }
+
+      h2 {
+        font-size: 24px;
+        border-bottom: 1px solid #ccc;
+        color: #000;
+      }
+
+      h3 {
+        font-size: 18px;
+      }
+
+      h4 {
+        font-size: 16px;
+      }
+
+      h5 {
+        font-size: 14px;
+      }
+
+      h6 {
+        color: #777;
+        font-size: 14px;
+      }
+
+      body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+        margin-top: 0;
+        padding-top: 0;
+      }
+
+      a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+        margin-top: 0;
+        padding-top: 0;
+      }
+
+      h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+        margin-top: 10px;
+      }
+
+      /* LINKS
+      =============================================================================*/
+
+      a {
+        color: #4183C4;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      .strikethrough {
+          text-decoration: line-through;
+      }
+
+      /* LISTS
+      =============================================================================*/
+
+      ul, ol {
+        padding-left: 30px;
+      }
+
+      ul li > :first-child,
+      ol li > :first-child,
+      ul li ul:first-of-type,
+      ol li ol:first-of-type,
+      ul li ol:first-of-type,
+      ol li ul:first-of-type {
+        margin-top: 0px;
+      }
+
+      ul ul, ul ol, ol ol, ol ul {
+        margin-bottom: 0;
+      }
+
+      dl {
+        padding: 0;
+      }
+
+      dl dt {
+        font-size: 14px;
+        font-weight: bold;
+        font-style: italic;
+        padding: 0;
+        margin: 15px 0 5px;
+      }
+
+      dl dt:first-child {
+        padding: 0;
+      }
+
+      dl dt>:first-child {
+        margin-top: 0px;
+      }
+
+      dl dt>:last-child {
+        margin-bottom: 0px;
+      }
+
+      dl dd {
+        margin: 0 0 15px;
+        padding: 0 15px;
+      }
+
+      dl dd>:first-child {
+        margin-top: 0px;
+      }
+
+      dl dd>:last-child {
+        margin-bottom: 0px;
+      }
+
+      /* CODE
+      =============================================================================*/
+
+      pre, code, tt {
+        font-size: 12px;
+        font-family: Consolas, "Liberation Mono", Courier, monospace;
+      }
+
+      code, tt {
+        margin: 0 0px;
+        padding: 0px 0px;
+        white-space: nowrap;
+        border: 1px solid #eaeaea;
+        background-color: #f8f8f8;
+        border-radius: 3px;
+      }
+
+      pre>code {
+        margin: 0;
+        padding: 0;
+        white-space: pre;
+        border: none;
+        background: transparent;
+      }
+
+      pre {
+        background-color: #f8f8f8;
+        border: 1px solid #ccc;
+        font-size: 13px;
+        line-height: 19px;
+        overflow: auto;
+        padding: 6px 10px;
+        border-radius: 3px;
+      }
+
+      pre code, pre tt {
+        background-color: transparent;
+        border: none;
+      }
+
+      kbd {
+          -moz-border-bottom-colors: none;
+          -moz-border-left-colors: none;
+          -moz-border-right-colors: none;
+          -moz-border-top-colors: none;
+          background-color: #DDDDDD;
+          background-image: linear-gradient(#F1F1F1, #DDDDDD);
+          background-repeat: repeat-x;
+          border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+          border-image: none;
+          border-radius: 2px 2px 2px 2px;
+          border-style: solid;
+          border-width: 1px;
+          font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+          line-height: 10px;
+          padding: 1px 4px;
+      }
+
+      /* QUOTES
+      =============================================================================*/
+
+      blockquote {
+        border-left: 4px solid #DDD;
+        padding: 0 15px;
+        color: #777;
+      }
+
+      blockquote>:first-child {
+        margin-top: 0px;
+      }
+
+      blockquote>:last-child {
+        margin-bottom: 0px;
+      }
+
+      /* HORIZONTAL RULES
+      =============================================================================*/
+
+      hr {
+        clear: both;
+        margin: 15px 0;
+        height: 0px;
+        overflow: hidden;
+        border: none;
+        background: transparent;
+        border-bottom: 4px solid #ddd;
+        padding: 0;
+      }
+
+      /* TABLES
+      =============================================================================*/
+
+      table th {
+        font-weight: bold;
+      }
+
+      table th, table td {
+        border: 1px solid #ccc;
+        padding: 6px 13px;
+      }
+
+      table tr {
+        border-top: 1px solid #ccc;
+        background-color: #fff;
+      }
+
+      table tr:nth-child(2n) {
+        background-color: #f8f8f8;
+      }
+
+      /* IMAGES
+      =============================================================================*/
+
+      img {
+        max-width: 100%
+      }
+    </style>
+  </head>
+  <body>
+
+
+
+
+<h1>Enumeration: PrimitiveType</h1>
+<p>Defined in: index.d.ts:2099</p>
+<h2>Enumeration Members</h2>
+<h3>ArrowLine</h3>
+<blockquote>
+<p><strong>ArrowLine</strong>: <code>13</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:2117</p>
+<p>箭头线</p>
+<hr>
+<h3>Billboard</h3>
+<blockquote>
+<p><strong>Billboard</strong>: <code>1</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:2103</p>
+<p>图片</p>
+<hr>
+<h3>ColumnModel</h3>
+<blockquote>
+<p><strong>ColumnModel</strong>: <code>32</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:2139</p>
+<p>白模柱状体</p>
+<hr>
+<h3>ContourLine</h3>
+<blockquote>
+<p><strong>ContourLine</strong>: <code>12</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:2115</p>
+<p>轮廓线</p>
+<hr>
+<h3>ContourRegion</h3>
+<blockquote>
+<p><strong>ContourRegion</strong>: <code>24</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:2133</p>
+<p>描边面</p>
+<hr>
+<h3>DashedLine</h3>
+<blockquote>
+<p><strong>DashedLine</strong>: <code>11</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:2113</p>
+<p>虚线</p>
+<hr>
+<h3>FeatherRegion</h3>
+<blockquote>
+<p><strong>FeatherRegion</strong>: <code>26</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:2137</p>
+<p>羽化面</p>
+<hr>
+<h3>GridRegion</h3>
+<blockquote>
+<p><strong>GridRegion</strong>: <code>21</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:2127</p>
+<p>网格面</p>
+<hr>
+<h3>HaloLine</h3>
+<blockquote>
+<p><strong>HaloLine</strong>: <code>14</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:2119</p>
+<p>光晕线</p>
+<hr>
+<h3>ImageLine</h3>
+<blockquote>
+<p><strong>ImageLine</strong>: <code>19</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:2121</p>
+<p>图片填充线</p>
+<hr>
+<h3>ImageRegion</h3>
+<blockquote>
+<p><strong>ImageRegion</strong>: <code>23</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:2131</p>
+<p>图片填充面</p>
+<hr>
+<h3>Label</h3>
+<blockquote>
+<p><strong>Label</strong>: <code>2</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:2105</p>
+<p>文字</p>
+<hr>
+<h3>Model</h3>
+<blockquote>
+<p><strong>Model</strong>: <code>4</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:2109</p>
+<p>模型</p>
+<hr>
+<h3>SolidLine</h3>
+<blockquote>
+<p><strong>SolidLine</strong>: <code>10</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:2111</p>
+<p>纯色线</p>
+<hr>
+<h3>SolidPoint</h3>
+<blockquote>
+<p><strong>SolidPoint</strong>: <code>0</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:2101</p>
+<p>纯色点</p>
+<hr>
+<h3>SolidRegion</h3>
+<blockquote>
+<p><strong>SolidRegion</strong>: <code>20</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:2125</p>
+<p>纯色面</p>
+<hr>
+<h3>StripeRegion</h3>
+<blockquote>
+<p><strong>StripeRegion</strong>: <code>22</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:2129</p>
+<p>条纹面</p>
+<hr>
+<h3>TerrainLabel</h3>
+<blockquote>
+<p><strong>TerrainLabel</strong>: <code>3</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:2107</p>
+<p>贴地文字</p>
+<hr>
+<h3>WallLine</h3>
+<blockquote>
+<p><strong>WallLine</strong>: <code>17</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:2123</p>
+<p>墙线</p>
+<hr>
+<h3>WaterRegion</h3>
+<blockquote>
+<p><strong>WaterRegion</strong>: <code>25</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:2135</p>
+<p>水面</p>
+
+
+</body>
+</html>

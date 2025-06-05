@@ -1,0 +1,765 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>react-native-webmap3d开发文档开发文档</title>
+
+    <style type="text/css">
+
+      #doc-container {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .main-container {
+        display: flex;
+        height: calc(100% - 40px);
+      }
+
+      .main-header {
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        height: 40px;
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        padding: 0 20px;
+
+        strong {
+          text-align: center;
+          width: calc(100% - 120px);
+          margin-left: 40px;
+          margin-right: 20px;
+        }
+
+        .search-btn {
+          position: relative;
+          right: 0;
+          width: 20px;
+          height: 20px;
+          cursor: pointer;
+        }
+      }
+
+      .sidebar {
+        background-color: #f4f4f4;
+        padding: 20px;
+        width: 250px; /* 或者使用flex-basis来设置 */
+        height: calc(100vh - 40px);
+        overflow: hidden;
+        overflow-y: scroll;
+      }
+
+      #content {
+        flex-grow: 1; /* 使内容区域填充剩余空间 */
+        height: 100vh;
+        overflow: hidden;
+        overflow-y: hidden;
+      }
+
+      /* BODY
+      =============================================================================*/
+
+      html, body {
+        font-family: Helvetica, arial, freesans, clean, sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #333;
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        overflow: hidden;
+      }
+
+      body>*:first-child {
+        margin-top: 0 !important;
+      }
+
+      body>*:last-child {
+        margin-bottom: 0 !important;
+      }
+
+      /* BLOCKS
+      =============================================================================*/
+
+      p, blockquote, ul, ol, dl, table, pre {
+        margin: 15px 0;
+      }
+
+      /* HEADERS
+      =============================================================================*/
+
+      h1, h2, h3, h4, h5, h6 {
+        margin: 20px 0 10px;
+        padding: 0;
+        font-weight: bold;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+        font-size: inherit;
+      }
+
+      h1 {
+        font-size: 28px;
+        color: #000;
+      }
+
+      h2 {
+        font-size: 24px;
+        border-bottom: 1px solid #ccc;
+        color: #000;
+      }
+
+      h3 {
+        font-size: 18px;
+      }
+
+      h4 {
+        font-size: 16px;
+      }
+
+      h5 {
+        font-size: 14px;
+      }
+
+      h6 {
+        color: #777;
+        font-size: 14px;
+      }
+
+      body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+        margin-top: 0;
+        padding-top: 0;
+      }
+
+      a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+        margin-top: 0;
+        padding-top: 0;
+      }
+
+      h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+        margin-top: 10px;
+      }
+
+      /* LINKS
+      =============================================================================*/
+
+      a {
+        color: #4183C4;
+        text-decoration: none;
+        font-size: 16px;
+        width: 100%;
+        color: #222;
+        padding: 0 5px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+      }
+
+      a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      a.current {
+        background-color: #d6d8da;
+        color: #4183C4;
+      }
+
+      .strikethrough {
+        text-decoration: line-through;
+      }
+
+      /* LISTS
+      =============================================================================*/
+
+      ul, ol {
+        padding-left: 20px;
+      }
+
+      ul li > :first-child,
+      ol li > :first-child,
+      ul li ul:first-of-type,
+      ol li ol:first-of-type,
+      ul li ol:first-of-type,
+      ol li ul:first-of-type {
+        margin-top: 0px;
+      }
+
+      ul ul, ul ol, ol ol, ol ul {
+        margin-bottom: 0;
+      }
+
+      ul li {
+        display: flex;
+      }
+
+      dl {
+        padding: 0;
+      }
+
+      dl dt {
+        font-size: 14px;
+        font-weight: bold;
+        font-style: italic;
+        padding: 0;
+        margin: 15px 0 5px;
+      }
+
+      dl dt:first-child {
+        padding: 0;
+      }
+
+      dl dt>:first-child {
+        margin-top: 0px;
+      }
+
+      dl dt>:last-child {
+        margin-bottom: 0px;
+      }
+
+      dl dd {
+        margin: 0 0 15px;
+        padding: 0 15px;
+      }
+
+      dl dd>:first-child {
+        margin-top: 0px;
+      }
+
+      dl dd>:last-child {
+        margin-bottom: 0px;
+      }
+
+      /* CODE
+      =============================================================================*/
+
+      pre, code, tt {
+        font-size: 12px;
+        font-family: Consolas, "Liberation Mono", Courier, monospace;
+      }
+
+      code, tt {
+        margin: 0 0px;
+        padding: 0px 0px;
+        white-space: nowrap;
+        border: 1px solid #eaeaea;
+        background-color: #f8f8f8;
+        border-radius: 3px;
+      }
+
+      pre>code {
+        margin: 0;
+        padding: 0;
+        white-space: pre;
+        border: none;
+        background: transparent;
+      }
+
+      pre {
+        background-color: #f8f8f8;
+        border: 1px solid #ccc;
+        font-size: 13px;
+        line-height: 19px;
+        overflow: auto;
+        padding: 6px 10px;
+        border-radius: 3px;
+      }
+
+      pre code, pre tt {
+        background-color: transparent;
+        border: none;
+      }
+
+      kbd {
+          -moz-border-bottom-colors: none;
+          -moz-border-left-colors: none;
+          -moz-border-right-colors: none;
+          -moz-border-top-colors: none;
+          background-color: #DDDDDD;
+          background-image: linear-gradient(#F1F1F1, #DDDDDD);
+          background-repeat: repeat-x;
+          border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+          border-image: none;
+          border-radius: 2px 2px 2px 2px;
+          border-style: solid;
+          border-width: 1px;
+          font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+          line-height: 10px;
+          padding: 1px 4px;
+      }
+
+      /* QUOTES
+      =============================================================================*/
+
+      blockquote {
+        border-left: 4px solid #DDD;
+        padding: 0 15px;
+        color: #777;
+      }
+
+      blockquote>:first-child {
+        margin-top: 0px;
+      }
+
+      blockquote>:last-child {
+        margin-bottom: 0px;
+      }
+
+      /* HORIZONTAL RULES
+      =============================================================================*/
+
+      hr {
+        clear: both;
+        margin: 15px 0;
+        height: 0px;
+        overflow: hidden;
+        border: none;
+        background: transparent;
+        border-bottom: 4px solid #ddd;
+        padding: 0;
+      }
+
+      /* TABLES
+      =============================================================================*/
+
+      table th {
+        font-weight: bold;
+      }
+
+      table th, table td {
+        border: 1px solid #ccc;
+        padding: 6px 13px;
+      }
+
+      table tr {
+        border-top: 1px solid #ccc;
+        background-color: #fff;
+      }
+
+      table tr:nth-child(2n) {
+        background-color: #f8f8f8;
+      }
+
+      /* IMAGES
+      =============================================================================*/
+
+      img {
+        max-width: 100%
+      }
+
+      /* DIALOG */
+
+      #tsd-overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        animation: fade-in var(--modal-animation-duration) forwards;
+      }
+
+      dialog {
+        border: none;
+        outline: none;
+        padding: 0;
+        background-color: #f2f4f8;
+        width: fit-content;
+        height: fit-content;
+      }
+
+      #tsd-search-input {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0 0.625rem;
+        outline: 0;
+        border: 2px solid #c5c7c9;
+        background-color: transparent;
+        color: #222;
+        border-radius: 4px;
+        height: 2.5rem;
+        flex: 0 0 auto;
+        font-size: 0.875rem;
+        transition: border-color 0.2s, background-color 0.2s;
+      }
+
+      #tsd-search[open] {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        width: 32rem;
+        max-width: 90vw;
+        max-height: calc(100vh - env(keyboard-inset-height, 0px) - 25vh);
+        margin-top: 10vh;
+        border-radius: 6px;
+        will-change: max-height;
+
+        animation: fade-in var(--modal-animation-duration) ease-out forwards;
+      }
+
+      #tsd-search-results {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+      }
+
+      #tsd-search-status {
+        flex: 1;
+        display: grid;
+        place-content: center;
+        text-align: center;
+        overflow-wrap: anywhere;
+      }
+
+      .closing {
+        display: none !important;
+        pointer-events: none !important;
+      }
+
+      .overlay {
+        content: "";
+        display: block;
+        position: fixed;
+        z-index: 1023;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.75);
+        visibility: hidden;
+      }
+
+    </style>
+    <style
+      data-for="filters">html:not(.filter-inherited) .tsd-is-inherited { display: none; }</style>
+  </head>
+  <body>
+    <script src='./utils/modal.js'></script>
+    <script src='./utils/searchUtil.js'></script>
+    <div id="doc-container">
+      <div class="main-header">
+        <strong>react-native-webmap3d开发文档</strong>
+        <img src='./assets/icon_search.png' class='search-btn'
+          onclick='openSearch()' />
+      </div>
+      <div class="main-container">
+        <aside id="sidebar-list" class="sidebar">
+
+<p><a data-type="README.html"><strong>react-native-webmap3d开发文档</strong></a></p>
+<hr>
+
+<h2>主要接口</h2>
+<ul>
+<li><a data-type="functions/createSuperMap3D.html">createSuperMap3D</a></li>
+<li><a data-type="interfaces/ClientModule.html">ClientModule</a></li>
+<li><a data-type="type-aliases/IScene.html">IScene</a></li>
+<li><a data-type="type-aliases/ICamera.html">ICamera</a></li>
+<li><a data-type="type-aliases/ITrackingLayer.html">ITrackingLayer</a></li>
+<li><a data-type="type-aliases/IParticleLayers.html">IParticleLayers</a></li>
+<li><a data-type="type-aliases/IScanEffect.html">IScanEffect</a></li>
+<li><a data-type="type-aliases/IPrimitiveLayers.html">IPrimitiveLayers</a></li>
+<li><a data-type="type-aliases/IAnimation.html">IAnimation</a></li>
+<li><a data-type="type-aliases/IMeasure.html">IMeasure</a></li>
+<li><a data-type="type-aliases/IAnalysis.html">IAnalysis</a></li>
+<li><a data-type="type-aliases/IMagnifier.html">IMagnifier</a></li>
+<li><a data-type="type-aliases/IGeometrist.html">IGeometrist</a></li>
+<li><a data-type="type-aliases/ITileCache.html">ITileCache</a></li>
+<li><a data-type="type-aliases/ICoordTrans.html">ICoordTrans</a></li>
+<li><a data-type="type-aliases/IFileConverter.html">IFileConverter</a></li>
+</ul>
+<h2>Enumerations</h2>
+<ul>
+<li><a data-type="enumerations/AnimatorType.html">AnimatorType</a></li>
+<li><a data-type="enumerations/BingMapsStyle.html">BingMapsStyle</a></li>
+<li><a data-type="enumerations/ClampType.html">ClampType</a></li>
+<li><a data-type="enumerations/ClassificationType.html">ClassificationType</a></li>
+<li><a data-type="enumerations/EllipsoidType.html">EllipsoidType</a></li>
+<li><a data-type="enumerations/FillType.html">FillType</a></li>
+<li><a data-type="enumerations/FlyPresetType.html">FlyPresetType</a></li>
+<li><a data-type="enumerations/HeightReference.html">HeightReference</a></li>
+<li><a data-type="enumerations/HorizontalOrigin.html">HorizontalOrigin</a></li>
+<li><a data-type="enumerations/LabelStyle.html">LabelStyle</a></li>
+<li><a data-type="enumerations/LineType.html">LineType</a></li>
+<li><a data-type="enumerations/MeasureType.html">MeasureType</a></li>
+<li><a data-type="enumerations/ParticleBlendMode.html">ParticleBlendMode</a></li>
+<li><a data-type="enumerations/PolygonGrowType.html">PolygonGrowType</a></li>
+<li><a data-type="enumerations/PrimitiveType.html">PrimitiveType</a></li>
+<li><a data-type="enumerations/ProviderType.html">ProviderType</a></li>
+<li><a data-type="enumerations/S3MLayerType.html">S3MLayerType</a></li>
+<li><a data-type="enumerations/ScanEffectMode.html">ScanEffectMode</a></li>
+<li><a data-type="enumerations/SceneAction.html">SceneAction</a></li>
+<li><a data-type="enumerations/SceneAnimationType.html">SceneAnimationType</a></li>
+<li><a data-type="enumerations/SceneMode.html">SceneMode</a></li>
+<li><a data-type="enumerations/ScreenPosition.html">ScreenPosition</a></li>
+<li><a data-type="enumerations/SlideTransitionType.html">SlideTransitionType</a></li>
+<li><a data-type="enumerations/SLineType.html">SLineType</a></li>
+<li><a data-type="enumerations/TiandituMapsStyle.html">TiandituMapsStyle</a></li>
+<li><a data-type="enumerations/TilingSchemeType.html">TilingSchemeType</a></li>
+<li><a data-type="enumerations/VerticalOrigin.html">VerticalOrigin</a></li>
+<li><a data-type="enumerations/WaterbodySize.html">WaterbodySize</a></li>
+<li><a data-type="enumerations/WaveStrength.html">WaveStrength</a></li>
+<li><a data-type="enumerations/WeatherType.html">WeatherType</a></li>
+</ul>
+<h2>Interfaces</h2>
+<ul>
+<li><a data-type="interfaces/AddCount.html">AddCount</a></li>
+<li><a data-type="interfaces/AnimatorGeneral.html">AnimatorGeneral</a></li>
+<li><a data-type="interfaces/ArrowLine.html">ArrowLine</a></li>
+<li><a data-type="interfaces/Atmosphere.html">Atmosphere</a></li>
+<li><a data-type="interfaces/AudioAnimation.html">AudioAnimation</a></li>
+<li><a data-type="interfaces/AudioParam.html">AudioParam</a></li>
+<li><a data-type="interfaces/AudioSubtitle.html">AudioSubtitle</a></li>
+<li><a data-type="interfaces/BillboardGraphics.html">BillboardGraphics</a></li>
+<li><a data-type="interfaces/BingMapsImageProvider.html">BingMapsImageProvider</a></li>
+<li><a data-type="interfaces/BloomEffect.html">BloomEffect</a></li>
+<li><a data-type="interfaces/Bounds.html">Bounds</a></li>
+<li><a data-type="interfaces/BoxParticleEmitter.html">BoxParticleEmitter</a></li>
+<li><a data-type="interfaces/Camera.html">Camera</a></li>
+<li><a data-type="interfaces/ChangGuangProvider.html">ChangGuangProvider</a></li>
+<li><a data-type="interfaces/Circle.html">Circle</a></li>
+<li><a data-type="interfaces/ClientOption.html">ClientOption</a></li>
+<li><a data-type="interfaces/Clouds.html">Clouds</a></li>
+<li><a data-type="interfaces/ColorAnimation.html">ColorAnimation</a></li>
+<li><a data-type="interfaces/ColorCorrectionType.html">ColorCorrectionType</a></li>
+<li><a data-type="interfaces/ConeParticleEmitter.html">ConeParticleEmitter</a></li>
+<li><a data-type="interfaces/ContourLine.html">ContourLine</a></li>
+<li><a data-type="interfaces/CylinderParticleEmitter.html">CylinderParticleEmitter</a></li>
+<li><a data-type="interfaces/DashedLine.html">DashedLine</a></li>
+<li><a data-type="interfaces/DistanceDisplayCondition.html">DistanceDisplayCondition</a></li>
+<li><a data-type="interfaces/DynamicLine.html">DynamicLine</a></li>
+<li><a data-type="interfaces/EntitiesDatasource.html">EntitiesDatasource</a></li>
+<li><a data-type="interfaces/EntitiesLayer.html">EntitiesLayer</a></li>
+<li><a data-type="interfaces/Entity.html">Entity</a></li>
+<li><a data-type="interfaces/EntityAdditionType.html">EntityAdditionType</a></li>
+<li><a data-type="interfaces/EntityCollection.html">EntityCollection</a></li>
+<li><a data-type="interfaces/FeatherPolygon.html">FeatherPolygon</a></li>
+<li><a data-type="interfaces/Feature.html">Feature</a></li>
+<li><a data-type="interfaces/FeatureCollection.html">FeatureCollection</a></li>
+<li><a data-type="interfaces/FlyAlongLine.html">FlyAlongLine</a></li>
+<li><a data-type="interfaces/FlyBackwardParam.html">FlyBackwardParam</a></li>
+<li><a data-type="interfaces/FlyCircleStop.html">FlyCircleStop</a></li>
+<li><a data-type="interfaces/FlyForwardAroundBackwardParam.html">FlyForwardAroundBackwardParam</a></li>
+<li><a data-type="interfaces/FlyForwardParam.html">FlyForwardParam</a></li>
+<li><a data-type="interfaces/FlyPresetStop.html">FlyPresetStop</a></li>
+<li><a data-type="interfaces/FlyRoute.html">FlyRoute</a></li>
+<li><a data-type="interfaces/FlyRouteStop.html">FlyRouteStop</a></li>
+<li><a data-type="interfaces/FlyStop.html">FlyStop</a></li>
+<li><a data-type="interfaces/Fog.html">Fog</a></li>
+<li><a data-type="interfaces/GeoJSONObject.html">GeoJSONObject</a></li>
+<li><a data-type="interfaces/Geometry.html">Geometry</a></li>
+<li><a data-type="interfaces/GeometryCollection.html">GeometryCollection</a></li>
+<li><a data-type="interfaces/GeometryObject.html">GeometryObject</a></li>
+<li><a data-type="interfaces/GlobeLighting.html">GlobeLighting</a></li>
+<li><a data-type="interfaces/GraticuleParam.html">GraticuleParam</a></li>
+<li><a data-type="interfaces/GregorianDate.html">GregorianDate</a></li>
+<li><a data-type="interfaces/GriddingPolygon.html">GriddingPolygon</a></li>
+<li><a data-type="interfaces/GridImageProvider.html">GridImageProvider</a></li>
+<li><a data-type="interfaces/HaloLine.html">HaloLine</a></li>
+<li><a data-type="interfaces/HeadingPitchRoll.html">HeadingPitchRoll</a></li>
+<li><a data-type="interfaces/HemisphericParticleEmitter.html">HemisphericParticleEmitter</a></li>
+<li><a data-type="interfaces/HypsometricSetting.html">HypsometricSetting</a></li>
+<li><a data-type="interfaces/ILabelStyle.html">ILabelStyle</a></li>
+<li><a data-type="interfaces/ILicenseInfo.html">ILicenseInfo</a></li>
+<li><a data-type="interfaces/ILineStyle.html">ILineStyle</a></li>
+<li><a data-type="interfaces/ImageLayer.html">ImageLayer</a></li>
+<li><a data-type="interfaces/ImagePolygon.html">ImagePolygon</a></li>
+<li><a data-type="interfaces/IMap3D.html">IMap3D</a></li>
+<li><a data-type="interfaces/InitMeasureParam.html">InitMeasureParam</a></li>
+<li><a data-type="interfaces/IPointStyle.html">IPointStyle</a></li>
+<li><a data-type="interfaces/IRegionStyle.html">IRegionStyle</a></li>
+<li><a data-type="interfaces/IScreenAnimationBase.html">IScreenAnimationBase</a></li>
+<li><a data-type="interfaces/IScreenImage.html" class="strikethrough">IScreenImage</a></li>
+<li><a data-type="interfaces/IScreenItem.html" class="strikethrough">IScreenItem</a></li>
+<li><a data-type="interfaces/IScreenText.html" class="strikethrough">IScreenText</a></li>
+<li><a data-type="interfaces/IScreenVideo.html" class="strikethrough">IScreenVideo</a></li>
+<li><a data-type="interfaces/LabelGraphics.html">LabelGraphics</a></li>
+<li><a data-type="interfaces/LayerVisibilityAnimation.html">LayerVisibilityAnimation</a></li>
+<li><a data-type="interfaces/LineGrowAnimation.html">LineGrowAnimation</a></li>
+<li><a data-type="interfaces/LineString.html">LineString</a></li>
+<li><a data-type="interfaces/LocalProvider.html">LocalProvider</a></li>
+<li><a data-type="interfaces/MapSetting.html">MapSetting</a></li>
+<li><a data-type="interfaces/MeasureResultDVHparam.html">MeasureResultDVHparam</a></li>
+<li><a data-type="interfaces/MessagerHandlers.html">MessagerHandlers</a></li>
+<li><a data-type="interfaces/ModelGraphics.html">ModelGraphics</a></li>
+<li><a data-type="interfaces/MultiLineString.html">MultiLineString</a></li>
+<li><a data-type="interfaces/MultiPoint.html">MultiPoint</a></li>
+<li><a data-type="interfaces/MultiPolygon.html">MultiPolygon</a></li>
+<li><a data-type="interfaces/NearFarScalar.html">NearFarScalar</a></li>
+<li><a data-type="interfaces/NofillPolygon.html">NofillPolygon</a></li>
+<li><a data-type="interfaces/NonuniformPrimitiveLayer.html">NonuniformPrimitiveLayer</a></li>
+<li><a data-type="interfaces/Particle.html">Particle</a></li>
+<li><a data-type="interfaces/ParticleColorGradient.html">ParticleColorGradient</a></li>
+<li><a data-type="interfaces/ParticleGradient.html">ParticleGradient</a></li>
+<li><a data-type="interfaces/ParticleLayer.html">ParticleLayer</a></li>
+<li><a data-type="interfaces/ParticleParam.html">ParticleParam</a></li>
+<li><a data-type="interfaces/Point.html">Point</a></li>
+<li><a data-type="interfaces/PointGraphics.html">PointGraphics</a></li>
+<li><a data-type="interfaces/PointParticleEmitter.html">PointParticleEmitter</a></li>
+<li><a data-type="interfaces/Polygon.html">Polygon</a></li>
+<li><a data-type="interfaces/PolygonGraphicsBase.html">PolygonGraphicsBase</a></li>
+<li><a data-type="interfaces/PolygonGrowAnimation.html">PolygonGrowAnimation</a></li>
+<li><a data-type="interfaces/PolygonHierarchy.html">PolygonHierarchy</a></li>
+<li><a data-type="interfaces/PolylineGraphicsBase.html">PolylineGraphicsBase</a></li>
+<li><a data-type="interfaces/PositionsGrowAnimation.html">PositionsGrowAnimation</a></li>
+<li><a data-type="interfaces/PrimitiveArrowLine.html">PrimitiveArrowLine</a></li>
+<li><a data-type="interfaces/PrimitiveBase.html">PrimitiveBase</a></li>
+<li><a data-type="interfaces/PrimitiveBillboard.html">PrimitiveBillboard</a></li>
+<li><a data-type="interfaces/PrimitiveColumnModel.html">PrimitiveColumnModel</a></li>
+<li><a data-type="interfaces/PrimitiveContourLine.html">PrimitiveContourLine</a></li>
+<li><a data-type="interfaces/PrimitiveDashedLine.html">PrimitiveDashedLine</a></li>
+<li><a data-type="interfaces/PrimitiveFeatherRegion.html">PrimitiveFeatherRegion</a></li>
+<li><a data-type="interfaces/PrimitiveGridRegion.html">PrimitiveGridRegion</a></li>
+<li><a data-type="interfaces/PrimitiveHaloLine.html">PrimitiveHaloLine</a></li>
+<li><a data-type="interfaces/PrimitiveImageRegion.html">PrimitiveImageRegion</a></li>
+<li><a data-type="interfaces/PrimitiveLabel.html">PrimitiveLabel</a></li>
+<li><a data-type="interfaces/PrimitiveLayerBase.html">PrimitiveLayerBase</a></li>
+<li><a data-type="interfaces/PrimitiveModel.html">PrimitiveModel</a></li>
+<li><a data-type="interfaces/PrimitiveSolidLine.html">PrimitiveSolidLine</a></li>
+<li><a data-type="interfaces/PrimitiveSolidPoint.html">PrimitiveSolidPoint</a></li>
+<li><a data-type="interfaces/PrimitiveSolidRegion.html">PrimitiveSolidRegion</a></li>
+<li><a data-type="interfaces/PrimitiveStripeRegion.html">PrimitiveStripeRegion</a></li>
+<li><a data-type="interfaces/PrimitiveTerrainLabel.html">PrimitiveTerrainLabel</a></li>
+<li><a data-type="interfaces/PrimitiveWallLine.html">PrimitiveWallLine</a></li>
+<li><a data-type="interfaces/PrimitiveWaterRegion.html">PrimitiveWaterRegion</a></li>
+<li><a data-type="interfaces/PropertyAnimation.html">PropertyAnimation</a></li>
+<li><a data-type="interfaces/PropertyInfo.html">PropertyInfo</a></li>
+<li><a data-type="interfaces/Rain.html">Rain</a></li>
+<li><a data-type="interfaces/RainbowLine.html">RainbowLine</a></li>
+<li><a data-type="interfaces/Rectangle.html">Rectangle</a></li>
+<li><a data-type="interfaces/RotationAnimation.html">RotationAnimation</a></li>
+<li><a data-type="interfaces/RouteStop.html">RouteStop</a></li>
+<li><a data-type="interfaces/S3MLayerGroup.html">S3MLayerGroup</a></li>
+<li><a data-type="interfaces/S3MTilesLayer.html">S3MTilesLayer</a></li>
+<li><a data-type="interfaces/S3MTilesLayerBase.html">S3MTilesLayerBase</a></li>
+<li><a data-type="interfaces/S3MWaterStyle.html">S3MWaterStyle</a></li>
+<li><a data-type="interfaces/ScanEffect.html">ScanEffect</a></li>
+<li><a data-type="interfaces/SceneWeather.html">SceneWeather</a></li>
+<li><a data-type="interfaces/ScreenAnimationParam.html">ScreenAnimationParam</a></li>
+<li><a data-type="interfaces/ScreenEffect.html">ScreenEffect</a></li>
+<li><a data-type="interfaces/ScreenEnterAnimation.html">ScreenEnterAnimation</a></li>
+<li><a data-type="interfaces/ScreenEnterAppear.html">ScreenEnterAppear</a></li>
+<li><a data-type="interfaces/ScreenEnterFly.html">ScreenEnterFly</a></li>
+<li><a data-type="interfaces/ScreenExitAnimation.html">ScreenExitAnimation</a></li>
+<li><a data-type="interfaces/ScreenExitDisappear.html">ScreenExitDisappear</a></li>
+<li><a data-type="interfaces/ScreenExitFly.html">ScreenExitFly</a></li>
+<li><a data-type="interfaces/ScreenImage.html">ScreenImage</a></li>
+<li><a data-type="interfaces/ScreenImageItem.html">ScreenImageItem</a></li>
+<li><a data-type="interfaces/ScreenItemBase.html">ScreenItemBase</a></li>
+<li><a data-type="interfaces/ScreenLayer.html">ScreenLayer</a></li>
+<li><a data-type="interfaces/ScreenMediaAnimation.html">ScreenMediaAnimation</a></li>
+<li><a data-type="interfaces/ScreenShot.html">ScreenShot</a></li>
+<li><a data-type="interfaces/ScreenTextItem.html">ScreenTextItem</a></li>
+<li><a data-type="interfaces/ScreenTextStyle.html">ScreenTextStyle</a></li>
+<li><a data-type="interfaces/ScreenVideoItem.html">ScreenVideoItem</a></li>
+<li><a data-type="interfaces/SCTTerrainProvider.html">SCTTerrainProvider</a></li>
+<li><a data-type="interfaces/ServerOption.html">ServerOption</a></li>
+<li><a data-type="interfaces/Shadow.html">Shadow</a></li>
+<li><a data-type="interfaces/Skybox.html">Skybox</a></li>
+<li><a data-type="interfaces/SkyboxResource.html">SkyboxResource</a></li>
+<li><a data-type="interfaces/Slide.html">Slide</a></li>
+<li><a data-type="interfaces/SlideTransition.html">SlideTransition</a></li>
+<li><a data-type="interfaces/Snow.html">Snow</a></li>
+<li><a data-type="interfaces/SolidLine.html">SolidLine</a></li>
+<li><a data-type="interfaces/SolidPolygon.html">SolidPolygon</a></li>
+<li><a data-type="interfaces/SoundAnimation.html">SoundAnimation</a></li>
+<li><a data-type="interfaces/Spec.html">Spec</a></li>
+<li><a data-type="interfaces/SphereParticleEmitter.html">SphereParticleEmitter</a></li>
+<li><a data-type="interfaces/Spline.html">Spline</a></li>
+<li><a data-type="interfaces/StripePolygon.html">StripePolygon</a></li>
+<li><a data-type="interfaces/Sun.html">Sun</a></li>
+<li><a data-type="interfaces/SuperMap3DEvent.html">SuperMap3DEvent</a></li>
+<li><a data-type="interfaces/SuperMapCredential.html">SuperMapCredential</a></li>
+<li><a data-type="interfaces/SuperMapImageProvider.html">SuperMapImageProvider</a></li>
+<li><a data-type="interfaces/SuperMapTerrainProvider.html">SuperMapTerrainProvider</a></li>
+<li><a data-type="interfaces/TerrainLabel.html">TerrainLabel</a></li>
+<li><a data-type="interfaces/TerrainLayer.html">TerrainLayer</a></li>
+<li><a data-type="interfaces/TerrainSetAnimation.html">TerrainSetAnimation</a></li>
+<li><a data-type="interfaces/TextStyle.html" class="strikethrough">TextStyle</a></li>
+<li><a data-type="interfaces/TiandituImageProvider.html">TiandituImageProvider</a></li>
+<li><a data-type="interfaces/TiandituTerrainProvider.html">TiandituTerrainProvider</a></li>
+<li><a data-type="interfaces/TranslationAnimation.html">TranslationAnimation</a></li>
+<li><a data-type="interfaces/UniformPrimitiveData.html">UniformPrimitiveData</a></li>
+<li><a data-type="interfaces/UniformPrimitiveLayer.html">UniformPrimitiveLayer</a></li>
+<li><a data-type="interfaces/UrlTemplateImageProvider.html">UrlTemplateImageProvider</a></li>
+<li><a data-type="interfaces/Vector2.html">Vector2</a></li>
+<li><a data-type="interfaces/Vector3.html">Vector3</a></li>
+<li><a data-type="interfaces/ViewStyle.html" class="strikethrough">ViewStyle</a></li>
+<li><a data-type="interfaces/VisibilityAnimation.html">VisibilityAnimation</a></li>
+<li><a data-type="interfaces/WakeLine.html">WakeLine</a></li>
+<li><a data-type="interfaces/WallGraphics.html">WallGraphics</a></li>
+</ul>
+<h2>Type Aliases</h2>
+<ul>
+<li><a data-type="type-aliases/AnimationParam.html">AnimationParam</a></li>
+<li><a data-type="type-aliases/AsyncFunction.html">AsyncFunction</a></li>
+<li><a data-type="type-aliases/AudioAnimationParam.html">AudioAnimationParam</a></li>
+<li><a data-type="type-aliases/CameraAnimation.html">CameraAnimation</a></li>
+<li><a data-type="type-aliases/Client.html">Client</a></li>
+<li><a data-type="type-aliases/ColorNumber.html">ColorNumber</a></li>
+<li><a data-type="type-aliases/ColorValue.html" class="strikethrough">ColorValue</a></li>
+<li><a data-type="type-aliases/EffectType.html">EffectType</a></li>
+<li><a data-type="type-aliases/FlyPresetParam.html">FlyPresetParam</a></li>
+<li><a data-type="type-aliases/GeometryTypes.html">GeometryTypes</a></li>
+<li><a data-type="type-aliases/Id.html">Id</a></li>
+<li><a data-type="type-aliases/ImageProvider.html">ImageProvider</a></li>
+<li><a data-type="type-aliases/IScreenAnimation.html">IScreenAnimation</a></li>
+<li><a data-type="type-aliases/LayerAnimation.html">LayerAnimation</a></li>
+<li><a data-type="type-aliases/MessagerSendHandler.html">MessagerSendHandler</a></li>
+<li><a data-type="type-aliases/ObjectAnimation.html">ObjectAnimation</a></li>
+<li><a data-type="type-aliases/ObjectLayerAnimation.html">ObjectLayerAnimation</a></li>
+<li><a data-type="type-aliases/OpaqueColorValue.html" class="strikethrough">OpaqueColorValue</a></li>
+<li><a data-type="type-aliases/ParticleEmitterType.html">ParticleEmitterType</a></li>
+<li><a data-type="type-aliases/ParticleLayerAnimation.html">ParticleLayerAnimation</a></li>
+<li><a data-type="type-aliases/PointStyleType.html">PointStyleType</a></li>
+<li><a data-type="type-aliases/PolygonGraphics.html">PolygonGraphics</a></li>
+<li><a data-type="type-aliases/PolylineGraphics.html">PolylineGraphics</a></li>
+<li><a data-type="type-aliases/Position.html">Position</a></li>
+<li><a data-type="type-aliases/Primitive.html">Primitive</a></li>
+<li><a data-type="type-aliases/PrimitiveLayer.html">PrimitiveLayer</a></li>
+<li><a data-type="type-aliases/PrimitiveUniform.html">PrimitiveUniform</a></li>
+<li><a data-type="type-aliases/Properties.html">Properties</a></li>
+<li><a data-type="type-aliases/S3MLayer.html">S3MLayer</a></li>
+<li><a data-type="type-aliases/SceneAnimation.html">SceneAnimation</a></li>
+<li><a data-type="type-aliases/ScreenAnimation.html" class="strikethrough">ScreenAnimation</a></li>
+<li><a data-type="type-aliases/TAnchor.html">TAnchor</a></li>
+<li><a data-type="type-aliases/TCoordSys.html">TCoordSys</a></li>
+<li><a data-type="type-aliases/TDirection.html">TDirection</a></li>
+<li><a data-type="type-aliases/TerrainProvider.html">TerrainProvider</a></li>
+<li><a data-type="type-aliases/UniformPrimitiveDataPropertyMap.html">UniformPrimitiveDataPropertyMap</a></li>
+</ul>
+
+
+      </aside>
+        <object id="content" data="./README.html" type="text/html"></object>
+      </div>
+    </div>
+
+    <dialog id="tsd-search" aria-label="Search" class>
+      <input role="combobox"
+        id="tsd-search-input" aria-controls="tsd-search-results"
+        aria-autocomplete="list" aria-expanded="true" autocapitalize="off"
+        autocomplete="off" placeholder="Search the docs" maxlength="100"
+        aria-activedescendant>
+      <ul role="listbox" id="tsd-search-results"></ul>
+      <div id="tsd-search-status" aria-live="polite" aria-atomic="true">
+      </div>
+    </dialog>
+    <div class="overlay"></div>
+    <script type="text/javascript">
+      init()
+    </script>
+  </body>
+</html>

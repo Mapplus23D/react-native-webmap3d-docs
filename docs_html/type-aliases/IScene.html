@@ -1,0 +1,2600 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>react-native-webmap3d开发文档开发文档</title>
+
+    <style type="text/css">
+
+      /* BODY
+      =============================================================================*/
+
+      html {
+        font-family: Helvetica, arial, freesans, clean, sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #333;
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        overflow: hidden;
+      }
+
+      body {
+        font-family: Helvetica, arial, freesans, clean, sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #333;
+        background-color: #fff;
+        margin: 0;
+        padding: 20px;
+        border: 0;
+        overflow: auto;
+        height: calc(100vh - 40px);
+      }
+
+      body>*:first-child {
+        margin-top: 0 !important;
+      }
+
+      body>*:last-child {
+        margin-bottom: 0 !important;
+      }
+
+      /* BLOCKS
+      =============================================================================*/
+
+      p, blockquote, ul, ol, dl, table, pre {
+        margin: 15px 0;
+      }
+
+      /* HEADERS
+      =============================================================================*/
+
+      h1, h2, h3, h4, h5, h6 {
+        margin: 20px 0 10px;
+        padding: 0;
+        font-weight: bold;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+        font-size: inherit;
+      }
+
+      h1 {
+        font-size: 28px;
+        color: #000;
+      }
+
+      h2 {
+        font-size: 24px;
+        border-bottom: 1px solid #ccc;
+        color: #000;
+      }
+
+      h3 {
+        font-size: 18px;
+      }
+
+      h4 {
+        font-size: 16px;
+      }
+
+      h5 {
+        font-size: 14px;
+      }
+
+      h6 {
+        color: #777;
+        font-size: 14px;
+      }
+
+      body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+        margin-top: 0;
+        padding-top: 0;
+      }
+
+      a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+        margin-top: 0;
+        padding-top: 0;
+      }
+
+      h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+        margin-top: 10px;
+      }
+
+      /* LINKS
+      =============================================================================*/
+
+      a {
+        color: #4183C4;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      .strikethrough {
+          text-decoration: line-through;
+      }
+
+      /* LISTS
+      =============================================================================*/
+
+      ul, ol {
+        padding-left: 30px;
+      }
+
+      ul li > :first-child,
+      ol li > :first-child,
+      ul li ul:first-of-type,
+      ol li ol:first-of-type,
+      ul li ol:first-of-type,
+      ol li ul:first-of-type {
+        margin-top: 0px;
+      }
+
+      ul ul, ul ol, ol ol, ol ul {
+        margin-bottom: 0;
+      }
+
+      dl {
+        padding: 0;
+      }
+
+      dl dt {
+        font-size: 14px;
+        font-weight: bold;
+        font-style: italic;
+        padding: 0;
+        margin: 15px 0 5px;
+      }
+
+      dl dt:first-child {
+        padding: 0;
+      }
+
+      dl dt>:first-child {
+        margin-top: 0px;
+      }
+
+      dl dt>:last-child {
+        margin-bottom: 0px;
+      }
+
+      dl dd {
+        margin: 0 0 15px;
+        padding: 0 15px;
+      }
+
+      dl dd>:first-child {
+        margin-top: 0px;
+      }
+
+      dl dd>:last-child {
+        margin-bottom: 0px;
+      }
+
+      /* CODE
+      =============================================================================*/
+
+      pre, code, tt {
+        font-size: 12px;
+        font-family: Consolas, "Liberation Mono", Courier, monospace;
+      }
+
+      code, tt {
+        margin: 0 0px;
+        padding: 0px 0px;
+        white-space: nowrap;
+        border: 1px solid #eaeaea;
+        background-color: #f8f8f8;
+        border-radius: 3px;
+      }
+
+      pre>code {
+        margin: 0;
+        padding: 0;
+        white-space: pre;
+        border: none;
+        background: transparent;
+      }
+
+      pre {
+        background-color: #f8f8f8;
+        border: 1px solid #ccc;
+        font-size: 13px;
+        line-height: 19px;
+        overflow: auto;
+        padding: 6px 10px;
+        border-radius: 3px;
+      }
+
+      pre code, pre tt {
+        background-color: transparent;
+        border: none;
+      }
+
+      kbd {
+          -moz-border-bottom-colors: none;
+          -moz-border-left-colors: none;
+          -moz-border-right-colors: none;
+          -moz-border-top-colors: none;
+          background-color: #DDDDDD;
+          background-image: linear-gradient(#F1F1F1, #DDDDDD);
+          background-repeat: repeat-x;
+          border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+          border-image: none;
+          border-radius: 2px 2px 2px 2px;
+          border-style: solid;
+          border-width: 1px;
+          font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+          line-height: 10px;
+          padding: 1px 4px;
+      }
+
+      /* QUOTES
+      =============================================================================*/
+
+      blockquote {
+        border-left: 4px solid #DDD;
+        padding: 0 15px;
+        color: #777;
+      }
+
+      blockquote>:first-child {
+        margin-top: 0px;
+      }
+
+      blockquote>:last-child {
+        margin-bottom: 0px;
+      }
+
+      /* HORIZONTAL RULES
+      =============================================================================*/
+
+      hr {
+        clear: both;
+        margin: 15px 0;
+        height: 0px;
+        overflow: hidden;
+        border: none;
+        background: transparent;
+        border-bottom: 4px solid #ddd;
+        padding: 0;
+      }
+
+      /* TABLES
+      =============================================================================*/
+
+      table th {
+        font-weight: bold;
+      }
+
+      table th, table td {
+        border: 1px solid #ccc;
+        padding: 6px 13px;
+      }
+
+      table tr {
+        border-top: 1px solid #ccc;
+        background-color: #fff;
+      }
+
+      table tr:nth-child(2n) {
+        background-color: #f8f8f8;
+      }
+
+      /* IMAGES
+      =============================================================================*/
+
+      img {
+        max-width: 100%
+      }
+    </style>
+  </head>
+  <body>
+
+
+
+
+<h1>Type Alias: IScene</h1>
+<blockquote>
+<p><strong>IScene</strong> = <code>object</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3193</p>
+<p>场景模块</p>
+<p>包含场景打开关闭，图层管理，场景设置，数据导入，对象管理，相机</p>
+<h2>Properties</h2>
+<h3>addEntities()</h3>
+<blockquote>
+<p><strong>addEntities</strong>: (<code>datasourceName</code>, <code>entities</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3375</p>
+<p>图层批量添加对象</p>
+<h4>Parameters</h4>
+<h5>datasourceName</h5>
+<p><code>string</code></p>
+<h5>entities</h5>
+<p><a href="../interfaces/Entity.html"><code>Entity</code></a>[]</p>
+<p>对象数组</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>成功/失败</p>
+<hr>
+<h3>addEntitiesFromGeojson()</h3>
+<blockquote>
+<p><strong>addEntitiesFromGeojson</strong>: (<code>datasourceName</code>, <code>geojson</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3403</p>
+<p>图层从geojson添加对象</p>
+<h4>Parameters</h4>
+<h5>datasourceName</h5>
+<p><code>string</code></p>
+<h5>geojson</h5>
+<p><a href="../interfaces/FeatureCollection.html"><code>FeatureCollection</code></a></p>
+<p>FeatureCollection</p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<p>成功/失败</p>
+<hr>
+<h3>addEntitiesFromJson()</h3>
+<blockquote>
+<p><strong>addEntitiesFromJson</strong>: (<code>datasourceName</code>, <code>jsonContent</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3382</p>
+<p>图层从json添加对象</p>
+<h4>Parameters</h4>
+<h5>datasourceName</h5>
+<p><code>string</code></p>
+<h5>jsonContent</h5>
+<p><code>string</code></p>
+<p>对象json，like：{entities : Entity[]}</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>成功/失败</p>
+<hr>
+<h3>addEntitiesFromKml()</h3>
+<blockquote>
+<p><strong>addEntitiesFromKml</strong>: (<code>datasourceName</code>, <code>kmlContent</code>, <code>clampToGround?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3389</p>
+<p>图层从kml添加对象</p>
+<h4>Parameters</h4>
+<h5>datasourceName</h5>
+<p><code>string</code></p>
+<h5>kmlContent</h5>
+<p><code>string</code></p>
+<p>kml字符串</p>
+<h5>clampToGround?</h5>
+<p><code>boolean</code></p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>成功/失败</p>
+<hr>
+<h3>addEntitiesFromKmlURI()</h3>
+<blockquote>
+<p><strong>addEntitiesFromKmlURI</strong>: (<code>datasourceName</code>, <code>kmlUri</code>, <code>clampToGround?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3396</p>
+<p>图层从kml/kmz地址添加对象</p>
+<h4>Parameters</h4>
+<h5>datasourceName</h5>
+<p><code>string</code></p>
+<h5>kmlUri</h5>
+<p><code>string</code></p>
+<p>kml/kmz地址</p>
+<h5>clampToGround?</h5>
+<p><code>boolean</code></p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>成功/失败</p>
+<hr>
+<h3>addEntitiesLayer()</h3>
+<blockquote>
+<p><strong>addEntitiesLayer</strong>: (<code>name</code>, <code>datasouece?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3311</p>
+<p>添加矢量图层</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>要添加的图层名</p>
+<h5>datasouece?</h5>
+<p>矢量图层数据源,undefined表示添加空图层</p>
+<p><a href="../interfaces/EntitiesDatasource.html"><code>EntitiesDatasource</code></a> | <a href="../interfaces/EntityCollection.html"><code>EntityCollection</code></a></p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>是否成功</p>
+<hr>
+<h3>addEntity()</h3>
+<blockquote>
+<p><strong>addEntity</strong>: (<code>name</code>, <code>entity</code>) =&gt; <code>string</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3368</p>
+<p>图层添加对象</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h5>entity</h5>
+<p><a href="../interfaces/Entity.html"><code>Entity</code></a></p>
+<p>对象</p>
+<h4>Returns</h4>
+<p><code>string</code></p>
+<p>返回添加对象的id,返回&#39;&#39;表示添加失败</p>
+<hr>
+<h3>addImagelayer()</h3>
+<blockquote>
+<p><strong>addImagelayer</strong>: (<code>name</code>, <code>provider</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3249</p>
+<p>添加影像图层</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>要添加的图层名</p>
+<h5>provider</h5>
+<p><a href="ImageProvider.html"><code>ImageProvider</code></a></p>
+<p>影像图层provider</p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<p>是否成功</p>
+<hr>
+<h3>addMediaEntitiesLayer()</h3>
+<blockquote>
+<p><strong>addMediaEntitiesLayer</strong>: (<code>name</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3317</p>
+<p>添加多媒体矢量图层</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>要添加的图层名</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>是否成功</p>
+<hr>
+<h3>addS3MTilesLayer()</h3>
+<blockquote>
+<p><strong>addS3MTilesLayer</strong>: (<code>name</code>, <code>url</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3522</p>
+<p>添加切片缓存图层</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>要添加的图层名</p>
+<h5>url</h5>
+<p><code>string</code></p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>是否成功</p>
+<hr>
+<h3>beginTranslation()</h3>
+<blockquote>
+<p><strong>beginTranslation</strong>: (<code>layerName</code>, <code>entityId</code>, <code>type?</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4041</p>
+<p>设置球面平移目标</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h5>entityId</h5>
+<p><code>string</code></p>
+<p>对象id</p>
+<h5>type?</h5>
+<p><code>&quot;entity&quot;</code> | <code>&quot;trackingLayer&quot;</code> | <code>&quot;primitive&quot;</code></p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<p>是否成功</p>
+<hr>
+<h3>calcAreaValue()</h3>
+<blockquote>
+<p><strong>calcAreaValue</strong>: (<code>positions</code>, <code>clampModeParam</code>) =&gt; <code>Promise</code>&lt;<code>number</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:4006</p>
+<p>计算面积</p>
+<h4>Parameters</h4>
+<h5>positions</h5>
+<p><a href="../interfaces/Vector3.html"><code>Vector3</code></a>[]</p>
+<p>计算面积的点集</p>
+<h5>clampModeParam</h5>
+<p><a href="../enumerations/ClampType.html"><code>ClampType</code></a></p>
+<p>计算面积的模式</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>number</code>&gt;</p>
+<hr>
+<h3>calcDistanceValue()</h3>
+<blockquote>
+<p><strong>calcDistanceValue</strong>: (<code>positions</code>, <code>clampModeParam</code>) =&gt; <code>number</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3999</p>
+<p>计算距离</p>
+<h4>Parameters</h4>
+<h5>positions</h5>
+<p><a href="../interfaces/Vector3.html"><code>Vector3</code></a>[]</p>
+<p>计算距离的点集</p>
+<h5>clampModeParam</h5>
+<p><a href="../enumerations/ClampType.html"><code>ClampType</code></a></p>
+<p>计算距离的模式</p>
+<h4>Returns</h4>
+<p><code>number</code></p>
+<hr>
+<h3>clearEntitiesLayer()</h3>
+<blockquote>
+<p><strong>clearEntitiesLayer</strong>: (<code>name</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3342</p>
+<p>清空矢量图层</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>是否成功</p>
+<hr>
+<h3>clearSlideShow()</h3>
+<blockquote>
+<p><strong>clearSlideShow</strong>: () =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:4112</p>
+<p>删除幻灯片播放列表</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<hr>
+<h3>close()</h3>
+<blockquote>
+<p><strong>close</strong>: (<code>duration?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3207</p>
+<p>关闭当前互动地图</p>
+<h4>Parameters</h4>
+<h5>duration?</h5>
+<p><code>number</code></p>
+<p>关闭地图时的动画时间，单位秒。如果不指定，将自动计算一个最合适的时间</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>当前打开的互动地图</p>
+<hr>
+<h3>closeTerrainLayer()</h3>
+<blockquote>
+<p><strong>closeTerrainLayer</strong>: () =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3231</p>
+<p>关闭当前的地形图层</p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<p>是否成功</p>
+<hr>
+<h3>enableSceneTouch()</h3>
+<blockquote>
+<p><strong>enableSceneTouch</strong>: (<code>enabled</code>) =&gt; <code>void</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4020</p>
+<p>设置地图手势可用</p>
+<h4>Parameters</h4>
+<h5>enabled</h5>
+<p><code>boolean</code></p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>endTranslation()</h3>
+<blockquote>
+<p><strong>endTranslation</strong>: (<code>isUpdateModified</code>) =&gt; <code>void</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4042</p>
+<h4>Parameters</h4>
+<h5>isUpdateModified</h5>
+<p><code>boolean</code></p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>entitiesFromKml()</h3>
+<blockquote>
+<p><strong>entitiesFromKml</strong>: (<code>kmlContent</code>, <code>clampToGround?</code>) =&gt; <code>Promise</code>&lt;<a href="../interfaces/Entity.html"><code>Entity</code></a>[]&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3475</p>
+<p>kml字符串中读取entities</p>
+<h4>Parameters</h4>
+<h5>kmlContent</h5>
+<p><code>string</code></p>
+<p>kml字符串</p>
+<h5>clampToGround?</h5>
+<p><code>boolean</code></p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<a href="../interfaces/Entity.html"><code>Entity</code></a>[]&gt;</p>
+<hr>
+<h3>exportEntityAsGeojson()</h3>
+<blockquote>
+<p><strong>exportEntityAsGeojson</strong>: (<code>entityParams</code>) =&gt; <code>Promise</code>&lt;<a href="../interfaces/FeatureCollection.html"><code>FeatureCollection</code></a>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3481</p>
+<p>entity导出为geojson字符串</p>
+<h4>Parameters</h4>
+<h5>entityParams</h5>
+<p><code>object</code>[]</p>
+<p>entity所在图层名及id参数的数组</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<a href="../interfaces/FeatureCollection.html"><code>FeatureCollection</code></a>&gt;</p>
+<hr>
+<h3>exportEntityAsKml()</h3>
+<blockquote>
+<p><strong>exportEntityAsKml</strong>: (<code>entityParams</code>) =&gt; <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3466</p>
+<p>entity导出为kml字符串</p>
+<h4>Parameters</h4>
+<h5>entityParams</h5>
+<p><code>object</code>[]</p>
+<p>entity所在图层名及id参数的数组</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<hr>
+<h3>exportLayerAsKml()</h3>
+<blockquote>
+<p><strong>exportLayerAsKml</strong>: (<code>name</code>) =&gt; <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3460</p>
+<p>entity图层导出为kml字符串</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<p>kml字符串</p>
+<hr>
+<h3>getAction()</h3>
+<blockquote>
+<p><strong>getAction</strong>: () =&gt; <a href="../enumerations/SceneAction.html"><code>SceneAction</code></a></p>
+</blockquote>
+<p>Defined in: index.d.ts:3916</p>
+<p>获取当前action</p>
+<h4>Returns</h4>
+<p><a href="../enumerations/SceneAction.html"><code>SceneAction</code></a></p>
+<p>action</p>
+<hr>
+<h3>getAtmosphere()</h3>
+<blockquote>
+<p><strong>getAtmosphere</strong>: () =&gt; <code>Required</code>&lt;<a href="../interfaces/Atmosphere.html"><code>Atmosphere</code></a>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3685</p>
+<p>获取当前大气设置</p>
+<h4>Returns</h4>
+<p><code>Required</code>&lt;<a href="../interfaces/Atmosphere.html"><code>Atmosphere</code></a>&gt;</p>
+<p>当前大气设置参数</p>
+<hr>
+<h3>getBloomEffect()</h3>
+<blockquote>
+<p><strong>getBloomEffect</strong>: () =&gt; <code>Promise</code>&lt;<a href="../interfaces/BloomEffect.html"><code>BloomEffect</code></a>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3789</p>
+<p>获取当前地图泛光效果参数</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<a href="../interfaces/BloomEffect.html"><code>BloomEffect</code></a>&gt;</p>
+<p>泛光效果参数</p>
+<hr>
+<h3>getCameraDragMode()</h3>
+<blockquote>
+<p><strong>getCameraDragMode</strong>: () =&gt; <code>&quot;CDT_1&quot;</code> | <code>&quot;CDT_2&quot;</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3833</p>
+<p>获取当前地图清晰度</p>
+<h4>Returns</h4>
+<p><code>&quot;CDT_1&quot;</code> | <code>&quot;CDT_2&quot;</code></p>
+<p>当前地图清晰度 范围 0 - 100</p>
+<hr>
+<h3>getCloud()</h3>
+<blockquote>
+<p><strong>getCloud</strong>: () =&gt; <a href="../interfaces/Clouds.html"><code>Clouds</code></a> | <code>undefined</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3911</p>
+<p>获取云层设置</p>
+<h4>Returns</h4>
+<p><a href="../interfaces/Clouds.html"><code>Clouds</code></a> | <code>undefined</code></p>
+<p>云层设置。未设置返回 undefined</p>
+<hr>
+<h3>getColorCorrection()</h3>
+<blockquote>
+<p><strong>getColorCorrection</strong>: () =&gt; <a href="../interfaces/ColorCorrectionType.html"><code>ColorCorrectionType</code></a></p>
+</blockquote>
+<p>Defined in: index.d.ts:3894</p>
+<p>颜色校正参数获取方法</p>
+<h4>Returns</h4>
+<p><a href="../interfaces/ColorCorrectionType.html"><code>ColorCorrectionType</code></a></p>
+<p>颜色校正参数</p>
+<hr>
+<h3>getCurrentTime()</h3>
+<blockquote>
+<p><strong>getCurrentTime</strong>: () =&gt; <a href="../interfaces/GregorianDate.html"><code>GregorianDate</code></a></p>
+</blockquote>
+<p>Defined in: index.d.ts:3992</p>
+<p>获取时间轴当前时间</p>
+<h4>Returns</h4>
+<p><a href="../interfaces/GregorianDate.html"><code>GregorianDate</code></a></p>
+<p>当前时间</p>
+<hr>
+<h3>getEntitiesLayerNames()</h3>
+<blockquote>
+<p><strong>getEntitiesLayerNames</strong>: () =&gt; <code>Promise</code>&lt;<code>string</code>[]&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3426</p>
+<p>获取地图图层数组</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>string</code>[]&gt;</p>
+<p>地图对象数量</p>
+<hr>
+<h3>getEntitiesLayers()</h3>
+<blockquote>
+<p><strong>getEntitiesLayers</strong>: (<code>datasourceNeeded?</code>) =&gt; <code>Promise</code>&lt;<a href="../interfaces/EntitiesLayer.html"><code>EntitiesLayer</code></a>[]&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3323</p>
+<p>获取所有矢量图层</p>
+<h4>Parameters</h4>
+<h5>datasourceNeeded?</h5>
+<p><code>boolean</code></p>
+<p>是否需要图层数据源 ，默认false</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<a href="../interfaces/EntitiesLayer.html"><code>EntitiesLayer</code></a>[]&gt;</p>
+<p>地图中所有影像图层</p>
+<hr>
+<h3>getEntity()</h3>
+<blockquote>
+<p><strong>getEntity</strong>: (<code>name</code>, <code>entityId</code>) =&gt; <a href="../interfaces/Entity.html"><code>Entity</code></a> | <code>undefined</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3416</p>
+<p>图层获取对象</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h5>entityId</h5>
+<p><code>string</code></p>
+<p>对象id</p>
+<h4>Returns</h4>
+<p><a href="../interfaces/Entity.html"><code>Entity</code></a> | <code>undefined</code></p>
+<p>Entity对象</p>
+<hr>
+<h3>getEntityCount()</h3>
+<blockquote>
+<p><strong>getEntityCount</strong>: () =&gt; <code>number</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3421</p>
+<p>获取地图对象数量</p>
+<h4>Returns</h4>
+<p><code>number</code></p>
+<p>地图对象数量</p>
+<hr>
+<h3>getFog()</h3>
+<blockquote>
+<p><strong>getFog</strong>: () =&gt; <a href="../interfaces/Fog.html"><code>Fog</code></a></p>
+</blockquote>
+<p>Defined in: index.d.ts:3748</p>
+<p>获取当前地图雾化效果参数</p>
+<h4>Returns</h4>
+<p><a href="../interfaces/Fog.html"><code>Fog</code></a></p>
+<p>雾化效果参数</p>
+<hr>
+<h3>getFPS()</h3>
+<blockquote>
+<p><strong>getFPS</strong>: () =&gt; <code>Promise</code>&lt;<code>number</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3858</p>
+<p>获取最新的每秒渲染帧数 FPS</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>number</code>&gt;</p>
+<p>当前帧率</p>
+<hr>
+<h3>getGraticulesParam()</h3>
+<blockquote>
+<p><strong>getGraticulesParam</strong>: () =&gt; <a href="../interfaces/GraticuleParam.html"><code>GraticuleParam</code></a> | <code>undefined</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3707</p>
+<p>获取经纬网参数</p>
+<h4>Returns</h4>
+<p><a href="../interfaces/GraticuleParam.html"><code>GraticuleParam</code></a> | <code>undefined</code></p>
+<p>经纬网参数</p>
+<hr>
+<h3>getGraticuleVisible()</h3>
+<blockquote>
+<p><strong>getGraticuleVisible</strong>: () =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3718</p>
+<p>获取经纬网可见性</p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<p>经纬网可见性</p>
+<hr>
+<h3>getHypsometricSetting()</h3>
+<blockquote>
+<p><strong>getHypsometricSetting</strong>: () =&gt; <code>Pick</code>&lt;<a href="../interfaces/HypsometricSetting.html"><code>HypsometricSetting</code></a>, <code>&quot;mode&quot;</code>&gt; &amp; <code>Partial</code>&lt;<a href="../interfaces/HypsometricSetting.html"><code>HypsometricSetting</code></a>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:4024</p>
+<p>获取等高显示设置</p>
+<h4>Returns</h4>
+<p><code>Pick</code>&lt;<a href="../interfaces/HypsometricSetting.html"><code>HypsometricSetting</code></a>, <code>&quot;mode&quot;</code>&gt; &amp; <code>Partial</code>&lt;<a href="../interfaces/HypsometricSetting.html"><code>HypsometricSetting</code></a>&gt;</p>
+<hr>
+<h3>getImageLayerByIndex()</h3>
+<blockquote>
+<p><strong>getImageLayerByIndex</strong>: (<code>index</code>) =&gt; <a href="../interfaces/ImageLayer.html"><code>ImageLayer</code></a> | <code>undefined</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3259</p>
+<p>获取所有影像图层</p>
+<h4>Parameters</h4>
+<h5>index</h5>
+<p><code>number</code></p>
+<h4>Returns</h4>
+<p><a href="../interfaces/ImageLayer.html"><code>ImageLayer</code></a> | <code>undefined</code></p>
+<p>地图中所有影像图层</p>
+<hr>
+<h3>getImageLayers()</h3>
+<blockquote>
+<p><strong>getImageLayers</strong>: () =&gt; <a href="../interfaces/ImageLayer.html"><code>ImageLayer</code></a>[]</p>
+</blockquote>
+<p>Defined in: index.d.ts:3254</p>
+<p>获取所有影像图层</p>
+<h4>Returns</h4>
+<p><a href="../interfaces/ImageLayer.html"><code>ImageLayer</code></a>[]</p>
+<p>地图中所有影像图层</p>
+<hr>
+<h3>getLayerEntities()</h3>
+<blockquote>
+<p><strong>getLayerEntities</strong>: (<code>datasourceName</code>, <code>range?</code>) =&gt; <code>Promise</code>&lt;<a href="../interfaces/Entity.html"><code>Entity</code></a>[]&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3444</p>
+<p>获取图层所有的对象</p>
+<h4>Parameters</h4>
+<h5>datasourceName</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h5>range?</h5>
+<h6>end?</h6>
+<p><code>number</code></p>
+<h6>start?</h6>
+<p><code>number</code></p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<a href="../interfaces/Entity.html"><code>Entity</code></a>[]&gt;</p>
+<p>entity数组</p>
+<hr>
+<h3>getLayerEntityCount()</h3>
+<blockquote>
+<p><strong>getLayerEntityCount</strong>: (<code>datasourceName</code>) =&gt; <code>Promise</code>&lt;<code>number</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3438</p>
+<p>获取图层所有的对象id</p>
+<h4>Parameters</h4>
+<h5>datasourceName</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>number</code>&gt;</p>
+<p>id数组</p>
+<hr>
+<h3>getLayerEntityIDs()</h3>
+<blockquote>
+<p><strong>getLayerEntityIDs</strong>: (<code>datasourceName</code>) =&gt; <code>Promise</code>&lt;<code>string</code>[]&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3432</p>
+<p>获取图层所有的对象id</p>
+<h4>Parameters</h4>
+<h5>datasourceName</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>string</code>[]&gt;</p>
+<p>id数组</p>
+<hr>
+<h3>getLighting()</h3>
+<blockquote>
+<p><strong>getLighting</strong>: () =&gt; <a href="../interfaces/GlobeLighting.html"><code>GlobeLighting</code></a></p>
+</blockquote>
+<p>Defined in: index.d.ts:3728</p>
+<p>获取当前地图地球光照阴影参数</p>
+<h4>Returns</h4>
+<p><a href="../interfaces/GlobeLighting.html"><code>GlobeLighting</code></a></p>
+<p>地球光照阴影参数</p>
+<hr>
+<h3>getMap()</h3>
+<blockquote>
+<p><strong>getMap</strong>: () =&gt; <code>Promise</code>&lt;<a href="../interfaces/IMap3D.html"><code>IMap3D</code></a>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3212</p>
+<p>获取当前互动地图</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<a href="../interfaces/IMap3D.html"><code>IMap3D</code></a>&gt;</p>
+<p>当前打开的互动地图</p>
+<hr>
+<h3>getMapQuality()</h3>
+<blockquote>
+<p><strong>getMapQuality</strong>: () =&gt; <code>number</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3821</p>
+<p>获取当前地图清晰度</p>
+<h4>Returns</h4>
+<p><code>number</code></p>
+<p>当前地图清晰度 范围 0 - 100</p>
+<hr>
+<h3>getMaximumZoomDistance()</h3>
+<blockquote>
+<p><strong>getMaximumZoomDistance</strong>: () =&gt; <code>number</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3768</p>
+<p>获得最大视距</p>
+<h4>Returns</h4>
+<p><code>number</code></p>
+<p>最大视距</p>
+<hr>
+<h3>getRealityMeshMemoryLimit()</h3>
+<blockquote>
+<p><strong>getRealityMeshMemoryLimit</strong>: () =&gt; <code>number</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3810</p>
+<p>获取加载realityMesh时内存限制（单位MB）</p>
+<h4>Returns</h4>
+<p><code>number</code></p>
+<p>limit</p>
+<hr>
+<h3>getRequestRenderMode()</h3>
+<blockquote>
+<p><strong>getRequestRenderMode</strong>: () =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3866</p>
+<p>获取当前是否为主动刷新模式</p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<hr>
+<h3>getS3MLayerAttribute()</h3>
+<blockquote>
+<p><strong>getS3MLayerAttribute</strong>: (<code>name</code>, <code>id</code>) =&gt; <code>Promise</code>&lt;<code>Record</code>&lt;<code>string</code>, <code>unknown</code>&gt; | <code>undefined</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3541</p>
+<p>获取 s3m 图层对象属性</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h5>id</h5>
+<p><code>number</code></p>
+<p>对象id</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>Record</code>&lt;<code>string</code>, <code>unknown</code>&gt; | <code>undefined</code>&gt;</p>
+<p>属性。获取失败返回 undefined</p>
+<hr>
+<h3>getS3MLayers()</h3>
+<blockquote>
+<p><strong>getS3MLayers</strong>: () =&gt; <a href="S3MLayer.html"><code>S3MLayer</code></a>[]</p>
+</blockquote>
+<p>Defined in: index.d.ts:3528</p>
+<p>获取所有切片缓存图层</p>
+<h4>Returns</h4>
+<p><a href="S3MLayer.html"><code>S3MLayer</code></a>[]</p>
+<p>地图中所有切片缓存图层</p>
+<hr>
+<h3>getS3MTilesLayers()</h3>
+<blockquote>
+<p><strong>getS3MTilesLayers</strong>: () =&gt; <a href="../interfaces/S3MTilesLayer.html"><code>S3MTilesLayer</code></a>[]</p>
+</blockquote>
+<p>Defined in: index.d.ts:3523</p>
+<h4>Returns</h4>
+<p><a href="../interfaces/S3MTilesLayer.html"><code>S3MTilesLayer</code></a>[]</p>
+<hr>
+<h3>getS3MTilesWaterStyle()</h3>
+<blockquote>
+<p><strong>getS3MTilesWaterStyle</strong>: (<code>name</code>) =&gt; <code>Promise</code>&lt;<a href="../interfaces/S3MWaterStyle.html"><code>S3MWaterStyle</code></a> | <code>undefined</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3565</p>
+<p>get水面风格（不能设置图层组内图层风格）</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<a href="../interfaces/S3MWaterStyle.html"><code>S3MWaterStyle</code></a> | <code>undefined</code>&gt;</p>
+<p>是否成功</p>
+<hr>
+<h3>getSceneMode()</h3>
+<blockquote>
+<p><strong>getSceneMode</strong>: () =&gt; <code>Promise</code>&lt;<a href="../enumerations/SceneMode.html"><code>SceneMode</code></a>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3799</p>
+<p>获取当前场景模式</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<a href="../enumerations/SceneMode.html"><code>SceneMode</code></a>&gt;</p>
+<p>当前场景模式</p>
+<hr>
+<h3>getSceneQuality()</h3>
+<blockquote>
+<p><strong>getSceneQuality</strong>: () =&gt; <code>number</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3844</p>
+<p>获取当前场景清晰度</p>
+<h4>Returns</h4>
+<p><code>number</code></p>
+<p>当前场景清晰度 范围 0 - 100</p>
+<hr>
+<h3>getScreenShot()</h3>
+<blockquote>
+<p><strong>getScreenShot</strong>: (<code>params</code>) =&gt; <code>string</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4070</p>
+<p>截取地球Canvas图片</p>
+<h4>Parameters</h4>
+<h5>params</h5>
+<p><code>Partial</code>&lt;<a href="../interfaces/ScreenShot.html"><code>ScreenShot</code></a>&gt;</p>
+<p>图片参数</p>
+<h4>Returns</h4>
+<p><code>string</code></p>
+<p>图片路径</p>
+<hr>
+<h3>getShadow()</h3>
+<blockquote>
+<p><strong>getShadow</strong>: () =&gt; <code>Promise</code>&lt;<a href="../interfaces/Shadow.html"><code>Shadow</code></a>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3738</p>
+<p>获取当前地图对象阴影参数</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<a href="../interfaces/Shadow.html"><code>Shadow</code></a>&gt;</p>
+<p>对象阴影参数</p>
+<hr>
+<h3>getSkybox()</h3>
+<blockquote>
+<p><strong>getSkybox</strong>: () =&gt; <a href="../interfaces/Skybox.html"><code>Skybox</code></a> | <code>undefined</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3674</p>
+<p>获取当前设置的天空盒</p>
+<h4>Returns</h4>
+<p><a href="../interfaces/Skybox.html"><code>Skybox</code></a> | <code>undefined</code></p>
+<p>当前的天空盒。没有设置返回 undefined</p>
+<hr>
+<h3>getSlideAtIndex()</h3>
+<blockquote>
+<p><strong>getSlideAtIndex</strong>: (<code>index</code>) =&gt; <code>Promise</code>&lt;<a href="../interfaces/Slide.html"><code>Slide</code></a> | <code>undefined</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:4091</p>
+<p>获取索引处幻灯片</p>
+<h4>Parameters</h4>
+<h5>index</h5>
+<p><code>number</code></p>
+<p>索引</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<a href="../interfaces/Slide.html"><code>Slide</code></a> | <code>undefined</code>&gt;</p>
+<p>幻灯片</p>
+<hr>
+<h3>getSlideCount()</h3>
+<blockquote>
+<p><strong>getSlideCount</strong>: () =&gt; <code>Promise</code>&lt;<code>number</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:4080</p>
+<p>获取幻灯片列表长度</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>number</code>&gt;</p>
+<p>幻灯片列表长度</p>
+<hr>
+<h3>getSlideShow()</h3>
+<blockquote>
+<p><strong>getSlideShow</strong>: () =&gt; <code>Promise</code>&lt;<a href="../interfaces/Slide.html"><code>Slide</code></a>[]&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:4075</p>
+<p>获取幻灯片列表</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<a href="../interfaces/Slide.html"><code>Slide</code></a>[]&gt;</p>
+<p>幻灯片列表</p>
+<hr>
+<h3>getSun()</h3>
+<blockquote>
+<p><strong>getSun</strong>: () =&gt; <code>Required</code>&lt;<a href="../interfaces/Sun.html"><code>Sun</code></a>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3696</p>
+<p>获取当前太阳参数</p>
+<h4>Returns</h4>
+<p><code>Required</code>&lt;<a href="../interfaces/Sun.html"><code>Sun</code></a>&gt;</p>
+<p>当前太阳参数</p>
+<hr>
+<h3>getTerrainExaggeration()</h3>
+<blockquote>
+<p><strong>getTerrainExaggeration</strong>: () =&gt; <code>number</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4034</p>
+<p>获取地形夸张系数</p>
+<h4>Returns</h4>
+<p><code>number</code></p>
+<p>地形夸张系数</p>
+<hr>
+<h3>getTerrainLayer()</h3>
+<blockquote>
+<p><strong>getTerrainLayer</strong>: () =&gt; <a href="../interfaces/TerrainLayer.html"><code>TerrainLayer</code></a> | <code>undefined</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3236</p>
+<p>获取当前的地形图层，没有返回 undefined</p>
+<h4>Returns</h4>
+<p><a href="../interfaces/TerrainLayer.html"><code>TerrainLayer</code></a> | <code>undefined</code></p>
+<p>当前的地形图层</p>
+<hr>
+<h3>getTilesLayerBottomAltitude()</h3>
+<blockquote>
+<p><strong>getTilesLayerBottomAltitude</strong>: (<code>name</code>) =&gt; <code>Promise</code>&lt;<code>number</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3642</p>
+<p>切片底部高程</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>number</code>&gt;</p>
+<p>切片底部高程</p>
+<hr>
+<h3>getTilesLayerIgnoreNormal()</h3>
+<blockquote>
+<p><strong>getTilesLayerIgnoreNormal</strong>: (<code>name</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3629</p>
+<p>切片是否重新计算法线</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<hr>
+<h3>getTilesLayerLodRangeScale()</h3>
+<blockquote>
+<p><strong>getTilesLayerLodRangeScale</strong>: (<code>name</code>) =&gt; <code>Promise</code>&lt;<code>number</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3616</p>
+<p>切片图层的LOD层级切换距离缩放系数</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>number</code>&gt;</p>
+<p>切片图层的LOD层级切换距离缩放系数</p>
+<hr>
+<h3>getWeather()</h3>
+<blockquote>
+<p><strong>getWeather</strong>: () =&gt; <a href="../interfaces/Rain.html"><code>Rain</code></a> | <a href="../interfaces/Snow.html"><code>Snow</code></a> | <code>null</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4015</p>
+<p>获取天气参数</p>
+<h4>Returns</h4>
+<p><a href="../interfaces/Rain.html"><code>Rain</code></a> | <a href="../interfaces/Snow.html"><code>Snow</code></a> | <code>null</code></p>
+<p>当前天气</p>
+<hr>
+<h3>insertSlideAtIndex()</h3>
+<blockquote>
+<p><strong>insertSlideAtIndex</strong>: (<code>slide</code>, <code>index?</code>) =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:4097</p>
+<p>在索引处插入幻灯片</p>
+<h4>Parameters</h4>
+<h5>slide</h5>
+<p><a href="../interfaces/Slide.html"><code>Slide</code></a></p>
+<p>幻灯片</p>
+<h5>index?</h5>
+<p><code>number</code></p>
+<p>索引(undefined插入在列表末尾)</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<hr>
+<h3>isDepthTestAgainstTerrain()</h3>
+<blockquote>
+<p><strong>isDepthTestAgainstTerrain</strong>: () =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3758</p>
+<p>当前地图是否开启地图深度检测</p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<p>是否开启地图深度检测</p>
+<hr>
+<h3>isEntitiesLayerMedia()</h3>
+<blockquote>
+<p><strong>isEntitiesLayerMedia</strong>: (<code>name</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3361</p>
+<p>矢量图层是否多媒体图层</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>是否成功</p>
+<hr>
+<h3>isEntitiesLayerVisible()</h3>
+<blockquote>
+<p><strong>isEntitiesLayerVisible</strong>: (<code>name</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3355</p>
+<p>矢量图层可见性</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>是否成功</p>
+<hr>
+<h3>isHdrEnable()</h3>
+<blockquote>
+<p><strong>isHdrEnable</strong>: () =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3763</p>
+<p>当前地图是否开启hdr</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>是否开启hdr</p>
+<hr>
+<h3>isShowDebugFPS()</h3>
+<blockquote>
+<p><strong>isShowDebugFPS</strong>: () =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3853</p>
+<p>是否显示 fps 信息</p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<hr>
+<h3>isTilesLayerOrderIndependentTranslucency()</h3>
+<blockquote>
+<p><strong>isTilesLayerOrderIndependentTranslucency</strong>: (<code>name</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3604</p>
+<p>是否开启透明排序功能（OIT）</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>是否反色</p>
+<hr>
+<h3>isTilesLayerRGBTOBGR()</h3>
+<blockquote>
+<p><strong>isTilesLayerRGBTOBGR</strong>: (<code>name</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3591</p>
+<p>切片图层是否反色</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>是否反色</p>
+<hr>
+<h3>isTilesLayerVisible()</h3>
+<blockquote>
+<p><strong>isTilesLayerVisible</strong>: (<code>name</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3578</p>
+<p>切片图层可见性</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>是否可见</p>
+<hr>
+<h3>lowerImageLayer()</h3>
+<blockquote>
+<p><strong>lowerImageLayer</strong>: (<code>index</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3297</p>
+<p>在影像图层集合中下移影像图层</p>
+<h4>Parameters</h4>
+<h5>index</h5>
+<p><code>number</code></p>
+<p>影像图层在影像图层集合中的序号</p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<p>是否成功</p>
+<hr>
+<h3>lowerImageLayerToBottom()</h3>
+<blockquote>
+<p><strong>lowerImageLayerToBottom</strong>: (<code>index</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3303</p>
+<p>在影像图层集合中下移影像图层到最底层</p>
+<h4>Parameters</h4>
+<h5>index</h5>
+<p><code>number</code></p>
+<p>影像图层在影像图层集合中的序号</p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<p>是否成功</p>
+<hr>
+<h3>noneExistEntityNameOfLayer()</h3>
+<blockquote>
+<p><strong>noneExistEntityNameOfLayer</strong>: (<code>datasourceName</code>, <code>expectEntityName</code>) =&gt; <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3454</p>
+<p>获取一个图层中不重复的entity.name</p>
+<h4>Parameters</h4>
+<h5>datasourceName</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h5>expectEntityName</h5>
+<p><code>string</code></p>
+<p>希望的名字</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<p>id数组</p>
+<hr>
+<h3>open()</h3>
+<blockquote>
+<p><strong>open</strong>: (<code>map</code>, <code>autoPlay?</code>, <code>s3mInOrder?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3201</p>
+<p>打开互动地图</p>
+<h4>Parameters</h4>
+<h5>map</h5>
+<p><a href="../interfaces/IMap3D.html"><code>IMap3D</code></a></p>
+<p>互动地图</p>
+<h5>autoPlay?</h5>
+<p><code>boolean</code></p>
+<p>当有动画时，是否自动播放。默认不自动播放</p>
+<h5>s3mInOrder?</h5>
+<p><code>boolean</code></p>
+<p>s3m顺序打开，默认false</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>当前打开的互动地图</p>
+<hr>
+<h3>openAnnotation3D()</h3>
+<blockquote>
+<p><strong>openAnnotation3D</strong>: (<code>option?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3648</p>
+<p>打开天地图三维注记</p>
+<h4>Parameters</h4>
+<h5>option?</h5>
+<p>天地图的token等信息，传 undefiend 为关闭三维注记</p>
+<h6>displayDistance?</h6>
+<p><code>number</code></p>
+<h6>token</h6>
+<p><code>string</code></p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>是否成功</p>
+<hr>
+<h3>openIServerScene()</h3>
+<blockquote>
+<p><strong>openIServerScene</strong>: (<code>url</code>, <code>sceneName?</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3219</p>
+<p>打开 iserver 发布的场景</p>
+<h4>Parameters</h4>
+<h5>url</h5>
+<p><code>string</code></p>
+<p>场景地址 eg: http://www.supermapol.com/realspace/services/3D-CQBaiMoMeiHua-2/rest/realspace</p>
+<h5>sceneName?</h5>
+<p><code>string</code></p>
+<p>要打开的场景名，默认打开第一个</p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<p>是否成功</p>
+<hr>
+<h3>openTerrainLayer()</h3>
+<blockquote>
+<p><strong>openTerrainLayer</strong>: (<code>name</code>, <code>provider</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3226</p>
+<p>打开地形图层</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>要添加的图层名</p>
+<h5>provider</h5>
+<p><a href="TerrainProvider.html"><code>TerrainProvider</code></a></p>
+<p>地形图层provider</p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<p>是否成功</p>
+<hr>
+<h3>pausePropertyAnimation()</h3>
+<blockquote>
+<p><strong>pausePropertyAnimation</strong>: () =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3937</p>
+<p>暂停属性动画</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>设置是否成功</p>
+<hr>
+<h3>pickElement()</h3>
+<blockquote>
+<p><strong>pickElement</strong>: (<code>screenPoint</code>) =&gt; { <code>elementId</code>: <code>string</code>; <code>elementType</code>: <code>&quot;primitive&quot;</code> | <code>&quot;entity&quot;</code> | <code>&quot;s3m&quot;</code> | <code>&quot;tracking&quot;</code>; <code>layerName</code>: <code>string</code>; } | <code>undefined</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3879</p>
+<p>屏幕点击取对象</p>
+<h4>Parameters</h4>
+<h5>screenPoint</h5>
+<p><a href="../interfaces/Vector2.html"><code>Vector2</code></a></p>
+<p>屏幕点</p>
+<h4>Returns</h4>
+<p>{ <code>elementId</code>: <code>string</code>; <code>elementType</code>: <code>&quot;primitive&quot;</code> | <code>&quot;entity&quot;</code> | <code>&quot;s3m&quot;</code> | <code>&quot;tracking&quot;</code>; <code>layerName</code>: <code>string</code>; } | <code>undefined</code></p>
+<hr>
+<h3>pickPosition()</h3>
+<blockquote>
+<p><strong>pickPosition</strong>: (<code>screenPoint</code>, <code>isGlobePoint?</code>) =&gt; <a href="../interfaces/Vector3.html"><code>Vector3</code></a> | <code>null</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3873</p>
+<p>屏幕点转经纬度类型三维点</p>
+<h4>Parameters</h4>
+<h5>screenPoint</h5>
+<p><a href="../interfaces/Vector2.html"><code>Vector2</code></a></p>
+<p>屏幕点</p>
+<h5>isGlobePoint?</h5>
+<p><code>boolean</code></p>
+<p>该参数已经废弃，直接从球面上pick</p>
+<h4>Returns</h4>
+<p><a href="../interfaces/Vector3.html"><code>Vector3</code></a> | <code>null</code></p>
+<hr>
+<h3>raiseImageLayer()</h3>
+<blockquote>
+<p><strong>raiseImageLayer</strong>: (<code>index</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3285</p>
+<p>在影像图层集合中上移影像图层</p>
+<h4>Parameters</h4>
+<h5>index</h5>
+<p><code>number</code></p>
+<p>影像图层在影像图层集合中的序号</p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<p>是否成功</p>
+<hr>
+<h3>raiseImageLayerToTop()</h3>
+<blockquote>
+<p><strong>raiseImageLayerToTop</strong>: (<code>index</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3291</p>
+<p>在影像图层集合中上移影像图层到最顶层</p>
+<h4>Parameters</h4>
+<h5>index</h5>
+<p><code>number</code></p>
+<p>影像图层在影像图层集合中的序号</p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<p>是否成功</p>
+<hr>
+<h3>removeEntitiesLayer()</h3>
+<blockquote>
+<p><strong>removeEntitiesLayer</strong>: (<code>name</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3329</p>
+<p>移除矢量图层</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>是否成功</p>
+<hr>
+<h3>removeEntity()</h3>
+<blockquote>
+<p><strong>removeEntity</strong>: (<code>name</code>, <code>entityId</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3409</p>
+<p>图层删除对象</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h5>entityId</h5>
+<p><code>string</code></p>
+<p>对象id</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<hr>
+<h3>removeImageLayer()</h3>
+<blockquote>
+<p><strong>removeImageLayer</strong>: (<code>index</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3265</p>
+<p>移除影像图层</p>
+<h4>Parameters</h4>
+<h5>index</h5>
+<p><code>number</code></p>
+<p>影像图层在影像图层集合中的序号</p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<p>是否成功</p>
+<hr>
+<h3>removeS3MTilesLayer()</h3>
+<blockquote>
+<p><strong>removeS3MTilesLayer</strong>: (<code>name</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3534</p>
+<p>移除切片缓存图层(不能移除scene中的切片图层)</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>是否成功</p>
+<hr>
+<h3>removeSlideAtIndex()</h3>
+<blockquote>
+<p><strong>removeSlideAtIndex</strong>: (<code>index</code>) =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:4108</p>
+<p>删除索引处幻灯片</p>
+<h4>Parameters</h4>
+<h5>index</h5>
+<p><code>number</code></p>
+<p>索引</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<hr>
+<h3>renameEntitiesLayer()</h3>
+<blockquote>
+<p><strong>renameEntitiesLayer</strong>: (<code>currentName</code>, <code>newName</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3336</p>
+<p>矢量图层更名</p>
+<h4>Parameters</h4>
+<h5>currentName</h5>
+<p><code>string</code></p>
+<p>现在的图层名</p>
+<h5>newName</h5>
+<p><code>string</code></p>
+<p>新的的图层名</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>是否成功</p>
+<hr>
+<h3>setAction()</h3>
+<blockquote>
+<p><strong>setAction</strong>: (<code>action</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3922</p>
+<p>设置action</p>
+<h4>Parameters</h4>
+<h5>action</h5>
+<p><a href="../enumerations/SceneAction.html"><code>SceneAction</code></a></p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<p>设置是否成功</p>
+<hr>
+<h3>setAnnotation3DVisible()</h3>
+<blockquote>
+<p><strong>setAnnotation3DVisible</strong>: (<code>visible</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3657</p>
+<p>设置三维注记图层显隐</p>
+<h4>Parameters</h4>
+<h5>visible</h5>
+<p><code>boolean</code></p>
+<p>是否显示</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>是否成功</p>
+<hr>
+<h3>setAtmosphere()</h3>
+<blockquote>
+<p><strong>setAtmosphere</strong>: (<code>option</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3680</p>
+<p>设置大气参数</p>
+<h4>Parameters</h4>
+<h5>option</h5>
+<p><a href="../interfaces/Atmosphere.html"><code>Atmosphere</code></a></p>
+<p>大气参数</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>是否成功</p>
+<hr>
+<h3>setBloomEffect()</h3>
+<blockquote>
+<p><strong>setBloomEffect</strong>: (<code>param</code>) =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3784</p>
+<p>设置泛光效果</p>
+<h4>Parameters</h4>
+<h5>param</h5>
+<p><a href="../interfaces/BloomEffect.html"><code>BloomEffect</code></a></p>
+<p>泛光效果参数</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<hr>
+<h3>setCameraDragMode()</h3>
+<blockquote>
+<p><strong>setCameraDragMode</strong>: (<code>typeString</code>) =&gt; <code>void</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3828</p>
+<p>设置相机拖动逻辑</p>
+<h4>Parameters</h4>
+<h5>typeString</h5>
+<p>CDT_1 : 1.漫游：左键  2.倾斜：中键；ctrl+左键；ctrl+右键  3.推近：右键；滚轮
+ CDT_2 : 1.漫游：左键  2.倾斜：右键；ctrl+右键  3.推近：中键；滚轮；ctrl+左键</p>
+<p><code>&quot;CDT_1&quot;</code> | <code>&quot;CDT_2&quot;</code></p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>setCloudImage()</h3>
+<blockquote>
+<p><strong>setCloudImage</strong>: (<code>url?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3900</p>
+<p>设置云层纹理</p>
+<h4>Parameters</h4>
+<h5>url?</h5>
+<p><code>string</code></p>
+<p>纹理图片地址</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<hr>
+<h3>setColorCorrection()</h3>
+<blockquote>
+<p><strong>setColorCorrection</strong>: (<code>param</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3889</p>
+<p>颜色校正参数设置方法</p>
+<h4>Parameters</h4>
+<h5>param</h5>
+<p><a href="../interfaces/ColorCorrectionType.html"><code>ColorCorrectionType</code></a></p>
+<p>颜色校正参数</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<hr>
+<h3>setDepthTestAgainstTerrain()</h3>
+<blockquote>
+<p><strong>setDepthTestAgainstTerrain</strong>: (<code>enable</code>) =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3753</p>
+<p>设置地形深度检测</p>
+<h4>Parameters</h4>
+<h5>enable</h5>
+<p><code>boolean</code></p>
+<p>是否开启地图深度检测</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<hr>
+<h3>setEntitiesLayerVisible()</h3>
+<blockquote>
+<p><strong>setEntitiesLayerVisible</strong>: (<code>name</code>, <code>visible</code>) =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3349</p>
+<p>设置矢量图层可见</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h5>visible</h5>
+<p><code>boolean</code></p>
+<p>是否可见</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<p>是否成功</p>
+<hr>
+<h3>setFog()</h3>
+<blockquote>
+<p><strong>setFog</strong>: (<code>param</code>) =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3743</p>
+<p>设置雾化效果</p>
+<h4>Parameters</h4>
+<h5>param</h5>
+<p><a href="../interfaces/Fog.html"><code>Fog</code></a></p>
+<p>雾化效果参数</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<hr>
+<h3>setGraticulesParam()</h3>
+<blockquote>
+<p><strong>setGraticulesParam</strong>: (<code>param?</code>) =&gt; <code>void</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3702</p>
+<p>设置经纬网参数</p>
+<h4>Parameters</h4>
+<h5>param?</h5>
+<p><a href="../interfaces/GraticuleParam.html"><code>GraticuleParam</code></a></p>
+<p>经纬网参数</p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>setGraticuleVisible()</h3>
+<blockquote>
+<p><strong>setGraticuleVisible</strong>: (<code>visible</code>) =&gt; <code>void</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3713</p>
+<p>设置经纬网可见性</p>
+<h4>Parameters</h4>
+<h5>visible</h5>
+<p><code>boolean</code></p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>setHdrEnable()</h3>
+<blockquote>
+<p><strong>setHdrEnable</strong>: (<code>enable</code>) =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3779</p>
+<p>设置是否开启hdr</p>
+<h4>Parameters</h4>
+<h5>enable</h5>
+<p><code>boolean</code></p>
+<p>是否开启hdr</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<hr>
+<h3>setHypsometricSetting()</h3>
+<blockquote>
+<p><strong>setHypsometricSetting</strong>: (<code>setting</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:4022</p>
+<p>等高显示设置</p>
+<h4>Parameters</h4>
+<h5>setting</h5>
+<p><code>Pick</code>&lt;<a href="../interfaces/HypsometricSetting.html"><code>HypsometricSetting</code></a>, <code>&quot;mode&quot;</code>&gt; &amp; <code>Partial</code>&lt;<a href="../interfaces/HypsometricSetting.html"><code>HypsometricSetting</code></a>&gt;</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<hr>
+<h3>setImageLayerAlpha()</h3>
+<blockquote>
+<p><strong>setImageLayerAlpha</strong>: (<code>index</code>, <code>alpha</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3279</p>
+<p>设置影像图层透明度</p>
+<h4>Parameters</h4>
+<h5>index</h5>
+<p><code>number</code></p>
+<p>影像图层在影像图层集合中的序号</p>
+<h5>alpha</h5>
+<p><code>number</code></p>
+<p>透明度 0:完全透明,1:不透明</p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<p>是否成功</p>
+<hr>
+<h3>setImageLayerVisible()</h3>
+<blockquote>
+<p><strong>setImageLayerVisible</strong>: (<code>index</code>, <code>visible</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3272</p>
+<p>设置影像图层可见</p>
+<h4>Parameters</h4>
+<h5>index</h5>
+<p><code>number</code></p>
+<p>影像图层在影像图层集合中的序号</p>
+<h5>visible</h5>
+<p><code>boolean</code></p>
+<p>是否可见</p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<p>是否成功</p>
+<hr>
+<h3>setLighting()</h3>
+<blockquote>
+<p><strong>setLighting</strong>: (<code>param</code>) =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3723</p>
+<p>设置地球光照阴影参数</p>
+<h4>Parameters</h4>
+<h5>param</h5>
+<p><a href="../interfaces/GlobeLighting.html"><code>GlobeLighting</code></a></p>
+<p>地球光照阴影参数</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<hr>
+<h3>setLocalResourceBase()</h3>
+<blockquote>
+<p><strong>setLocalResourceBase</strong>: (<code>base</code>) =&gt; <code>void</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4121</p>
+<p>设置本地资源文件请求的base路径</p>
+<h4>Parameters</h4>
+<h5>base</h5>
+<p><code>string</code></p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>setLocalSymbolBase()</h3>
+<blockquote>
+<p><strong>setLocalSymbolBase</strong>: (<code>base</code>) =&gt; <code>void</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4125</p>
+<p>设置本地符号资源文件请求的base路径</p>
+<h4>Parameters</h4>
+<h5>base</h5>
+<p><code>string</code></p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>setMapQuality()</h3>
+<blockquote>
+<p><strong>setMapQuality</strong>: (<code>quality</code>) =&gt; <code>void</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3816</p>
+<p>设置地图清晰度，会保存到地图设置中</p>
+<h4>Parameters</h4>
+<h5>quality</h5>
+<p><code>number</code></p>
+<p>显示质量 范围 0 - 100</p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>setMaximumZoomDistance()</h3>
+<blockquote>
+<p><strong>setMaximumZoomDistance</strong>: (<code>value</code>) =&gt; <code>void</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3774</p>
+<p>设置最大视距</p>
+<h4>Parameters</h4>
+<h5>value</h5>
+<p><code>number</code></p>
+<p>设置的值</p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>setRealityMeshMemoryLimit()</h3>
+<blockquote>
+<p><strong>setRealityMeshMemoryLimit</strong>: (<code>limited</code>) =&gt; <code>void</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3805</p>
+<p>设置加载realityMesh时内存限制（单位MB）</p>
+<h4>Parameters</h4>
+<h5>limited</h5>
+<p><code>number</code></p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>setRequestRenderMode()</h3>
+<blockquote>
+<p><strong>setRequestRenderMode</strong>: (<code>value</code>) =&gt; <code>void</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3862</p>
+<p>是否开启主动刷新</p>
+<h4>Parameters</h4>
+<h5>value</h5>
+<p><code>boolean</code></p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>setResourceBase()</h3>
+<blockquote>
+<p><strong>setResourceBase</strong>: (<code>base</code>) =&gt; <code>void</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4117</p>
+<p>设置资源文件请求的base路径
+未设置则从当前url读取</p>
+<h4>Parameters</h4>
+<h5>base</h5>
+<p><code>string</code></p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>setS3MLayerOverlapDisplay()</h3>
+<blockquote>
+<p><strong>setS3MLayerOverlapDisplay</strong>: (<code>layer</code>, <code>overlap</code>) =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3547</p>
+<p>设置S3M图层是否开启遮挡</p>
+<h4>Parameters</h4>
+<h5>layer</h5>
+<p><code>string</code></p>
+<p>要设置的图层名</p>
+<h5>overlap</h5>
+<p><code>boolean</code></p>
+<p>是否遮挡</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<hr>
+<h3>setS3MLayerRelatedTextLayer()</h3>
+<blockquote>
+<p><strong>setS3MLayerRelatedTextLayer</strong>: (<code>iconLayer</code>, <code>textLayer</code>) =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3553</p>
+<p>设置S3M图标图层对应的文本图层</p>
+<h4>Parameters</h4>
+<h5>iconLayer</h5>
+<p><code>string</code></p>
+<p>图标图层名</p>
+<h5>textLayer</h5>
+<p>文本图层名</p>
+<p><code>string</code> | <code>undefined</code></p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<hr>
+<h3>setS3MTilesWaterStyle()</h3>
+<blockquote>
+<p><strong>setS3MTilesWaterStyle</strong>: (<code>name</code>, <code>waterStyle</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3559</p>
+<p>set水面风格（不能设置图层组内图层风格）</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h5>waterStyle</h5>
+<p><a href="../interfaces/S3MWaterStyle.html"><code>S3MWaterStyle</code></a></p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>是否成功</p>
+<hr>
+<h3>setSceneMode()</h3>
+<blockquote>
+<p><strong>setSceneMode</strong>: (<code>mode</code>) =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3794</p>
+<p>设置场景模式</p>
+<h4>Parameters</h4>
+<h5>mode</h5>
+<p><a href="../enumerations/SceneMode.html"><code>SceneMode</code></a></p>
+<p>场景模式</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<hr>
+<h3>setSceneQuality()</h3>
+<blockquote>
+<p><strong>setSceneQuality</strong>: (<code>quality</code>) =&gt; <code>void</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3839</p>
+<p>动态设置场景清晰度。不影响当前地图的设置</p>
+<h4>Parameters</h4>
+<h5>quality</h5>
+<p><code>number</code></p>
+<p>显示质量 范围 0 - 100</p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>setShadow()</h3>
+<blockquote>
+<p><strong>setShadow</strong>: (<code>param</code>) =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3733</p>
+<p>设置对象阴影</p>
+<h4>Parameters</h4>
+<h5>param</h5>
+<p><a href="../interfaces/Shadow.html"><code>Shadow</code></a></p>
+<p>对象阴影参数</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<hr>
+<h3>setSkybox()</h3>
+<blockquote>
+<p><strong>setSkybox</strong>: (<code>skybox?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3663</p>
+<p>设置天空盒</p>
+<h4>Parameters</h4>
+<h5>skybox?</h5>
+<p><a href="../interfaces/SkyboxResource.html"><code>SkyboxResource</code></a></p>
+<p>天空盒图片资源地址 传 undefeind 为关闭自定义天空盒</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>是否成功</p>
+<hr>
+<h3>setSkyboxVisible()</h3>
+<blockquote>
+<p><strong>setSkyboxVisible</strong>: (<code>visible</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3669</p>
+<p>设置天空盒可见</p>
+<h4>Parameters</h4>
+<h5>visible</h5>
+<p><code>boolean</code></p>
+<p>是否可见</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>是否成功</p>
+<hr>
+<h3>setSlideShow()</h3>
+<blockquote>
+<p><strong>setSlideShow</strong>: (<code>slideShow</code>) =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:4085</p>
+<p>设置幻灯片列表</p>
+<h4>Parameters</h4>
+<h5>slideShow</h5>
+<p><a href="../interfaces/Slide.html"><code>Slide</code></a>[]</p>
+<p>幻灯片列表</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<hr>
+<h3>setSun()</h3>
+<blockquote>
+<p><strong>setSun</strong>: (<code>option</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3691</p>
+<p>设置太阳参数</p>
+<h4>Parameters</h4>
+<h5>option</h5>
+<p><a href="../interfaces/Sun.html"><code>Sun</code></a></p>
+<p>太阳参数</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>是否成功</p>
+<hr>
+<h3>setTerrainExaggeration()</h3>
+<blockquote>
+<p><strong>setTerrainExaggeration</strong>: (<code>ratio</code>) =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:4029</p>
+<p>设置地形夸张系数</p>
+<h4>Parameters</h4>
+<h5>ratio</h5>
+<p><code>number</code></p>
+<p>地形夸张系数，需要大于 0</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<hr>
+<h3>setTerrainLayerVisible()</h3>
+<blockquote>
+<p><strong>setTerrainLayerVisible</strong>: (<code>visible</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3242</p>
+<p>设置地形图层可见</p>
+<h4>Parameters</h4>
+<h5>visible</h5>
+<p><code>boolean</code></p>
+<p>是否可见</p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<p>是否成功</p>
+<hr>
+<h3>setTilesLayerBottomAltitude()</h3>
+<blockquote>
+<p><strong>setTilesLayerBottomAltitude</strong>: (<code>name</code>, <code>bottomAltitude</code>) =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3636</p>
+<p>设置切片底部高程</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h5>bottomAltitude</h5>
+<p><code>number</code></p>
+<p>底部高程</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<p>是否成功</p>
+<hr>
+<h3>setTilesLayerIgnoreNormal()</h3>
+<blockquote>
+<p><strong>setTilesLayerIgnoreNormal</strong>: (<code>name</code>, <code>ignoreNormal</code>) =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3623</p>
+<p>设置切片重新计算法线</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h5>ignoreNormal</h5>
+<p><code>boolean</code></p>
+<p>是否重新计算</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<p>是否成功</p>
+<hr>
+<h3>setTilesLayerLodRangeScale()</h3>
+<blockquote>
+<p><strong>setTilesLayerLodRangeScale</strong>: (<code>name</code>, <code>lodRangeScale</code>) =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3610</p>
+<p>设置切片图层的LOD层级切换距离缩放系数</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h5>lodRangeScale</h5>
+<p><code>number</code></p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<hr>
+<h3>setTilesLayerOrderIndependentTranslucency()</h3>
+<blockquote>
+<p><strong>setTilesLayerOrderIndependentTranslucency</strong>: (<code>name</code>, <code>isOrderIndependentTranslucency</code>) =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3598</p>
+<p>设置是否开启透明排序功能（OIT）</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h5>isOrderIndependentTranslucency</h5>
+<p><code>boolean</code></p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<p>是否成功</p>
+<hr>
+<h3>setTilesLayerRGBTOBGR()</h3>
+<blockquote>
+<p><strong>setTilesLayerRGBTOBGR</strong>: (<code>name</code>, <code>isRGBTOBGR</code>) =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3585</p>
+<p>设置切片是否反色</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h5>isRGBTOBGR</h5>
+<p><code>boolean</code></p>
+<p>是否反色</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<p>是否成功</p>
+<hr>
+<h3>setTilesLayerVisible()</h3>
+<blockquote>
+<p><strong>setTilesLayerVisible</strong>: (<code>name</code>, <code>visible</code>) =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3572</p>
+<p>设置切片图层可见（不能设置图层组内图层可见性）</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h5>visible</h5>
+<p><code>boolean</code></p>
+<p>是否可见</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<p>是否成功</p>
+<hr>
+<h3>setWeather()</h3>
+<blockquote>
+<p><strong>setWeather</strong>: (<code>weather?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:4010</p>
+<p>设置当前天气</p>
+<h4>Parameters</h4>
+<h5>weather?</h5>
+<p><a href="../interfaces/Rain.html"><code>Rain</code></a> | <a href="../interfaces/Snow.html"><code>Snow</code></a> | <code>null</code></p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<hr>
+<h3>showCloud()</h3>
+<blockquote>
+<p><strong>showCloud</strong>: (<code>show</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3906</p>
+<p>云层是否显示，在显示之前需要先吊用setCloudImage设置一个云层纹理</p>
+<h4>Parameters</h4>
+<h5>show</h5>
+<p><code>boolean</code></p>
+<p>为true显示云层，为false不显示云层</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<hr>
+<h3>showDebugFPS()</h3>
+<blockquote>
+<p><strong>showDebugFPS</strong>: (<code>show</code>) =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3849</p>
+<p>显示 fps 信息。默认不显示</p>
+<h4>Parameters</h4>
+<h5>show</h5>
+<p><code>boolean</code></p>
+<p>是否显示</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<hr>
+<h3>startPropertyAnimation()</h3>
+<blockquote>
+<p><strong>startPropertyAnimation</strong>: () =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3927</p>
+<p>播放属性动画</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>设置是否成功</p>
+<hr>
+<h3>stopPropertyAnimation()</h3>
+<blockquote>
+<p><strong>stopPropertyAnimation</strong>: () =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3932</p>
+<p>停止属性动画</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>设置是否成功</p>
+<hr>
+<h3>translationAnchorToPosition()</h3>
+<blockquote>
+<p><strong>translationAnchorToPosition</strong>: (<code>position</code>) =&gt; <code>void</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4059</p>
+<p>球面平移设置目标绝对位置</p>
+<h4>Parameters</h4>
+<h5>position</h5>
+<p><a href="../interfaces/Vector3.html"><code>Vector3</code></a></p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>translationCurrentDelta()</h3>
+<blockquote>
+<p><strong>translationCurrentDelta</strong>: () =&gt; <a href="../interfaces/Vector3.html"><code>Vector3</code></a></p>
+</blockquote>
+<p>Defined in: index.d.ts:4064</p>
+<p>当前球面平移结果</p>
+<h4>Returns</h4>
+<p><a href="../interfaces/Vector3.html"><code>Vector3</code></a></p>
+<hr>
+<h3>translationHeight()</h3>
+<blockquote>
+<p><strong>translationHeight</strong>: (<code>delta</code>) =&gt; <code>void</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4047</p>
+<p>球面平移目标高度调整</p>
+<h4>Parameters</h4>
+<h5>delta</h5>
+<p><code>number</code></p>
+<p>调整高度</p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>translationXYDistance()</h3>
+<blockquote>
+<p><strong>translationXYDistance</strong>: (<code>currentPosition</code>, <code>delta_x</code>, <code>delta_y</code>) =&gt; <code>void</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4054</p>
+<p>球面沿经纬度按距离平移</p>
+<h4>Parameters</h4>
+<h5>currentPosition</h5>
+<p><a href="../interfaces/Vector3.html"><code>Vector3</code></a></p>
+<p>经纬度位置 废弃</p>
+<h5>delta_x</h5>
+<p><code>number</code></p>
+<p>沿着纬线移动距离 =&gt;&gt; 改为向右移动距离</p>
+<h5>delta_y</h5>
+<p><code>number</code></p>
+<p>沿着经线移动距离 =&gt;&gt; 改为向前移动距离</p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>upadateLayerLabels()</h3>
+<blockquote>
+<p><strong>upadateLayerLabels</strong>: (<code>layerName</code>, <code>labelStyle</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3508</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<h5>labelStyle</h5>
+<p><code>Omit</code>&lt;<a href="../interfaces/LabelGraphics.html"><code>LabelGraphics</code></a>, <code>&quot;text&quot;</code>&gt;</p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<hr>
+<h3>upadateLayerPOILabels()</h3>
+<blockquote>
+<p><strong>upadateLayerPOILabels</strong>: (<code>layerName</code>, <code>labelStyle</code>, <code>filter?</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3507</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<h5>labelStyle</h5>
+<p><code>Omit</code>&lt;<a href="../interfaces/LabelGraphics.html"><code>LabelGraphics</code></a>, <code>&quot;text&quot;</code>&gt;</p>
+<h5>filter?</h5>
+<p>(<code>&quot;point&quot;</code> | <code>&quot;model&quot;</code> | <code>&quot;billboard&quot;</code>)[]</p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<hr>
+<h3>upadateLayerPolygons()</h3>
+<blockquote>
+<p><strong>upadateLayerPolygons</strong>: (<code>layerName</code>, <code>lineStyle</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3515</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<h5>lineStyle</h5>
+<p><code>Omit</code>&lt;<a href="../interfaces/NofillPolygon.html"><code>NofillPolygon</code></a>, <code>&quot;hierarchy&quot;</code>&gt; | <code>Omit</code>&lt;<a href="../interfaces/SolidPolygon.html"><code>SolidPolygon</code></a>, <code>&quot;hierarchy&quot;</code>&gt; | <code>Omit</code>&lt;<a href="../interfaces/GriddingPolygon.html"><code>GriddingPolygon</code></a>, <code>&quot;hierarchy&quot;</code>&gt; | <code>Omit</code>&lt;<a href="../interfaces/StripePolygon.html"><code>StripePolygon</code></a>, <code>&quot;hierarchy&quot;</code>&gt; | <code>Omit</code>&lt;<a href="../interfaces/ImagePolygon.html"><code>ImagePolygon</code></a>, <code>&quot;hierarchy&quot;</code>&gt; | <code>Omit</code>&lt;<a href="../interfaces/FeatherPolygon.html"><code>FeatherPolygon</code></a>, <code>&quot;hierarchy&quot;</code>&gt;</p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<hr>
+<h3>upadateLayerPolylines()</h3>
+<blockquote>
+<p><strong>upadateLayerPolylines</strong>: (<code>layerName</code>, <code>lineStyle</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3510</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<h5>lineStyle</h5>
+<p><code>Omit</code>&lt;<a href="../interfaces/SolidLine.html"><code>SolidLine</code></a>, <code>&quot;positions&quot;</code>&gt; | <code>Omit</code>&lt;<a href="../interfaces/DashedLine.html"><code>DashedLine</code></a>, <code>&quot;positions&quot;</code>&gt; | <code>Omit</code>&lt;<a href="../interfaces/ContourLine.html"><code>ContourLine</code></a>, <code>&quot;positions&quot;</code>&gt; | <code>Omit</code>&lt;<a href="../interfaces/ArrowLine.html"><code>ArrowLine</code></a>, <code>&quot;positions&quot;</code>&gt; | <code>Omit</code>&lt;<a href="../interfaces/HaloLine.html"><code>HaloLine</code></a>, <code>&quot;positions&quot;</code>&gt; | <code>Omit</code>&lt;<a href="../interfaces/WakeLine.html"><code>WakeLine</code></a>, <code>&quot;positions&quot;</code>&gt; | <code>Omit</code>&lt;<a href="../interfaces/DynamicLine.html"><code>DynamicLine</code></a>, <code>&quot;positions&quot;</code>&gt; | <code>Omit</code>&lt;<a href="../interfaces/RainbowLine.html"><code>RainbowLine</code></a>, <code>&quot;positions&quot;</code>&gt; &amp; <code>object</code> | <code>Omit</code>&lt;<a href="../interfaces/WallGraphics.html"><code>WallGraphics</code></a>, <code>&quot;positions&quot;</code>&gt; &amp; <code>object</code></p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<hr>
+<h3>upadateLayerTerrainLabels()</h3>
+<blockquote>
+<p><strong>upadateLayerTerrainLabels</strong>: (<code>layerName</code>, <code>labelStyle</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3509</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<h5>labelStyle</h5>
+<p><code>Omit</code>&lt;<a href="../interfaces/TerrainLabel.html"><code>TerrainLabel</code></a>, <code>&quot;text&quot;</code>&gt;</p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<hr>
+<h3>updateEntityDelete()</h3>
+<blockquote>
+<p><strong>updateEntityDelete</strong>: (<code>datasourceName</code>, <code>entityId</code>, <code>type</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3499</p>
+<p>图层更新对象，</p>
+<h4>Parameters</h4>
+<h5>datasourceName</h5>
+<p><code>string</code></p>
+<h5>entityId</h5>
+<p><code>string</code></p>
+<h5>type</h5>
+<p><code>string</code></p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>是否成功</p>
+<hr>
+<h3>updateEntityLayerLabelByDiff()</h3>
+<blockquote>
+<p><strong>updateEntityLayerLabelByDiff</strong>: (<code>layer</code>, <code>diff</code>) =&gt; <code>void</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4130</p>
+<h4>Parameters</h4>
+<h5>layer</h5>
+<p><code>string</code></p>
+<h5>diff</h5>
+<p><code>Partial</code>&lt;<a href="../interfaces/ILabelStyle.html"><code>ILabelStyle</code></a>&gt;</p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>updateEntityLayerLineByDiff()</h3>
+<blockquote>
+<p><strong>updateEntityLayerLineByDiff</strong>: (<code>layer</code>, <code>diff</code>) =&gt; <code>void</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4128</p>
+<h4>Parameters</h4>
+<h5>layer</h5>
+<p><code>string</code></p>
+<h5>diff</h5>
+<p><code>Partial</code>&lt;<a href="../interfaces/ILineStyle.html"><code>ILineStyle</code></a>&gt;</p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>updateEntityLayerPointByDiff()</h3>
+<blockquote>
+<p><strong>updateEntityLayerPointByDiff</strong>: (<code>layer</code>, <code>diff</code>) =&gt; <code>void</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4126</p>
+<h4>Parameters</h4>
+<h5>layer</h5>
+<p><code>string</code></p>
+<h5>diff</h5>
+<p><code>Partial</code>&lt;<a href="../interfaces/IPointStyle.html"><code>IPointStyle</code></a>&gt;</p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>updateEntityLayerPointLabelByDiff()</h3>
+<blockquote>
+<p><strong>updateEntityLayerPointLabelByDiff</strong>: (<code>layer</code>, <code>diff</code>) =&gt; <code>void</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4127</p>
+<h4>Parameters</h4>
+<h5>layer</h5>
+<p><code>string</code></p>
+<h5>diff</h5>
+<p><code>Partial</code>&lt;<a href="../interfaces/IPointStyle.html"><code>IPointStyle</code></a>&gt;</p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>updateEntityLayerRegionByDiff()</h3>
+<blockquote>
+<p><strong>updateEntityLayerRegionByDiff</strong>: (<code>layer</code>, <code>diff</code>) =&gt; <code>void</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4129</p>
+<h4>Parameters</h4>
+<h5>layer</h5>
+<p><code>string</code></p>
+<h5>diff</h5>
+<p><code>Partial</code>&lt;<a href="../interfaces/IRegionStyle.html"><code>IRegionStyle</code></a>&gt;</p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>updateEntityLayerTerrainLabelByDiff()</h3>
+<blockquote>
+<p><strong>updateEntityLayerTerrainLabelByDiff</strong>: (<code>layer</code>, <code>diff</code>) =&gt; <code>void</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:4131</p>
+<h4>Parameters</h4>
+<h5>layer</h5>
+<p><code>string</code></p>
+<h5>diff</h5>
+<p><code>Partial</code>&lt;<a href="../interfaces/ILabelStyle.html"><code>ILabelStyle</code></a>&gt;</p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>updateEntityModify()</h3>
+<blockquote>
+<p><strong>updateEntityModify</strong>: (<code>datasourceName</code>, <code>entity</code>, <code>polygonExtrudedHeightRalative?</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3492</p>
+<p>图层更新对象，</p>
+<h4>Parameters</h4>
+<h5>datasourceName</h5>
+<p><code>string</code></p>
+<h5>entity</h5>
+<p><a href="../interfaces/Entity.html"><code>Entity</code></a></p>
+<p>对象,entity.id!==undefined&amp;&amp;图层包含entity.id</p>
+<h5>polygonExtrudedHeightRalative?</h5>
+<p><code>boolean</code></p>
+<p>polygon.extrudedHeight与面高度相对位置</p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<p>是否成功</p>
+<hr>
+<h3>updateLayerModelsOrientation()</h3>
+<blockquote>
+<p><strong>updateLayerModelsOrientation</strong>: (<code>layerName</code>, <code>orientation</code>, <code>orientationAlongVelocity?</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3506</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<h5>orientation</h5>
+<p><a href="../interfaces/HeadingPitchRoll.html"><code>HeadingPitchRoll</code></a> | <a href="../interfaces/PropertyAnimation.html"><code>PropertyAnimation</code></a>&lt;<a href="../interfaces/HeadingPitchRoll.html"><code>HeadingPitchRoll</code></a>&gt;</p>
+<h5>orientationAlongVelocity?</h5>
+<p><code>boolean</code></p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<hr>
+<h3>updateLayerPOIMarkers()</h3>
+<blockquote>
+<p><strong>updateLayerPOIMarkers</strong>: (<code>layerName</code>, <code>markerStyle</code>) =&gt; <code>boolean</code></p>
+</blockquote>
+<p>Defined in: index.d.ts:3501</p>
+<p>*********** 批量更新 *************</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<h5>markerStyle</h5>
+<p><a href="../interfaces/PointGraphics.html"><code>PointGraphics</code></a> | <a href="../interfaces/ModelGraphics.html"><code>ModelGraphics</code></a> &amp; <code>object</code> | <a href="../interfaces/BillboardGraphics.html"><code>BillboardGraphics</code></a> &amp; <code>object</code></p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<hr>
+<h3>updateSlideAtIndex()</h3>
+<blockquote>
+<p><strong>updateSlideAtIndex</strong>: (<code>slide</code>, <code>index</code>) =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:4103</p>
+<p>更新索引处幻灯片</p>
+<h4>Parameters</h4>
+<h5>slide</h5>
+<p><a href="../interfaces/Slide.html"><code>Slide</code></a></p>
+<p>幻灯片</p>
+<h5>index</h5>
+<p><code>number</code></p>
+<p>索引</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<hr>
+<h3>viewEntireEntities()</h3>
+<blockquote>
+<p><strong>viewEntireEntities</strong>: (<code>entities</code>, <code>duration</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3951</p>
+<p>全幅矢量</p>
+<h4>Parameters</h4>
+<h5>entities</h5>
+<p><code>object</code>[]</p>
+<p>矢量数组</p>
+<h5>duration</h5>
+<p><code>number</code></p>
+<p>动画时间</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>设置是否成功</p>
+<hr>
+<h3>viewEntireEntitiesLayer()</h3>
+<blockquote>
+<p><strong>viewEntireEntitiesLayer</strong>: (<code>layerName</code>, <code>duration</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3944</p>
+<p>全幅矢量层</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<p>矢量图层名</p>
+<h5>duration</h5>
+<p><code>number</code></p>
+<p>动画时间</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>设置是否成功</p>
+<hr>
+<h3>viewEntireEntitiesList()</h3>
+<blockquote>
+<p><strong>viewEntireEntitiesList</strong>: (<code>entities</code>, <code>duration</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3982</p>
+<p>全幅矢量</p>
+<h4>Parameters</h4>
+<h5>entities</h5>
+<p><a href="../interfaces/Entity.html"><code>Entity</code></a>[]</p>
+<p>矢量数组</p>
+<h5>duration</h5>
+<p><code>number</code></p>
+<p>动画时间</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>设置是否成功</p>
+<hr>
+<h3>viewEntireGeojson()</h3>
+<blockquote>
+<p><strong>viewEntireGeojson</strong>: (<code>geojson</code>, <code>duration</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3975</p>
+<p>全幅Geojson</p>
+<h4>Parameters</h4>
+<h5>geojson</h5>
+<p><a href="../interfaces/FeatureCollection.html"><code>FeatureCollection</code></a></p>
+<h5>duration</h5>
+<p><code>number</code></p>
+<p>动画时间</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>设置是否成功</p>
+<hr>
+<h3>viewEntireImageLayer()</h3>
+<blockquote>
+<p><strong>viewEntireImageLayer</strong>: (<code>index</code>, <code>duration</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3968</p>
+<p>全幅影像图层</p>
+<h4>Parameters</h4>
+<h5>index</h5>
+<p><code>number</code></p>
+<h5>duration</h5>
+<p><code>number</code></p>
+<p>动画时间</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>设置是否成功</p>
+<hr>
+<h3>viewEntireS3MLayer()</h3>
+<blockquote>
+<p><strong>viewEntireS3MLayer</strong>: (<code>layerName</code>, <code>duration</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3961</p>
+<p>全幅S3M图层</p>
+<h4>Parameters</h4>
+<h5>layerName</h5>
+<p><code>string</code></p>
+<p>图层名</p>
+<h5>duration</h5>
+<p><code>number</code></p>
+<p>动画时间</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>设置是否成功</p>
+<hr>
+<h3>zoomToTime()</h3>
+<blockquote>
+<p><strong>zoomToTime</strong>: (<code>time</code>) =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Defined in: index.d.ts:3987</p>
+<p>设置时间轴当前时间</p>
+<h4>Parameters</h4>
+<h5>time</h5>
+<p><a href="../interfaces/GregorianDate.html"><code>GregorianDate</code></a></p>
+<p>当前时间</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+
+
+</body>
+</html>
