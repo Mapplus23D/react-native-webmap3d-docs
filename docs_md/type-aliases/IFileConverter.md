@@ -8,7 +8,7 @@
 
 > **IFileConverter** = `object`
 
-Defined in: index.d.ts:4223
+Defined in: index.d.ts:4231
 
 文件转化工具
 
@@ -20,7 +20,7 @@ Defined in: index.d.ts:4223
 
 > **shp2Geojson**: (`src`) => `Promise`\<[`FeatureCollection`](../interfaces/FeatureCollection.md)[]\>
 
-Defined in: index.d.ts:4236
+Defined in: index.d.ts:4244
 
 shp 转 geojson
 
@@ -44,7 +44,7 @@ geojson 对象
 
 > **vectorFile2Geojson**: (`src`) => `Promise`\<[`FeatureCollection`](../interfaces/FeatureCollection.md)[]\>
 
-Defined in: index.d.ts:4230
+Defined in: index.d.ts:4238
 
 矢量数据转geojson
 

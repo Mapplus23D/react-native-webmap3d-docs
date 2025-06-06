@@ -6,7 +6,7 @@
 
 # Interface: ScanEffect
 
-Defined in: index.d.ts:1966
+Defined in: index.d.ts:1974
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1966
 
 > **color**: [`ColorNumber`](../type-aliases/ColorNumber.md)
 
-Defined in: index.d.ts:1972
+Defined in: index.d.ts:1980
 
 颜色。分别对应 rgba, 默认 [1,1,1,1]
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:1972
 
 > **lines**: `object`[]
 
-Defined in: index.d.ts:1985
+Defined in: index.d.ts:1993
 
 线参数
 在 'LINE' 模式下，需要设置 direction。默认按自西向东运动
@@ -47,7 +47,7 @@ Defined in: index.d.ts:1985
 
 > **mode**: [`ScanEffectMode`](../enumerations/ScanEffectMode.md)
 
-Defined in: index.d.ts:1970
+Defined in: index.d.ts:1978
 
 扫描线模式
 
@@ -57,7 +57,7 @@ Defined in: index.d.ts:1970
 
 > **period**: `number`
 
-Defined in: index.d.ts:1978
+Defined in: index.d.ts:1986
 
 时长。单位 秒
 
@@ -67,7 +67,7 @@ Defined in: index.d.ts:1978
 
 > **show**: `boolean`
 
-Defined in: index.d.ts:1968
+Defined in: index.d.ts:1976
 
 是否显示
 
@@ -77,7 +77,7 @@ Defined in: index.d.ts:1968
 
 > **speed**: `number`
 
-Defined in: index.d.ts:1980
+Defined in: index.d.ts:1988
 
 速度。单位 米/秒
 
@@ -87,7 +87,7 @@ Defined in: index.d.ts:1980
 
 > **texture**: `string`
 
-Defined in: index.d.ts:1974
+Defined in: index.d.ts:1982
 
 纹理地址
 
@@ -97,6 +97,6 @@ Defined in: index.d.ts:1974
 
 > **width**: `number`
 
-Defined in: index.d.ts:1976
+Defined in: index.d.ts:1984
 
 线宽。单位 米

@@ -6,7 +6,7 @@
 
 # Enumeration: ClampType
 
-Defined in: index.d.ts:1213
+Defined in: index.d.ts:1221
 
 贴地类型
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:1213
 
 > **Ground**: `1`
 
-Defined in: index.d.ts:1217
+Defined in: index.d.ts:1225
 
 贴地模式
 
@@ -26,7 +26,7 @@ Defined in: index.d.ts:1217
 
 > **Raster**: `3`
 
-Defined in: index.d.ts:1221
+Defined in: index.d.ts:1229
 
 栅格化模式
 
@@ -36,7 +36,7 @@ Defined in: index.d.ts:1221
 
 > **S3mModel**: `2`
 
-Defined in: index.d.ts:1219
+Defined in: index.d.ts:1227
 
 贴对象模式
 
@@ -46,6 +46,6 @@ Defined in: index.d.ts:1219
 
 > **Space**: `0`
 
-Defined in: index.d.ts:1215
+Defined in: index.d.ts:1223
 
 空间模式

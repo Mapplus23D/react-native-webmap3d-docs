@@ -6,7 +6,7 @@
 
 # Interface: ScreenEnterAppear
 
-Defined in: index.d.ts:802
+Defined in: index.d.ts:810
 
 ## Properties
 
@@ -14,4 +14,4 @@ Defined in: index.d.ts:802
 
 > **type**: `"appear"`
 
-Defined in: index.d.ts:803
+Defined in: index.d.ts:811

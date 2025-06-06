@@ -6,7 +6,7 @@
 
 # Interface: ConeParticleEmitter
 
-Defined in: index.d.ts:1899
+Defined in: index.d.ts:1907
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1899
 
 > **angle**: `number`
 
-Defined in: index.d.ts:1902
+Defined in: index.d.ts:1910
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:1902
 
 > **directionRandomizer**: `number`
 
-Defined in: index.d.ts:1903
+Defined in: index.d.ts:1911
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:1903
 
 > **emitFromSpawnPointOnly**: `boolean`
 
-Defined in: index.d.ts:1906
+Defined in: index.d.ts:1914
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:1906
 
 > **heightRange**: `number`
 
-Defined in: index.d.ts:1905
+Defined in: index.d.ts:1913
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:1905
 
 > **radius**: `number`
 
-Defined in: index.d.ts:1901
+Defined in: index.d.ts:1909
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:1901
 
 > **radiusRange**: `number`
 
-Defined in: index.d.ts:1904
+Defined in: index.d.ts:1912
 
 ***
 
@@ -62,4 +62,4 @@ Defined in: index.d.ts:1904
 
 > **type**: `"ConeParticleEmitter"`
 
-Defined in: index.d.ts:1900
+Defined in: index.d.ts:1908

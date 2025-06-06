@@ -6,7 +6,7 @@
 
 # Interface: FeatureCollection\<G, P\>
 
-Defined in: index.d.ts:3090
+Defined in: index.d.ts:3098
 
 Feature Collection
 
@@ -36,7 +36,7 @@ It is possible for this array to be empty.
 
 > `optional` **bbox**: [`BBox`](../type-aliases/BBox.md)
 
-Defined in: index.d.ts:2975
+Defined in: index.d.ts:2983
 
 Bounding box of the coordinate range of the object's Geometries, Features, or Feature Collections.
 https://tools.ietf.org/html/rfc7946#section-5
@@ -51,7 +51,7 @@ https://tools.ietf.org/html/rfc7946#section-5
 
 > **features**: [`Feature`](Feature.md)\<`G`, `P`\>[]
 
-Defined in: index.d.ts:3092
+Defined in: index.d.ts:3100
 
 ***
 
@@ -59,7 +59,7 @@ Defined in: index.d.ts:3092
 
 > **type**: `"FeatureCollection"`
 
-Defined in: index.d.ts:3091
+Defined in: index.d.ts:3099
 
 Specifies the type of GeoJSON object.
 

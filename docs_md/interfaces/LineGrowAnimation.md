@@ -6,7 +6,7 @@
 
 # Interface: LineGrowAnimation
 
-Defined in: index.d.ts:1107
+Defined in: index.d.ts:1115
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:1107
 
 > **duration**: `number`
 
-Defined in: index.d.ts:1099
+Defined in: index.d.ts:1107
 
 动画持续时间，单位秒
 
@@ -32,7 +32,7 @@ Defined in: index.d.ts:1099
 
 > `optional` **isReverse**: `boolean`
 
-Defined in: index.d.ts:1110
+Defined in: index.d.ts:1118
 
 逆生长
 
@@ -42,7 +42,7 @@ Defined in: index.d.ts:1110
 
 > `optional` **layerName**: `string`
 
-Defined in: index.d.ts:1103
+Defined in: index.d.ts:1111
 
 矢量图层名
 
@@ -56,7 +56,7 @@ Defined in: index.d.ts:1103
 
 > **name**: `string`
 
-Defined in: index.d.ts:1095
+Defined in: index.d.ts:1103
 
 #### Inherited from
 
@@ -68,7 +68,7 @@ Defined in: index.d.ts:1095
 
 > `optional` **repeatCount**: `number`
 
-Defined in: index.d.ts:1101
+Defined in: index.d.ts:1109
 
 重复次数
 
@@ -82,7 +82,7 @@ Defined in: index.d.ts:1101
 
 > **startTime**: `number`
 
-Defined in: index.d.ts:1097
+Defined in: index.d.ts:1105
 
 开始时间，单位秒
 
@@ -96,7 +96,7 @@ Defined in: index.d.ts:1097
 
 > **target**: `string`
 
-Defined in: index.d.ts:1105
+Defined in: index.d.ts:1113
 
 对象 id
 
@@ -110,4 +110,4 @@ Defined in: index.d.ts:1105
 
 > **type**: [`LINEGROW`](../enumerations/AnimatorType.md#linegrow)
 
-Defined in: index.d.ts:1108
+Defined in: index.d.ts:1116

@@ -6,7 +6,7 @@
 
 # Enumeration: PrimitiveType
 
-Defined in: index.d.ts:2099
+Defined in: index.d.ts:2107
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:2099
 
 > **ArrowLine**: `13`
 
-Defined in: index.d.ts:2117
+Defined in: index.d.ts:2125
 
 箭头线
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:2117
 
 > **Billboard**: `1`
 
-Defined in: index.d.ts:2103
+Defined in: index.d.ts:2111
 
 图片
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:2103
 
 > **ColumnModel**: `32`
 
-Defined in: index.d.ts:2139
+Defined in: index.d.ts:2147
 
 白模柱状体
 
@@ -44,7 +44,7 @@ Defined in: index.d.ts:2139
 
 > **ContourLine**: `12`
 
-Defined in: index.d.ts:2115
+Defined in: index.d.ts:2123
 
 轮廓线
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:2115
 
 > **ContourRegion**: `24`
 
-Defined in: index.d.ts:2133
+Defined in: index.d.ts:2141
 
 描边面
 
@@ -64,7 +64,7 @@ Defined in: index.d.ts:2133
 
 > **DashedLine**: `11`
 
-Defined in: index.d.ts:2113
+Defined in: index.d.ts:2121
 
 虚线
 
@@ -74,7 +74,7 @@ Defined in: index.d.ts:2113
 
 > **FeatherRegion**: `26`
 
-Defined in: index.d.ts:2137
+Defined in: index.d.ts:2145
 
 羽化面
 
@@ -84,7 +84,7 @@ Defined in: index.d.ts:2137
 
 > **GridRegion**: `21`
 
-Defined in: index.d.ts:2127
+Defined in: index.d.ts:2135
 
 网格面
 
@@ -94,7 +94,7 @@ Defined in: index.d.ts:2127
 
 > **HaloLine**: `14`
 
-Defined in: index.d.ts:2119
+Defined in: index.d.ts:2127
 
 光晕线
 
@@ -104,7 +104,7 @@ Defined in: index.d.ts:2119
 
 > **ImageLine**: `19`
 
-Defined in: index.d.ts:2121
+Defined in: index.d.ts:2129
 
 图片填充线
 
@@ -114,7 +114,7 @@ Defined in: index.d.ts:2121
 
 > **ImageRegion**: `23`
 
-Defined in: index.d.ts:2131
+Defined in: index.d.ts:2139
 
 图片填充面
 
@@ -124,7 +124,7 @@ Defined in: index.d.ts:2131
 
 > **Label**: `2`
 
-Defined in: index.d.ts:2105
+Defined in: index.d.ts:2113
 
 文字
 
@@ -134,7 +134,7 @@ Defined in: index.d.ts:2105
 
 > **Model**: `4`
 
-Defined in: index.d.ts:2109
+Defined in: index.d.ts:2117
 
 模型
 
@@ -144,7 +144,7 @@ Defined in: index.d.ts:2109
 
 > **SolidLine**: `10`
 
-Defined in: index.d.ts:2111
+Defined in: index.d.ts:2119
 
 纯色线
 
@@ -154,7 +154,7 @@ Defined in: index.d.ts:2111
 
 > **SolidPoint**: `0`
 
-Defined in: index.d.ts:2101
+Defined in: index.d.ts:2109
 
 纯色点
 
@@ -164,7 +164,7 @@ Defined in: index.d.ts:2101
 
 > **SolidRegion**: `20`
 
-Defined in: index.d.ts:2125
+Defined in: index.d.ts:2133
 
 纯色面
 
@@ -174,7 +174,7 @@ Defined in: index.d.ts:2125
 
 > **StripeRegion**: `22`
 
-Defined in: index.d.ts:2129
+Defined in: index.d.ts:2137
 
 条纹面
 
@@ -184,7 +184,7 @@ Defined in: index.d.ts:2129
 
 > **TerrainLabel**: `3`
 
-Defined in: index.d.ts:2107
+Defined in: index.d.ts:2115
 
 贴地文字
 
@@ -194,7 +194,7 @@ Defined in: index.d.ts:2107
 
 > **WallLine**: `17`
 
-Defined in: index.d.ts:2123
+Defined in: index.d.ts:2131
 
 墙线
 
@@ -204,6 +204,6 @@ Defined in: index.d.ts:2123
 
 > **WaterRegion**: `25`
 
-Defined in: index.d.ts:2135
+Defined in: index.d.ts:2143
 
 水面

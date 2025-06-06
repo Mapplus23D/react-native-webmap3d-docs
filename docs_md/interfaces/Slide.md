@@ -6,7 +6,7 @@
 
 # Interface: Slide
 
-Defined in: index.d.ts:691
+Defined in: index.d.ts:699
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:691
 
 > `optional` **addCount**: [`AddCount`](AddCount.md)
 
-Defined in: index.d.ts:711
+Defined in: index.d.ts:719
 
 添加的累计索引
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:711
 
 > **animation**: [`AnimationParam`](../type-aliases/AnimationParam.md)
 
-Defined in: index.d.ts:703
+Defined in: index.d.ts:711
 
 幻灯片内容是一条推演动画
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:703
 
 > `optional` **cover**: `string`
 
-Defined in: index.d.ts:693
+Defined in: index.d.ts:701
 
 航线封面
 
@@ -44,7 +44,7 @@ Defined in: index.d.ts:693
 
 > **id**: `number`
 
-Defined in: index.d.ts:705
+Defined in: index.d.ts:713
 
 动画id
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:705
 
 > **isAutoPlay**: `boolean`
 
-Defined in: index.d.ts:699
+Defined in: index.d.ts:707
 
 播放方式自动播放/点击播放
 
@@ -64,7 +64,7 @@ Defined in: index.d.ts:699
 
 > `optional` **screenLayerData**: [`ScreenLayer`](ScreenLayer.md)
 
-Defined in: index.d.ts:709
+Defined in: index.d.ts:717
 
 对应屏幕图层内容
 
@@ -76,7 +76,7 @@ Defined in: index.d.ts:709
 
 > `optional` **slideTransition**: [`SlideTransition`](SlideTransition.md)
 
-Defined in: index.d.ts:697
+Defined in: index.d.ts:705
 
 幻灯片翻页动画
 
@@ -86,7 +86,7 @@ Defined in: index.d.ts:697
 
 > **time**: `string`
 
-Defined in: index.d.ts:707
+Defined in: index.d.ts:715
 
 最近一次修改时间
 
@@ -96,7 +96,7 @@ Defined in: index.d.ts:707
 
 > **visible**: `boolean`
 
-Defined in: index.d.ts:695
+Defined in: index.d.ts:703
 
 当前幻灯片是否播放
 
@@ -106,6 +106,6 @@ Defined in: index.d.ts:695
 
 > **waitTime**: `number`
 
-Defined in: index.d.ts:701
+Defined in: index.d.ts:709
 
 播放延迟时间

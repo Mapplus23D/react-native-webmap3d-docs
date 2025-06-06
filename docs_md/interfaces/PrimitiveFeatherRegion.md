@@ -6,7 +6,7 @@
 
 # Interface: PrimitiveFeatherRegion
 
-Defined in: index.d.ts:2479
+Defined in: index.d.ts:2487
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:2479
 
 > `optional` **baseHeight**: `number`
 
-Defined in: index.d.ts:2493
+Defined in: index.d.ts:2501
 
 底部高度，贴地时无效
 
@@ -28,7 +28,7 @@ Defined in: index.d.ts:2493
 
 > `optional` **clampToGround**: `boolean`
 
-Defined in: index.d.ts:2489
+Defined in: index.d.ts:2497
 
 deprecated 废弃的贴地接口 当classificationType未定义时生效
 
@@ -38,7 +38,7 @@ deprecated 废弃的贴地接口 当classificationType未定义时生效
 
 > `optional` **classificationType**: [`ClassificationType`](../enumerations/ClassificationType.md)
 
-Defined in: index.d.ts:2487
+Defined in: index.d.ts:2495
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:2487
 
 > `optional` **color**: `string`
 
-Defined in: index.d.ts:2484
+Defined in: index.d.ts:2492
 
 面底色
 
@@ -56,7 +56,7 @@ Defined in: index.d.ts:2484
 
 > `optional` **distanceDisplayCondition**: [`DistanceDisplayCondition`](DistanceDisplayCondition.md)
 
-Defined in: index.d.ts:2147
+Defined in: index.d.ts:2155
 
 可见范围
 
@@ -70,7 +70,7 @@ Defined in: index.d.ts:2147
 
 > `optional` **edgeAlpha**: `number`
 
-Defined in: index.d.ts:2486
+Defined in: index.d.ts:2494
 
 羽化边缘透明度 区值0～1，默认值0.2
 
@@ -80,7 +80,7 @@ Defined in: index.d.ts:2486
 
 > **hierarchy**: [`Circle`](Circle.md) \| [`Rectangle`](Rectangle.md) \| [`PolygonHierarchy`](PolygonHierarchy.md)
 
-Defined in: index.d.ts:2482
+Defined in: index.d.ts:2490
 
 面节点
 
@@ -90,7 +90,7 @@ Defined in: index.d.ts:2482
 
 > `optional` **name**: `string`
 
-Defined in: index.d.ts:2150
+Defined in: index.d.ts:2158
 
 primitive 名称
 
@@ -104,7 +104,7 @@ primitive 名称
 
 > `optional` **properties**: `object`
 
-Defined in: index.d.ts:2152
+Defined in: index.d.ts:2160
 
 属性字段
 
@@ -122,7 +122,7 @@ Defined in: index.d.ts:2152
 
 > `optional` **show**: `boolean`
 
-Defined in: index.d.ts:2145
+Defined in: index.d.ts:2153
 
 是否显示，默认true
 
@@ -136,7 +136,7 @@ Defined in: index.d.ts:2145
 
 > `optional` **stRotation**: `number`
 
-Defined in: index.d.ts:2495
+Defined in: index.d.ts:2503
 
 贴图旋转角度
 
@@ -146,7 +146,7 @@ Defined in: index.d.ts:2495
 
 > `optional` **topHeight**: `number`
 
-Defined in: index.d.ts:2491
+Defined in: index.d.ts:2499
 
 水面高度,贴地时无效
 
@@ -156,7 +156,7 @@ Defined in: index.d.ts:2491
 
 > **type**: [`FeatherRegion`](../enumerations/PrimitiveType.md#featherregion)
 
-Defined in: index.d.ts:2480
+Defined in: index.d.ts:2488
 
 类型
 

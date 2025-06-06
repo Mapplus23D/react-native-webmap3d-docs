@@ -6,7 +6,7 @@
 
 # Interface: Circle
 
-Defined in: index.d.ts:1507
+Defined in: index.d.ts:1515
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1507
 
 > **center**: [`Vector3`](Vector3.md)
 
-Defined in: index.d.ts:1508
+Defined in: index.d.ts:1516
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:1508
 
 > `optional` **pointCount**: `number`
 
-Defined in: index.d.ts:1510
+Defined in: index.d.ts:1518
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: index.d.ts:1510
 
 > **radius**: `number`
 
-Defined in: index.d.ts:1509
+Defined in: index.d.ts:1517

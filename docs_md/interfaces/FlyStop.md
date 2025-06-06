@@ -6,7 +6,7 @@
 
 # Interface: FlyStop
 
-Defined in: index.d.ts:1073
+Defined in: index.d.ts:1081
 
 [FlyRoute](FlyRoute.md) 中站点参数转换后相机实际飞行经过的站点参数
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:1073
 
 > **duration**: `number`
 
-Defined in: index.d.ts:1081
+Defined in: index.d.ts:1089
 
 到下一个站点的时间
 
@@ -26,7 +26,7 @@ Defined in: index.d.ts:1081
 
 > **height**: `number`
 
-Defined in: index.d.ts:1079
+Defined in: index.d.ts:1087
 
 站点高度
 
@@ -36,7 +36,7 @@ Defined in: index.d.ts:1079
 
 > **latitude**: `number`
 
-Defined in: index.d.ts:1077
+Defined in: index.d.ts:1085
 
 站点纬度
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:1077
 
 > **longitude**: `number`
 
-Defined in: index.d.ts:1075
+Defined in: index.d.ts:1083
 
 站点经度
 
@@ -56,6 +56,6 @@ Defined in: index.d.ts:1075
 
 > **waitTime**: `number`
 
-Defined in: index.d.ts:1083
+Defined in: index.d.ts:1091
 
 在本站点停留的时间

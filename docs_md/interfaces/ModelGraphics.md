@@ -6,7 +6,7 @@
 
 # Interface: ModelGraphics
 
-Defined in: index.d.ts:1268
+Defined in: index.d.ts:1276
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1268
 
 > `optional` **distanceDisplayCondition**: [`DistanceDisplayCondition`](DistanceDisplayCondition.md)
 
-Defined in: index.d.ts:1276
+Defined in: index.d.ts:1284
 
 可见范围
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:1276
 
 > `optional` **heightReference**: [`HeightReference`](../enumerations/HeightReference.md)
 
-Defined in: index.d.ts:1280
+Defined in: index.d.ts:1288
 
 相对地形的位置
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:1280
 
 > `optional` **minimumPixelSize**: `number`
 
-Defined in: index.d.ts:1278
+Defined in: index.d.ts:1286
 
 最小可见像素大小
 
@@ -44,7 +44,7 @@ Defined in: index.d.ts:1278
 
 > `optional` **runAnimations**: `boolean`
 
-Defined in: index.d.ts:1282
+Defined in: index.d.ts:1290
 
 是否播放骨骼动画
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:1282
 
 > `optional` **scale**: `number`
 
-Defined in: index.d.ts:1272
+Defined in: index.d.ts:1280
 
 缩放
 
@@ -64,7 +64,7 @@ Defined in: index.d.ts:1272
 
 > `optional` **show**: `boolean` \| [`PropertyAnimation`](PropertyAnimation.md)\<`boolean`\>
 
-Defined in: index.d.ts:1274
+Defined in: index.d.ts:1282
 
 显隐
 
@@ -74,7 +74,7 @@ Defined in: index.d.ts:1274
 
 > `optional` **silhouetteColor**: `string`
 
-Defined in: index.d.ts:1285
+Defined in: index.d.ts:1293
 
 ***
 
@@ -82,7 +82,7 @@ Defined in: index.d.ts:1285
 
 > `optional` **silhouetteSize**: `number`
 
-Defined in: index.d.ts:1284
+Defined in: index.d.ts:1292
 
 模型轮廓
 
@@ -92,6 +92,6 @@ Defined in: index.d.ts:1284
 
 > `optional` **uri**: `string`
 
-Defined in: index.d.ts:1270
+Defined in: index.d.ts:1278
 
 gltf uri

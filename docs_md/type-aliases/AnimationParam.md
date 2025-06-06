@@ -8,7 +8,7 @@
 
 > **AnimationParam** = `object`
 
-Defined in: index.d.ts:714
+Defined in: index.d.ts:722
 
 地图动画
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:714
 
 > `optional` **audio**: [`AudioAnimationParam`](AudioAnimationParam.md)
 
-Defined in: index.d.ts:724
+Defined in: index.d.ts:732
 
 音频动画
 
@@ -28,7 +28,7 @@ Defined in: index.d.ts:724
 
 > `optional` **fly**: [`CameraAnimation`](CameraAnimation.md)
 
-Defined in: index.d.ts:716
+Defined in: index.d.ts:724
 
 相机飞行动画
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:716
 
 > `optional` **layer**: [`LayerAnimation`](LayerAnimation.md)[]
 
-Defined in: index.d.ts:732
+Defined in: index.d.ts:740
 
 影像/s3m/地形动画
 
@@ -48,7 +48,7 @@ Defined in: index.d.ts:732
 
 > `optional` **object**: [`ObjectAnimation`](ObjectAnimation.md)[]
 
-Defined in: index.d.ts:718
+Defined in: index.d.ts:726
 
 对象动画
 
@@ -58,7 +58,7 @@ Defined in: index.d.ts:718
 
 > `optional` **objectLayer**: [`ObjectLayerAnimation`](ObjectLayerAnimation.md)[]
 
-Defined in: index.d.ts:720
+Defined in: index.d.ts:728
 
 矢量对象图层动画
 
@@ -68,7 +68,7 @@ Defined in: index.d.ts:720
 
 > `optional` **particleLayer**: [`ParticleLayerAnimation`](ParticleLayerAnimation.md)[]
 
-Defined in: index.d.ts:722
+Defined in: index.d.ts:730
 
 粒子对象图层动画
 
@@ -78,7 +78,7 @@ Defined in: index.d.ts:722
 
 > `optional` **scene**: [`SceneAnimation`](SceneAnimation.md)[]
 
-Defined in: index.d.ts:730
+Defined in: index.d.ts:738
 
 场景动画
 
@@ -88,7 +88,7 @@ Defined in: index.d.ts:730
 
 > `optional` **screen**: [`ScreenAnimation`](ScreenAnimation.md)[] \| [`ScreenAnimationParam`](../interfaces/ScreenAnimationParam.md)
 
-Defined in: index.d.ts:728
+Defined in: index.d.ts:736
 
 屏幕动画
 
@@ -98,6 +98,6 @@ Defined in: index.d.ts:728
 
 > `optional` **sound**: [`SoundAnimation`](../interfaces/SoundAnimation.md)[]
 
-Defined in: index.d.ts:726
+Defined in: index.d.ts:734
 
 音效动画

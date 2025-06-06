@@ -6,7 +6,7 @@
 
 # Enumeration: LineType
 
-Defined in: index.d.ts:1412
+Defined in: index.d.ts:1420
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1412
 
 > **arrow**: `4`
 
-Defined in: index.d.ts:1420
+Defined in: index.d.ts:1428
 
 箭头线
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:1420
 
 > **contour**: `3`
 
-Defined in: index.d.ts:1418
+Defined in: index.d.ts:1426
 
 轮廓线
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:1418
 
 > **dashed**: `2`
 
-Defined in: index.d.ts:1416
+Defined in: index.d.ts:1424
 
 虚线型
 
@@ -44,7 +44,7 @@ Defined in: index.d.ts:1416
 
 > **dynamic**: `7`
 
-Defined in: index.d.ts:1426
+Defined in: index.d.ts:1434
 
 动态线
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:1426
 
 > **halo**: `5`
 
-Defined in: index.d.ts:1422
+Defined in: index.d.ts:1430
 
 光晕线
 
@@ -64,7 +64,7 @@ Defined in: index.d.ts:1422
 
 > **solid**: `1`
 
-Defined in: index.d.ts:1414
+Defined in: index.d.ts:1422
 
 实线
 
@@ -74,6 +74,6 @@ Defined in: index.d.ts:1414
 
 > **wake**: `6`
 
-Defined in: index.d.ts:1424
+Defined in: index.d.ts:1432
 
 尾迹线

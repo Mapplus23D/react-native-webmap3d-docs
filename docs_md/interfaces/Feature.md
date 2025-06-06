@@ -6,7 +6,7 @@
 
 # Interface: Feature\<G, P\>
 
-Defined in: index.d.ts:3068
+Defined in: index.d.ts:3076
 
 Feature
 
@@ -34,7 +34,7 @@ Every Feature object is a GeoJSON object no matter where it occurs in a GeoJSON 
 
 > `optional` **bbox**: [`BBox`](../type-aliases/BBox.md)
 
-Defined in: index.d.ts:2975
+Defined in: index.d.ts:2983
 
 Bounding box of the coordinate range of the object's Geometries, Features, or Feature Collections.
 https://tools.ietf.org/html/rfc7946#section-5
@@ -49,7 +49,7 @@ https://tools.ietf.org/html/rfc7946#section-5
 
 > **geometry**: `G`
 
-Defined in: index.d.ts:3070
+Defined in: index.d.ts:3078
 
 ***
 
@@ -57,7 +57,7 @@ Defined in: index.d.ts:3070
 
 > `optional` **id**: [`Id`](../type-aliases/Id.md)
 
-Defined in: index.d.ts:3075
+Defined in: index.d.ts:3083
 
 A value that uniquely identifies this feature in a
 https://tools.ietf.org/html/rfc7946#section-3.2.
@@ -68,7 +68,7 @@ https://tools.ietf.org/html/rfc7946#section-3.2.
 
 > **properties**: `P`
 
-Defined in: index.d.ts:3079
+Defined in: index.d.ts:3087
 
 Properties associated with this feature.
 
@@ -78,7 +78,7 @@ Properties associated with this feature.
 
 > **type**: `"Feature"`
 
-Defined in: index.d.ts:3069
+Defined in: index.d.ts:3077
 
 Specifies the type of GeoJSON object.
 

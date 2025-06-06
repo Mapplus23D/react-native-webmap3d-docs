@@ -6,7 +6,7 @@
 
 # Enumeration: HeightReference
 
-Defined in: index.d.ts:1290
+Defined in: index.d.ts:1298
 
 Represents the position relative to the terrain.
 
@@ -16,7 +16,7 @@ Represents the position relative to the terrain.
 
 > **CLAMP\_TO\_GROUND**: `1`
 
-Defined in: index.d.ts:1298
+Defined in: index.d.ts:1306
 
 The position is clamped to the terrain.
 
@@ -26,7 +26,7 @@ The position is clamped to the terrain.
 
 > **NONE**: `0`
 
-Defined in: index.d.ts:1294
+Defined in: index.d.ts:1302
 
 The position is absolute.
 
@@ -36,6 +36,6 @@ The position is absolute.
 
 > **RELATIVE\_TO\_GROUND**: `2`
 
-Defined in: index.d.ts:1302
+Defined in: index.d.ts:1310
 
 The position height is the height above the terrain.

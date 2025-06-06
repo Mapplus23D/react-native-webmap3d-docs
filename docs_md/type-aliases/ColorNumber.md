@@ -8,6 +8,6 @@
 
 > **ColorNumber** = \[`number`, `number`, `number`, `number`\]
 
-Defined in: index.d.ts:1941
+Defined in: index.d.ts:1949
 
 颜色。分别对应 rgba, 数字范围 0 - 1

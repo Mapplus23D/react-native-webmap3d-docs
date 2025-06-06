@@ -6,7 +6,7 @@
 
 # Interface: FlyCircleStop
 
-Defined in: index.d.ts:934
+Defined in: index.d.ts:942
 
 绕点飞行站点参数
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:934
 
 > **centerHeight**: `number`
 
-Defined in: index.d.ts:954
+Defined in: index.d.ts:962
 
 要环绕的点的高度
 
@@ -26,7 +26,7 @@ Defined in: index.d.ts:954
 
 > **centerLatitude**: `number`
 
-Defined in: index.d.ts:952
+Defined in: index.d.ts:960
 
 要环绕的点的纬度
 
@@ -36,7 +36,7 @@ Defined in: index.d.ts:952
 
 > **centerLongitude**: `number`
 
-Defined in: index.d.ts:950
+Defined in: index.d.ts:958
 
 要环绕的点的经度
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:950
 
 > **circleTime**: `number`
 
-Defined in: index.d.ts:940
+Defined in: index.d.ts:948
 
 绕点飞行的时间
 
@@ -56,7 +56,7 @@ Defined in: index.d.ts:940
 
 > **degress**: `number`
 
-Defined in: index.d.ts:960
+Defined in: index.d.ts:968
 
 要旋转的角度。如 360 表示绕点旋转一周。
 
@@ -68,7 +68,7 @@ Defined in: index.d.ts:960
 
 > **duration**: `number`
 
-Defined in: index.d.ts:942
+Defined in: index.d.ts:950
 
 绕点飞行后到下一站点的时间
 
@@ -78,7 +78,7 @@ Defined in: index.d.ts:942
 
 > `optional` **startHeading**: `number`
 
-Defined in: index.d.ts:962
+Defined in: index.d.ts:970
 
 起始朝向角度
 
@@ -88,7 +88,7 @@ Defined in: index.d.ts:962
 
 > **startHeight**: `number`
 
-Defined in: index.d.ts:948
+Defined in: index.d.ts:956
 
 开始点高度
 
@@ -98,7 +98,7 @@ Defined in: index.d.ts:948
 
 > **startLatitude**: `number`
 
-Defined in: index.d.ts:946
+Defined in: index.d.ts:954
 
 开始点纬度
 
@@ -108,7 +108,7 @@ Defined in: index.d.ts:946
 
 > **startLongitude**: `number`
 
-Defined in: index.d.ts:944
+Defined in: index.d.ts:952
 
 开始点经度
 
@@ -118,7 +118,7 @@ Defined in: index.d.ts:944
 
 > `optional` **startTilt**: `number`
 
-Defined in: index.d.ts:964
+Defined in: index.d.ts:972
 
 俯仰角度
 
@@ -128,7 +128,7 @@ Defined in: index.d.ts:964
 
 > **stopName**: `string`
 
-Defined in: index.d.ts:936
+Defined in: index.d.ts:944
 
 站点名
 
@@ -138,6 +138,6 @@ Defined in: index.d.ts:936
 
 > **waitTime**: `number`
 
-Defined in: index.d.ts:938
+Defined in: index.d.ts:946
 
 飞行前停留的时间

@@ -308,7 +308,7 @@
 <blockquote>
 <p><strong>ICamera</strong> = <code>object</code></p>
 </blockquote>
-<p>Defined in: index.d.ts:2644</p>
+
 <p>场景相机</p>
 <p>可以移动/固定视角，缩放，指北等功能</p>
 <h2>Properties</h2>
@@ -316,7 +316,7 @@
 <blockquote>
 <p><strong>compassPointingNorth</strong>: () =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:2699</p>
+
 <p>罗盘指北</p>
 <h4>Returns</h4>
 <p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
@@ -326,7 +326,7 @@
 <blockquote>
 <p><strong>enableRotate</strong>: (<code>enable</code>) =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:2766</p>
+
 <p>开启或关闭相机旋转</p>
 <p>在 2D 或 3D 模式下有效</p>
 <h4>Parameters</h4>
@@ -340,7 +340,7 @@
 <blockquote>
 <p><strong>enableTilt</strong>: (<code>enable</code>) =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:2773</p>
+
 <p>开启或关闭相机俯仰</p>
 <p>在 3D 或 Columbus(2.5D) 模式下有效</p>
 <h4>Parameters</h4>
@@ -354,7 +354,7 @@
 <blockquote>
 <p><strong>enableTranslate</strong>: (<code>enable</code>) =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:2780</p>
+
 <p>开启或关闭相机移动</p>
 <p>在 2D 或 Columbus(2.5D) 模式下有效</p>
 <h4>Parameters</h4>
@@ -368,7 +368,7 @@
 <blockquote>
 <p><strong>enableZoom</strong>: (<code>enable</code>) =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:2786</p>
+
 <p>开启或关闭相机缩放</p>
 <h4>Parameters</h4>
 <h5>enable</h5>
@@ -381,7 +381,7 @@
 <blockquote>
 <p><strong>flyForward</strong>: (<code>byDistance</code>, <code>byLookDirection?</code>, <code>bySecends?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:2664</p>
+
 <p>相机拉近（沿相机朝向）
 byDistance 拉近距离（单位米，正表示拉近，负表示拉远）
 byLookDirection 是否沿着视野方向（默认否）
@@ -401,7 +401,7 @@ bySecends 相机移动过场动画时间（单位秒，默认值1）</p>
 <blockquote>
 <p><strong>flyRight</strong>: (<code>byDistance</code>, <code>bySecends?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:2671</p>
+
 <p>相机平移（沿相机右侧）
 byDistance 平移距离（单位米，正表示右，负表示左）
 bySecends 相机移动过场动画时间（单位秒，默认值1）</p>
@@ -418,7 +418,7 @@ bySecends 相机移动过场动画时间（单位秒，默认值1）</p>
 <blockquote>
 <p><strong>flyTo</strong>: (<code>camera</code>, <code>bySecends?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:2685</p>
+
 <p>相机移动
 Camera移动到的目标相机
 bySecends 相机移动过场动画时间（单位秒，默认值1）</p>
@@ -435,7 +435,7 @@ bySecends 相机移动过场动画时间（单位秒，默认值1）</p>
 <blockquote>
 <p><strong>flyUp</strong>: (<code>byDistance</code>, <code>bySecends?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:2678</p>
+
 <p>相机平移（沿相机上方）
 byDistance 平移距离（单位米，正表示上，负表示下）
 bySecends 相机移动过场动画时间（单位秒，默认值1）</p>
@@ -452,7 +452,7 @@ bySecends 相机移动过场动画时间（单位秒，默认值1）</p>
 <blockquote>
 <p><strong>getCameraParam</strong>: () =&gt; <a href="../interfaces/Camera.html"><code>Camera</code></a> | <code>null</code></p>
 </blockquote>
-<p>Defined in: index.d.ts:2737</p>
+
 <p>获取相机位置参数</p>
 <h4>Returns</h4>
 <p><a href="../interfaces/Camera.html"><code>Camera</code></a> | <code>null</code></p>
@@ -462,7 +462,7 @@ bySecends 相机移动过场动画时间（单位秒，默认值1）</p>
 <blockquote>
 <p><strong>getPositionInCameraSpace</strong>: (<code>position</code>) =&gt; <a href="../interfaces/Vector3.html"><code>Vector3</code></a></p>
 </blockquote>
-<p>Defined in: index.d.ts:2759</p>
+
 <p>获取世界点在相机坐标系下的坐标</p>
 <h4>Parameters</h4>
 <h5>position</h5>
@@ -476,7 +476,7 @@ bySecends 相机移动过场动画时间（单位秒，默认值1）</p>
 <blockquote>
 <p><strong>getRelativePosition</strong>: (<code>param</code>) =&gt; <a href="../interfaces/Vector3.html"><code>Vector3</code></a> | <code>null</code></p>
 </blockquote>
-<p>Defined in: index.d.ts:2742</p>
+
 <p>获取相机相对位置参数</p>
 <h4>Parameters</h4>
 <h5>param</h5>
@@ -494,7 +494,7 @@ bySecends 相机移动过场动画时间（单位秒，默认值1）</p>
 <blockquote>
 <p><strong>getViewBounds</strong>: () =&gt; <a href="../interfaces/Bounds.html"><code>Bounds</code></a> | <code>undefined</code></p>
 </blockquote>
-<p>Defined in: index.d.ts:2811</p>
+
 <p>获取当前视角下地球可视的经纬度范围
 若地球不可见，则返回 undefined</p>
 <h4>Returns</h4>
@@ -504,7 +504,7 @@ bySecends 相机移动过场动画时间（单位秒，默认值1）</p>
 <blockquote>
 <p><strong>heading</strong>: (<code>angle</code>, <code>bySecends?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:2712</p>
+
 <p>相机朝向
 angle与北夹角角度
 bySecond转向时间</p>
@@ -521,7 +521,7 @@ bySecond转向时间</p>
 <blockquote>
 <p><strong>headingAt</strong>: (<code>angle</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:2705</p>
+
 <p>罗盘指向（视野焦点不变，若无焦点转向失败）
 angle与北夹角角度</p>
 <h4>Parameters</h4>
@@ -535,7 +535,7 @@ angle与北夹角角度</p>
 <blockquote>
 <p><strong>isEnableRotate</strong>: () =&gt; <code>boolean</code></p>
 </blockquote>
-<p>Defined in: index.d.ts:2791</p>
+
 <p>是否开启相机旋转</p>
 <h4>Returns</h4>
 <p><code>boolean</code></p>
@@ -545,7 +545,7 @@ angle与北夹角角度</p>
 <blockquote>
 <p><strong>isEnableTilt</strong>: () =&gt; <code>boolean</code></p>
 </blockquote>
-<p>Defined in: index.d.ts:2796</p>
+
 <p>是否开启相机俯仰</p>
 <h4>Returns</h4>
 <p><code>boolean</code></p>
@@ -555,7 +555,7 @@ angle与北夹角角度</p>
 <blockquote>
 <p><strong>isEnableTranslate</strong>: () =&gt; <code>boolean</code></p>
 </blockquote>
-<p>Defined in: index.d.ts:2801</p>
+
 <p>是否开启相机移动</p>
 <h4>Returns</h4>
 <p><code>boolean</code></p>
@@ -565,7 +565,7 @@ angle与北夹角角度</p>
 <blockquote>
 <p><strong>isEnableZoom</strong>: () =&gt; <code>boolean</code></p>
 </blockquote>
-<p>Defined in: index.d.ts:2806</p>
+
 <p>是否开启相机缩放</p>
 <h4>Returns</h4>
 <p><code>boolean</code></p>
@@ -575,7 +575,7 @@ angle与北夹角角度</p>
 <blockquote>
 <p><strong>pitch</strong>: (<code>angle</code>, <code>bySecends?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:2725</p>
+
 <p>相机俯仰
 angle角度，0为平视，-90为top-down视角
 bySecond转向时间</p>
@@ -592,7 +592,7 @@ bySecond转向时间</p>
 <blockquote>
 <p><strong>pitchAt</strong>: (<code>angle</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:2718</p>
+
 <p>俯仰角（视野焦点不变，若无焦点转向失败）
 angle角度，0为平视，-90为top-down视角</p>
 <h4>Parameters</h4>
@@ -606,7 +606,7 @@ angle角度，0为平视，-90为top-down视角</p>
 <blockquote>
 <p><strong>setCameraRadian</strong>: (<code>camera</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:2691</p>
+
 <p>相机弧度
 Camera弧度</p>
 <h4>Parameters</h4>
@@ -623,7 +623,7 @@ Camera弧度</p>
 <blockquote>
 <p><strong>translateRelativeCamera</strong>: (<code>position</code>, <code>right</code>, <code>forward</code>) =&gt; <a href="../interfaces/Vector3.html"><code>Vector3</code></a> | <code>null</code></p>
 </blockquote>
-<p>Defined in: index.d.ts:2753</p>
+
 <p>相对相机在球面移动</p>
 <h4>Parameters</h4>
 <h5>position</h5>
@@ -640,7 +640,7 @@ Camera弧度</p>
 <blockquote>
 <p><strong>viewEntire</strong>: (<code>bySecends?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:2650</p>
+
 <p>全幅显示球
 bySecends 当前相机到全幅相机过场动画时间（单位秒，默认值1）</p>
 <h4>Parameters</h4>
@@ -654,7 +654,7 @@ bySecends 当前相机到全幅相机过场动画时间（单位秒，默认值1
 <blockquote>
 <p><strong>viewEntireCurrent</strong>: (<code>duration?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:2656</p>
+
 <p>飞行到当前位置的上空，使地球全幅</p>
 <h4>Parameters</h4>
 <h5>duration?</h5>
@@ -668,7 +668,7 @@ bySecends 当前相机到全幅相机过场动画时间（单位秒，默认值1
 <blockquote>
 <p><strong>zoom</strong>: (<code>byRatio</code>, <code>bySecends?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:2732</p>
+
 <p>放大/缩小（按倍数拉近/拉远相机）
 byRatio 放大倍数（正表示放大，负表示缩小）
 bySecends 相机移动过场动画时间（单位秒，默认值1）</p>

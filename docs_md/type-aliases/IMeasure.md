@@ -8,7 +8,7 @@
 
 > **IMeasure** = `object`
 
-Defined in: index.d.ts:2859
+Defined in: index.d.ts:2867
 
 量算
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:2859
 
 > **addPoint**: (`position`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:2887
+Defined in: index.d.ts:2895
 
 添加测量点
 
@@ -46,7 +46,7 @@ Promise<void>
 
 > **beginMeasure**: (`measureTypeParam`, `Param`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:2866
+Defined in: index.d.ts:2874
 
 开始测量
 
@@ -76,7 +76,7 @@ boolean 是否执行完成
 
 > **clear**: () => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:2881
+Defined in: index.d.ts:2889
 
 清空所有测量
 
@@ -92,7 +92,7 @@ Promise<void>
 
 > **completed**: () => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:2876
+Defined in: index.d.ts:2884
 
 提交测量 （结束当前测量，可开始下一测量）
 
@@ -108,7 +108,7 @@ Promise<void>
 
 > **getPreviewMeasureResult**: () => `Promise`\<`number` \| [`MeasureResultDVHparam`](../interfaces/MeasureResultDVHparam.md)\>
 
-Defined in: index.d.ts:2899
+Defined in: index.d.ts:2907
 
 获取预览的量算结果， 调用之前需要先调用updatePreviewPoint方法
 
@@ -124,7 +124,7 @@ Defined in: index.d.ts:2899
 
 > **undo**: () => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:2871
+Defined in: index.d.ts:2879
 
 撤销当前测量（已提交的测量，不可撤销)
 
@@ -140,7 +140,7 @@ Promise<void>
 
 > **updatePreviewPoint**: (`position`, `isShowPreview`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:2894
+Defined in: index.d.ts:2902
 
 添加预览点
 

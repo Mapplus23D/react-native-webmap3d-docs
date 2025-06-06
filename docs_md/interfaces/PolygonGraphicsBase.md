@@ -6,7 +6,7 @@
 
 # Interface: PolygonGraphicsBase
 
-Defined in: index.d.ts:1545
+Defined in: index.d.ts:1553
 
 ## Extended by
 
@@ -23,7 +23,7 @@ Defined in: index.d.ts:1545
 
 > `optional` **classificationType**: [`ClassificationType`](../enumerations/ClassificationType.md)
 
-Defined in: index.d.ts:1549
+Defined in: index.d.ts:1557
 
 贴地方式 undefined === ClassificationType.NONE
 
@@ -33,7 +33,7 @@ Defined in: index.d.ts:1549
 
 > `optional` **distanceDisplayCondition**: [`DistanceDisplayCondition`](DistanceDisplayCondition.md)
 
-Defined in: index.d.ts:1559
+Defined in: index.d.ts:1567
 
 可见范围
 
@@ -43,7 +43,7 @@ Defined in: index.d.ts:1559
 
 > `optional` **extrudedHeight**: `number`
 
-Defined in: index.d.ts:1563
+Defined in: index.d.ts:1571
 
 白膜高度
 
@@ -53,7 +53,7 @@ Defined in: index.d.ts:1563
 
 > `optional` **height**: `number`
 
-Defined in: index.d.ts:1561
+Defined in: index.d.ts:1569
 
 离地高度
 
@@ -63,7 +63,7 @@ Defined in: index.d.ts:1561
 
 > `optional` **hierarchy**: [`Circle`](Circle.md) \| [`Rectangle`](Rectangle.md) \| [`PolygonHierarchy`](PolygonHierarchy.md)
 
-Defined in: index.d.ts:1547
+Defined in: index.d.ts:1555
 
 positions
 
@@ -73,7 +73,7 @@ positions
 
 > `optional` **outline**: `boolean`
 
-Defined in: index.d.ts:1551
+Defined in: index.d.ts:1559
 
 是否描边
 
@@ -83,7 +83,7 @@ Defined in: index.d.ts:1551
 
 > `optional` **outlineColor**: `string`
 
-Defined in: index.d.ts:1555
+Defined in: index.d.ts:1563
 
 描边色，默认BLACK	*
 
@@ -93,7 +93,7 @@ Defined in: index.d.ts:1555
 
 > `optional` **outlineWidth**: `number`
 
-Defined in: index.d.ts:1553
+Defined in: index.d.ts:1561
 
 描边宽度，默认1.0
 
@@ -103,7 +103,7 @@ Defined in: index.d.ts:1553
 
 > `optional` **show**: `boolean` \| [`PropertyAnimation`](PropertyAnimation.md)\<`boolean`\>
 
-Defined in: index.d.ts:1557
+Defined in: index.d.ts:1565
 
 显隐
 
@@ -113,6 +113,6 @@ Defined in: index.d.ts:1557
 
 > `optional` **stRotation**: `number`
 
-Defined in: index.d.ts:1565
+Defined in: index.d.ts:1573
 
 贴图旋转角度

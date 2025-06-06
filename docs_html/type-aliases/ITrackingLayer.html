@@ -308,7 +308,7 @@
 <blockquote>
 <p><strong>ITrackingLayer</strong> = <code>object</code></p>
 </blockquote>
-<p>Defined in: index.d.ts:4789</p>
+
 <p>跟踪图层</p>
 <p>可以存放临时数据，例如：存放搜索结果，绘制对象（实线，虚线，曲线，矩形，圆，多边形），编辑对象（新增节点，删除节点，移动节点）</p>
 <h2>Properties</h2>
@@ -316,7 +316,7 @@
 <blockquote>
 <p><strong>addEntity</strong>: (<code>entity</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:4799</p>
+
 <p>临时层添加对象 ,id不为空</p>
 <h4>Parameters</h4>
 <h5>entity</h5>
@@ -329,7 +329,7 @@
 <blockquote>
 <p><strong>addPolygonOutLine</strong>: (<code>layerName</code>, <code>entityId</code>) =&gt; <code>Promise</code>&lt;<code>string</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:4806</p>
+
 <p>临时层高亮面轮廓
 layerName 图层名
 entityId 对象id</p>
@@ -346,7 +346,7 @@ entityId 对象id</p>
 <blockquote>
 <p><strong>createAddVertex</strong>: (<code>vertexPosition</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:4851</p>
+
 <h4>Parameters</h4>
 <h5>vertexPosition</h5>
 <p><a href="../interfaces/Vector3.html"><code>Vector3</code></a> | <a href="../interfaces/Vector2.html"><code>Vector2</code></a></p>
@@ -357,7 +357,7 @@ entityId 对象id</p>
 <blockquote>
 <p><strong>createEnd</strong>: () =&gt; <code>Promise</code>&lt;<a href="../interfaces/Vector3.html"><code>Vector3</code></a>[]&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:4852</p>
+
 <h4>Returns</h4>
 <p><code>Promise</code>&lt;<a href="../interfaces/Vector3.html"><code>Vector3</code></a>[]&gt;</p>
 <hr>
@@ -365,7 +365,7 @@ entityId 对象id</p>
 <blockquote>
 <p><strong>createPolygon</strong>: (<code>classificationType</code>, <code>positions?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:4850</p>
+
 <h4>Parameters</h4>
 <h5>classificationType</h5>
 <p><a href="../enumerations/ClassificationType.html"><code>ClassificationType</code></a></p>
@@ -378,7 +378,7 @@ entityId 对象id</p>
 <blockquote>
 <p><strong>createPolyline</strong>: (<code>classificationType</code>, <code>positions?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:4849</p>
+
 <p>手绘使用添加接口</p>
 <h4>Parameters</h4>
 <h5>classificationType</h5>
@@ -392,7 +392,7 @@ entityId 对象id</p>
 <blockquote>
 <p><strong>currentEditVertex</strong>: () =&gt; <a href="../interfaces/Vector3.html"><code>Vector3</code></a>[] | <a href="../interfaces/Circle.html"><code>Circle</code></a> | <a href="../interfaces/Rectangle.html"><code>Rectangle</code></a> | <a href="../interfaces/Spline.html"><code>Spline</code></a></p>
 </blockquote>
-<p>Defined in: index.d.ts:4979</p>
+
 <p>获取当前编辑结果</p>
 <h4>Returns</h4>
 <p><a href="../interfaces/Vector3.html"><code>Vector3</code></a>[] | <a href="../interfaces/Circle.html"><code>Circle</code></a> | <a href="../interfaces/Rectangle.html"><code>Rectangle</code></a> | <a href="../interfaces/Spline.html"><code>Spline</code></a></p>
@@ -402,7 +402,7 @@ entityId 对象id</p>
 <blockquote>
 <p><strong>editAddVertex</strong>: (<code>vertexPosition</code>, <code>vertexIndex?</code>) =&gt; <code>boolean</code></p>
 </blockquote>
-<p>Defined in: index.d.ts:4948</p>
+
 <p>添加顶点</p>
 <h4>Parameters</h4>
 <h5>vertexPosition</h5>
@@ -419,7 +419,7 @@ entityId 对象id</p>
 <blockquote>
 <p><strong>editCircle</strong>: (<code>classificationType</code>, <code>isFilled</code>, <code>center?</code>, <code>radius?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:4879</p>
+
 <p>开始圆</p>
 <h4>Parameters</h4>
 <h5>classificationType</h5>
@@ -442,7 +442,7 @@ entityId 对象id</p>
 <blockquote>
 <p><strong>editEnd</strong>: () =&gt; <a href="../interfaces/Vector3.html"><code>Vector3</code></a>[] | <a href="../interfaces/Circle.html"><code>Circle</code></a> | <a href="../interfaces/Rectangle.html"><code>Rectangle</code></a> | <a href="../interfaces/Spline.html"><code>Spline</code></a></p>
 </blockquote>
-<p>Defined in: index.d.ts:4984</p>
+
 <p>结束编辑</p>
 <h4>Returns</h4>
 <p><a href="../interfaces/Vector3.html"><code>Vector3</code></a>[] | <a href="../interfaces/Circle.html"><code>Circle</code></a> | <a href="../interfaces/Rectangle.html"><code>Rectangle</code></a> | <a href="../interfaces/Spline.html"><code>Spline</code></a></p>
@@ -452,7 +452,7 @@ entityId 对象id</p>
 <blockquote>
 <p><strong>editMoveVertex</strong>: (<code>vertexPosition</code>, <code>vertexIndex?</code>) =&gt; <code>boolean</code></p>
 </blockquote>
-<p>Defined in: index.d.ts:4955</p>
+
 <p>移动顶点</p>
 <h4>Parameters</h4>
 <h5>vertexPosition</h5>
@@ -468,7 +468,7 @@ entityId 对象id</p>
 <blockquote>
 <p><strong>editPickSegment</strong>: (<code>screenPosition</code>) =&gt; <code>object</code></p>
 </blockquote>
-<p>Defined in: index.d.ts:4916</p>
+
 <p>vertex0  segment0  vertex1  segment1  vertex2     ...    vertexN
      |        |         |        |          |                   |
      <em>——————————————————</em>———————————————————<em>———————————————————</em>
@@ -494,7 +494,7 @@ entityId 对象id</p>
 <blockquote>
 <p><strong>editPickVertex</strong>: (<code>screenPosition</code>) =&gt; <code>number</code></p>
 </blockquote>
-<p>Defined in: index.d.ts:4904</p>
+
 <p>通过屏幕点拾取编辑对象顶点索引</p>
 <h4>Parameters</h4>
 <h5>screenPosition</h5>
@@ -507,7 +507,7 @@ entityId 对象id</p>
 <blockquote>
 <p><strong>editPolygon</strong>: (<code>classificationType</code>, <code>positions?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:4870</p>
+
 <p>开始面编辑</p>
 <h4>Parameters</h4>
 <h5>classificationType</h5>
@@ -524,7 +524,7 @@ entityId 对象id</p>
 <blockquote>
 <p><strong>editPolyline</strong>: (<code>classificationType</code>, <code>positions?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:4863</p>
+
 <p>开始线编辑</p>
 <h4>Parameters</h4>
 <h5>classificationType</h5>
@@ -541,7 +541,7 @@ entityId 对象id</p>
 <blockquote>
 <p><strong>editRectangle</strong>: (<code>classificationType</code>, <code>isFilled</code>, <code>center?</code>, <code>heading?</code>, <code>w?</code>, <code>h?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:4889</p>
+
 <p>开始矩形</p>
 <h4>Parameters</h4>
 <h5>classificationType</h5>
@@ -568,7 +568,7 @@ entityId 对象id</p>
 <blockquote>
 <p><strong>editRemoveVertex</strong>: (<code>vertexIndex?</code>) =&gt; <code>boolean</code></p>
 </blockquote>
-<p>Defined in: index.d.ts:4941</p>
+
 <p>删除顶点</p>
 <h4>Parameters</h4>
 <h5>vertexIndex?</h5>
@@ -582,7 +582,7 @@ entityId 对象id</p>
 <blockquote>
 <p><strong>editSpline</strong>: (<code>classificationType</code>, <code>splineType</code>, <code>countPerSegment?</code>, <code>positions?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:4898</p>
+
 <p>开始Spline</p>
 <h4>Parameters</h4>
 <h5>classificationType</h5>
@@ -605,7 +605,7 @@ entityId 对象id</p>
 <blockquote>
 <p><strong>endEditTest</strong>: () =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:4974</p>
+
 <p>结束预览</p>
 <h4>Returns</h4>
 <p><code>Promise</code>&lt;<code>void</code>&gt;</p>
@@ -614,7 +614,7 @@ entityId 对象id</p>
 <blockquote>
 <p><strong>flyTo</strong>: (<code>name</code>, <code>duration?</code>) =&gt; <code>void</code></p>
 </blockquote>
-<p>Defined in: index.d.ts:4845</p>
+
 <p>飞行到指定对象上</p>
 <h4>Parameters</h4>
 <h5>name</h5>
@@ -628,7 +628,7 @@ entityId 对象id</p>
 <blockquote>
 <p><strong>getAllTrackingIds</strong>: () =&gt; <code>string</code>[]</p>
 </blockquote>
-<p>Defined in: index.d.ts:4841</p>
+
 <p>获取所有tracking对象id</p>
 <h4>Returns</h4>
 <p><code>string</code>[]</p>
@@ -637,7 +637,7 @@ entityId 对象id</p>
 <blockquote>
 <p><strong>getEditVertexIndex</strong>: () =&gt; <code>Promise</code>&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:4930</p>
+
 <p>获取编辑点</p>
 <h4>Returns</h4>
 <p><code>Promise</code>&lt;<code>number</code>&gt;</p>
@@ -647,7 +647,7 @@ entityId 对象id</p>
 <blockquote>
 <p><strong>getEditVertexPosition</strong>: () =&gt; <a href="../interfaces/Vector3.html"><code>Vector3</code></a> | <code>undefined</code></p>
 </blockquote>
-<p>Defined in: index.d.ts:4935</p>
+
 <p>获取编辑点坐标</p>
 <h4>Returns</h4>
 <p><a href="../interfaces/Vector3.html"><code>Vector3</code></a> | <code>undefined</code></p>
@@ -657,7 +657,7 @@ entityId 对象id</p>
 <blockquote>
 <p><strong>getEntity</strong>: (<code>entityId</code>) =&gt; <code>Promise</code>&lt;<a href="../interfaces/Entity.html"><code>Entity</code></a> | <code>undefined</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:4831</p>
+
 <p>临时层获取对象对象</p>
 <h4>Parameters</h4>
 <h5>entityId</h5>
@@ -671,7 +671,7 @@ entityId 对象id</p>
 <blockquote>
 <p><strong>onTrackingLayer</strong>: (<code>entityId</code>) =&gt; <code>string</code> | <code>undefined</code></p>
 </blockquote>
-<p>Defined in: index.d.ts:4837</p>
+
 <p>判断对象是否在临时层</p>
 <h4>Parameters</h4>
 <h5>entityId</h5>
@@ -685,7 +685,7 @@ entityId 对象id</p>
 <blockquote>
 <p><strong>removeAll</strong>: () =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:4794</p>
+
 <p>清空临时层</p>
 <h4>Returns</h4>
 <p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
@@ -695,7 +695,7 @@ entityId 对象id</p>
 <blockquote>
 <p><strong>removeEntity</strong>: (<code>entityId</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:4825</p>
+
 <p>临时层删除对象</p>
 <h4>Parameters</h4>
 <h5>entityId</h5>
@@ -709,7 +709,7 @@ entityId 对象id</p>
 <blockquote>
 <p><strong>setEditVertexIndex</strong>: (<code>vertexIndex</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:4925</p>
+
 <p>设置编辑点（并高亮之）</p>
 <h4>Parameters</h4>
 <h5>vertexIndex</h5>
@@ -723,7 +723,7 @@ entityId 对象id</p>
 <blockquote>
 <p><strong>testEditAddVertex</strong>: (<code>vertexPosition</code>, <code>vertexIndex?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:4962</p>
+
 <p>预添加</p>
 <h4>Parameters</h4>
 <h5>vertexPosition</h5>
@@ -739,7 +739,7 @@ entityId 对象id</p>
 <blockquote>
 <p><strong>testEditMoveVertex</strong>: (<code>vertexPosition</code>, <code>vertexIndex?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:4969</p>
+
 <p>预移动</p>
 <h4>Parameters</h4>
 <h5>vertexPosition</h5>
@@ -755,7 +755,7 @@ entityId 对象id</p>
 <blockquote>
 <p><strong>translateEntity</strong>: (<code>entityId</code>, <code>from</code>, <code>to</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:4985</p>
+
 <h4>Parameters</h4>
 <h5>entityId</h5>
 <p><code>string</code></p>
@@ -770,7 +770,7 @@ entityId 对象id</p>
 <blockquote>
 <p><strong>updateEntityDelete</strong>: (<code>entityId</code>, <code>type</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:4819</p>
+
 <p>临时层更新删除对象部分内容</p>
 <h4>Parameters</h4>
 <h5>entityId</h5>
@@ -787,7 +787,7 @@ entityId 对象id</p>
 <blockquote>
 <p><strong>updateEntityModify</strong>: (<code>entity</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:4812</p>
+
 <p>临时层更新对象</p>
 <h4>Parameters</h4>
 <h5>entity</h5>

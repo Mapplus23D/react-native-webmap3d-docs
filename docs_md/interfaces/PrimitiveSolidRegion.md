@@ -6,7 +6,7 @@
 
 # Interface: PrimitiveSolidRegion
 
-Defined in: index.d.ts:2367
+Defined in: index.d.ts:2375
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:2367
 
 > `optional` **baseHeight**: `number`
 
-Defined in: index.d.ts:2379
+Defined in: index.d.ts:2387
 
 底部高度，贴地时无效
 
@@ -28,7 +28,7 @@ Defined in: index.d.ts:2379
 
 > `optional` **clampToGround**: `boolean`
 
-Defined in: index.d.ts:2375
+Defined in: index.d.ts:2383
 
 deprecated 废弃的贴地接口 当classificationType未定义时生效
 
@@ -38,7 +38,7 @@ deprecated 废弃的贴地接口 当classificationType未定义时生效
 
 > `optional` **classificationType**: [`ClassificationType`](../enumerations/ClassificationType.md)
 
-Defined in: index.d.ts:2373
+Defined in: index.d.ts:2381
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:2373
 
 > `optional` **color**: `string`
 
-Defined in: index.d.ts:2372
+Defined in: index.d.ts:2380
 
 填充颜色
 
@@ -56,7 +56,7 @@ Defined in: index.d.ts:2372
 
 > `optional` **distanceDisplayCondition**: [`DistanceDisplayCondition`](DistanceDisplayCondition.md)
 
-Defined in: index.d.ts:2147
+Defined in: index.d.ts:2155
 
 可见范围
 
@@ -70,7 +70,7 @@ Defined in: index.d.ts:2147
 
 > **hierarchy**: [`Circle`](Circle.md) \| [`Rectangle`](Rectangle.md) \| [`PolygonHierarchy`](PolygonHierarchy.md)
 
-Defined in: index.d.ts:2370
+Defined in: index.d.ts:2378
 
 面节点
 
@@ -80,7 +80,7 @@ Defined in: index.d.ts:2370
 
 > `optional` **name**: `string`
 
-Defined in: index.d.ts:2150
+Defined in: index.d.ts:2158
 
 primitive 名称
 
@@ -94,7 +94,7 @@ primitive 名称
 
 > `optional` **properties**: `object`
 
-Defined in: index.d.ts:2152
+Defined in: index.d.ts:2160
 
 属性字段
 
@@ -112,7 +112,7 @@ Defined in: index.d.ts:2152
 
 > `optional` **show**: `boolean`
 
-Defined in: index.d.ts:2145
+Defined in: index.d.ts:2153
 
 是否显示，默认true
 
@@ -126,7 +126,7 @@ Defined in: index.d.ts:2145
 
 > `optional` **stRotation**: `number`
 
-Defined in: index.d.ts:2381
+Defined in: index.d.ts:2389
 
 贴图旋转角度
 
@@ -136,7 +136,7 @@ Defined in: index.d.ts:2381
 
 > `optional` **topHeight**: `number`
 
-Defined in: index.d.ts:2377
+Defined in: index.d.ts:2385
 
 水面高度,贴地时无效
 
@@ -146,7 +146,7 @@ Defined in: index.d.ts:2377
 
 > **type**: [`SolidRegion`](../enumerations/PrimitiveType.md#solidregion)
 
-Defined in: index.d.ts:2368
+Defined in: index.d.ts:2376
 
 类型
 

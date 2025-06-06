@@ -6,7 +6,7 @@
 
 # Enumeration: ClassificationType
 
-Defined in: index.d.ts:1226
+Defined in: index.d.ts:1234
 
 贴地方式
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:1226
 
 > **BOTH**: `"BOTH"`
 
-Defined in: index.d.ts:1230
+Defined in: index.d.ts:1238
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:1230
 
 > **NONE**: `"NONE"`
 
-Defined in: index.d.ts:1227
+Defined in: index.d.ts:1235
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: index.d.ts:1227
 
 > **S3M\_TILE**: `"S3M_TILE"`
 
-Defined in: index.d.ts:1229
+Defined in: index.d.ts:1237
 
 ***
 
@@ -40,4 +40,4 @@ Defined in: index.d.ts:1229
 
 > **TERRAIN**: `"TERRAIN"`
 
-Defined in: index.d.ts:1228
+Defined in: index.d.ts:1236

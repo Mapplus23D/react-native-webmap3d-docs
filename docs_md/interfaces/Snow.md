@@ -6,7 +6,7 @@
 
 # Interface: Snow
 
-Defined in: index.d.ts:1753
+Defined in: index.d.ts:1761
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1753
 
 > `optional` **angle**: `number`
 
-Defined in: index.d.ts:1755
+Defined in: index.d.ts:1763
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:1755
 
 > `optional` **density**: `number`
 
-Defined in: index.d.ts:1757
+Defined in: index.d.ts:1765
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:1757
 
 > `optional` **speed**: `number`
 
-Defined in: index.d.ts:1756
+Defined in: index.d.ts:1764
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: index.d.ts:1756
 
 > **type**: [`SNOW`](../enumerations/WeatherType.md#snow)
 
-Defined in: index.d.ts:1754
+Defined in: index.d.ts:1762

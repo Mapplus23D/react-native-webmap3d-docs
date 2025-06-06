@@ -305,6 +305,8 @@
 <hr>
 <h1>react-native-webmap3d</h1>
 <p>webmap3d for react native</p>
+<p>可参考完整<a href="https://github.com/Dituhui-Mapplus/web3dsdk-rn/tree/main">SDK Demo</a></p>
+<p><a href="https://github.com/Dituhui-Mapplus/react-native-webmap3d-docs/blob/main/docs_md/globals.html">SDK文档</a></p>
 <h2>前提</h2>
 <p>鸿蒙OS请先按照<a href="https://gitcode.com/openharmony-sig/ohos_react_native/blob/master/docs/zh-cn/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.html">鸿蒙RN文档</a>将RN工程鸿蒙化后再进行以下步骤。</p>
 <h2>安装</h2>
@@ -463,7 +465,7 @@ export default function SceneView() {
           // 加载完成后，初始化 client 对象，与 webview 中的 webmap3d sdk 建立联系
           // 初始化完成后才可以调用 sdk 中的各个方法
           client.init(undefined, { clientPort: 9999 }).then(() =&gt; {
-            // 初始化成功后变可以调用client内的各种方法了
+            // 初始化成功后便可以调用client内的各种方法了
             // 比如 client.scene.open() 打开已有地图等
           })
         }}

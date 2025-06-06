@@ -8,7 +8,7 @@
 
 > **IParticleLayers** = `object`
 
-Defined in: index.d.ts:4401
+Defined in: index.d.ts:4409
 
 粒子特效图层
 
@@ -20,7 +20,7 @@ Defined in: index.d.ts:4401
 
 > **addParticleLayer**: (`name`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4407
+Defined in: index.d.ts:4415
 
 添加图层（已有同名图层添加失败）
 
@@ -44,7 +44,7 @@ Defined in: index.d.ts:4407
 
 > **clearParticleLayer**: (`name`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4424
+Defined in: index.d.ts:4432
 
 清空图层
 
@@ -68,7 +68,7 @@ Defined in: index.d.ts:4424
 
 > **getAllCount**: () => `number`
 
-Defined in: index.d.ts:4493
+Defined in: index.d.ts:4501
 
 获取所有对象个数
 
@@ -82,7 +82,7 @@ Defined in: index.d.ts:4493
 
 > **getAvailableName**: (`layerName`, `name`) => `string`
 
-Defined in: index.d.ts:4489
+Defined in: index.d.ts:4497
 
 获取指定图层中可用粒子特效名称
 
@@ -106,7 +106,7 @@ Defined in: index.d.ts:4489
 
 > **getParticle**: (`layerName`, `id`) => [`Particle`](../interfaces/Particle.md) \| `undefined`
 
-Defined in: index.d.ts:4487
+Defined in: index.d.ts:4495
 
 获取指定指定的粒子特效对象
 
@@ -134,7 +134,7 @@ Defined in: index.d.ts:4487
 
 > **getParticleCount**: (`layerName`) => `number`
 
-Defined in: index.d.ts:4491
+Defined in: index.d.ts:4499
 
 获取图层对象个数
 
@@ -154,7 +154,7 @@ Defined in: index.d.ts:4491
 
 > **getParticleLayerNames**: () => `string`[]
 
-Defined in: index.d.ts:4441
+Defined in: index.d.ts:4449
 
 获取所有粒子图层名
 
@@ -170,7 +170,7 @@ Defined in: index.d.ts:4441
 
 > **isParticleLayerVisible**: (`name`) => `boolean`
 
-Defined in: index.d.ts:4430
+Defined in: index.d.ts:4438
 
 图层是否可见
 
@@ -194,7 +194,7 @@ Defined in: index.d.ts:4430
 
 > **layerAddParticle**: (`name`, `particleName`, `particleUrl`, `param?`) => `Promise`\<`string`\>
 
-Defined in: index.d.ts:4457
+Defined in: index.d.ts:4465
 
 图层添加粒子对象
 
@@ -236,7 +236,7 @@ json路径
 
 > **layerModifyParticle**: (`name`, `particleId`, `param`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4481
+Defined in: index.d.ts:4489
 
 更新图层粒子对象
 
@@ -270,7 +270,7 @@ Defined in: index.d.ts:4481
 
 > **layerParticles**: (`name`, `range?`) => [`Particle`](../interfaces/Particle.md)[]
 
-Defined in: index.d.ts:4470
+Defined in: index.d.ts:4478
 
 获取图层所有粒子对象
 
@@ -304,7 +304,7 @@ Defined in: index.d.ts:4470
 
 > **layerRemoveParticle**: (`name`, `particleId`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4464
+Defined in: index.d.ts:4472
 
 图层删除粒子对象
 
@@ -332,7 +332,7 @@ Defined in: index.d.ts:4464
 
 > **removeAllParticleLayers**: () => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4418
+Defined in: index.d.ts:4426
 
 删除所有图层
 
@@ -348,7 +348,7 @@ Defined in: index.d.ts:4418
 
 > **removeParticleLayer**: (`name`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4413
+Defined in: index.d.ts:4421
 
 删除图层
 
@@ -372,7 +372,7 @@ Defined in: index.d.ts:4413
 
 > **renameParticleLayer**: (`oldName`, `newName`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4448
+Defined in: index.d.ts:4456
 
 重命名
 
@@ -402,7 +402,7 @@ Defined in: index.d.ts:4448
 
 > **setParticleLayerVisible**: (`name`, `isVisible`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:4436
+Defined in: index.d.ts:4444
 
 设置图层是否可见
 

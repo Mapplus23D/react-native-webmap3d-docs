@@ -6,7 +6,7 @@
 
 # Interface: PrimitiveBillboard
 
-Defined in: index.d.ts:2177
+Defined in: index.d.ts:2185
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:2177
 
 > `optional` **disableDepthTestDistance**: `number`
 
-Defined in: index.d.ts:2188
+Defined in: index.d.ts:2196
 
 遮挡深度
 
@@ -28,7 +28,7 @@ Defined in: index.d.ts:2188
 
 > `optional` **distanceDisplayCondition**: [`DistanceDisplayCondition`](DistanceDisplayCondition.md)
 
-Defined in: index.d.ts:2147
+Defined in: index.d.ts:2155
 
 可见范围
 
@@ -42,7 +42,7 @@ Defined in: index.d.ts:2147
 
 > `optional` **eyeOffset**: [`Vector3`](Vector3.md)
 
-Defined in: index.d.ts:2196
+Defined in: index.d.ts:2204
 
 局部坐标系偏移量，单位米
 
@@ -52,7 +52,7 @@ Defined in: index.d.ts:2196
 
 > `optional` **height**: `number`
 
-Defined in: index.d.ts:2192
+Defined in: index.d.ts:2200
 
 图片高，单位px
 
@@ -62,7 +62,7 @@ Defined in: index.d.ts:2192
 
 > `optional` **heightReference**: [`HeightReference`](../enumerations/HeightReference.md)
 
-Defined in: index.d.ts:2200
+Defined in: index.d.ts:2208
 
 相对地形的位置
 
@@ -72,7 +72,7 @@ Defined in: index.d.ts:2200
 
 > `optional` **horizontalOrigin**: [`HorizontalOrigin`](../enumerations/HorizontalOrigin.md)
 
-Defined in: index.d.ts:2184
+Defined in: index.d.ts:2192
 
 水平对齐方式 , 默认center
 
@@ -82,7 +82,7 @@ Defined in: index.d.ts:2184
 
 > **image**: `string`
 
-Defined in: index.d.ts:2182
+Defined in: index.d.ts:2190
 
 图片路径
 
@@ -92,7 +92,7 @@ Defined in: index.d.ts:2182
 
 > `optional` **name**: `string`
 
-Defined in: index.d.ts:2150
+Defined in: index.d.ts:2158
 
 primitive 名称
 
@@ -106,7 +106,7 @@ primitive 名称
 
 > `optional` **pixelOffset**: [`Vector2`](Vector2.md)
 
-Defined in: index.d.ts:2198
+Defined in: index.d.ts:2206
 
 屏幕偏移量，单位px
 
@@ -116,7 +116,7 @@ Defined in: index.d.ts:2198
 
 > **position**: [`Vector3`](Vector3.md)
 
-Defined in: index.d.ts:2180
+Defined in: index.d.ts:2188
 
 位置
 
@@ -126,7 +126,7 @@ Defined in: index.d.ts:2180
 
 > `optional` **properties**: `object`
 
-Defined in: index.d.ts:2152
+Defined in: index.d.ts:2160
 
 属性字段
 
@@ -144,7 +144,7 @@ Defined in: index.d.ts:2152
 
 > `optional` **scaleByDistance**: [`NearFarScalar`](NearFarScalar.md)
 
-Defined in: index.d.ts:2190
+Defined in: index.d.ts:2198
 
 随距离缩放参数，默认undefine表示不随距离缩放
 
@@ -154,7 +154,7 @@ Defined in: index.d.ts:2190
 
 > `optional` **show**: `boolean`
 
-Defined in: index.d.ts:2145
+Defined in: index.d.ts:2153
 
 是否显示，默认true
 
@@ -168,7 +168,7 @@ Defined in: index.d.ts:2145
 
 > **type**: [`Billboard`](../enumerations/PrimitiveType.md#billboard)
 
-Defined in: index.d.ts:2178
+Defined in: index.d.ts:2186
 
 类型
 
@@ -182,7 +182,7 @@ Defined in: index.d.ts:2178
 
 > `optional` **verticalOrigin**: [`VerticalOrigin`](../enumerations/VerticalOrigin.md)
 
-Defined in: index.d.ts:2186
+Defined in: index.d.ts:2194
 
 竖直对齐方式 , 默认center
 
@@ -192,6 +192,6 @@ Defined in: index.d.ts:2186
 
 > `optional` **width**: `number`
 
-Defined in: index.d.ts:2194
+Defined in: index.d.ts:2202
 
 图片宽，单位px

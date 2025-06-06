@@ -6,7 +6,7 @@
 
 # Interface: PositionsGrowAnimation
 
-Defined in: index.d.ts:1696
+Defined in: index.d.ts:1704
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1696
 
 > **duration**: `number`
 
-Defined in: index.d.ts:1697
+Defined in: index.d.ts:1705
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:1697
 
 > `optional` **isErase**: `boolean`
 
-Defined in: index.d.ts:1701
+Defined in: index.d.ts:1709
 
 是否擦除效果
 
@@ -32,7 +32,7 @@ Defined in: index.d.ts:1701
 
 > `optional` **isReverse**: `boolean`
 
-Defined in: index.d.ts:1699
+Defined in: index.d.ts:1707
 
 是否逆生长
 
@@ -42,6 +42,6 @@ Defined in: index.d.ts:1699
 
 > `optional` **timeOffset**: `number`
 
-Defined in: index.d.ts:1703
+Defined in: index.d.ts:1711
 
 时间偏移量

@@ -6,14 +6,24 @@
 
 # Interface: ServerOption
 
-Defined in: index.d.ts:5002
+Defined in: index.d.ts:5010
 
 ## Properties
+
+### libPath
+
+> **libPath**: `string`
+
+Defined in: index.d.ts:5016
+
+依赖库路径
+
+***
 
 ### navigation
 
 > **navigation**: `boolean`
 
-Defined in: index.d.ts:5006
+Defined in: index.d.ts:5014
 
 是否开启右上角导航

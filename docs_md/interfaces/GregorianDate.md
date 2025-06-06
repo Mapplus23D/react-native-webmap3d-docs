@@ -6,7 +6,7 @@
 
 # Interface: GregorianDate
 
-Defined in: index.d.ts:1705
+Defined in: index.d.ts:1713
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1705
 
 > **day**: `number`
 
-Defined in: index.d.ts:1717
+Defined in: index.d.ts:1725
 
 日，从 1 开始
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:1717
 
 > **hour**: `number`
 
-Defined in: index.d.ts:1721
+Defined in: index.d.ts:1729
 
 小时，范围 [0, 23].
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:1721
 
 > `optional` **isLeapSecond**: `boolean`
 
-Defined in: index.d.ts:1737
+Defined in: index.d.ts:1745
 
 此时间是否为闰秒
 
@@ -44,7 +44,7 @@ Defined in: index.d.ts:1737
 
 > **millisecond**: `number`
 
-Defined in: index.d.ts:1733
+Defined in: index.d.ts:1741
 
 毫秒，范围 [0.0, 1000.0).
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:1733
 
 > **minute**: `number`
 
-Defined in: index.d.ts:1725
+Defined in: index.d.ts:1733
 
 分钟，范围 [0, 59].
 
@@ -64,7 +64,7 @@ Defined in: index.d.ts:1725
 
 > **month**: `number`
 
-Defined in: index.d.ts:1713
+Defined in: index.d.ts:1721
 
 月，范围 [1, 12]
 
@@ -74,7 +74,7 @@ Defined in: index.d.ts:1713
 
 > **second**: `number`
 
-Defined in: index.d.ts:1729
+Defined in: index.d.ts:1737
 
 秒 [0, 60], 60 代表闰秒.
 
@@ -84,6 +84,6 @@ Defined in: index.d.ts:1729
 
 > **year**: `number`
 
-Defined in: index.d.ts:1709
+Defined in: index.d.ts:1717
 
 年

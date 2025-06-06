@@ -8,7 +8,7 @@
 
 > **Client** = *typeof* `enums` & `object` & [`ClientModule`](../interfaces/ClientModule.md)
 
-Defined in: index.d.ts:5012
+Defined in: index.d.ts:5022
 
 ## Type declaration
 

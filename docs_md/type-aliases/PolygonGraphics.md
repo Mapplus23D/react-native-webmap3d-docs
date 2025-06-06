@@ -8,4 +8,4 @@
 
 > **PolygonGraphics** = [`NofillPolygon`](../interfaces/NofillPolygon.md) \| [`SolidPolygon`](../interfaces/SolidPolygon.md) \| [`GriddingPolygon`](../interfaces/GriddingPolygon.md) \| [`StripePolygon`](../interfaces/StripePolygon.md) \| [`ImagePolygon`](../interfaces/ImagePolygon.md) \| [`FeatherPolygon`](../interfaces/FeatherPolygon.md)
 
-Defined in: index.d.ts:1616
+Defined in: index.d.ts:1624

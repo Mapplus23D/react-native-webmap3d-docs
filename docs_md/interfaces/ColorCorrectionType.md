@@ -6,7 +6,7 @@
 
 # Interface: ColorCorrectionType
 
-Defined in: index.d.ts:640
+Defined in: index.d.ts:648
 
 颜色校正类型
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:640
 
 > `optional` **brightness**: `number`
 
-Defined in: index.d.ts:642
+Defined in: index.d.ts:650
 
 亮度
 
@@ -26,7 +26,7 @@ Defined in: index.d.ts:642
 
 > `optional` **contrast**: `number`
 
-Defined in: index.d.ts:644
+Defined in: index.d.ts:652
 
 对比度
 
@@ -36,7 +36,7 @@ Defined in: index.d.ts:644
 
 > `optional` **hue**: `number`
 
-Defined in: index.d.ts:646
+Defined in: index.d.ts:654
 
 色调
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:646
 
 > `optional` **saturation**: `number`
 
-Defined in: index.d.ts:648
+Defined in: index.d.ts:656
 
 饱和度
 
@@ -56,6 +56,6 @@ Defined in: index.d.ts:648
 
 > `optional` **show**: `boolean`
 
-Defined in: index.d.ts:650
+Defined in: index.d.ts:658
 
 颜色校正是否开启

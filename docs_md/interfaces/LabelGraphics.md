@@ -6,7 +6,7 @@
 
 # Interface: LabelGraphics
 
-Defined in: index.d.ts:1320
+Defined in: index.d.ts:1328
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1320
 
 > `optional` **backgroundColor**: `string` \| [`PropertyAnimation`](PropertyAnimation.md)\<`string`\>
 
-Defined in: index.d.ts:1340
+Defined in: index.d.ts:1348
 
 背景色，不设置表示没有背景
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:1340
 
 > `optional` **backgroundPaddingSize**: `number`
 
-Defined in: index.d.ts:1342
+Defined in: index.d.ts:1350
 
 背景边框宽度 , 默认0
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:1342
 
 > `optional` **disableDepthTestDistance**: `number`
 
-Defined in: index.d.ts:1344
+Defined in: index.d.ts:1352
 
 文字遮挡深度
 
@@ -44,7 +44,7 @@ Defined in: index.d.ts:1344
 
 > `optional` **distanceDisplayCondition**: [`DistanceDisplayCondition`](DistanceDisplayCondition.md)
 
-Defined in: index.d.ts:1352
+Defined in: index.d.ts:1360
 
 可见范围
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:1352
 
 > `optional` **eyeOffset**: [`Vector3`](Vector3.md)
 
-Defined in: index.d.ts:1354
+Defined in: index.d.ts:1362
 
 局部坐标系偏移量，单位米
 
@@ -64,7 +64,7 @@ Defined in: index.d.ts:1354
 
 > `optional` **fillColor**: `string` \| [`PropertyAnimation`](PropertyAnimation.md)\<`string`\>
 
-Defined in: index.d.ts:1332
+Defined in: index.d.ts:1340
 
 文字填充色
 
@@ -74,7 +74,7 @@ Defined in: index.d.ts:1332
 
 > `optional` **font**: `string`
 
-Defined in: index.d.ts:1328
+Defined in: index.d.ts:1336
 
 字体样式，默认字体'10px sans-serif'
 
@@ -84,7 +84,7 @@ Defined in: index.d.ts:1328
 
 > `optional` **heightReference**: [`HeightReference`](../enumerations/HeightReference.md)
 
-Defined in: index.d.ts:1358
+Defined in: index.d.ts:1366
 
 相对地形的位置
 
@@ -94,7 +94,7 @@ Defined in: index.d.ts:1358
 
 > `optional` **horizontalOrigin**: [`HorizontalOrigin`](../enumerations/HorizontalOrigin.md)
 
-Defined in: index.d.ts:1324
+Defined in: index.d.ts:1332
 
 水平对齐方式 , 默认center
 
@@ -104,7 +104,7 @@ Defined in: index.d.ts:1324
 
 > `optional` **outlineColor**: `string` \| [`PropertyAnimation`](PropertyAnimation.md)\<`string`\>
 
-Defined in: index.d.ts:1334
+Defined in: index.d.ts:1342
 
 文字填轮廓色
 
@@ -114,7 +114,7 @@ Defined in: index.d.ts:1334
 
 > `optional` **outlineWidth**: `number`
 
-Defined in: index.d.ts:1336
+Defined in: index.d.ts:1344
 
 描边宽度 ，默认1.0
 
@@ -124,7 +124,7 @@ Defined in: index.d.ts:1336
 
 > `optional` **pixelOffset**: [`Vector2`](Vector2.md)
 
-Defined in: index.d.ts:1356
+Defined in: index.d.ts:1364
 
 屏幕偏移量，单位px
 
@@ -134,7 +134,7 @@ Defined in: index.d.ts:1356
 
 > `optional` **scale**: `number`
 
-Defined in: index.d.ts:1348
+Defined in: index.d.ts:1356
 
 缩放比例，默认1.0
 
@@ -144,7 +144,7 @@ Defined in: index.d.ts:1348
 
 > `optional` **scaleByDistance**: [`NearFarScalar`](NearFarScalar.md)
 
-Defined in: index.d.ts:1346
+Defined in: index.d.ts:1354
 
 随距离缩放参数，默认undefine表示不随距离缩放
 
@@ -154,7 +154,7 @@ Defined in: index.d.ts:1346
 
 > `optional` **show**: `boolean` \| [`PropertyAnimation`](PropertyAnimation.md)\<`boolean`\>
 
-Defined in: index.d.ts:1350
+Defined in: index.d.ts:1358
 
 显隐
 
@@ -164,7 +164,7 @@ Defined in: index.d.ts:1350
 
 > `optional` **showBackground**: `boolean`
 
-Defined in: index.d.ts:1338
+Defined in: index.d.ts:1346
 
 背景显示否，默认false
 
@@ -174,7 +174,7 @@ Defined in: index.d.ts:1338
 
 > `optional` **style**: [`LabelStyle`](../enumerations/LabelStyle.md)
 
-Defined in: index.d.ts:1330
+Defined in: index.d.ts:1338
 
 默认FILL
 
@@ -184,7 +184,7 @@ Defined in: index.d.ts:1330
 
 > `optional` **text**: `string`
 
-Defined in: index.d.ts:1322
+Defined in: index.d.ts:1330
 
 文本内容
 
@@ -194,6 +194,6 @@ Defined in: index.d.ts:1322
 
 > `optional` **verticalOrigin**: [`VerticalOrigin`](../enumerations/VerticalOrigin.md)
 
-Defined in: index.d.ts:1326
+Defined in: index.d.ts:1334
 
 竖直对齐方式 , 默认center

@@ -6,7 +6,7 @@
 
 # Interface: HypsometricSetting
 
-Defined in: index.d.ts:1948
+Defined in: index.d.ts:1956
 
 等高设置
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:1948
 
 > **lineColor**: [`ColorNumber`](../type-aliases/ColorNumber.md)
 
-Defined in: index.d.ts:1957
+Defined in: index.d.ts:1965
 
 等高线颜色
 
@@ -26,7 +26,7 @@ Defined in: index.d.ts:1957
 
 > **mode**: `"line"` \| `"region"` \| `"line_region"` \| `"none"`
 
-Defined in: index.d.ts:1955
+Defined in: index.d.ts:1963
 
 line: 等高线
 region: 等高面

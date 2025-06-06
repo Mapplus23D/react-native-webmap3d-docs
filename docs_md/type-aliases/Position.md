@@ -8,7 +8,7 @@
 
 > **Position** = `number`[]
 
-Defined in: index.d.ts:2948
+Defined in: index.d.ts:2956
 
 Position
 

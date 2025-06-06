@@ -6,7 +6,7 @@
 
 # Enumeration: SlideTransitionType
 
-Defined in: index.d.ts:669
+Defined in: index.d.ts:677
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:669
 
 > **fadeIn**: `3`
 
-Defined in: index.d.ts:675
+Defined in: index.d.ts:683
 
 淡入
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:675
 
 > **pushAside**: `8`
 
-Defined in: index.d.ts:685
+Defined in: index.d.ts:693
 
 推开
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:685
 
 > **shimmer**: `2`
 
-Defined in: index.d.ts:673
+Defined in: index.d.ts:681
 
 闪白
 
@@ -44,7 +44,7 @@ Defined in: index.d.ts:673
 
 > **slideBottom**: `7`
 
-Defined in: index.d.ts:683
+Defined in: index.d.ts:691
 
 下滑
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:683
 
 > **slideLeft**: `4`
 
-Defined in: index.d.ts:677
+Defined in: index.d.ts:685
 
 左滑
 
@@ -64,7 +64,7 @@ Defined in: index.d.ts:677
 
 > **slideRight**: `5`
 
-Defined in: index.d.ts:679
+Defined in: index.d.ts:687
 
 右滑
 
@@ -74,7 +74,7 @@ Defined in: index.d.ts:679
 
 > **slideTop**: `6`
 
-Defined in: index.d.ts:681
+Defined in: index.d.ts:689
 
 上滑
 
@@ -84,6 +84,6 @@ Defined in: index.d.ts:681
 
 > **windowBlinds**: `1`
 
-Defined in: index.d.ts:671
+Defined in: index.d.ts:679
 
 百叶窗

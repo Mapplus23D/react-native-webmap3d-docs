@@ -6,7 +6,7 @@
 
 # Interface: ScreenTextStyle
 
-Defined in: index.d.ts:753
+Defined in: index.d.ts:761
 
 css style
 
@@ -16,7 +16,7 @@ css style
 
 > **background-color**: `string`
 
-Defined in: index.d.ts:758
+Defined in: index.d.ts:766
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:758
 
 > **border**: `string`
 
-Defined in: index.d.ts:759
+Defined in: index.d.ts:767
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: index.d.ts:759
 
 > **border-radius**: `string`
 
-Defined in: index.d.ts:760
+Defined in: index.d.ts:768
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: index.d.ts:760
 
 > **color**: `string`
 
-Defined in: index.d.ts:754
+Defined in: index.d.ts:762
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: index.d.ts:754
 
 > **font-family**: `string`
 
-Defined in: index.d.ts:756
+Defined in: index.d.ts:764
 
 ***
 
@@ -56,7 +56,7 @@ Defined in: index.d.ts:756
 
 > **font-size**: `string`
 
-Defined in: index.d.ts:755
+Defined in: index.d.ts:763
 
 ***
 
@@ -64,7 +64,7 @@ Defined in: index.d.ts:755
 
 > **opacity**: `string`
 
-Defined in: index.d.ts:763
+Defined in: index.d.ts:771
 
 ***
 
@@ -72,7 +72,7 @@ Defined in: index.d.ts:763
 
 > **padding**: `string`
 
-Defined in: index.d.ts:762
+Defined in: index.d.ts:770
 
 ***
 
@@ -80,7 +80,7 @@ Defined in: index.d.ts:762
 
 > **text-align**: `string`
 
-Defined in: index.d.ts:761
+Defined in: index.d.ts:769
 
 ***
 
@@ -88,4 +88,4 @@ Defined in: index.d.ts:761
 
 > **text-shadow**: `string`
 
-Defined in: index.d.ts:757
+Defined in: index.d.ts:765

@@ -8,7 +8,7 @@
 
 > **ITileCache** = `object`
 
-Defined in: index.d.ts:4990
+Defined in: index.d.ts:4998
 
 瓦片离线缓存
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:4990
 
 > **connectToServer**(`wsPort`, `httpPort`): `void`
 
-Defined in: index.d.ts:4996
+Defined in: index.d.ts:5004
 
 连接到本地缓存服务器
 
@@ -46,7 +46,7 @@ http端口
 
 > **disconnectFromServer**(): `void`
 
-Defined in: index.d.ts:5000
+Defined in: index.d.ts:5008
 
 断开本地缓存服务器
 

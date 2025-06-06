@@ -6,7 +6,7 @@
 
 # Enumeration: AnimatorType
 
-Defined in: index.d.ts:1175
+Defined in: index.d.ts:1183
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1175
 
 > **COLOR**: `4`
 
-Defined in: index.d.ts:1185
+Defined in: index.d.ts:1193
 
 颜色动画
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:1185
 
 > **LINEGROW**: `3`
 
-Defined in: index.d.ts:1183
+Defined in: index.d.ts:1191
 
 线生长动画
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:1183
 
 > **POLYGONGROW**: `6`
 
-Defined in: index.d.ts:1189
+Defined in: index.d.ts:1197
 
 面生长动画
 
@@ -44,7 +44,7 @@ Defined in: index.d.ts:1189
 
 > **ROTATION**: `1`
 
-Defined in: index.d.ts:1179
+Defined in: index.d.ts:1187
 
 旋转类型动画
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:1179
 
 > **SCALE**: `2`
 
-Defined in: index.d.ts:1181
+Defined in: index.d.ts:1189
 
 缩放类型动画
 
@@ -64,7 +64,7 @@ Defined in: index.d.ts:1181
 
 > **TRANSLATION**: `0`
 
-Defined in: index.d.ts:1177
+Defined in: index.d.ts:1185
 
 位移类型动画
 
@@ -74,6 +74,6 @@ Defined in: index.d.ts:1177
 
 > **VISIBILITY**: `5`
 
-Defined in: index.d.ts:1187
+Defined in: index.d.ts:1195
 
 显隐动画

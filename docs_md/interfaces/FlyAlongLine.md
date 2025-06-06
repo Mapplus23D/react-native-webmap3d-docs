@@ -6,7 +6,7 @@
 
 # Interface: FlyAlongLine
 
-Defined in: index.d.ts:967
+Defined in: index.d.ts:975
 
 沿线贴地飞行参数
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:967
 
 > `optional` **clampToCround**: `boolean`
 
-Defined in: index.d.ts:987
+Defined in: index.d.ts:995
 
 是否贴地线
 
@@ -26,7 +26,7 @@ Defined in: index.d.ts:987
 
 > **duration**: `number`
 
-Defined in: index.d.ts:975
+Defined in: index.d.ts:983
 
 到下一个站点的时间
 
@@ -36,7 +36,7 @@ Defined in: index.d.ts:975
 
 > `optional` **headingPitchRange**: `object`
 
-Defined in: index.d.ts:989
+Defined in: index.d.ts:997
 
 相机跟随参数
 
@@ -58,7 +58,7 @@ Defined in: index.d.ts:989
 
 > **line**: \[`number`, `number`, `number`, `...number[]`\]
 
-Defined in: index.d.ts:980
+Defined in: index.d.ts:988
 
 经纬度高度点串数组
 至少三个点且个数为3的倍数,格式： [经度，纬度，高度，经度，纬度，高度...]
@@ -69,7 +69,7 @@ Defined in: index.d.ts:980
 
 > **lineFlyTime**: `number`
 
-Defined in: index.d.ts:973
+Defined in: index.d.ts:981
 
 飞行时间
 
@@ -79,7 +79,7 @@ Defined in: index.d.ts:973
 
 > **stopName**: `string`
 
-Defined in: index.d.ts:969
+Defined in: index.d.ts:977
 
 站点名
 
@@ -89,7 +89,7 @@ Defined in: index.d.ts:969
 
 > `optional` **trackingLineParam**: `object`
 
-Defined in: index.d.ts:997
+Defined in: index.d.ts:1005
 
 飞行时轨迹（默认不显示）
 
@@ -107,7 +107,7 @@ Defined in: index.d.ts:997
 
 > `optional` **turnDuration**: `number`
 
-Defined in: index.d.ts:995
+Defined in: index.d.ts:1003
 
 转向时间(转180度所需时间) 默认9s
 
@@ -117,6 +117,6 @@ Defined in: index.d.ts:995
 
 > **waitTime**: `number`
 
-Defined in: index.d.ts:971
+Defined in: index.d.ts:979
 
 飞行前停留的时间

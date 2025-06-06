@@ -6,7 +6,7 @@
 
 # Interface: UniformPrimitiveLayer\<P\>
 
-Defined in: index.d.ts:2085
+Defined in: index.d.ts:2093
 
 ## Extends
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:2085
 
 > **name**: `string`
 
-Defined in: index.d.ts:2048
+Defined in: index.d.ts:2056
 
 #### Inherited from
 
@@ -36,7 +36,7 @@ Defined in: index.d.ts:2048
 
 > **primitives**: `Omit`\<`P`, `Exclude`\<keyof `P`, keyof [`UniformPrimitiveData`](UniformPrimitiveData.md)\>\> & `object`[]
 
-Defined in: index.d.ts:2089
+Defined in: index.d.ts:2097
 
 数据
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:2089
 
 > `optional` **propertyInfos**: [`PropertyInfo`](PropertyInfo.md)[]
 
-Defined in: index.d.ts:2094
+Defined in: index.d.ts:2102
 
 属性表,规则primitive.properties仅符合属性表部分可见
 
@@ -56,7 +56,7 @@ Defined in: index.d.ts:2094
 
 > **uniform**: `Omit`\<`P`, keyof [`UniformPrimitiveData`](UniformPrimitiveData.md)\>
 
-Defined in: index.d.ts:2087
+Defined in: index.d.ts:2095
 
 统一风格
 
@@ -66,7 +66,7 @@ Defined in: index.d.ts:2087
 
 > `optional` **uniformPrimitiveDataPropertyMap**: [`UniformPrimitiveDataPropertyMap`](../type-aliases/UniformPrimitiveDataPropertyMap.md)
 
-Defined in: index.d.ts:2096
+Defined in: index.d.ts:2104
 
 data和property关联表
 
@@ -76,7 +76,7 @@ data和property关联表
 
 > **visible**: `boolean`
 
-Defined in: index.d.ts:2047
+Defined in: index.d.ts:2055
 
 #### Inherited from
 

@@ -6,7 +6,7 @@
 
 # Interface: Sun
 
-Defined in: index.d.ts:652
+Defined in: index.d.ts:660
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:652
 
 > `optional` **glowFactor**: `number`
 
-Defined in: index.d.ts:656
+Defined in: index.d.ts:664
 
 亮度 默认值 1
 
@@ -24,6 +24,6 @@ Defined in: index.d.ts:656
 
 > **visible**: `boolean`
 
-Defined in: index.d.ts:654
+Defined in: index.d.ts:662
 
 是否可见

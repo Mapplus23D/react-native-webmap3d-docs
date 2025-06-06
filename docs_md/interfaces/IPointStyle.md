@@ -6,7 +6,7 @@
 
 # Interface: IPointStyle
 
-Defined in: index.d.ts:3127
+Defined in: index.d.ts:3135
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:3127
 
 > **alwaysVisible**: `boolean`
 
-Defined in: index.d.ts:3153
+Defined in: index.d.ts:3161
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:3153
 
 > **breathFrenquency**: `number`
 
-Defined in: index.d.ts:3142
+Defined in: index.d.ts:3150
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:3142
 
 > **color**: `string`
 
-Defined in: index.d.ts:3132
+Defined in: index.d.ts:3140
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:3132
 
 > **depthDistance**: `number`
 
-Defined in: index.d.ts:3155
+Defined in: index.d.ts:3163
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:3155
 
 > **glowColor**: `string`
 
-Defined in: index.d.ts:3140
+Defined in: index.d.ts:3148
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:3140
 
 > **glowFactor**: `number`
 
-Defined in: index.d.ts:3141
+Defined in: index.d.ts:3149
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: index.d.ts:3141
 
 > **imageContent**: `` `${string}ratio:${number}` ``
 
-Defined in: index.d.ts:3130
+Defined in: index.d.ts:3138
 
 ***
 
@@ -70,7 +70,7 @@ Defined in: index.d.ts:3130
 
 > **imageSize**: `number`
 
-Defined in: index.d.ts:3134
+Defined in: index.d.ts:3142
 
 ***
 
@@ -78,7 +78,7 @@ Defined in: index.d.ts:3134
 
 > **isClampToGroud**: `boolean`
 
-Defined in: index.d.ts:3129
+Defined in: index.d.ts:3137
 
 ***
 
@@ -86,7 +86,7 @@ Defined in: index.d.ts:3129
 
 > **isFixSize**: `boolean`
 
-Defined in: index.d.ts:3139
+Defined in: index.d.ts:3147
 
 ***
 
@@ -94,7 +94,7 @@ Defined in: index.d.ts:3139
 
 > **isLabelFix**: `boolean`
 
-Defined in: index.d.ts:3152
+Defined in: index.d.ts:3160
 
 ***
 
@@ -102,7 +102,7 @@ Defined in: index.d.ts:3152
 
 > **label**: `string`
 
-Defined in: index.d.ts:3144
+Defined in: index.d.ts:3152
 
 ***
 
@@ -110,7 +110,7 @@ Defined in: index.d.ts:3144
 
 > **labelBackgroundColor**: `string`
 
-Defined in: index.d.ts:3148
+Defined in: index.d.ts:3156
 
 ***
 
@@ -118,7 +118,7 @@ Defined in: index.d.ts:3148
 
 > **labelColor**: `string`
 
-Defined in: index.d.ts:3147
+Defined in: index.d.ts:3155
 
 ***
 
@@ -126,7 +126,7 @@ Defined in: index.d.ts:3147
 
 > **labelOutlineColor**: `string`
 
-Defined in: index.d.ts:3149
+Defined in: index.d.ts:3157
 
 ***
 
@@ -134,7 +134,7 @@ Defined in: index.d.ts:3149
 
 > **labelSize**: `number`
 
-Defined in: index.d.ts:3146
+Defined in: index.d.ts:3154
 
 ***
 
@@ -142,7 +142,7 @@ Defined in: index.d.ts:3146
 
 > **labelType**: `"normal"` \| `"outline"` \| `"background"` \| `"backgroundAndOutline"`
 
-Defined in: index.d.ts:3145
+Defined in: index.d.ts:3153
 
 ***
 
@@ -150,7 +150,7 @@ Defined in: index.d.ts:3145
 
 > **modelContent**: `string`
 
-Defined in: index.d.ts:3131
+Defined in: index.d.ts:3139
 
 ***
 
@@ -158,7 +158,7 @@ Defined in: index.d.ts:3131
 
 > **modelSize**: `number`
 
-Defined in: index.d.ts:3135
+Defined in: index.d.ts:3143
 
 ***
 
@@ -166,7 +166,7 @@ Defined in: index.d.ts:3135
 
 > **offsetHorizontal**: `number`
 
-Defined in: index.d.ts:3151
+Defined in: index.d.ts:3159
 
 ***
 
@@ -174,7 +174,7 @@ Defined in: index.d.ts:3151
 
 > **offsetVertical**: `number`
 
-Defined in: index.d.ts:3150
+Defined in: index.d.ts:3158
 
 ***
 
@@ -182,7 +182,7 @@ Defined in: index.d.ts:3150
 
 > **orientation**: `number`
 
-Defined in: index.d.ts:3136
+Defined in: index.d.ts:3144
 
 ***
 
@@ -190,7 +190,7 @@ Defined in: index.d.ts:3136
 
 > **pitch**: `number`
 
-Defined in: index.d.ts:3137
+Defined in: index.d.ts:3145
 
 ***
 
@@ -198,7 +198,7 @@ Defined in: index.d.ts:3137
 
 > **roll**: `number`
 
-Defined in: index.d.ts:3138
+Defined in: index.d.ts:3146
 
 ***
 
@@ -206,7 +206,7 @@ Defined in: index.d.ts:3138
 
 > **showLabel**: `boolean`
 
-Defined in: index.d.ts:3143
+Defined in: index.d.ts:3151
 
 ***
 
@@ -214,7 +214,7 @@ Defined in: index.d.ts:3143
 
 > **size**: `number`
 
-Defined in: index.d.ts:3133
+Defined in: index.d.ts:3141
 
 ***
 
@@ -222,7 +222,7 @@ Defined in: index.d.ts:3133
 
 > **type**: [`PointStyleType`](../type-aliases/PointStyleType.md)
 
-Defined in: index.d.ts:3128
+Defined in: index.d.ts:3136
 
 ***
 
@@ -230,4 +230,4 @@ Defined in: index.d.ts:3128
 
 > **visibleDistance**: `number`
 
-Defined in: index.d.ts:3154
+Defined in: index.d.ts:3162

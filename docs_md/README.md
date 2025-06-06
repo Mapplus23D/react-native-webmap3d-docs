@@ -6,9 +6,9 @@
 
 webmap3d for react native
 
-[SDK参考文档](https://github.com/iMobileforJavaScript/react-native-webmap3d/blob/main/docs/globals.md)
+可参考完整[SDK Demo](https://github.com/Dituhui-Mapplus/web3dsdk-rn/tree/main)
 
-[完整Demo]
+[SDK文档](https://github.com/Dituhui-Mapplus/react-native-webmap3d-docs/blob/main/docs_md/globals.md)
 
 ## 前提
 
@@ -200,7 +200,7 @@ export default function SceneView() {
           // 加载完成后，初始化 client 对象，与 webview 中的 webmap3d sdk 建立联系
           // 初始化完成后才可以调用 sdk 中的各个方法
           client.init(undefined, { clientPort: 9999 }).then(() => {
-            // 初始化成功后变可以调用client内的各种方法了
+            // 初始化成功后便可以调用client内的各种方法了
             // 比如 client.scene.open() 打开已有地图等
           })
         }}

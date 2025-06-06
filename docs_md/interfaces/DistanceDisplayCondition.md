@@ -6,7 +6,7 @@
 
 # Interface: DistanceDisplayCondition
 
-Defined in: index.d.ts:1237
+Defined in: index.d.ts:1245
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1237
 
 > `optional` **far**: `number`
 
-Defined in: index.d.ts:1239
+Defined in: index.d.ts:1247
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: index.d.ts:1239
 
 > `optional` **near**: `number`
 
-Defined in: index.d.ts:1238
+Defined in: index.d.ts:1246

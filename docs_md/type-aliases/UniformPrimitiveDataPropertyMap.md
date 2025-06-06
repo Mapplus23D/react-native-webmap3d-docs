@@ -8,7 +8,7 @@
 
 > **UniformPrimitiveDataPropertyMap** = \{ \[P in Exclude\<keyof UniformPrimitiveData, "position" \| "orientation" \| "positions" \| "hierarchy" \| "properties"\>\]?: string \} & `object`
 
-Defined in: index.d.ts:2079
+Defined in: index.d.ts:2087
 
 ## Type declaration
 

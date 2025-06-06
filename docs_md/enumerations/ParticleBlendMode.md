@@ -6,7 +6,7 @@
 
 # Enumeration: ParticleBlendMode
 
-Defined in: index.d.ts:1848
+Defined in: index.d.ts:1856
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1848
 
 > **Add**: `2`
 
-Defined in: index.d.ts:1851
+Defined in: index.d.ts:1859
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:1851
 
 > **Multiply**: `3`
 
-Defined in: index.d.ts:1852
+Defined in: index.d.ts:1860
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:1852
 
 > **MultiplyAdd**: `4`
 
-Defined in: index.d.ts:1853
+Defined in: index.d.ts:1861
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:1853
 
 > **OneOne**: `0`
 
-Defined in: index.d.ts:1849
+Defined in: index.d.ts:1857
 
 ***
 
@@ -46,4 +46,4 @@ Defined in: index.d.ts:1849
 
 > **Standard**: `1`
 
-Defined in: index.d.ts:1850
+Defined in: index.d.ts:1858

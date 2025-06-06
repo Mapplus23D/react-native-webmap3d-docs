@@ -8,7 +8,7 @@
 
 > **CameraAnimation** = `string` \| [`FlyRoute`](../interfaces/FlyRoute.md)
 
-Defined in: index.d.ts:904
+Defined in: index.d.ts:912
 
 相机飞行动画
 

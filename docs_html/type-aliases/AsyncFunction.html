@@ -308,7 +308,7 @@
 <blockquote>
 <p><strong>AsyncFunction</strong>&lt;<code>Functions</code>&gt; = <code>{ [K in keyof Functions]: ReturnType&lt;Functions[K]&gt; extends Promise&lt;unknown&gt; ? (params: Parameters&lt;Functions[K]&gt;) =&gt; ReturnType&lt;Functions[K]&gt; : (params: Parameters&lt;Functions[K]&gt;) =&gt; Promise&lt;ReturnType&lt;Functions[K]&gt;&gt; }</code></p>
 </blockquote>
-<p>Defined in: index.d.ts:2517</p>
+
 <h2>Type Parameters</h2>
 <h3>Functions</h3>
 <p><code>Functions</code> <em>extends</em> <code>Record</code>&lt;<code>string</code>, (...<code>args</code>) =&gt; <code>any</code>&gt;</p>

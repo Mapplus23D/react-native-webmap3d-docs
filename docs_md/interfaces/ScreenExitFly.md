@@ -6,7 +6,7 @@
 
 # Interface: ScreenExitFly
 
-Defined in: index.d.ts:805
+Defined in: index.d.ts:813
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:805
 
 > **to**: [`TDirection`](../type-aliases/TDirection.md)
 
-Defined in: index.d.ts:807
+Defined in: index.d.ts:815
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: index.d.ts:807
 
 > **type**: `"fly"`
 
-Defined in: index.d.ts:806
+Defined in: index.d.ts:814

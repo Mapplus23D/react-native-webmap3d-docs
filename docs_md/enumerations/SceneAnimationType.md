@@ -6,7 +6,7 @@
 
 # Enumeration: SceneAnimationType
 
-Defined in: index.d.ts:838
+Defined in: index.d.ts:846
 
 ## Enumeration Members
 
@@ -14,4 +14,4 @@ Defined in: index.d.ts:838
 
 > **WEATHER**: `"weather"`
 
-Defined in: index.d.ts:839
+Defined in: index.d.ts:847

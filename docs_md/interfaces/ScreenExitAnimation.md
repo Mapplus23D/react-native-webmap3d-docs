@@ -6,7 +6,7 @@
 
 # Interface: ScreenExitAnimation
 
-Defined in: index.d.ts:790
+Defined in: index.d.ts:798
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:790
 
 > **duration**: `number`
 
-Defined in: index.d.ts:784
+Defined in: index.d.ts:792
 
 #### Inherited from
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:784
 
 > **effect**: [`ScreenExitFly`](ScreenExitFly.md) \| [`ScreenExitDisappear`](ScreenExitDisappear.md)
 
-Defined in: index.d.ts:792
+Defined in: index.d.ts:800
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:792
 
 > **startTime**: `number`
 
-Defined in: index.d.ts:783
+Defined in: index.d.ts:791
 
 #### Inherited from
 
@@ -50,4 +50,4 @@ Defined in: index.d.ts:783
 
 > **type**: `"exit"`
 
-Defined in: index.d.ts:791
+Defined in: index.d.ts:799

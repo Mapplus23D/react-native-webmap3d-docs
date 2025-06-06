@@ -6,7 +6,7 @@
 
 # Interface: PointParticleEmitter
 
-Defined in: index.d.ts:1921
+Defined in: index.d.ts:1929
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1921
 
 > **direction1**: \[`number`, `number`, `number`\]
 
-Defined in: index.d.ts:1923
+Defined in: index.d.ts:1931
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:1923
 
 > **direction2**: \[`number`, `number`, `number`\]
 
-Defined in: index.d.ts:1928
+Defined in: index.d.ts:1936
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: index.d.ts:1928
 
 > **type**: `"PointParticleEmitter"`
 
-Defined in: index.d.ts:1922
+Defined in: index.d.ts:1930

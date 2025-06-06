@@ -8,7 +8,7 @@
 
 > **IMServer** = `object`
 
-Defined in: index.d.ts:4393
+Defined in: index.d.ts:4401
 
 ## Methods
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:4393
 
 > **setServerAddress**(`addr`): `void`
 
-Defined in: index.d.ts:4394
+Defined in: index.d.ts:4402
 
 #### Parameters
 

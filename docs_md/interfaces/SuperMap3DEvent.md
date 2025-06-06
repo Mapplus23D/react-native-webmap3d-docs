@@ -6,7 +6,7 @@
 
 # Interface: SuperMap3DEvent
 
-Defined in: index.d.ts:4173
+Defined in: index.d.ts:4181
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:4173
 
 > **fly\_stop\_arrived**: [`RouteStop`](RouteStop.md)
 
-Defined in: index.d.ts:4175
+Defined in: index.d.ts:4183
 
 飞行站点抵达回调
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:4175
 
 > **onAnimationEnd**: `string`
 
-Defined in: index.d.ts:4198
+Defined in: index.d.ts:4206
 
 动画播放完成回调。返回动画的id。对从地图播放的动画来说，返回的是地图id的字符串
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:4198
 
 > **onAnimationPause**: `string`
 
-Defined in: index.d.ts:4194
+Defined in: index.d.ts:4202
 
 动画暂停回调。返回动画的id。
 
@@ -44,7 +44,7 @@ Defined in: index.d.ts:4194
 
 > **onAnimationPlay**: `string`
 
-Defined in: index.d.ts:4192
+Defined in: index.d.ts:4200
 
 动画播放回调。返回动画的id。
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:4192
 
 > **onAnimationStop**: `string`
 
-Defined in: index.d.ts:4196
+Defined in: index.d.ts:4204
 
 动画停止回调。返回动画的id。
 
@@ -64,7 +64,7 @@ Defined in: index.d.ts:4196
 
 > **onCacheConnectionClose**: `undefined`
 
-Defined in: index.d.ts:4216
+Defined in: index.d.ts:4224
 
 ***
 
@@ -72,7 +72,7 @@ Defined in: index.d.ts:4216
 
 > **onS3mLayersAdded**: `boolean`
 
-Defined in: index.d.ts:4200
+Defined in: index.d.ts:4208
 
 打开地图时s3m图层加载完成回调
 
@@ -82,7 +82,7 @@ Defined in: index.d.ts:4200
 
 > **record\_blob**: `string`
 
-Defined in: index.d.ts:4215
+Defined in: index.d.ts:4223
 
 ***
 
@@ -90,7 +90,7 @@ Defined in: index.d.ts:4215
 
 > **right\_click**: `object`
 
-Defined in: index.d.ts:4211
+Defined in: index.d.ts:4219
 
 鼠标右键点击事件
 
@@ -108,7 +108,7 @@ Defined in: index.d.ts:4211
 
 > **selected\_entity**: `object`[]
 
-Defined in: index.d.ts:4177
+Defined in: index.d.ts:4185
 
 选中Entity回调
 
@@ -126,7 +126,7 @@ Defined in: index.d.ts:4177
 
 > **selected\_primitive**: `object`[]
 
-Defined in: index.d.ts:4187
+Defined in: index.d.ts:4195
 
 选中Primitive回调
 
@@ -144,7 +144,7 @@ Defined in: index.d.ts:4187
 
 > **selected\_s3m**: `object`[]
 
-Defined in: index.d.ts:4182
+Defined in: index.d.ts:4190
 
 s3m选中回调
 
@@ -162,7 +162,7 @@ s3m选中回调
 
 > **touch\_event**: `object`
 
-Defined in: index.d.ts:4202
+Defined in: index.d.ts:4210
 
 touch监听 'touchBegin' 'touchEnd' 'touchMove' ‘touchClick’
 
@@ -192,4 +192,4 @@ touch监听 'touchBegin' 'touchEnd' 'touchMove' ‘touchClick’
 
 > **translation\_end\_event**: [`Vector3`](Vector3.md)
 
-Defined in: index.d.ts:4209
+Defined in: index.d.ts:4217

@@ -6,7 +6,7 @@
 
 # Interface: PointGraphics
 
-Defined in: index.d.ts:1248
+Defined in: index.d.ts:1256
 
 Entity关联点，画在Entity.position处
 
@@ -16,7 +16,7 @@ Entity关联点，画在Entity.position处
 
 > `optional` **color**: `string` \| [`PropertyAnimation`](PropertyAnimation.md)\<`string`\>
 
-Defined in: index.d.ts:1252
+Defined in: index.d.ts:1260
 
 填充颜色
 
@@ -26,7 +26,7 @@ Defined in: index.d.ts:1252
 
 > `optional` **disableDepthTestDistance**: `number`
 
-Defined in: index.d.ts:1258
+Defined in: index.d.ts:1266
 
 遮挡深度
 
@@ -36,7 +36,7 @@ Defined in: index.d.ts:1258
 
 > `optional` **distanceDisplayCondition**: [`DistanceDisplayCondition`](DistanceDisplayCondition.md)
 
-Defined in: index.d.ts:1264
+Defined in: index.d.ts:1272
 
 可见范围
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:1264
 
 > `optional` **heightReference**: [`HeightReference`](../enumerations/HeightReference.md)
 
-Defined in: index.d.ts:1266
+Defined in: index.d.ts:1274
 
 相对地形的位置
 
@@ -56,7 +56,7 @@ Defined in: index.d.ts:1266
 
 > `optional` **outlineColor**: `string`
 
-Defined in: index.d.ts:1254
+Defined in: index.d.ts:1262
 
 轮廓颜色，默认黑色
 
@@ -66,7 +66,7 @@ Defined in: index.d.ts:1254
 
 > `optional` **outlineWidth**: `number`
 
-Defined in: index.d.ts:1256
+Defined in: index.d.ts:1264
 
 轮廓宽度，默认0
 
@@ -76,7 +76,7 @@ Defined in: index.d.ts:1256
 
 > `optional` **scaleByDistance**: [`NearFarScalar`](NearFarScalar.md)
 
-Defined in: index.d.ts:1260
+Defined in: index.d.ts:1268
 
 随距离缩放参数，默认undefine表示不随距离缩放
 
@@ -86,7 +86,7 @@ Defined in: index.d.ts:1260
 
 > `optional` **show**: `boolean` \| [`PropertyAnimation`](PropertyAnimation.md)\<`boolean`\>
 
-Defined in: index.d.ts:1262
+Defined in: index.d.ts:1270
 
 显隐
 
@@ -96,6 +96,6 @@ Defined in: index.d.ts:1262
 
 > `optional` **size**: `number`
 
-Defined in: index.d.ts:1250
+Defined in: index.d.ts:1258
 
 大小pixelSize

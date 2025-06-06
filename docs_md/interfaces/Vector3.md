@@ -6,7 +6,7 @@
 
 # Interface: Vector3
 
-Defined in: index.d.ts:1191
+Defined in: index.d.ts:1199
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1191
 
 > **x**: `number`
 
-Defined in: index.d.ts:1192
+Defined in: index.d.ts:1200
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:1192
 
 > **y**: `number`
 
-Defined in: index.d.ts:1193
+Defined in: index.d.ts:1201
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: index.d.ts:1193
 
 > **z**: `number`
 
-Defined in: index.d.ts:1194
+Defined in: index.d.ts:1202

@@ -6,7 +6,7 @@
 
 # Interface: FlyBackwardParam
 
-Defined in: index.d.ts:1057
+Defined in: index.d.ts:1065
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1057
 
 > `optional` **backwardDistanceRatio**: `number`
 
-Defined in: index.d.ts:1065
+Defined in: index.d.ts:1073
 
 远离比率(远离距离与起点焦点间距比率)，默认4
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:1065
 
 > **focus**: [`Vector3`](Vector3.md)
 
-Defined in: index.d.ts:1063
+Defined in: index.d.ts:1071
 
 焦点
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:1063
 
 > `optional` **heading**: `number`
 
-Defined in: index.d.ts:1067
+Defined in: index.d.ts:1075
 
 站点朝向角度
 
@@ -44,7 +44,7 @@ Defined in: index.d.ts:1067
 
 > **presetType**: [`backward`](../enumerations/FlyPresetType.md#backward)
 
-Defined in: index.d.ts:1059
+Defined in: index.d.ts:1067
 
 预制类型
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:1059
 
 > **start**: [`Vector3`](Vector3.md)
 
-Defined in: index.d.ts:1061
+Defined in: index.d.ts:1069
 
 飞行起点
 
@@ -64,6 +64,6 @@ Defined in: index.d.ts:1061
 
 > `optional` **tilt**: `number`
 
-Defined in: index.d.ts:1069
+Defined in: index.d.ts:1077
 
 站点俯仰角度

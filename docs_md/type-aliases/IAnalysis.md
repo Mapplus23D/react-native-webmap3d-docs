@@ -8,7 +8,7 @@
 
 > **IAnalysis** = `object`
 
-Defined in: index.d.ts:2525
+Defined in: index.d.ts:2533
 
 地形分析模块
 
@@ -20,7 +20,7 @@ Defined in: index.d.ts:2525
 
 > **distanceOfPoints**: (`points`) => `Promise`\<`number`\>
 
-Defined in: index.d.ts:2545
+Defined in: index.d.ts:2553
 
 获取指定经纬度点间距离
 
@@ -42,7 +42,7 @@ Defined in: index.d.ts:2545
 
 > **pickTerrainLine**: (`start`, `end`, `tolerance?`, `classificationType?`) => `Promise`\<[`Vector3`](../interfaces/Vector3.md)[]\>
 
-Defined in: index.d.ts:2533
+Defined in: index.d.ts:2541
 
 根据起点终点生成一条贴地形的线
 
@@ -82,7 +82,7 @@ Defined in: index.d.ts:2533
 
 > **pickTerrainPoint**: (`point`) => `Promise`\<[`Vector3`](../interfaces/Vector3.md) \| `undefined`\>
 
-Defined in: index.d.ts:2539
+Defined in: index.d.ts:2547
 
 获取指定经纬度点在地形上的点坐标
 

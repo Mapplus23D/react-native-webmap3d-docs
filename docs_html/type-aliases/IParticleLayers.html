@@ -308,7 +308,7 @@
 <blockquote>
 <p><strong>IParticleLayers</strong> = <code>object</code></p>
 </blockquote>
-<p>Defined in: index.d.ts:4401</p>
+
 <p>粒子特效图层</p>
 <p>存放粒子特效对象，可以添加，删除，修改</p>
 <h2>Properties</h2>
@@ -316,7 +316,7 @@
 <blockquote>
 <p><strong>addParticleLayer</strong>: (<code>name</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:4407</p>
+
 <p>添加图层（已有同名图层添加失败）</p>
 <h4>Parameters</h4>
 <h5>name</h5>
@@ -330,7 +330,7 @@
 <blockquote>
 <p><strong>clearParticleLayer</strong>: (<code>name</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:4424</p>
+
 <p>清空图层</p>
 <h4>Parameters</h4>
 <h5>name</h5>
@@ -344,7 +344,7 @@
 <blockquote>
 <p><strong>getAllCount</strong>: () =&gt; <code>number</code></p>
 </blockquote>
-<p>Defined in: index.d.ts:4493</p>
+
 <p>获取所有对象个数</p>
 <h4>Returns</h4>
 <p><code>number</code></p>
@@ -353,7 +353,7 @@
 <blockquote>
 <p><strong>getAvailableName</strong>: (<code>layerName</code>, <code>name</code>) =&gt; <code>string</code></p>
 </blockquote>
-<p>Defined in: index.d.ts:4489</p>
+
 <p>获取指定图层中可用粒子特效名称</p>
 <h4>Parameters</h4>
 <h5>layerName</h5>
@@ -367,7 +367,7 @@
 <blockquote>
 <p><strong>getParticle</strong>: (<code>layerName</code>, <code>id</code>) =&gt; <a href="../interfaces/Particle.html"><code>Particle</code></a> | <code>undefined</code></p>
 </blockquote>
-<p>Defined in: index.d.ts:4487</p>
+
 <p>获取指定指定的粒子特效对象</p>
 <h4>Parameters</h4>
 <h5>layerName</h5>
@@ -383,7 +383,7 @@
 <blockquote>
 <p><strong>getParticleCount</strong>: (<code>layerName</code>) =&gt; <code>number</code></p>
 </blockquote>
-<p>Defined in: index.d.ts:4491</p>
+
 <p>获取图层对象个数</p>
 <h4>Parameters</h4>
 <h5>layerName</h5>
@@ -395,7 +395,7 @@
 <blockquote>
 <p><strong>getParticleLayerNames</strong>: () =&gt; <code>string</code>[]</p>
 </blockquote>
-<p>Defined in: index.d.ts:4441</p>
+
 <p>获取所有粒子图层名</p>
 <h4>Returns</h4>
 <p><code>string</code>[]</p>
@@ -405,7 +405,7 @@
 <blockquote>
 <p><strong>isParticleLayerVisible</strong>: (<code>name</code>) =&gt; <code>boolean</code></p>
 </blockquote>
-<p>Defined in: index.d.ts:4430</p>
+
 <p>图层是否可见</p>
 <h4>Parameters</h4>
 <h5>name</h5>
@@ -419,7 +419,7 @@
 <blockquote>
 <p><strong>layerAddParticle</strong>: (<code>name</code>, <code>particleName</code>, <code>particleUrl</code>, <code>param?</code>) =&gt; <code>Promise</code>&lt;<code>string</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:4457</p>
+
 <p>图层添加粒子对象</p>
 <h4>Parameters</h4>
 <h5>name</h5>
@@ -442,7 +442,7 @@
 <blockquote>
 <p><strong>layerModifyParticle</strong>: (<code>name</code>, <code>particleId</code>, <code>param</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:4481</p>
+
 <p>更新图层粒子对象</p>
 <h4>Parameters</h4>
 <h5>name</h5>
@@ -461,7 +461,7 @@
 <blockquote>
 <p><strong>layerParticles</strong>: (<code>name</code>, <code>range?</code>) =&gt; <a href="../interfaces/Particle.html"><code>Particle</code></a>[]</p>
 </blockquote>
-<p>Defined in: index.d.ts:4470</p>
+
 <p>获取图层所有粒子对象</p>
 <h4>Parameters</h4>
 <h5>name</h5>
@@ -480,7 +480,7 @@
 <blockquote>
 <p><strong>layerRemoveParticle</strong>: (<code>name</code>, <code>particleId</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:4464</p>
+
 <p>图层删除粒子对象</p>
 <h4>Parameters</h4>
 <h5>name</h5>
@@ -496,7 +496,7 @@
 <blockquote>
 <p><strong>removeAllParticleLayers</strong>: () =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:4418</p>
+
 <p>删除所有图层</p>
 <h4>Returns</h4>
 <p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
@@ -506,7 +506,7 @@
 <blockquote>
 <p><strong>removeParticleLayer</strong>: (<code>name</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:4413</p>
+
 <p>删除图层</p>
 <h4>Parameters</h4>
 <h5>name</h5>
@@ -520,7 +520,7 @@
 <blockquote>
 <p><strong>renameParticleLayer</strong>: (<code>oldName</code>, <code>newName</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:4448</p>
+
 <p>重命名</p>
 <h4>Parameters</h4>
 <h5>oldName</h5>
@@ -537,7 +537,7 @@
 <blockquote>
 <p><strong>setParticleLayerVisible</strong>: (<code>name</code>, <code>isVisible</code>) =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
 </blockquote>
-<p>Defined in: index.d.ts:4436</p>
+
 <p>设置图层是否可见</p>
 <h4>Parameters</h4>
 <h5>name</h5>

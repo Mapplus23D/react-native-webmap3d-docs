@@ -6,7 +6,7 @@
 
 # Interface: Bounds
 
-Defined in: index.d.ts:2017
+Defined in: index.d.ts:2025
 
 表示空间经纬度范围
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:2017
 
 > **east**: `number`
 
-Defined in: index.d.ts:2020
+Defined in: index.d.ts:2028
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:2020
 
 > **north**: `number`
 
-Defined in: index.d.ts:2021
+Defined in: index.d.ts:2029
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: index.d.ts:2021
 
 > **south**: `number`
 
-Defined in: index.d.ts:2019
+Defined in: index.d.ts:2027
 
 ***
 
@@ -40,4 +40,4 @@ Defined in: index.d.ts:2019
 
 > **west**: `number`
 
-Defined in: index.d.ts:2018
+Defined in: index.d.ts:2026

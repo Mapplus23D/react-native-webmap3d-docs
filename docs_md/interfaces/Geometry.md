@@ -6,7 +6,7 @@
 
 # Interface: Geometry
 
-Defined in: index.d.ts:2990
+Defined in: index.d.ts:2998
 
 Geometry
 
@@ -22,7 +22,7 @@ https://tools.ietf.org/html/rfc7946#section-3
 
 > `optional` **bbox**: [`BBox`](../type-aliases/BBox.md)
 
-Defined in: index.d.ts:2975
+Defined in: index.d.ts:2983
 
 Bounding box of the coordinate range of the object's Geometries, Features, or Feature Collections.
 https://tools.ietf.org/html/rfc7946#section-5
@@ -37,7 +37,7 @@ https://tools.ietf.org/html/rfc7946#section-5
 
 > **coordinates**: [`Position`](../type-aliases/Position.md) \| [`Position`](../type-aliases/Position.md)[] \| [`Position`](../type-aliases/Position.md)[][] \| [`Position`](../type-aliases/Position.md)[][][]
 
-Defined in: index.d.ts:2991
+Defined in: index.d.ts:2999
 
 ***
 
@@ -45,7 +45,7 @@ Defined in: index.d.ts:2991
 
 > **type**: `string`
 
-Defined in: index.d.ts:2970
+Defined in: index.d.ts:2978
 
 Specifies the type of GeoJSON object.
 

@@ -8,7 +8,7 @@
 
 > **IPrimitiveLayers** = `object`
 
-Defined in: index.d.ts:4502
+Defined in: index.d.ts:4510
 
 矢量图层
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:4502
 
 > **addLayerPrimitivePropertyInfo**: (`layerName`, `info`) => `boolean`
 
-Defined in: index.d.ts:4602
+Defined in: index.d.ts:4610
 
 添加一条属性
 
@@ -48,7 +48,7 @@ Defined in: index.d.ts:4602
 
 > **addPrimitiveLayer**: (`name`, `uniform?`, `propertyInfos?`, `uniformPrimitiveDataPropertyMap?`) => `boolean`
 
-Defined in: index.d.ts:4511
+Defined in: index.d.ts:4519
 
 添加图层（已有同名图层添加失败）
 
@@ -88,7 +88,7 @@ Defined in: index.d.ts:4511
 
 > **addPrimitivesFromEntities**: (`layerName`, `entities`, `option?`) => `boolean`
 
-Defined in: index.d.ts:4684
+Defined in: index.d.ts:4692
 
 从Entities添加对象
 
@@ -130,7 +130,7 @@ Defined in: index.d.ts:4684
 
 > **addPrimitivesFromGeojson**: (`layerName`, `featureCollection`, `option?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4692
+Defined in: index.d.ts:4700
 
 导入geojson
 
@@ -164,7 +164,7 @@ Defined in: index.d.ts:4692
 
 > **addPrimitivesFromKml**: (`layerName`, `kmlContent`, `option?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4665
+Defined in: index.d.ts:4673
 
 导入kml
 
@@ -214,7 +214,7 @@ Defined in: index.d.ts:4665
 
 > **addPrimitivesFromKmlURI**: (`layerName`, `kmluri`, `option?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4674
+Defined in: index.d.ts:4682
 
 #### Parameters
 
@@ -262,7 +262,7 @@ Defined in: index.d.ts:4674
 
 > **clearPrimitiveLayer**: (`name`) => `boolean`
 
-Defined in: index.d.ts:4528
+Defined in: index.d.ts:4536
 
 清空图层
 
@@ -286,7 +286,7 @@ Defined in: index.d.ts:4528
 
 > **exportPrimitivesAsEntities**: (`primitives`) => [`Entity`](../interfaces/Entity.md)[]
 
-Defined in: index.d.ts:4653
+Defined in: index.d.ts:4661
 
 导出
 
@@ -306,7 +306,7 @@ Defined in: index.d.ts:4653
 
 > **exportPrimitivesAsGeojson**: (`primitives`) => [`FeatureCollection`](../interfaces/FeatureCollection.md)
 
-Defined in: index.d.ts:4661
+Defined in: index.d.ts:4669
 
 导出Geojson
 
@@ -326,7 +326,7 @@ Defined in: index.d.ts:4661
 
 > **exportPrimitivesAsKml**: (`primitives`) => `Promise`\<`string`\>
 
-Defined in: index.d.ts:4657
+Defined in: index.d.ts:4665
 
 导出kml
 
@@ -346,7 +346,7 @@ Defined in: index.d.ts:4657
 
 > **getAllCount**: () => `number`
 
-Defined in: index.d.ts:4651
+Defined in: index.d.ts:4659
 
 获取所有对象个数
 
@@ -360,7 +360,7 @@ Defined in: index.d.ts:4651
 
 > **getAvailableName**: (`layerName`, `name`) => `string`
 
-Defined in: index.d.ts:4639
+Defined in: index.d.ts:4647
 
 获取指定图层中可用对象名称
 
@@ -384,7 +384,7 @@ Defined in: index.d.ts:4639
 
 > **getLayerPrimitivePropertyInfo**: (`layerName`, `infoName`) => [`PropertyInfo`](../interfaces/PropertyInfo.md) \| `undefined`
 
-Defined in: index.d.ts:4597
+Defined in: index.d.ts:4605
 
 #### Parameters
 
@@ -406,7 +406,7 @@ Defined in: index.d.ts:4597
 
 > **getLayerPrimitivePropertyInfoNames**: (`layerName`) => `string`[]
 
-Defined in: index.d.ts:4596
+Defined in: index.d.ts:4604
 
 #### Parameters
 
@@ -424,7 +424,7 @@ Defined in: index.d.ts:4596
 
 > **getLayerPrimitivePropertyInfos**: (`layerName`) => [`PropertyInfo`](../interfaces/PropertyInfo.md)[]
 
-Defined in: index.d.ts:4595
+Defined in: index.d.ts:4603
 
 属性表头
 
@@ -444,7 +444,7 @@ Defined in: index.d.ts:4595
 
 > **getLayerPrimitiveUniform**: (`layerName`) => [`PrimitiveUniform`](PrimitiveUniform.md) \| `undefined`
 
-Defined in: index.d.ts:4586
+Defined in: index.d.ts:4594
 
 获取图层统一风格
 
@@ -464,7 +464,7 @@ Defined in: index.d.ts:4586
 
 > **getLayerUniformPrimitiveDataPropertyMap**: (`layerName`) => [`UniformPrimitiveDataPropertyMap`](UniformPrimitiveDataPropertyMap.md)
 
-Defined in: index.d.ts:4606
+Defined in: index.d.ts:4614
 
 #### Parameters
 
@@ -482,7 +482,7 @@ Defined in: index.d.ts:4606
 
 > **getPrimitive**: (`layerName`, `id`) => [`Primitive`](Primitive.md) & `object` \| `undefined`
 
-Defined in: index.d.ts:4623
+Defined in: index.d.ts:4631
 
 获取指定的对象
 
@@ -508,7 +508,7 @@ Defined in: index.d.ts:4623
 
 > **getPrimitiveCount**: (`layerName`) => `number`
 
-Defined in: index.d.ts:4649
+Defined in: index.d.ts:4657
 
 获取图层对象个数
 
@@ -528,7 +528,7 @@ Defined in: index.d.ts:4649
 
 > **getPrimitiveLayerNames**: () => `string`[]
 
-Defined in: index.d.ts:4545
+Defined in: index.d.ts:4553
 
 获取所有粒子图层名
 
@@ -544,7 +544,7 @@ Defined in: index.d.ts:4545
 
 > **getPrimitiveProperties**: (`layerName`, `id`) => \{[`_`: `string`]: `unknown`; \} \| `undefined`
 
-Defined in: index.d.ts:4631
+Defined in: index.d.ts:4639
 
 获取指定的对象属性
 
@@ -570,7 +570,7 @@ Defined in: index.d.ts:4631
 
 > **isPrimitiveLayerVisible**: (`name`) => `boolean`
 
-Defined in: index.d.ts:4534
+Defined in: index.d.ts:4542
 
 图层是否可见
 
@@ -594,7 +594,7 @@ Defined in: index.d.ts:4534
 
 > **layerAddPrimitive**: (`layerName`, `primitive`) => `string` \| `undefined`
 
-Defined in: index.d.ts:4559
+Defined in: index.d.ts:4567
 
 图层添加对象
 
@@ -624,7 +624,7 @@ Defined in: index.d.ts:4559
 
 > **layerModifyPrimitive**: (`layerName`, `primitive`) => `boolean`
 
-Defined in: index.d.ts:4615
+Defined in: index.d.ts:4623
 
 更新图层对象
 
@@ -654,7 +654,7 @@ Defined in: index.d.ts:4615
 
 > **layerPrimitives**: (`layerName`, `indexRange?`) => [`Primitive`](Primitive.md) & `object`[]
 
-Defined in: index.d.ts:4575
+Defined in: index.d.ts:4583
 
 获取图层所有对象
 
@@ -688,7 +688,7 @@ Defined in: index.d.ts:4575
 
 > **layerRemovePrimitive**: (`layerName`, `primitiveId`) => `boolean`
 
-Defined in: index.d.ts:4568
+Defined in: index.d.ts:4576
 
 图层删除对象
 
@@ -714,7 +714,7 @@ Defined in: index.d.ts:4568
 
 > **loadLayerUniformPrimitiveDataPropertyMap**: (`layerName`, `map`) => `void`
 
-Defined in: index.d.ts:4607
+Defined in: index.d.ts:4615
 
 #### Parameters
 
@@ -736,7 +736,7 @@ Defined in: index.d.ts:4607
 
 > **modifyLayerPrimitivePropertyInfo**: (`layerName`, `info`) => `boolean`
 
-Defined in: index.d.ts:4605
+Defined in: index.d.ts:4613
 
 propertyName valueType 不能改
 
@@ -760,7 +760,7 @@ propertyName valueType 不能改
 
 > **removeAllPrimitiveLayers**: () => `boolean`
 
-Defined in: index.d.ts:4522
+Defined in: index.d.ts:4530
 
 删除所有图层
 
@@ -776,7 +776,7 @@ Defined in: index.d.ts:4522
 
 > **removeLayerPrimitivePropertyInfo**: (`layerName`, `infoName`) => `boolean`
 
-Defined in: index.d.ts:4603
+Defined in: index.d.ts:4611
 
 #### Parameters
 
@@ -798,7 +798,7 @@ Defined in: index.d.ts:4603
 
 > **removePrimitiveLayer**: (`name`) => `boolean`
 
-Defined in: index.d.ts:4517
+Defined in: index.d.ts:4525
 
 删除图层
 
@@ -822,7 +822,7 @@ Defined in: index.d.ts:4517
 
 > **renamePrimitiveLayer**: (`oldName`, `newName`) => `boolean`
 
-Defined in: index.d.ts:4552
+Defined in: index.d.ts:4560
 
 重命名
 
@@ -852,7 +852,7 @@ Defined in: index.d.ts:4552
 
 > **setLayerPrimitiveUniform**: (`layerName`, `uniform`) => `boolean`
 
-Defined in: index.d.ts:4593
+Defined in: index.d.ts:4601
 
 设置图层统一风格
 
@@ -878,7 +878,7 @@ Defined in: index.d.ts:4593
 
 > **setLayerUniformPrimitiveDataFromProperty**: (`layerName`, `dataType`, `value`) => `boolean`
 
-Defined in: index.d.ts:4608
+Defined in: index.d.ts:4616
 
 #### Parameters
 
@@ -904,7 +904,7 @@ keyof [`UniformPrimitiveDataPropertyMap`](UniformPrimitiveDataPropertyMap.md)
 
 > **setPrimitiveLayerVisible**: (`name`, `isVisible`) => `void`
 
-Defined in: index.d.ts:4540
+Defined in: index.d.ts:4548
 
 设置图层是否可见
 
@@ -932,7 +932,7 @@ Defined in: index.d.ts:4540
 
 > **viewEntirePrimitive**: (`layerName`, `primitiveId`, `duration`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4647
+Defined in: index.d.ts:4655
 
 全幅primitive矢量
 

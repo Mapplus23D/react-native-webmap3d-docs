@@ -6,7 +6,7 @@
 
 # Interface: PropertyAnimation\<T\>
 
-Defined in: index.d.ts:1682
+Defined in: index.d.ts:1690
 
 ## Type Parameters
 
@@ -20,7 +20,7 @@ Defined in: index.d.ts:1682
 
 > `optional` **defaultValue**: `T`
 
-Defined in: index.d.ts:1692
+Defined in: index.d.ts:1700
 
 默认值，动画暂停时的值
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:1692
 
 > **duration**: `number`
 
-Defined in: index.d.ts:1690
+Defined in: index.d.ts:1698
 
 动画持续时间，单位秒
 
@@ -40,7 +40,7 @@ Defined in: index.d.ts:1690
 
 > `optional` **timeOffset**: `number`
 
-Defined in: index.d.ts:1694
+Defined in: index.d.ts:1702
 
 时间偏移量
 
@@ -50,6 +50,6 @@ Defined in: index.d.ts:1694
 
 > **values**: \[`T`, `T`, `...T[]`\]
 
-Defined in: index.d.ts:1684
+Defined in: index.d.ts:1692
 
 属性动画属性值站点

@@ -6,7 +6,7 @@
 
 # Enumeration: FlyPresetType
 
-Defined in: index.d.ts:1015
+Defined in: index.d.ts:1023
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1015
 
 > **backward**: `"backward"`
 
-Defined in: index.d.ts:1021
+Defined in: index.d.ts:1029
 
 拉远
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:1021
 
 > **forward**: `"forward"`
 
-Defined in: index.d.ts:1019
+Defined in: index.d.ts:1027
 
 推近
 
@@ -34,6 +34,6 @@ Defined in: index.d.ts:1019
 
 > **forward\_around\_backward**: `"forward_around_backward"`
 
-Defined in: index.d.ts:1017
+Defined in: index.d.ts:1025
 
 推近-环绕-拉远

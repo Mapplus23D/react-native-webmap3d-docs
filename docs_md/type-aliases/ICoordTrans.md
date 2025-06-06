@@ -8,7 +8,7 @@
 
 > **ICoordTrans** = `object`
 
-Defined in: index.d.ts:2817
+Defined in: index.d.ts:2825
 
 坐标转换
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:2817
 
 > **translate**(`points`, `from`, `to`): `number`[][]
 
-Defined in: index.d.ts:2824
+Defined in: index.d.ts:2832
 
 坐标转换
 

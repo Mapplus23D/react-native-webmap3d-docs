@@ -6,7 +6,7 @@
 
 # Interface: NonuniformPrimitiveLayer
 
-Defined in: index.d.ts:2051
+Defined in: index.d.ts:2059
 
 复合型
 
@@ -20,7 +20,7 @@ Defined in: index.d.ts:2051
 
 > **name**: `string`
 
-Defined in: index.d.ts:2048
+Defined in: index.d.ts:2056
 
 #### Inherited from
 
@@ -32,7 +32,7 @@ Defined in: index.d.ts:2048
 
 > **primitives**: [`Primitive`](../type-aliases/Primitive.md) & `object`[]
 
-Defined in: index.d.ts:2052
+Defined in: index.d.ts:2060
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: index.d.ts:2052
 
 > **visible**: `boolean`
 
-Defined in: index.d.ts:2047
+Defined in: index.d.ts:2055
 
 #### Inherited from
 

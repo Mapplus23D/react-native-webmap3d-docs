@@ -6,7 +6,7 @@
 
 # Interface: TerrainLabel
 
-Defined in: index.d.ts:1360
+Defined in: index.d.ts:1368
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1360
 
 > `optional` **backgroundColor**: `string`
 
-Defined in: index.d.ts:1376
+Defined in: index.d.ts:1384
 
 背景色，不设置表示没有背景
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:1376
 
 > `optional` **backgroundPaddingSize**: `number`
 
-Defined in: index.d.ts:1378
+Defined in: index.d.ts:1386
 
 背景边框宽度 , 默认0
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:1378
 
 > `optional` **distanceDisplayCondition**: [`DistanceDisplayCondition`](DistanceDisplayCondition.md)
 
-Defined in: index.d.ts:1384
+Defined in: index.d.ts:1392
 
 可见范围
 
@@ -44,7 +44,7 @@ Defined in: index.d.ts:1384
 
 > `optional` **fillColor**: `string`
 
-Defined in: index.d.ts:1370
+Defined in: index.d.ts:1378
 
 文字填充色
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:1370
 
 > `optional` **font**: `string`
 
-Defined in: index.d.ts:1366
+Defined in: index.d.ts:1374
 
 字体样式，默认字体'10px sans-serif'
 
@@ -64,7 +64,7 @@ Defined in: index.d.ts:1366
 
 > `optional` **headingAngle**: `number`
 
-Defined in: index.d.ts:1364
+Defined in: index.d.ts:1372
 
 文本走向
 
@@ -74,7 +74,7 @@ Defined in: index.d.ts:1364
 
 > `optional` **outlineColor**: `string`
 
-Defined in: index.d.ts:1372
+Defined in: index.d.ts:1380
 
 文字填轮廓色
 
@@ -84,7 +84,7 @@ Defined in: index.d.ts:1372
 
 > `optional` **scale**: `number`
 
-Defined in: index.d.ts:1380
+Defined in: index.d.ts:1388
 
 缩放比例，默认1.0
 
@@ -94,7 +94,7 @@ Defined in: index.d.ts:1380
 
 > `optional` **show**: `boolean` \| [`PropertyAnimation`](PropertyAnimation.md)\<`boolean`\>
 
-Defined in: index.d.ts:1382
+Defined in: index.d.ts:1390
 
 显隐
 
@@ -104,7 +104,7 @@ Defined in: index.d.ts:1382
 
 > `optional` **showBackground**: `boolean`
 
-Defined in: index.d.ts:1374
+Defined in: index.d.ts:1382
 
 背景显示否，默认false
 
@@ -114,7 +114,7 @@ Defined in: index.d.ts:1374
 
 > `optional` **style**: [`LabelStyle`](../enumerations/LabelStyle.md)
 
-Defined in: index.d.ts:1368
+Defined in: index.d.ts:1376
 
 默认FILL
 
@@ -124,6 +124,6 @@ Defined in: index.d.ts:1368
 
 > `optional` **text**: `string`
 
-Defined in: index.d.ts:1362
+Defined in: index.d.ts:1370
 
 文本内容

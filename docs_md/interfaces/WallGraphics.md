@@ -6,7 +6,7 @@
 
 # Interface: WallGraphics
 
-Defined in: index.d.ts:1617
+Defined in: index.d.ts:1625
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1617
 
 > `optional` **distanceDisplayCondition**: [`DistanceDisplayCondition`](DistanceDisplayCondition.md)
 
-Defined in: index.d.ts:1624
+Defined in: index.d.ts:1632
 
 可见范围
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:1624
 
 > `optional` **growAnimation**: `null` \| [`PositionsGrowAnimation`](PositionsGrowAnimation.md)
 
-Defined in: index.d.ts:1620
+Defined in: index.d.ts:1628
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: index.d.ts:1620
 
 > `optional` **imageMaterial**: `object`
 
-Defined in: index.d.ts:1628
+Defined in: index.d.ts:1636
 
 填充符号
 
@@ -54,7 +54,7 @@ X/Y方向重复填充次数，默认（1，1）
 
 > `optional` **material**: `string` \| [`PropertyAnimation`](PropertyAnimation.md)\<`string`\>
 
-Defined in: index.d.ts:1626
+Defined in: index.d.ts:1634
 
 填充颜色
 
@@ -64,7 +64,7 @@ Defined in: index.d.ts:1626
 
 > `optional` **positions**: `number`[] \| [`Vector3`](Vector3.md)[] \| [`Circle`](Circle.md) \| [`Rectangle`](Rectangle.md) \| [`Spline`](Spline.md)
 
-Defined in: index.d.ts:1619
+Defined in: index.d.ts:1627
 
 位置数组
 
@@ -74,7 +74,7 @@ Defined in: index.d.ts:1619
 
 > `optional` **show**: `boolean` \| [`PropertyAnimation`](PropertyAnimation.md)\<`boolean`\>
 
-Defined in: index.d.ts:1622
+Defined in: index.d.ts:1630
 
 显隐
 
@@ -84,6 +84,6 @@ Defined in: index.d.ts:1622
 
 > `optional` **wallHeight**: `number`
 
-Defined in: index.d.ts:1635
+Defined in: index.d.ts:1643
 
 墙高度

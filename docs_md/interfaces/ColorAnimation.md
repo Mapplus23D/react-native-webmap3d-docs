@@ -6,7 +6,7 @@
 
 # Interface: ColorAnimation
 
-Defined in: index.d.ts:1144
+Defined in: index.d.ts:1152
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:1144
 
 > **color**: \[`string`, `string`, `...string[]`\]
 
-Defined in: index.d.ts:1150
+Defined in: index.d.ts:1158
 
 颜色。至少两个
 支持 css 风格的颜色字符串: #rgb, #rgba, #rrggbb, #rrggbbaa, rgb(), rgba(), hsl(), hsla()
@@ -29,7 +29,7 @@ Defined in: index.d.ts:1150
 
 > **duration**: `number`
 
-Defined in: index.d.ts:1099
+Defined in: index.d.ts:1107
 
 动画持续时间，单位秒
 
@@ -43,7 +43,7 @@ Defined in: index.d.ts:1099
 
 > **interval**: `number`
 
-Defined in: index.d.ts:1156
+Defined in: index.d.ts:1164
 
 切换一次颜色的间隔时间，单位 秒
 
@@ -53,7 +53,7 @@ Defined in: index.d.ts:1156
 
 > `optional` **layerName**: `string`
 
-Defined in: index.d.ts:1103
+Defined in: index.d.ts:1111
 
 矢量图层名
 
@@ -67,7 +67,7 @@ Defined in: index.d.ts:1103
 
 > `optional` **lerp**: `boolean`
 
-Defined in: index.d.ts:1158
+Defined in: index.d.ts:1166
 
 颜色之间是否有过渡, 默认 false
 
@@ -77,7 +77,7 @@ Defined in: index.d.ts:1158
 
 > **name**: `string`
 
-Defined in: index.d.ts:1095
+Defined in: index.d.ts:1103
 
 #### Inherited from
 
@@ -89,7 +89,7 @@ Defined in: index.d.ts:1095
 
 > `optional` **repeatCount**: `number`
 
-Defined in: index.d.ts:1101
+Defined in: index.d.ts:1109
 
 重复次数
 
@@ -103,7 +103,7 @@ Defined in: index.d.ts:1101
 
 > **startTime**: `number`
 
-Defined in: index.d.ts:1097
+Defined in: index.d.ts:1105
 
 开始时间，单位秒
 
@@ -117,7 +117,7 @@ Defined in: index.d.ts:1097
 
 > **target**: `string`
 
-Defined in: index.d.ts:1105
+Defined in: index.d.ts:1113
 
 对象 id
 
@@ -131,4 +131,4 @@ Defined in: index.d.ts:1105
 
 > **type**: [`COLOR`](../enumerations/AnimatorType.md#color)
 
-Defined in: index.d.ts:1145
+Defined in: index.d.ts:1153

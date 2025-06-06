@@ -8,7 +8,7 @@
 
 > **ITrackingLayer** = `object`
 
-Defined in: index.d.ts:4789
+Defined in: index.d.ts:4797
 
 跟踪图层
 
@@ -20,7 +20,7 @@ Defined in: index.d.ts:4789
 
 > **addEntity**: (`entity`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4799
+Defined in: index.d.ts:4807
 
 临时层添加对象 ,id不为空
 
@@ -42,7 +42,7 @@ Defined in: index.d.ts:4799
 
 > **addPolygonOutLine**: (`layerName`, `entityId`) => `Promise`\<`string`\>
 
-Defined in: index.d.ts:4806
+Defined in: index.d.ts:4814
 
 临时层高亮面轮廓
 layerName 图层名
@@ -70,7 +70,7 @@ entityId 对象id
 
 > **createAddVertex**: (`vertexPosition`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4851
+Defined in: index.d.ts:4859
 
 #### Parameters
 
@@ -88,7 +88,7 @@ Defined in: index.d.ts:4851
 
 > **createEnd**: () => `Promise`\<[`Vector3`](../interfaces/Vector3.md)[]\>
 
-Defined in: index.d.ts:4852
+Defined in: index.d.ts:4860
 
 #### Returns
 
@@ -100,7 +100,7 @@ Defined in: index.d.ts:4852
 
 > **createPolygon**: (`classificationType`, `positions?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4850
+Defined in: index.d.ts:4858
 
 #### Parameters
 
@@ -122,7 +122,7 @@ Defined in: index.d.ts:4850
 
 > **createPolyline**: (`classificationType`, `positions?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4849
+Defined in: index.d.ts:4857
 
 手绘使用添加接口
 
@@ -146,7 +146,7 @@ Defined in: index.d.ts:4849
 
 > **currentEditVertex**: () => [`Vector3`](../interfaces/Vector3.md)[] \| [`Circle`](../interfaces/Circle.md) \| [`Rectangle`](../interfaces/Rectangle.md) \| [`Spline`](../interfaces/Spline.md)
 
-Defined in: index.d.ts:4979
+Defined in: index.d.ts:4987
 
 获取当前编辑结果
 
@@ -162,7 +162,7 @@ Defined in: index.d.ts:4979
 
 > **editAddVertex**: (`vertexPosition`, `vertexIndex?`) => `boolean`
 
-Defined in: index.d.ts:4948
+Defined in: index.d.ts:4956
 
 添加顶点
 
@@ -192,7 +192,7 @@ Defined in: index.d.ts:4948
 
 > **editCircle**: (`classificationType`, `isFilled`, `center?`, `radius?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4879
+Defined in: index.d.ts:4887
 
 开始圆
 
@@ -234,7 +234,7 @@ Defined in: index.d.ts:4879
 
 > **editEnd**: () => [`Vector3`](../interfaces/Vector3.md)[] \| [`Circle`](../interfaces/Circle.md) \| [`Rectangle`](../interfaces/Rectangle.md) \| [`Spline`](../interfaces/Spline.md)
 
-Defined in: index.d.ts:4984
+Defined in: index.d.ts:4992
 
 结束编辑
 
@@ -250,7 +250,7 @@ Defined in: index.d.ts:4984
 
 > **editMoveVertex**: (`vertexPosition`, `vertexIndex?`) => `boolean`
 
-Defined in: index.d.ts:4955
+Defined in: index.d.ts:4963
 
 移动顶点
 
@@ -278,7 +278,7 @@ Defined in: index.d.ts:4955
 
 > **editPickSegment**: (`screenPosition`) => `object`
 
-Defined in: index.d.ts:4916
+Defined in: index.d.ts:4924
 
 vertex0  segment0  vertex1  segment1  vertex2     ...    vertexN
      |        |         |        |          |                   |
@@ -314,7 +314,7 @@ segmentIndex线段索引值（-1表示拾取失败）,  position:点击位置）
 
 > **editPickVertex**: (`screenPosition`) => `number`
 
-Defined in: index.d.ts:4904
+Defined in: index.d.ts:4912
 
 通过屏幕点拾取编辑对象顶点索引
 
@@ -336,7 +336,7 @@ vertexIndex:拾取到的顶点索引（-1表示拾取失败）
 
 > **editPolygon**: (`classificationType`, `positions?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4870
+Defined in: index.d.ts:4878
 
 开始面编辑
 
@@ -366,7 +366,7 @@ Defined in: index.d.ts:4870
 
 > **editPolyline**: (`classificationType`, `positions?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4863
+Defined in: index.d.ts:4871
 
 开始线编辑
 
@@ -396,7 +396,7 @@ Defined in: index.d.ts:4863
 
 > **editRectangle**: (`classificationType`, `isFilled`, `center?`, `heading?`, `w?`, `h?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4889
+Defined in: index.d.ts:4897
 
 开始矩形
 
@@ -446,7 +446,7 @@ Defined in: index.d.ts:4889
 
 > **editRemoveVertex**: (`vertexIndex?`) => `boolean`
 
-Defined in: index.d.ts:4941
+Defined in: index.d.ts:4949
 
 删除顶点
 
@@ -470,7 +470,7 @@ Defined in: index.d.ts:4941
 
 > **editSpline**: (`classificationType`, `splineType`, `countPerSegment?`, `positions?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4898
+Defined in: index.d.ts:4906
 
 开始Spline
 
@@ -512,7 +512,7 @@ SLineType
 
 > **endEditTest**: () => `Promise`\<`void`\>
 
-Defined in: index.d.ts:4974
+Defined in: index.d.ts:4982
 
 结束预览
 
@@ -526,7 +526,7 @@ Defined in: index.d.ts:4974
 
 > **flyTo**: (`name`, `duration?`) => `void`
 
-Defined in: index.d.ts:4845
+Defined in: index.d.ts:4853
 
 飞行到指定对象上
 
@@ -550,7 +550,7 @@ Defined in: index.d.ts:4845
 
 > **getAllTrackingIds**: () => `string`[]
 
-Defined in: index.d.ts:4841
+Defined in: index.d.ts:4849
 
 获取所有tracking对象id
 
@@ -564,7 +564,7 @@ Defined in: index.d.ts:4841
 
 > **getEditVertexIndex**: () => `Promise`\<`number`\>
 
-Defined in: index.d.ts:4930
+Defined in: index.d.ts:4938
 
 获取编辑点
 
@@ -580,7 +580,7 @@ Defined in: index.d.ts:4930
 
 > **getEditVertexPosition**: () => [`Vector3`](../interfaces/Vector3.md) \| `undefined`
 
-Defined in: index.d.ts:4935
+Defined in: index.d.ts:4943
 
 获取编辑点坐标
 
@@ -596,7 +596,7 @@ Defined in: index.d.ts:4935
 
 > **getEntity**: (`entityId`) => `Promise`\<[`Entity`](../interfaces/Entity.md) \| `undefined`\>
 
-Defined in: index.d.ts:4831
+Defined in: index.d.ts:4839
 
 临时层获取对象对象
 
@@ -620,7 +620,7 @@ Defined in: index.d.ts:4831
 
 > **onTrackingLayer**: (`entityId`) => `string` \| `undefined`
 
-Defined in: index.d.ts:4837
+Defined in: index.d.ts:4845
 
 判断对象是否在临时层
 
@@ -644,7 +644,7 @@ Defined in: index.d.ts:4837
 
 > **removeAll**: () => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4794
+Defined in: index.d.ts:4802
 
 清空临时层
 
@@ -660,7 +660,7 @@ Defined in: index.d.ts:4794
 
 > **removeEntity**: (`entityId`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4825
+Defined in: index.d.ts:4833
 
 临时层删除对象
 
@@ -684,7 +684,7 @@ Defined in: index.d.ts:4825
 
 > **setEditVertexIndex**: (`vertexIndex`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4925
+Defined in: index.d.ts:4933
 
 设置编辑点（并高亮之）
 
@@ -708,7 +708,7 @@ Defined in: index.d.ts:4925
 
 > **testEditAddVertex**: (`vertexPosition`, `vertexIndex?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4962
+Defined in: index.d.ts:4970
 
 预添加
 
@@ -736,7 +736,7 @@ Defined in: index.d.ts:4962
 
 > **testEditMoveVertex**: (`vertexPosition`, `vertexIndex?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4969
+Defined in: index.d.ts:4977
 
 预移动
 
@@ -764,7 +764,7 @@ Defined in: index.d.ts:4969
 
 > **translateEntity**: (`entityId`, `from`, `to`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4985
+Defined in: index.d.ts:4993
 
 #### Parameters
 
@@ -790,7 +790,7 @@ Defined in: index.d.ts:4985
 
 > **updateEntityDelete**: (`entityId`, `type`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4819
+Defined in: index.d.ts:4827
 
 临时层更新删除对象部分内容
 
@@ -820,7 +820,7 @@ Defined in: index.d.ts:4819
 
 > **updateEntityModify**: (`entity`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4812
+Defined in: index.d.ts:4820
 
 临时层更新对象
 

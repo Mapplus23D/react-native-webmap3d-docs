@@ -8,4 +8,4 @@
 
 > **BBox3d** = \[`number`, `number`, `number`, `number`, `number`, `number`\]
 
-Defined in: index.d.ts:2923
+Defined in: index.d.ts:2931

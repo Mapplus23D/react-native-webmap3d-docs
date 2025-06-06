@@ -6,7 +6,7 @@
 
 # Interface: ILicenseInfo
 
-Defined in: index.d.ts:5075
+Defined in: index.d.ts:5085
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:5075
 
 > **end**: `number`
 
-Defined in: index.d.ts:5078
+Defined in: index.d.ts:5088
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:5078
 
 > **isValid**: `boolean`
 
-Defined in: index.d.ts:5076
+Defined in: index.d.ts:5086
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: index.d.ts:5076
 
 > **start**: `number`
 
-Defined in: index.d.ts:5077
+Defined in: index.d.ts:5087

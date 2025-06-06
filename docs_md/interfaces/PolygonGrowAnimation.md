@@ -6,7 +6,7 @@
 
 # Interface: PolygonGrowAnimation
 
-Defined in: index.d.ts:1117
+Defined in: index.d.ts:1125
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:1117
 
 > `optional` **directionType**: `number`
 
-Defined in: index.d.ts:1131
+Defined in: index.d.ts:1139
 
 生长方向
 0:西->东
@@ -32,7 +32,7 @@ Defined in: index.d.ts:1131
 
 > **duration**: `number`
 
-Defined in: index.d.ts:1099
+Defined in: index.d.ts:1107
 
 动画持续时间，单位秒
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:1099
 
 > `optional` **growType**: [`PolygonGrowType`](../enumerations/PolygonGrowType.md)
 
-Defined in: index.d.ts:1124
+Defined in: index.d.ts:1132
 
 生长方式
 
@@ -56,7 +56,7 @@ Defined in: index.d.ts:1124
 
 > `optional` **initial**: [`Vector3`](Vector3.md)
 
-Defined in: index.d.ts:1122
+Defined in: index.d.ts:1130
 
 初始点（默认为形心）
 
@@ -66,7 +66,7 @@ Defined in: index.d.ts:1122
 
 > `optional` **isReduce**: `boolean`
 
-Defined in: index.d.ts:1120
+Defined in: index.d.ts:1128
 
 缩小
 
@@ -76,7 +76,7 @@ Defined in: index.d.ts:1120
 
 > `optional` **layerName**: `string`
 
-Defined in: index.d.ts:1103
+Defined in: index.d.ts:1111
 
 矢量图层名
 
@@ -90,7 +90,7 @@ Defined in: index.d.ts:1103
 
 > **name**: `string`
 
-Defined in: index.d.ts:1095
+Defined in: index.d.ts:1103
 
 #### Inherited from
 
@@ -102,7 +102,7 @@ Defined in: index.d.ts:1095
 
 > `optional` **repeatCount**: `number`
 
-Defined in: index.d.ts:1101
+Defined in: index.d.ts:1109
 
 重复次数
 
@@ -116,7 +116,7 @@ Defined in: index.d.ts:1101
 
 > **startTime**: `number`
 
-Defined in: index.d.ts:1097
+Defined in: index.d.ts:1105
 
 开始时间，单位秒
 
@@ -130,7 +130,7 @@ Defined in: index.d.ts:1097
 
 > **target**: `string`
 
-Defined in: index.d.ts:1105
+Defined in: index.d.ts:1113
 
 对象 id
 
@@ -144,4 +144,4 @@ Defined in: index.d.ts:1105
 
 > **type**: [`POLYGONGROW`](../enumerations/AnimatorType.md#polygongrow)
 
-Defined in: index.d.ts:1118
+Defined in: index.d.ts:1126

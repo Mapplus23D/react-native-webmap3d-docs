@@ -6,7 +6,7 @@
 
 # Interface: LayerVisibilityAnimation
 
-Defined in: index.d.ts:815
+Defined in: index.d.ts:823
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:815
 
 > **layerName**: `string`
 
-Defined in: index.d.ts:821
+Defined in: index.d.ts:829
 
 图层名
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:821
 
 > **layerType**: `"image"` \| `"s3m"` \| `"primitive"`
 
-Defined in: index.d.ts:819
+Defined in: index.d.ts:827
 
 图层类型
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:819
 
 > **name**: `string`
 
-Defined in: index.d.ts:817
+Defined in: index.d.ts:825
 
 动画名称
 
@@ -44,7 +44,7 @@ Defined in: index.d.ts:817
 
 > **startTime**: `number`
 
-Defined in: index.d.ts:825
+Defined in: index.d.ts:833
 
 开始时间 单位 秒
 
@@ -54,6 +54,6 @@ Defined in: index.d.ts:825
 
 > **visibility**: `boolean`
 
-Defined in: index.d.ts:823
+Defined in: index.d.ts:831
 
 显隐状态

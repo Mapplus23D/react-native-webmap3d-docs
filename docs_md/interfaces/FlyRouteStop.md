@@ -6,7 +6,7 @@
 
 # Interface: FlyRouteStop
 
-Defined in: index.d.ts:915
+Defined in: index.d.ts:923
 
 路径飞行站点参数
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:915
 
 > **duration**: `number`
 
-Defined in: index.d.ts:919
+Defined in: index.d.ts:927
 
 到下一个站点的时间
 
@@ -26,7 +26,7 @@ Defined in: index.d.ts:919
 
 > **heading**: `number`
 
-Defined in: index.d.ts:929
+Defined in: index.d.ts:937
 
 站点朝向角度
 
@@ -36,7 +36,7 @@ Defined in: index.d.ts:929
 
 > **height**: `number`
 
-Defined in: index.d.ts:927
+Defined in: index.d.ts:935
 
 站点高度
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:927
 
 > **latitude**: `number`
 
-Defined in: index.d.ts:925
+Defined in: index.d.ts:933
 
 站点纬度
 
@@ -56,7 +56,7 @@ Defined in: index.d.ts:925
 
 > **longitude**: `number`
 
-Defined in: index.d.ts:923
+Defined in: index.d.ts:931
 
 站点经度
 
@@ -66,7 +66,7 @@ Defined in: index.d.ts:923
 
 > **stopName**: `string`
 
-Defined in: index.d.ts:917
+Defined in: index.d.ts:925
 
 站点名
 
@@ -76,7 +76,7 @@ Defined in: index.d.ts:917
 
 > **tilt**: `number`
 
-Defined in: index.d.ts:931
+Defined in: index.d.ts:939
 
 站点俯仰角度
 
@@ -86,6 +86,6 @@ Defined in: index.d.ts:931
 
 > **waitTime**: `number`
 
-Defined in: index.d.ts:921
+Defined in: index.d.ts:929
 
 在本站点停留的时间

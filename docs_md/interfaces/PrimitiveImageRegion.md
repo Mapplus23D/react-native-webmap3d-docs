@@ -6,7 +6,7 @@
 
 # Interface: PrimitiveImageRegion
 
-Defined in: index.d.ts:2431
+Defined in: index.d.ts:2439
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:2431
 
 > `optional` **baseHeight**: `number`
 
-Defined in: index.d.ts:2445
+Defined in: index.d.ts:2453
 
 底部高度，贴地时无效
 
@@ -28,7 +28,7 @@ Defined in: index.d.ts:2445
 
 > `optional` **clampToGround**: `boolean`
 
-Defined in: index.d.ts:2441
+Defined in: index.d.ts:2449
 
 deprecated 废弃的贴地接口 当classificationType未定义时生效
 
@@ -38,7 +38,7 @@ deprecated 废弃的贴地接口 当classificationType未定义时生效
 
 > `optional` **classificationType**: [`ClassificationType`](../enumerations/ClassificationType.md)
 
-Defined in: index.d.ts:2439
+Defined in: index.d.ts:2447
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:2439
 
 > `optional` **distanceDisplayCondition**: [`DistanceDisplayCondition`](DistanceDisplayCondition.md)
 
-Defined in: index.d.ts:2147
+Defined in: index.d.ts:2155
 
 可见范围
 
@@ -60,7 +60,7 @@ Defined in: index.d.ts:2147
 
 > **hierarchy**: [`Circle`](Circle.md) \| [`Rectangle`](Rectangle.md) \| [`PolygonHierarchy`](PolygonHierarchy.md)
 
-Defined in: index.d.ts:2434
+Defined in: index.d.ts:2442
 
 面节点
 
@@ -70,7 +70,7 @@ Defined in: index.d.ts:2434
 
 > `optional` **image**: `string`
 
-Defined in: index.d.ts:2436
+Defined in: index.d.ts:2444
 
 填充图片url
 
@@ -80,7 +80,7 @@ Defined in: index.d.ts:2436
 
 > `optional` **name**: `string`
 
-Defined in: index.d.ts:2150
+Defined in: index.d.ts:2158
 
 primitive 名称
 
@@ -94,7 +94,7 @@ primitive 名称
 
 > `optional` **properties**: `object`
 
-Defined in: index.d.ts:2152
+Defined in: index.d.ts:2160
 
 属性字段
 
@@ -112,7 +112,7 @@ Defined in: index.d.ts:2152
 
 > `optional` **repeat**: [`Vector2`](Vector2.md)
 
-Defined in: index.d.ts:2438
+Defined in: index.d.ts:2446
 
 X/Y方向重复填充次数，默认（1，1）
 
@@ -122,7 +122,7 @@ X/Y方向重复填充次数，默认（1，1）
 
 > `optional` **show**: `boolean`
 
-Defined in: index.d.ts:2145
+Defined in: index.d.ts:2153
 
 是否显示，默认true
 
@@ -136,7 +136,7 @@ Defined in: index.d.ts:2145
 
 > `optional` **stRotation**: `number`
 
-Defined in: index.d.ts:2447
+Defined in: index.d.ts:2455
 
 贴图旋转角度
 
@@ -146,7 +146,7 @@ Defined in: index.d.ts:2447
 
 > `optional` **topHeight**: `number`
 
-Defined in: index.d.ts:2443
+Defined in: index.d.ts:2451
 
 水面高度,贴地时无效
 
@@ -156,7 +156,7 @@ Defined in: index.d.ts:2443
 
 > **type**: [`ImageRegion`](../enumerations/PrimitiveType.md#imageregion)
 
-Defined in: index.d.ts:2432
+Defined in: index.d.ts:2440
 
 类型
 

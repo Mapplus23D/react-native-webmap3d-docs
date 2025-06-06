@@ -8,7 +8,7 @@
 
 > **IScene** = `object`
 
-Defined in: index.d.ts:3193
+Defined in: index.d.ts:3201
 
 场景模块
 
@@ -20,7 +20,7 @@ Defined in: index.d.ts:3193
 
 > **addEntities**: (`datasourceName`, `entities`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3375
+Defined in: index.d.ts:3383
 
 图层批量添加对象
 
@@ -48,7 +48,7 @@ Defined in: index.d.ts:3375
 
 > **addEntitiesFromGeojson**: (`datasourceName`, `geojson`) => `boolean`
 
-Defined in: index.d.ts:3403
+Defined in: index.d.ts:3411
 
 图层从geojson添加对象
 
@@ -76,7 +76,7 @@ FeatureCollection
 
 > **addEntitiesFromJson**: (`datasourceName`, `jsonContent`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3382
+Defined in: index.d.ts:3390
 
 图层从json添加对象
 
@@ -104,7 +104,7 @@ Defined in: index.d.ts:3382
 
 > **addEntitiesFromKml**: (`datasourceName`, `kmlContent`, `clampToGround?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3389
+Defined in: index.d.ts:3397
 
 图层从kml添加对象
 
@@ -136,7 +136,7 @@ kml字符串
 
 > **addEntitiesFromKmlURI**: (`datasourceName`, `kmlUri`, `clampToGround?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3396
+Defined in: index.d.ts:3404
 
 图层从kml/kmz地址添加对象
 
@@ -168,7 +168,7 @@ kml/kmz地址
 
 > **addEntitiesLayer**: (`name`, `datasouece?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3311
+Defined in: index.d.ts:3319
 
 添加矢量图层
 
@@ -198,7 +198,7 @@ Defined in: index.d.ts:3311
 
 > **addEntity**: (`name`, `entity`) => `string`
 
-Defined in: index.d.ts:3368
+Defined in: index.d.ts:3376
 
 图层添加对象
 
@@ -228,7 +228,7 @@ Defined in: index.d.ts:3368
 
 > **addImagelayer**: (`name`, `provider`) => `boolean`
 
-Defined in: index.d.ts:3249
+Defined in: index.d.ts:3257
 
 添加影像图层
 
@@ -258,7 +258,7 @@ Defined in: index.d.ts:3249
 
 > **addMediaEntitiesLayer**: (`name`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3317
+Defined in: index.d.ts:3325
 
 添加多媒体矢量图层
 
@@ -282,7 +282,7 @@ Defined in: index.d.ts:3317
 
 > **addS3MTilesLayer**: (`name`, `url`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3522
+Defined in: index.d.ts:3530
 
 添加切片缓存图层
 
@@ -310,7 +310,7 @@ Defined in: index.d.ts:3522
 
 > **beginTranslation**: (`layerName`, `entityId`, `type?`) => `boolean`
 
-Defined in: index.d.ts:4041
+Defined in: index.d.ts:4049
 
 设置球面平移目标
 
@@ -344,7 +344,7 @@ Defined in: index.d.ts:4041
 
 > **calcAreaValue**: (`positions`, `clampModeParam`) => `Promise`\<`number`\>
 
-Defined in: index.d.ts:4006
+Defined in: index.d.ts:4014
 
 计算面积
 
@@ -372,7 +372,7 @@ Defined in: index.d.ts:4006
 
 > **calcDistanceValue**: (`positions`, `clampModeParam`) => `number`
 
-Defined in: index.d.ts:3999
+Defined in: index.d.ts:4007
 
 计算距离
 
@@ -400,7 +400,7 @@ Defined in: index.d.ts:3999
 
 > **clearEntitiesLayer**: (`name`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3342
+Defined in: index.d.ts:3350
 
 清空矢量图层
 
@@ -424,7 +424,7 @@ Defined in: index.d.ts:3342
 
 > **clearSlideShow**: () => `Promise`\<`void`\>
 
-Defined in: index.d.ts:4112
+Defined in: index.d.ts:4120
 
 删除幻灯片播放列表
 
@@ -438,7 +438,7 @@ Defined in: index.d.ts:4112
 
 > **close**: (`duration?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3207
+Defined in: index.d.ts:3215
 
 关闭当前互动地图
 
@@ -462,7 +462,7 @@ Defined in: index.d.ts:3207
 
 > **closeTerrainLayer**: () => `boolean`
 
-Defined in: index.d.ts:3231
+Defined in: index.d.ts:3239
 
 关闭当前的地形图层
 
@@ -478,7 +478,7 @@ Defined in: index.d.ts:3231
 
 > **enableSceneTouch**: (`enabled`) => `void`
 
-Defined in: index.d.ts:4020
+Defined in: index.d.ts:4028
 
 设置地图手势可用
 
@@ -498,7 +498,7 @@ Defined in: index.d.ts:4020
 
 > **endTranslation**: (`isUpdateModified`) => `void`
 
-Defined in: index.d.ts:4042
+Defined in: index.d.ts:4050
 
 #### Parameters
 
@@ -516,7 +516,7 @@ Defined in: index.d.ts:4042
 
 > **entitiesFromKml**: (`kmlContent`, `clampToGround?`) => `Promise`\<[`Entity`](../interfaces/Entity.md)[]\>
 
-Defined in: index.d.ts:3475
+Defined in: index.d.ts:3483
 
 kml字符串中读取entities
 
@@ -542,7 +542,7 @@ kml字符串
 
 > **exportEntityAsGeojson**: (`entityParams`) => `Promise`\<[`FeatureCollection`](../interfaces/FeatureCollection.md)\>
 
-Defined in: index.d.ts:3481
+Defined in: index.d.ts:3489
 
 entity导出为geojson字符串
 
@@ -564,7 +564,7 @@ entity所在图层名及id参数的数组
 
 > **exportEntityAsKml**: (`entityParams`) => `Promise`\<`string`\>
 
-Defined in: index.d.ts:3466
+Defined in: index.d.ts:3474
 
 entity导出为kml字符串
 
@@ -586,7 +586,7 @@ entity所在图层名及id参数的数组
 
 > **exportLayerAsKml**: (`name`) => `Promise`\<`string`\>
 
-Defined in: index.d.ts:3460
+Defined in: index.d.ts:3468
 
 entity图层导出为kml字符串
 
@@ -610,7 +610,7 @@ kml字符串
 
 > **getAction**: () => [`SceneAction`](../enumerations/SceneAction.md)
 
-Defined in: index.d.ts:3916
+Defined in: index.d.ts:3924
 
 获取当前action
 
@@ -626,7 +626,7 @@ action
 
 > **getAtmosphere**: () => `Required`\<[`Atmosphere`](../interfaces/Atmosphere.md)\>
 
-Defined in: index.d.ts:3685
+Defined in: index.d.ts:3693
 
 获取当前大气设置
 
@@ -642,7 +642,7 @@ Defined in: index.d.ts:3685
 
 > **getBloomEffect**: () => `Promise`\<[`BloomEffect`](../interfaces/BloomEffect.md)\>
 
-Defined in: index.d.ts:3789
+Defined in: index.d.ts:3797
 
 获取当前地图泛光效果参数
 
@@ -658,7 +658,7 @@ Defined in: index.d.ts:3789
 
 > **getCameraDragMode**: () => `"CDT_1"` \| `"CDT_2"`
 
-Defined in: index.d.ts:3833
+Defined in: index.d.ts:3841
 
 获取当前地图清晰度
 
@@ -674,7 +674,7 @@ Defined in: index.d.ts:3833
 
 > **getCloud**: () => [`Clouds`](../interfaces/Clouds.md) \| `undefined`
 
-Defined in: index.d.ts:3911
+Defined in: index.d.ts:3919
 
 获取云层设置
 
@@ -690,7 +690,7 @@ Defined in: index.d.ts:3911
 
 > **getColorCorrection**: () => [`ColorCorrectionType`](../interfaces/ColorCorrectionType.md)
 
-Defined in: index.d.ts:3894
+Defined in: index.d.ts:3902
 
 颜色校正参数获取方法
 
@@ -706,7 +706,7 @@ Defined in: index.d.ts:3894
 
 > **getCurrentTime**: () => [`GregorianDate`](../interfaces/GregorianDate.md)
 
-Defined in: index.d.ts:3992
+Defined in: index.d.ts:4000
 
 获取时间轴当前时间
 
@@ -722,7 +722,7 @@ Defined in: index.d.ts:3992
 
 > **getEntitiesLayerNames**: () => `Promise`\<`string`[]\>
 
-Defined in: index.d.ts:3426
+Defined in: index.d.ts:3434
 
 获取地图图层数组
 
@@ -738,7 +738,7 @@ Defined in: index.d.ts:3426
 
 > **getEntitiesLayers**: (`datasourceNeeded?`) => `Promise`\<[`EntitiesLayer`](../interfaces/EntitiesLayer.md)[]\>
 
-Defined in: index.d.ts:3323
+Defined in: index.d.ts:3331
 
 获取所有矢量图层
 
@@ -762,7 +762,7 @@ Defined in: index.d.ts:3323
 
 > **getEntity**: (`name`, `entityId`) => [`Entity`](../interfaces/Entity.md) \| `undefined`
 
-Defined in: index.d.ts:3416
+Defined in: index.d.ts:3424
 
 图层获取对象
 
@@ -792,7 +792,7 @@ Entity对象
 
 > **getEntityCount**: () => `number`
 
-Defined in: index.d.ts:3421
+Defined in: index.d.ts:3429
 
 获取地图对象数量
 
@@ -808,7 +808,7 @@ Defined in: index.d.ts:3421
 
 > **getFog**: () => [`Fog`](../interfaces/Fog.md)
 
-Defined in: index.d.ts:3748
+Defined in: index.d.ts:3756
 
 获取当前地图雾化效果参数
 
@@ -824,7 +824,7 @@ Defined in: index.d.ts:3748
 
 > **getFPS**: () => `Promise`\<`number`\>
 
-Defined in: index.d.ts:3858
+Defined in: index.d.ts:3866
 
 获取最新的每秒渲染帧数 FPS
 
@@ -840,7 +840,7 @@ Defined in: index.d.ts:3858
 
 > **getGraticulesParam**: () => [`GraticuleParam`](../interfaces/GraticuleParam.md) \| `undefined`
 
-Defined in: index.d.ts:3707
+Defined in: index.d.ts:3715
 
 获取经纬网参数
 
@@ -856,7 +856,7 @@ Defined in: index.d.ts:3707
 
 > **getGraticuleVisible**: () => `boolean`
 
-Defined in: index.d.ts:3718
+Defined in: index.d.ts:3726
 
 获取经纬网可见性
 
@@ -872,7 +872,7 @@ Defined in: index.d.ts:3718
 
 > **getHypsometricSetting**: () => `Pick`\<[`HypsometricSetting`](../interfaces/HypsometricSetting.md), `"mode"`\> & `Partial`\<[`HypsometricSetting`](../interfaces/HypsometricSetting.md)\>
 
-Defined in: index.d.ts:4024
+Defined in: index.d.ts:4032
 
 获取等高显示设置
 
@@ -886,7 +886,7 @@ Defined in: index.d.ts:4024
 
 > **getImageLayerByIndex**: (`index`) => [`ImageLayer`](../interfaces/ImageLayer.md) \| `undefined`
 
-Defined in: index.d.ts:3259
+Defined in: index.d.ts:3267
 
 获取所有影像图层
 
@@ -908,7 +908,7 @@ Defined in: index.d.ts:3259
 
 > **getImageLayers**: () => [`ImageLayer`](../interfaces/ImageLayer.md)[]
 
-Defined in: index.d.ts:3254
+Defined in: index.d.ts:3262
 
 获取所有影像图层
 
@@ -924,7 +924,7 @@ Defined in: index.d.ts:3254
 
 > **getLayerEntities**: (`datasourceName`, `range?`) => `Promise`\<[`Entity`](../interfaces/Entity.md)[]\>
 
-Defined in: index.d.ts:3444
+Defined in: index.d.ts:3452
 
 获取图层所有的对象
 
@@ -958,7 +958,7 @@ entity数组
 
 > **getLayerEntityCount**: (`datasourceName`) => `Promise`\<`number`\>
 
-Defined in: index.d.ts:3438
+Defined in: index.d.ts:3446
 
 获取图层所有的对象id
 
@@ -982,7 +982,7 @@ id数组
 
 > **getLayerEntityIDs**: (`datasourceName`) => `Promise`\<`string`[]\>
 
-Defined in: index.d.ts:3432
+Defined in: index.d.ts:3440
 
 获取图层所有的对象id
 
@@ -1006,7 +1006,7 @@ id数组
 
 > **getLighting**: () => [`GlobeLighting`](../interfaces/GlobeLighting.md)
 
-Defined in: index.d.ts:3728
+Defined in: index.d.ts:3736
 
 获取当前地图地球光照阴影参数
 
@@ -1022,7 +1022,7 @@ Defined in: index.d.ts:3728
 
 > **getMap**: () => `Promise`\<[`IMap3D`](../interfaces/IMap3D.md)\>
 
-Defined in: index.d.ts:3212
+Defined in: index.d.ts:3220
 
 获取当前互动地图
 
@@ -1038,7 +1038,7 @@ Defined in: index.d.ts:3212
 
 > **getMapQuality**: () => `number`
 
-Defined in: index.d.ts:3821
+Defined in: index.d.ts:3829
 
 获取当前地图清晰度
 
@@ -1054,7 +1054,7 @@ Defined in: index.d.ts:3821
 
 > **getMaximumZoomDistance**: () => `number`
 
-Defined in: index.d.ts:3768
+Defined in: index.d.ts:3776
 
 获得最大视距
 
@@ -1070,7 +1070,7 @@ Defined in: index.d.ts:3768
 
 > **getRealityMeshMemoryLimit**: () => `number`
 
-Defined in: index.d.ts:3810
+Defined in: index.d.ts:3818
 
 获取加载realityMesh时内存限制（单位MB）
 
@@ -1086,7 +1086,7 @@ limit
 
 > **getRequestRenderMode**: () => `boolean`
 
-Defined in: index.d.ts:3866
+Defined in: index.d.ts:3874
 
 获取当前是否为主动刷新模式
 
@@ -1100,7 +1100,7 @@ Defined in: index.d.ts:3866
 
 > **getS3MLayerAttribute**: (`name`, `id`) => `Promise`\<`Record`\<`string`, `unknown`\> \| `undefined`\>
 
-Defined in: index.d.ts:3541
+Defined in: index.d.ts:3549
 
 获取 s3m 图层对象属性
 
@@ -1130,7 +1130,7 @@ Defined in: index.d.ts:3541
 
 > **getS3MLayers**: () => [`S3MLayer`](S3MLayer.md)[]
 
-Defined in: index.d.ts:3528
+Defined in: index.d.ts:3536
 
 获取所有切片缓存图层
 
@@ -1146,7 +1146,7 @@ Defined in: index.d.ts:3528
 
 > **getS3MTilesLayers**: () => [`S3MTilesLayer`](../interfaces/S3MTilesLayer.md)[]
 
-Defined in: index.d.ts:3523
+Defined in: index.d.ts:3531
 
 #### Returns
 
@@ -1158,7 +1158,7 @@ Defined in: index.d.ts:3523
 
 > **getS3MTilesWaterStyle**: (`name`) => `Promise`\<[`S3MWaterStyle`](../interfaces/S3MWaterStyle.md) \| `undefined`\>
 
-Defined in: index.d.ts:3565
+Defined in: index.d.ts:3573
 
 get水面风格（不能设置图层组内图层风格）
 
@@ -1182,7 +1182,7 @@ get水面风格（不能设置图层组内图层风格）
 
 > **getSceneMode**: () => `Promise`\<[`SceneMode`](../enumerations/SceneMode.md)\>
 
-Defined in: index.d.ts:3799
+Defined in: index.d.ts:3807
 
 获取当前场景模式
 
@@ -1198,7 +1198,7 @@ Defined in: index.d.ts:3799
 
 > **getSceneQuality**: () => `number`
 
-Defined in: index.d.ts:3844
+Defined in: index.d.ts:3852
 
 获取当前场景清晰度
 
@@ -1214,7 +1214,7 @@ Defined in: index.d.ts:3844
 
 > **getScreenShot**: (`params`) => `string`
 
-Defined in: index.d.ts:4070
+Defined in: index.d.ts:4078
 
 截取地球Canvas图片
 
@@ -1238,7 +1238,7 @@ Defined in: index.d.ts:4070
 
 > **getShadow**: () => `Promise`\<[`Shadow`](../interfaces/Shadow.md)\>
 
-Defined in: index.d.ts:3738
+Defined in: index.d.ts:3746
 
 获取当前地图对象阴影参数
 
@@ -1254,7 +1254,7 @@ Defined in: index.d.ts:3738
 
 > **getSkybox**: () => [`Skybox`](../interfaces/Skybox.md) \| `undefined`
 
-Defined in: index.d.ts:3674
+Defined in: index.d.ts:3682
 
 获取当前设置的天空盒
 
@@ -1270,7 +1270,7 @@ Defined in: index.d.ts:3674
 
 > **getSlideAtIndex**: (`index`) => `Promise`\<[`Slide`](../interfaces/Slide.md) \| `undefined`\>
 
-Defined in: index.d.ts:4091
+Defined in: index.d.ts:4099
 
 获取索引处幻灯片
 
@@ -1294,7 +1294,7 @@ Defined in: index.d.ts:4091
 
 > **getSlideCount**: () => `Promise`\<`number`\>
 
-Defined in: index.d.ts:4080
+Defined in: index.d.ts:4088
 
 获取幻灯片列表长度
 
@@ -1310,7 +1310,7 @@ Defined in: index.d.ts:4080
 
 > **getSlideShow**: () => `Promise`\<[`Slide`](../interfaces/Slide.md)[]\>
 
-Defined in: index.d.ts:4075
+Defined in: index.d.ts:4083
 
 获取幻灯片列表
 
@@ -1326,7 +1326,7 @@ Defined in: index.d.ts:4075
 
 > **getSun**: () => `Required`\<[`Sun`](../interfaces/Sun.md)\>
 
-Defined in: index.d.ts:3696
+Defined in: index.d.ts:3704
 
 获取当前太阳参数
 
@@ -1342,7 +1342,7 @@ Defined in: index.d.ts:3696
 
 > **getTerrainExaggeration**: () => `number`
 
-Defined in: index.d.ts:4034
+Defined in: index.d.ts:4042
 
 获取地形夸张系数
 
@@ -1358,7 +1358,7 @@ Defined in: index.d.ts:4034
 
 > **getTerrainLayer**: () => [`TerrainLayer`](../interfaces/TerrainLayer.md) \| `undefined`
 
-Defined in: index.d.ts:3236
+Defined in: index.d.ts:3244
 
 获取当前的地形图层，没有返回 undefined
 
@@ -1374,7 +1374,7 @@ Defined in: index.d.ts:3236
 
 > **getTilesLayerBottomAltitude**: (`name`) => `Promise`\<`number`\>
 
-Defined in: index.d.ts:3642
+Defined in: index.d.ts:3650
 
 切片底部高程
 
@@ -1398,7 +1398,7 @@ Defined in: index.d.ts:3642
 
 > **getTilesLayerIgnoreNormal**: (`name`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3629
+Defined in: index.d.ts:3637
 
 切片是否重新计算法线
 
@@ -1420,7 +1420,7 @@ Defined in: index.d.ts:3629
 
 > **getTilesLayerLodRangeScale**: (`name`) => `Promise`\<`number`\>
 
-Defined in: index.d.ts:3616
+Defined in: index.d.ts:3624
 
 切片图层的LOD层级切换距离缩放系数
 
@@ -1444,7 +1444,7 @@ Defined in: index.d.ts:3616
 
 > **getWeather**: () => [`Rain`](../interfaces/Rain.md) \| [`Snow`](../interfaces/Snow.md) \| `null`
 
-Defined in: index.d.ts:4015
+Defined in: index.d.ts:4023
 
 获取天气参数
 
@@ -1460,7 +1460,7 @@ Defined in: index.d.ts:4015
 
 > **insertSlideAtIndex**: (`slide`, `index?`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:4097
+Defined in: index.d.ts:4105
 
 在索引处插入幻灯片
 
@@ -1488,7 +1488,7 @@ Defined in: index.d.ts:4097
 
 > **isDepthTestAgainstTerrain**: () => `boolean`
 
-Defined in: index.d.ts:3758
+Defined in: index.d.ts:3766
 
 当前地图是否开启地图深度检测
 
@@ -1504,7 +1504,7 @@ Defined in: index.d.ts:3758
 
 > **isEntitiesLayerMedia**: (`name`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3361
+Defined in: index.d.ts:3369
 
 矢量图层是否多媒体图层
 
@@ -1528,7 +1528,7 @@ Defined in: index.d.ts:3361
 
 > **isEntitiesLayerVisible**: (`name`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3355
+Defined in: index.d.ts:3363
 
 矢量图层可见性
 
@@ -1552,7 +1552,7 @@ Defined in: index.d.ts:3355
 
 > **isHdrEnable**: () => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3763
+Defined in: index.d.ts:3771
 
 当前地图是否开启hdr
 
@@ -1568,7 +1568,7 @@ Defined in: index.d.ts:3763
 
 > **isShowDebugFPS**: () => `boolean`
 
-Defined in: index.d.ts:3853
+Defined in: index.d.ts:3861
 
 是否显示 fps 信息
 
@@ -1582,7 +1582,7 @@ Defined in: index.d.ts:3853
 
 > **isTilesLayerOrderIndependentTranslucency**: (`name`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3604
+Defined in: index.d.ts:3612
 
 是否开启透明排序功能（OIT）
 
@@ -1606,7 +1606,7 @@ Defined in: index.d.ts:3604
 
 > **isTilesLayerRGBTOBGR**: (`name`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3591
+Defined in: index.d.ts:3599
 
 切片图层是否反色
 
@@ -1630,7 +1630,7 @@ Defined in: index.d.ts:3591
 
 > **isTilesLayerVisible**: (`name`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3578
+Defined in: index.d.ts:3586
 
 切片图层可见性
 
@@ -1654,7 +1654,7 @@ Defined in: index.d.ts:3578
 
 > **lowerImageLayer**: (`index`) => `boolean`
 
-Defined in: index.d.ts:3297
+Defined in: index.d.ts:3305
 
 在影像图层集合中下移影像图层
 
@@ -1678,7 +1678,7 @@ Defined in: index.d.ts:3297
 
 > **lowerImageLayerToBottom**: (`index`) => `boolean`
 
-Defined in: index.d.ts:3303
+Defined in: index.d.ts:3311
 
 在影像图层集合中下移影像图层到最底层
 
@@ -1702,7 +1702,7 @@ Defined in: index.d.ts:3303
 
 > **noneExistEntityNameOfLayer**: (`datasourceName`, `expectEntityName`) => `Promise`\<`string`\>
 
-Defined in: index.d.ts:3454
+Defined in: index.d.ts:3462
 
 获取一个图层中不重复的entity.name
 
@@ -1732,7 +1732,7 @@ id数组
 
 > **open**: (`map`, `autoPlay?`, `s3mInOrder?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3201
+Defined in: index.d.ts:3209
 
 打开互动地图
 
@@ -1768,7 +1768,7 @@ s3m顺序打开，默认false
 
 > **openAnnotation3D**: (`option?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3648
+Defined in: index.d.ts:3656
 
 打开天地图三维注记
 
@@ -1798,7 +1798,7 @@ Defined in: index.d.ts:3648
 
 > **openIServerScene**: (`url`, `sceneName?`) => `boolean`
 
-Defined in: index.d.ts:3219
+Defined in: index.d.ts:3227
 
 打开 iserver 发布的场景
 
@@ -1828,7 +1828,7 @@ Defined in: index.d.ts:3219
 
 > **openTerrainLayer**: (`name`, `provider`) => `boolean`
 
-Defined in: index.d.ts:3226
+Defined in: index.d.ts:3234
 
 打开地形图层
 
@@ -1858,7 +1858,7 @@ Defined in: index.d.ts:3226
 
 > **pausePropertyAnimation**: () => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3937
+Defined in: index.d.ts:3945
 
 暂停属性动画
 
@@ -1874,7 +1874,7 @@ Defined in: index.d.ts:3937
 
 > **pickElement**: (`screenPoint`) => \{ `elementId`: `string`; `elementType`: `"primitive"` \| `"entity"` \| `"s3m"` \| `"tracking"`; `layerName`: `string`; \} \| `undefined`
 
-Defined in: index.d.ts:3879
+Defined in: index.d.ts:3887
 
 屏幕点击取对象
 
@@ -1896,7 +1896,7 @@ Defined in: index.d.ts:3879
 
 > **pickPosition**: (`screenPoint`, `isGlobePoint?`) => [`Vector3`](../interfaces/Vector3.md) \| `null`
 
-Defined in: index.d.ts:3873
+Defined in: index.d.ts:3881
 
 屏幕点转经纬度类型三维点
 
@@ -1924,7 +1924,7 @@ Defined in: index.d.ts:3873
 
 > **raiseImageLayer**: (`index`) => `boolean`
 
-Defined in: index.d.ts:3285
+Defined in: index.d.ts:3293
 
 在影像图层集合中上移影像图层
 
@@ -1948,7 +1948,7 @@ Defined in: index.d.ts:3285
 
 > **raiseImageLayerToTop**: (`index`) => `boolean`
 
-Defined in: index.d.ts:3291
+Defined in: index.d.ts:3299
 
 在影像图层集合中上移影像图层到最顶层
 
@@ -1972,7 +1972,7 @@ Defined in: index.d.ts:3291
 
 > **removeEntitiesLayer**: (`name`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3329
+Defined in: index.d.ts:3337
 
 移除矢量图层
 
@@ -1996,7 +1996,7 @@ Defined in: index.d.ts:3329
 
 > **removeEntity**: (`name`, `entityId`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3409
+Defined in: index.d.ts:3417
 
 图层删除对象
 
@@ -2024,7 +2024,7 @@ Defined in: index.d.ts:3409
 
 > **removeImageLayer**: (`index`) => `boolean`
 
-Defined in: index.d.ts:3265
+Defined in: index.d.ts:3273
 
 移除影像图层
 
@@ -2048,7 +2048,7 @@ Defined in: index.d.ts:3265
 
 > **removeS3MTilesLayer**: (`name`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3534
+Defined in: index.d.ts:3542
 
 移除切片缓存图层(不能移除scene中的切片图层)
 
@@ -2072,7 +2072,7 @@ Defined in: index.d.ts:3534
 
 > **removeSlideAtIndex**: (`index`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:4108
+Defined in: index.d.ts:4116
 
 删除索引处幻灯片
 
@@ -2094,7 +2094,7 @@ Defined in: index.d.ts:4108
 
 > **renameEntitiesLayer**: (`currentName`, `newName`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3336
+Defined in: index.d.ts:3344
 
 矢量图层更名
 
@@ -2124,7 +2124,7 @@ Defined in: index.d.ts:3336
 
 > **setAction**: (`action`) => `boolean`
 
-Defined in: index.d.ts:3922
+Defined in: index.d.ts:3930
 
 设置action
 
@@ -2146,7 +2146,7 @@ Defined in: index.d.ts:3922
 
 > **setAnnotation3DVisible**: (`visible`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3657
+Defined in: index.d.ts:3665
 
 设置三维注记图层显隐
 
@@ -2170,7 +2170,7 @@ Defined in: index.d.ts:3657
 
 > **setAtmosphere**: (`option`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3680
+Defined in: index.d.ts:3688
 
 设置大气参数
 
@@ -2194,7 +2194,7 @@ Defined in: index.d.ts:3680
 
 > **setBloomEffect**: (`param`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:3784
+Defined in: index.d.ts:3792
 
 设置泛光效果
 
@@ -2216,7 +2216,7 @@ Defined in: index.d.ts:3784
 
 > **setCameraDragMode**: (`typeString`) => `void`
 
-Defined in: index.d.ts:3828
+Defined in: index.d.ts:3836
 
 设置相机拖动逻辑
 
@@ -2239,7 +2239,7 @@ CDT_1 : 1.漫游：左键  2.倾斜：中键；ctrl+左键；ctrl+右键  3.推�
 
 > **setCloudImage**: (`url?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3900
+Defined in: index.d.ts:3908
 
 设置云层纹理
 
@@ -2261,7 +2261,7 @@ Defined in: index.d.ts:3900
 
 > **setColorCorrection**: (`param`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3889
+Defined in: index.d.ts:3897
 
 颜色校正参数设置方法
 
@@ -2283,7 +2283,7 @@ Defined in: index.d.ts:3889
 
 > **setDepthTestAgainstTerrain**: (`enable`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:3753
+Defined in: index.d.ts:3761
 
 设置地形深度检测
 
@@ -2305,7 +2305,7 @@ Defined in: index.d.ts:3753
 
 > **setEntitiesLayerVisible**: (`name`, `visible`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:3349
+Defined in: index.d.ts:3357
 
 设置矢量图层可见
 
@@ -2335,7 +2335,7 @@ Defined in: index.d.ts:3349
 
 > **setFog**: (`param`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:3743
+Defined in: index.d.ts:3751
 
 设置雾化效果
 
@@ -2357,7 +2357,7 @@ Defined in: index.d.ts:3743
 
 > **setGraticulesParam**: (`param?`) => `void`
 
-Defined in: index.d.ts:3702
+Defined in: index.d.ts:3710
 
 设置经纬网参数
 
@@ -2379,7 +2379,7 @@ Defined in: index.d.ts:3702
 
 > **setGraticuleVisible**: (`visible`) => `void`
 
-Defined in: index.d.ts:3713
+Defined in: index.d.ts:3721
 
 设置经纬网可见性
 
@@ -2399,7 +2399,7 @@ Defined in: index.d.ts:3713
 
 > **setHdrEnable**: (`enable`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:3779
+Defined in: index.d.ts:3787
 
 设置是否开启hdr
 
@@ -2421,7 +2421,7 @@ Defined in: index.d.ts:3779
 
 > **setHypsometricSetting**: (`setting`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4022
+Defined in: index.d.ts:4030
 
 等高显示设置
 
@@ -2441,7 +2441,7 @@ Defined in: index.d.ts:4022
 
 > **setImageLayerAlpha**: (`index`, `alpha`) => `boolean`
 
-Defined in: index.d.ts:3279
+Defined in: index.d.ts:3287
 
 设置影像图层透明度
 
@@ -2471,7 +2471,7 @@ Defined in: index.d.ts:3279
 
 > **setImageLayerVisible**: (`index`, `visible`) => `boolean`
 
-Defined in: index.d.ts:3272
+Defined in: index.d.ts:3280
 
 设置影像图层可见
 
@@ -2501,7 +2501,7 @@ Defined in: index.d.ts:3272
 
 > **setLighting**: (`param`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:3723
+Defined in: index.d.ts:3731
 
 设置地球光照阴影参数
 
@@ -2523,7 +2523,7 @@ Defined in: index.d.ts:3723
 
 > **setLocalResourceBase**: (`base`) => `void`
 
-Defined in: index.d.ts:4121
+Defined in: index.d.ts:4129
 
 设置本地资源文件请求的base路径
 
@@ -2543,7 +2543,7 @@ Defined in: index.d.ts:4121
 
 > **setLocalSymbolBase**: (`base`) => `void`
 
-Defined in: index.d.ts:4125
+Defined in: index.d.ts:4133
 
 设置本地符号资源文件请求的base路径
 
@@ -2563,7 +2563,7 @@ Defined in: index.d.ts:4125
 
 > **setMapQuality**: (`quality`) => `void`
 
-Defined in: index.d.ts:3816
+Defined in: index.d.ts:3824
 
 设置地图清晰度，会保存到地图设置中
 
@@ -2585,7 +2585,7 @@ Defined in: index.d.ts:3816
 
 > **setMaximumZoomDistance**: (`value`) => `void`
 
-Defined in: index.d.ts:3774
+Defined in: index.d.ts:3782
 
 设置最大视距
 
@@ -2607,7 +2607,7 @@ Defined in: index.d.ts:3774
 
 > **setRealityMeshMemoryLimit**: (`limited`) => `void`
 
-Defined in: index.d.ts:3805
+Defined in: index.d.ts:3813
 
 设置加载realityMesh时内存限制（单位MB）
 
@@ -2627,7 +2627,7 @@ Defined in: index.d.ts:3805
 
 > **setRequestRenderMode**: (`value`) => `void`
 
-Defined in: index.d.ts:3862
+Defined in: index.d.ts:3870
 
 是否开启主动刷新
 
@@ -2647,7 +2647,7 @@ Defined in: index.d.ts:3862
 
 > **setResourceBase**: (`base`) => `void`
 
-Defined in: index.d.ts:4117
+Defined in: index.d.ts:4125
 
 设置资源文件请求的base路径
 未设置则从当前url读取
@@ -2668,7 +2668,7 @@ Defined in: index.d.ts:4117
 
 > **setS3MLayerOverlapDisplay**: (`layer`, `overlap`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:3547
+Defined in: index.d.ts:3555
 
 设置S3M图层是否开启遮挡
 
@@ -2696,7 +2696,7 @@ Defined in: index.d.ts:3547
 
 > **setS3MLayerRelatedTextLayer**: (`iconLayer`, `textLayer`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:3553
+Defined in: index.d.ts:3561
 
 设置S3M图标图层对应的文本图层
 
@@ -2724,7 +2724,7 @@ Defined in: index.d.ts:3553
 
 > **setS3MTilesWaterStyle**: (`name`, `waterStyle`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3559
+Defined in: index.d.ts:3567
 
 set水面风格（不能设置图层组内图层风格）
 
@@ -2752,7 +2752,7 @@ set水面风格（不能设置图层组内图层风格）
 
 > **setSceneMode**: (`mode`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:3794
+Defined in: index.d.ts:3802
 
 设置场景模式
 
@@ -2774,7 +2774,7 @@ Defined in: index.d.ts:3794
 
 > **setSceneQuality**: (`quality`) => `void`
 
-Defined in: index.d.ts:3839
+Defined in: index.d.ts:3847
 
 动态设置场景清晰度。不影响当前地图的设置
 
@@ -2796,7 +2796,7 @@ Defined in: index.d.ts:3839
 
 > **setShadow**: (`param`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:3733
+Defined in: index.d.ts:3741
 
 设置对象阴影
 
@@ -2818,7 +2818,7 @@ Defined in: index.d.ts:3733
 
 > **setSkybox**: (`skybox?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3663
+Defined in: index.d.ts:3671
 
 设置天空盒
 
@@ -2842,7 +2842,7 @@ Defined in: index.d.ts:3663
 
 > **setSkyboxVisible**: (`visible`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3669
+Defined in: index.d.ts:3677
 
 设置天空盒可见
 
@@ -2866,7 +2866,7 @@ Defined in: index.d.ts:3669
 
 > **setSlideShow**: (`slideShow`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:4085
+Defined in: index.d.ts:4093
 
 设置幻灯片列表
 
@@ -2888,7 +2888,7 @@ Defined in: index.d.ts:4085
 
 > **setSun**: (`option`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3691
+Defined in: index.d.ts:3699
 
 设置太阳参数
 
@@ -2912,7 +2912,7 @@ Defined in: index.d.ts:3691
 
 > **setTerrainExaggeration**: (`ratio`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:4029
+Defined in: index.d.ts:4037
 
 设置地形夸张系数
 
@@ -2934,7 +2934,7 @@ Defined in: index.d.ts:4029
 
 > **setTerrainLayerVisible**: (`visible`) => `boolean`
 
-Defined in: index.d.ts:3242
+Defined in: index.d.ts:3250
 
 设置地形图层可见
 
@@ -2958,7 +2958,7 @@ Defined in: index.d.ts:3242
 
 > **setTilesLayerBottomAltitude**: (`name`, `bottomAltitude`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:3636
+Defined in: index.d.ts:3644
 
 设置切片底部高程
 
@@ -2988,7 +2988,7 @@ Defined in: index.d.ts:3636
 
 > **setTilesLayerIgnoreNormal**: (`name`, `ignoreNormal`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:3623
+Defined in: index.d.ts:3631
 
 设置切片重新计算法线
 
@@ -3018,7 +3018,7 @@ Defined in: index.d.ts:3623
 
 > **setTilesLayerLodRangeScale**: (`name`, `lodRangeScale`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:3610
+Defined in: index.d.ts:3618
 
 设置切片图层的LOD层级切换距离缩放系数
 
@@ -3044,7 +3044,7 @@ Defined in: index.d.ts:3610
 
 > **setTilesLayerOrderIndependentTranslucency**: (`name`, `isOrderIndependentTranslucency`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:3598
+Defined in: index.d.ts:3606
 
 设置是否开启透明排序功能（OIT）
 
@@ -3072,7 +3072,7 @@ Defined in: index.d.ts:3598
 
 > **setTilesLayerRGBTOBGR**: (`name`, `isRGBTOBGR`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:3585
+Defined in: index.d.ts:3593
 
 设置切片是否反色
 
@@ -3102,7 +3102,7 @@ Defined in: index.d.ts:3585
 
 > **setTilesLayerVisible**: (`name`, `visible`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:3572
+Defined in: index.d.ts:3580
 
 设置切片图层可见（不能设置图层组内图层可见性）
 
@@ -3132,7 +3132,7 @@ Defined in: index.d.ts:3572
 
 > **setWeather**: (`weather?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4010
+Defined in: index.d.ts:4018
 
 设置当前天气
 
@@ -3152,7 +3152,7 @@ Defined in: index.d.ts:4010
 
 > **showCloud**: (`show`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3906
+Defined in: index.d.ts:3914
 
 云层是否显示，在显示之前需要先吊用setCloudImage设置一个云层纹理
 
@@ -3174,7 +3174,7 @@ Defined in: index.d.ts:3906
 
 > **showDebugFPS**: (`show`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:3849
+Defined in: index.d.ts:3857
 
 显示 fps 信息。默认不显示
 
@@ -3196,7 +3196,7 @@ Defined in: index.d.ts:3849
 
 > **startPropertyAnimation**: () => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3927
+Defined in: index.d.ts:3935
 
 播放属性动画
 
@@ -3212,7 +3212,7 @@ Defined in: index.d.ts:3927
 
 > **stopPropertyAnimation**: () => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3932
+Defined in: index.d.ts:3940
 
 停止属性动画
 
@@ -3228,7 +3228,7 @@ Defined in: index.d.ts:3932
 
 > **translationAnchorToPosition**: (`position`) => `void`
 
-Defined in: index.d.ts:4059
+Defined in: index.d.ts:4067
 
 球面平移设置目标绝对位置
 
@@ -3248,7 +3248,7 @@ Defined in: index.d.ts:4059
 
 > **translationCurrentDelta**: () => [`Vector3`](../interfaces/Vector3.md)
 
-Defined in: index.d.ts:4064
+Defined in: index.d.ts:4072
 
 当前球面平移结果
 
@@ -3262,7 +3262,7 @@ Defined in: index.d.ts:4064
 
 > **translationHeight**: (`delta`) => `void`
 
-Defined in: index.d.ts:4047
+Defined in: index.d.ts:4055
 
 球面平移目标高度调整
 
@@ -3284,7 +3284,7 @@ Defined in: index.d.ts:4047
 
 > **translationXYDistance**: (`currentPosition`, `delta_x`, `delta_y`) => `void`
 
-Defined in: index.d.ts:4054
+Defined in: index.d.ts:4062
 
 球面沿经纬度按距离平移
 
@@ -3318,7 +3318,7 @@ Defined in: index.d.ts:4054
 
 > **upadateLayerLabels**: (`layerName`, `labelStyle`) => `boolean`
 
-Defined in: index.d.ts:3508
+Defined in: index.d.ts:3516
 
 #### Parameters
 
@@ -3340,7 +3340,7 @@ Defined in: index.d.ts:3508
 
 > **upadateLayerPOILabels**: (`layerName`, `labelStyle`, `filter?`) => `boolean`
 
-Defined in: index.d.ts:3507
+Defined in: index.d.ts:3515
 
 #### Parameters
 
@@ -3366,7 +3366,7 @@ Defined in: index.d.ts:3507
 
 > **upadateLayerPolygons**: (`layerName`, `lineStyle`) => `boolean`
 
-Defined in: index.d.ts:3515
+Defined in: index.d.ts:3523
 
 #### Parameters
 
@@ -3388,7 +3388,7 @@ Defined in: index.d.ts:3515
 
 > **upadateLayerPolylines**: (`layerName`, `lineStyle`) => `boolean`
 
-Defined in: index.d.ts:3510
+Defined in: index.d.ts:3518
 
 #### Parameters
 
@@ -3410,7 +3410,7 @@ Defined in: index.d.ts:3510
 
 > **upadateLayerTerrainLabels**: (`layerName`, `labelStyle`) => `boolean`
 
-Defined in: index.d.ts:3509
+Defined in: index.d.ts:3517
 
 #### Parameters
 
@@ -3432,7 +3432,7 @@ Defined in: index.d.ts:3509
 
 > **updateEntityDelete**: (`datasourceName`, `entityId`, `type`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3499
+Defined in: index.d.ts:3507
 
 图层更新对象，
 
@@ -3462,7 +3462,7 @@ Defined in: index.d.ts:3499
 
 > **updateEntityLayerLabelByDiff**: (`layer`, `diff`) => `void`
 
-Defined in: index.d.ts:4130
+Defined in: index.d.ts:4138
 
 #### Parameters
 
@@ -3484,7 +3484,7 @@ Defined in: index.d.ts:4130
 
 > **updateEntityLayerLineByDiff**: (`layer`, `diff`) => `void`
 
-Defined in: index.d.ts:4128
+Defined in: index.d.ts:4136
 
 #### Parameters
 
@@ -3506,7 +3506,7 @@ Defined in: index.d.ts:4128
 
 > **updateEntityLayerPointByDiff**: (`layer`, `diff`) => `void`
 
-Defined in: index.d.ts:4126
+Defined in: index.d.ts:4134
 
 #### Parameters
 
@@ -3528,7 +3528,7 @@ Defined in: index.d.ts:4126
 
 > **updateEntityLayerPointLabelByDiff**: (`layer`, `diff`) => `void`
 
-Defined in: index.d.ts:4127
+Defined in: index.d.ts:4135
 
 #### Parameters
 
@@ -3550,7 +3550,7 @@ Defined in: index.d.ts:4127
 
 > **updateEntityLayerRegionByDiff**: (`layer`, `diff`) => `void`
 
-Defined in: index.d.ts:4129
+Defined in: index.d.ts:4137
 
 #### Parameters
 
@@ -3572,7 +3572,7 @@ Defined in: index.d.ts:4129
 
 > **updateEntityLayerTerrainLabelByDiff**: (`layer`, `diff`) => `void`
 
-Defined in: index.d.ts:4131
+Defined in: index.d.ts:4139
 
 #### Parameters
 
@@ -3594,7 +3594,7 @@ Defined in: index.d.ts:4131
 
 > **updateEntityModify**: (`datasourceName`, `entity`, `polygonExtrudedHeightRalative?`) => `boolean`
 
-Defined in: index.d.ts:3492
+Defined in: index.d.ts:3500
 
 图层更新对象，
 
@@ -3628,7 +3628,7 @@ polygon.extrudedHeight与面高度相对位置
 
 > **updateLayerModelsOrientation**: (`layerName`, `orientation`, `orientationAlongVelocity?`) => `boolean`
 
-Defined in: index.d.ts:3506
+Defined in: index.d.ts:3514
 
 #### Parameters
 
@@ -3654,7 +3654,7 @@ Defined in: index.d.ts:3506
 
 > **updateLayerPOIMarkers**: (`layerName`, `markerStyle`) => `boolean`
 
-Defined in: index.d.ts:3501
+Defined in: index.d.ts:3509
 
 *********** 批量更新 *************
 
@@ -3678,7 +3678,7 @@ Defined in: index.d.ts:3501
 
 > **updateSlideAtIndex**: (`slide`, `index`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:4103
+Defined in: index.d.ts:4111
 
 更新索引处幻灯片
 
@@ -3706,7 +3706,7 @@ Defined in: index.d.ts:4103
 
 > **viewEntireEntities**: (`entities`, `duration`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3951
+Defined in: index.d.ts:3959
 
 全幅矢量
 
@@ -3736,7 +3736,7 @@ Defined in: index.d.ts:3951
 
 > **viewEntireEntitiesLayer**: (`layerName`, `duration`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3944
+Defined in: index.d.ts:3952
 
 全幅矢量层
 
@@ -3766,7 +3766,7 @@ Defined in: index.d.ts:3944
 
 > **viewEntireEntitiesList**: (`entities`, `duration`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3982
+Defined in: index.d.ts:3990
 
 全幅矢量
 
@@ -3796,7 +3796,7 @@ Defined in: index.d.ts:3982
 
 > **viewEntireGeojson**: (`geojson`, `duration`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3975
+Defined in: index.d.ts:3983
 
 全幅Geojson
 
@@ -3824,7 +3824,7 @@ Defined in: index.d.ts:3975
 
 > **viewEntireImageLayer**: (`index`, `duration`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3968
+Defined in: index.d.ts:3976
 
 全幅影像图层
 
@@ -3852,7 +3852,7 @@ Defined in: index.d.ts:3968
 
 > **viewEntireS3MLayer**: (`layerName`, `duration`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:3961
+Defined in: index.d.ts:3969
 
 全幅S3M图层
 
@@ -3882,7 +3882,7 @@ Defined in: index.d.ts:3961
 
 > **zoomToTime**: (`time`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:3987
+Defined in: index.d.ts:3995
 
 设置时间轴当前时间
 

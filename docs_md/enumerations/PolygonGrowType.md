@@ -6,7 +6,7 @@
 
 # Enumeration: PolygonGrowType
 
-Defined in: index.d.ts:1112
+Defined in: index.d.ts:1120
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1112
 
 > **AlongDirection**: `2`
 
-Defined in: index.d.ts:1115
+Defined in: index.d.ts:1123
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:1115
 
 > **Proportion**: `0`
 
-Defined in: index.d.ts:1113
+Defined in: index.d.ts:1121
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: index.d.ts:1113
 
 > **Uniform**: `1`
 
-Defined in: index.d.ts:1114
+Defined in: index.d.ts:1122

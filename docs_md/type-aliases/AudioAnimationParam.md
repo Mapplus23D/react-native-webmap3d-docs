@@ -8,7 +8,7 @@
 
 > **AudioAnimationParam** = [`AudioAnimation`](../interfaces/AudioAnimation.md)[] \| \{ `animations`: [`AudioAnimation`](../interfaces/AudioAnimation.md)[]; `audio`: `string`; \}
 
-Defined in: index.d.ts:850
+Defined in: index.d.ts:858
 
 ## Type declaration
 

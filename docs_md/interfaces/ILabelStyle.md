@@ -6,7 +6,7 @@
 
 # Interface: ILabelStyle
 
-Defined in: index.d.ts:3094
+Defined in: index.d.ts:3102
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:3094
 
 > **alwaysVisible**: `boolean`
 
-Defined in: index.d.ts:3104
+Defined in: index.d.ts:3112
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:3104
 
 > **angle**: `number`
 
-Defined in: index.d.ts:3100
+Defined in: index.d.ts:3108
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:3100
 
 > **backgroundColor**: `string`
 
-Defined in: index.d.ts:3102
+Defined in: index.d.ts:3110
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:3102
 
 > **color**: `string`
 
-Defined in: index.d.ts:3097
+Defined in: index.d.ts:3105
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:3097
 
 > **depthDistance**: `number`
 
-Defined in: index.d.ts:3106
+Defined in: index.d.ts:3114
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:3106
 
 > **isFixSize**: `boolean`
 
-Defined in: index.d.ts:3101
+Defined in: index.d.ts:3109
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: index.d.ts:3101
 
 > **isTerrain**: `boolean`
 
-Defined in: index.d.ts:3107
+Defined in: index.d.ts:3115
 
 ***
 
@@ -70,7 +70,7 @@ Defined in: index.d.ts:3107
 
 > **label**: `string`
 
-Defined in: index.d.ts:3096
+Defined in: index.d.ts:3104
 
 ***
 
@@ -78,7 +78,7 @@ Defined in: index.d.ts:3096
 
 > **outlineColor**: `string`
 
-Defined in: index.d.ts:3103
+Defined in: index.d.ts:3111
 
 ***
 
@@ -86,7 +86,7 @@ Defined in: index.d.ts:3103
 
 > **scale**: `number`
 
-Defined in: index.d.ts:3099
+Defined in: index.d.ts:3107
 
 ***
 
@@ -94,7 +94,7 @@ Defined in: index.d.ts:3099
 
 > **size**: `number`
 
-Defined in: index.d.ts:3098
+Defined in: index.d.ts:3106
 
 ***
 
@@ -102,7 +102,7 @@ Defined in: index.d.ts:3098
 
 > **type**: `"normal"` \| `"outline"` \| `"background"` \| `"backgroundAndOutline"`
 
-Defined in: index.d.ts:3095
+Defined in: index.d.ts:3103
 
 ***
 
@@ -110,4 +110,4 @@ Defined in: index.d.ts:3095
 
 > **visibleDistance**: `number`
 
-Defined in: index.d.ts:3105
+Defined in: index.d.ts:3113

@@ -8,4 +8,4 @@
 
 > **TDirection** = `"top"` \| `"bottom"` \| `"left"` \| `"right"` \| `"top-left"` \| `"top-right"` \| `"bottom-left"` \| `"bottom-right"`
 
-Defined in: index.d.ts:813
+Defined in: index.d.ts:821

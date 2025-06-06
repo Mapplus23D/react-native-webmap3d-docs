@@ -6,7 +6,7 @@
 
 # Interface: AudioSubtitle
 
-Defined in: index.d.ts:881
+Defined in: index.d.ts:889
 
 音频字幕
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:881
 
 > **endTime**: `number`
 
-Defined in: index.d.ts:885
+Defined in: index.d.ts:893
 
 结束时间  单位 秒
 
@@ -26,7 +26,7 @@ Defined in: index.d.ts:885
 
 > **startTime**: `number`
 
-Defined in: index.d.ts:883
+Defined in: index.d.ts:891
 
 开始时间  单位 秒
 
@@ -36,6 +36,6 @@ Defined in: index.d.ts:883
 
 > **text**: `string`
 
-Defined in: index.d.ts:887
+Defined in: index.d.ts:895
 
 文本

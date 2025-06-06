@@ -6,7 +6,7 @@
 
 # Interface: BoxParticleEmitter
 
-Defined in: index.d.ts:1876
+Defined in: index.d.ts:1884
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1876
 
 > **direction1**: \[`number`, `number`, `number`\]
 
-Defined in: index.d.ts:1878
+Defined in: index.d.ts:1886
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:1878
 
 > **direction2**: \[`number`, `number`, `number`\]
 
-Defined in: index.d.ts:1883
+Defined in: index.d.ts:1891
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:1883
 
 > **maxEmitBox**: \[`number`, `number`, `number`\]
 
-Defined in: index.d.ts:1893
+Defined in: index.d.ts:1901
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:1893
 
 > **minEmitBox**: \[`number`, `number`, `number`\]
 
-Defined in: index.d.ts:1888
+Defined in: index.d.ts:1896
 
 ***
 
@@ -46,4 +46,4 @@ Defined in: index.d.ts:1888
 
 > **type**: `"BoxParticleEmitter"`
 
-Defined in: index.d.ts:1877
+Defined in: index.d.ts:1885

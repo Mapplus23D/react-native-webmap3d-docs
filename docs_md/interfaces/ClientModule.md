@@ -6,7 +6,7 @@
 
 # Interface: ClientModule
 
-Defined in: index.d.ts:5042
+Defined in: index.d.ts:5052
 
 Client模块类
 
@@ -18,7 +18,7 @@ Client模块类
 
 > **analysis**: [`AsyncFunction`](../type-aliases/AsyncFunction.md)\<[`IAnalysis`](../type-aliases/IAnalysis.md)\>
 
-Defined in: index.d.ts:5063
+Defined in: index.d.ts:5073
 
 分析模块
 
@@ -28,7 +28,7 @@ Defined in: index.d.ts:5063
 
 > **animation**: [`AsyncFunction`](../type-aliases/AsyncFunction.md)\<[`IAnimation`](../type-aliases/IAnimation.md)\>
 
-Defined in: index.d.ts:5057
+Defined in: index.d.ts:5067
 
 动画模块
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:5057
 
 > **coordTrans**: [`AsyncFunction`](../type-aliases/AsyncFunction.md)\<[`ICoordTrans`](../type-aliases/ICoordTrans.md)\>
 
-Defined in: index.d.ts:5071
+Defined in: index.d.ts:5081
 
 坐标转换
 
@@ -48,7 +48,7 @@ Defined in: index.d.ts:5071
 
 > **fileConverter**: [`AsyncFunction`](../type-aliases/AsyncFunction.md)\<[`IFileConverter`](../type-aliases/IFileConverter.md)\>
 
-Defined in: index.d.ts:5073
+Defined in: index.d.ts:5083
 
 文件数据转换
 
@@ -58,7 +58,7 @@ Defined in: index.d.ts:5073
 
 > **geometrist**: [`AsyncFunction`](../type-aliases/AsyncFunction.md)\<[`IGeometrist`](../type-aliases/IGeometrist.md)\>
 
-Defined in: index.d.ts:5067
+Defined in: index.d.ts:5077
 
 矢量数据管理
 
@@ -68,7 +68,7 @@ Defined in: index.d.ts:5067
 
 > **magnifier**: [`AsyncFunction`](../type-aliases/AsyncFunction.md)\<[`IMagnifier`](../type-aliases/IMagnifier.md)\>
 
-Defined in: index.d.ts:5065
+Defined in: index.d.ts:5075
 
 放大镜模块
 
@@ -78,7 +78,7 @@ Defined in: index.d.ts:5065
 
 > **measure**: [`AsyncFunction`](../type-aliases/AsyncFunction.md)\<[`IMeasure`](../type-aliases/IMeasure.md)\>
 
-Defined in: index.d.ts:5061
+Defined in: index.d.ts:5071
 
 测量模块
 
@@ -88,7 +88,7 @@ Defined in: index.d.ts:5061
 
 > **mServer**: [`AsyncFunction`](../type-aliases/AsyncFunction.md)\<[`IMServer`](../type-aliases/IMServer.md)\>
 
-Defined in: index.d.ts:5059
+Defined in: index.d.ts:5069
 
 服务模块
 
@@ -98,7 +98,7 @@ Defined in: index.d.ts:5059
 
 > **scene**: [`AsyncFunction`](../type-aliases/AsyncFunction.md)\<[`IScene`](../type-aliases/IScene.md)\> & `object`
 
-Defined in: index.d.ts:5044
+Defined in: index.d.ts:5054
 
 场景模块
 
@@ -140,6 +140,6 @@ Defined in: index.d.ts:5044
 
 > **tileCache**: [`AsyncFunction`](../type-aliases/AsyncFunction.md)\<[`ITileCache`](../type-aliases/ITileCache.md)\>
 
-Defined in: index.d.ts:5069
+Defined in: index.d.ts:5079
 
 瓦片缓存

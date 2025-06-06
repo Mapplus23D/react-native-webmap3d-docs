@@ -8,7 +8,7 @@
 
 > **IAnimation** = `object`
 
-Defined in: index.d.ts:2560
+Defined in: index.d.ts:2568
 
 动画模块
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:2560
 
 > **clear**: () => `void`
 
-Defined in: index.d.ts:2581
+Defined in: index.d.ts:2589
 
 清除当前动画
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:2581
 
 > **getAudioSubtitle**: () => [`AudioSubtitle`](../interfaces/AudioSubtitle.md)[]
 
-Defined in: index.d.ts:2577
+Defined in: index.d.ts:2585
 
 获取音频字幕
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:2577
 
 > **getAudioVolume**: () => `number`
 
-Defined in: index.d.ts:2637
+Defined in: index.d.ts:2645
 
 获取音量
 
@@ -70,7 +70,7 @@ Defined in: index.d.ts:2637
 
 > **getCurrentAnimation**: () => [`AnimationParam`](AnimationParam.md) \| `null`
 
-Defined in: index.d.ts:2583
+Defined in: index.d.ts:2591
 
 获取当前加载的动画
 
@@ -84,7 +84,7 @@ Defined in: index.d.ts:2583
 
 > **getCurrentTime**: () => `number`
 
-Defined in: index.d.ts:2606
+Defined in: index.d.ts:2614
 
 获取当前播放进度时间
 
@@ -100,7 +100,7 @@ Defined in: index.d.ts:2606
 
 > **getDuration**: () => `number`
 
-Defined in: index.d.ts:2601
+Defined in: index.d.ts:2609
 
 获取动画时长
 
@@ -116,7 +116,7 @@ Defined in: index.d.ts:2601
 
 > **getFlyStops**: () => [`FlyStop`](../interfaces/FlyStop.md)[]
 
-Defined in: index.d.ts:2626
+Defined in: index.d.ts:2634
 
 获取相机飞行经过的所有站点
 
@@ -132,7 +132,7 @@ Defined in: index.d.ts:2626
 
 > **getPlayRate**: () => `number`
 
-Defined in: index.d.ts:2616
+Defined in: index.d.ts:2624
 
 获取播放速率
 
@@ -148,7 +148,7 @@ Defined in: index.d.ts:2616
 
 > **load**: (`animation`, `id?`) => `void`
 
-Defined in: index.d.ts:2566
+Defined in: index.d.ts:2574
 
 加载动画
 
@@ -176,7 +176,7 @@ Defined in: index.d.ts:2566
 
 > **loadAudios**: (`data`) => `void`
 
-Defined in: index.d.ts:2572
+Defined in: index.d.ts:2580
 
 加载音频动画 [AnimationParam.audio](AnimationParam.md#audio) 对应的音频数据或路径
 
@@ -196,7 +196,7 @@ Defined in: index.d.ts:2572
 
 > **pause**: () => `void`
 
-Defined in: index.d.ts:2592
+Defined in: index.d.ts:2600
 
 暂停动画
 
@@ -210,7 +210,7 @@ Defined in: index.d.ts:2592
 
 > **play**: (`time?`) => `void`
 
-Defined in: index.d.ts:2588
+Defined in: index.d.ts:2596
 
 播放动画
 
@@ -232,7 +232,7 @@ Defined in: index.d.ts:2588
 
 > **setAudioVolume**: (`value`) => `void`
 
-Defined in: index.d.ts:2632
+Defined in: index.d.ts:2640
 
 设置音量
 
@@ -254,7 +254,7 @@ Defined in: index.d.ts:2632
 
 > **setPlayRate**: (`rate`) => `void`
 
-Defined in: index.d.ts:2611
+Defined in: index.d.ts:2619
 
 设置播放速率
 
@@ -276,7 +276,7 @@ Defined in: index.d.ts:2611
 
 > **stop**: () => `void`
 
-Defined in: index.d.ts:2596
+Defined in: index.d.ts:2604
 
 停止动画
 
@@ -290,7 +290,7 @@ Defined in: index.d.ts:2596
 
 > **zoomToTime**: (`time`) => `void`
 
-Defined in: index.d.ts:2621
+Defined in: index.d.ts:2629
 
 定位到具体时间
 

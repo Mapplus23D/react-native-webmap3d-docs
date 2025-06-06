@@ -6,7 +6,7 @@
 
 # Interface: RainbowLine
 
-Defined in: index.d.ts:1637
+Defined in: index.d.ts:1645
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1637
 
 > `optional` **colors**: [`ColorNumber`](../type-aliases/ColorNumber.md)[]
 
-Defined in: index.d.ts:1647
+Defined in: index.d.ts:1655
 
 彩虹颜色数组，默认七种颜色
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:1647
 
 > `optional` **hMax**: `number`
 
-Defined in: index.d.ts:1645
+Defined in: index.d.ts:1653
 
 离地高度
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:1645
 
 > `optional` **positions**: `number`[]
 
-Defined in: index.d.ts:1639
+Defined in: index.d.ts:1647
 
 位置数组 格式 [经度，纬度，经度，纬度...]
 
@@ -44,7 +44,7 @@ Defined in: index.d.ts:1639
 
 > `optional` **show**: `boolean`
 
-Defined in: index.d.ts:1643
+Defined in: index.d.ts:1651
 
 显隐
 
@@ -54,6 +54,6 @@ Defined in: index.d.ts:1643
 
 > `optional` **width**: `number`
 
-Defined in: index.d.ts:1641
+Defined in: index.d.ts:1649
 
 宽度

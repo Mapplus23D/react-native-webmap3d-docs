@@ -8,4 +8,4 @@
 
 > **TCoordSys** = `"wgs84"` \| `"gcj02"` \| `"bd09"`
 
-Defined in: index.d.ts:2813
+Defined in: index.d.ts:2821

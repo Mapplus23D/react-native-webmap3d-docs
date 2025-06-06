@@ -6,7 +6,7 @@
 
 # Interface: PrimitiveStripeRegion
 
-Defined in: index.d.ts:2407
+Defined in: index.d.ts:2415
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:2407
 
 > `optional` **baseHeight**: `number`
 
-Defined in: index.d.ts:2427
+Defined in: index.d.ts:2435
 
 底部高度，贴地时无效
 
@@ -28,7 +28,7 @@ Defined in: index.d.ts:2427
 
 > `optional` **clampToGround**: `boolean`
 
-Defined in: index.d.ts:2423
+Defined in: index.d.ts:2431
 
 deprecated 废弃的贴地接口 当classificationType未定义时生效
 
@@ -38,7 +38,7 @@ deprecated 废弃的贴地接口 当classificationType未定义时生效
 
 > `optional` **classificationType**: [`ClassificationType`](../enumerations/ClassificationType.md)
 
-Defined in: index.d.ts:2421
+Defined in: index.d.ts:2429
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:2421
 
 > `optional` **distanceDisplayCondition**: [`DistanceDisplayCondition`](DistanceDisplayCondition.md)
 
-Defined in: index.d.ts:2147
+Defined in: index.d.ts:2155
 
 可见范围
 
@@ -60,7 +60,7 @@ Defined in: index.d.ts:2147
 
 > `optional` **evenColor**: `string`
 
-Defined in: index.d.ts:2412
+Defined in: index.d.ts:2420
 
 偶数条带颜色polygonSymbolStripeEvenColor,默认白色
 
@@ -70,7 +70,7 @@ Defined in: index.d.ts:2412
 
 > **hierarchy**: [`Circle`](Circle.md) \| [`Rectangle`](Rectangle.md) \| [`PolygonHierarchy`](PolygonHierarchy.md)
 
-Defined in: index.d.ts:2410
+Defined in: index.d.ts:2418
 
 面节点
 
@@ -80,7 +80,7 @@ Defined in: index.d.ts:2410
 
 > `optional` **name**: `string`
 
-Defined in: index.d.ts:2150
+Defined in: index.d.ts:2158
 
 primitive 名称
 
@@ -94,7 +94,7 @@ primitive 名称
 
 > `optional` **oddColor**: `string`
 
-Defined in: index.d.ts:2414
+Defined in: index.d.ts:2422
 
 奇数条带颜色polygonSymbolStripeOddColor,默认黑色
 
@@ -104,7 +104,7 @@ Defined in: index.d.ts:2414
 
 > `optional` **offset**: `number`
 
-Defined in: index.d.ts:2418
+Defined in: index.d.ts:2426
 
 polygonSymbolStripeOffset,默认值0
 
@@ -114,7 +114,7 @@ polygonSymbolStripeOffset,默认值0
 
 > `optional` **orientationHorizontal**: `boolean`
 
-Defined in: index.d.ts:2420
+Defined in: index.d.ts:2428
 
 true（默认值）:SuperMap3D.StripeOrientation.HORIZONTAL/false:SuperMap3D.StripeOrientation.VERTICAL
 
@@ -124,7 +124,7 @@ true（默认值）:SuperMap3D.StripeOrientation.HORIZONTAL/false:SuperMap3D.Str
 
 > `optional` **properties**: `object`
 
-Defined in: index.d.ts:2152
+Defined in: index.d.ts:2160
 
 属性字段
 
@@ -142,7 +142,7 @@ Defined in: index.d.ts:2152
 
 > `optional` **repeat**: `number`
 
-Defined in: index.d.ts:2416
+Defined in: index.d.ts:2424
 
 polygonSymbolStripeRepeat,默认值1
 
@@ -152,7 +152,7 @@ polygonSymbolStripeRepeat,默认值1
 
 > `optional` **show**: `boolean`
 
-Defined in: index.d.ts:2145
+Defined in: index.d.ts:2153
 
 是否显示，默认true
 
@@ -166,7 +166,7 @@ Defined in: index.d.ts:2145
 
 > `optional` **stRotation**: `number`
 
-Defined in: index.d.ts:2429
+Defined in: index.d.ts:2437
 
 贴图旋转角度
 
@@ -176,7 +176,7 @@ Defined in: index.d.ts:2429
 
 > `optional` **topHeight**: `number`
 
-Defined in: index.d.ts:2425
+Defined in: index.d.ts:2433
 
 水面高度,贴地时无效
 
@@ -186,7 +186,7 @@ Defined in: index.d.ts:2425
 
 > **type**: [`StripeRegion`](../enumerations/PrimitiveType.md#striperegion)
 
-Defined in: index.d.ts:2408
+Defined in: index.d.ts:2416
 
 类型
 
