@@ -1,5 +1,8 @@
 {
   "name": "react-native-webmap3d-docs",
   "version": "0.0.1",
-  "description": "WebMap3D documents for react native"
+  "description": "WebMap3D documents for react native",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
