@@ -8,7 +8,7 @@
 
 <img src="assets/description.png" width="60%" />
 
-可参考完整[SDK Demo](https://github.com/Dituhui-Mapplus/web3dsdk-rn/tree/main)，[SDK文档](https://github.com/Dituhui-Mapplus/react-native-webmap3d-docs/blob/main/docs_md/index.md)
+可参考完整[SDK Demo](https://github.com/Mapplus23D/web3dsdk-rn/tree/main)
 
 ## 前提
 
