@@ -8,9 +8,7 @@
 
 > **ICoordTrans** = `object`
 
-Defined in: index.d.ts:2825
-
-坐标转换
+Defined in: index.d.ts:2786
 
 ## Methods
 
@@ -18,9 +16,7 @@ Defined in: index.d.ts:2825
 
 > **translate**(`points`, `from`, `to`): `number`[][]
 
-Defined in: index.d.ts:2832
-
-坐标转换
+Defined in: index.d.ts:2787
 
 #### Parameters
 
@@ -28,19 +24,13 @@ Defined in: index.d.ts:2832
 
 `number`[][]
 
-源坐标点串
-
 ##### from
 
 [`TCoordSys`](TCoordSys.md)
 
-当前坐标系
-
 ##### to
 
 [`TCoordSys`](TCoordSys.md)
-
-结果坐标系
 
 #### Returns
 

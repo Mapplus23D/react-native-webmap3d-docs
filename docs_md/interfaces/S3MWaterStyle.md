@@ -6,7 +6,7 @@
 
 # Interface: S3MWaterStyle
 
-Defined in: index.d.ts:348
+Defined in: index.d.ts:336
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:348
 
 > `optional` **waterBodySize**: [`WaterbodySize`](../enumerations/WaterbodySize.md)
 
-Defined in: index.d.ts:352
+Defined in: index.d.ts:340
 
 水面大小级别
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:352
 
 > `optional` **waterColor**: `string`
 
-Defined in: index.d.ts:350
+Defined in: index.d.ts:338
 
 水面颜色
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:350
 
 > `optional` **waveDirection**: `number`
 
-Defined in: index.d.ts:354
+Defined in: index.d.ts:342
 
 波浪方向
 
@@ -44,6 +44,6 @@ Defined in: index.d.ts:354
 
 > `optional` **waveStrength**: [`WaveStrength`](../enumerations/WaveStrength.md)
 
-Defined in: index.d.ts:356
+Defined in: index.d.ts:344
 
 波浪强度

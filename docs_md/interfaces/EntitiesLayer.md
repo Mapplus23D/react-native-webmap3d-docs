@@ -6,7 +6,7 @@
 
 # Interface: EntitiesLayer
 
-Defined in: index.d.ts:299
+Defined in: index.d.ts:287
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:299
 
 > `optional` **datasource**: [`EntitiesDatasource`](EntitiesDatasource.md) \| [`EntityCollection`](EntityCollection.md)
 
-Defined in: index.d.ts:307
+Defined in: index.d.ts:295
 
 图层数据
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:307
 
 > `optional` **isMediaLayer**: `boolean`
 
-Defined in: index.d.ts:305
+Defined in: index.d.ts:293
 
 是否多媒体图层
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:305
 
 > **name**: `string`
 
-Defined in: index.d.ts:301
+Defined in: index.d.ts:289
 
 图层名
 
@@ -44,6 +44,6 @@ Defined in: index.d.ts:301
 
 > **visible**: `boolean`
 
-Defined in: index.d.ts:303
+Defined in: index.d.ts:291
 
 图层是否可见,默认可见

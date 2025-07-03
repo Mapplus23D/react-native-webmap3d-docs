@@ -8,11 +8,9 @@
 
 > **ICamera** = `object`
 
-Defined in: index.d.ts:2652
+Defined in: index.d.ts:2616
 
-场景相机
-
-可以移动/固定视角，缩放，指北等功能
+场景
 
 ## Properties
 
@@ -20,7 +18,7 @@ Defined in: index.d.ts:2652
 
 > **compassPointingNorth**: () => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:2707
+Defined in: index.d.ts:2671
 
 罗盘指北
 
@@ -36,7 +34,7 @@ Defined in: index.d.ts:2707
 
 > **enableRotate**: (`enable`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:2774
+Defined in: index.d.ts:2738
 
 开启或关闭相机旋转
 
@@ -60,7 +58,7 @@ Defined in: index.d.ts:2774
 
 > **enableTilt**: (`enable`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:2781
+Defined in: index.d.ts:2745
 
 开启或关闭相机俯仰
 
@@ -84,7 +82,7 @@ Defined in: index.d.ts:2781
 
 > **enableTranslate**: (`enable`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:2788
+Defined in: index.d.ts:2752
 
 开启或关闭相机移动
 
@@ -108,7 +106,7 @@ Defined in: index.d.ts:2788
 
 > **enableZoom**: (`enable`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:2794
+Defined in: index.d.ts:2758
 
 开启或关闭相机缩放
 
@@ -130,7 +128,7 @@ Defined in: index.d.ts:2794
 
 > **flyForward**: (`byDistance`, `byLookDirection?`, `bySecends?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:2672
+Defined in: index.d.ts:2636
 
 相机拉近（沿相机朝向）
 byDistance 拉近距离（单位米，正表示拉近，负表示拉远）
@@ -163,7 +161,7 @@ bySecends 相机移动过场动画时间（单位秒，默认值1）
 
 > **flyRight**: (`byDistance`, `bySecends?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:2679
+Defined in: index.d.ts:2643
 
 相机平移（沿相机右侧）
 byDistance 平移距离（单位米，正表示右，负表示左）
@@ -191,7 +189,7 @@ bySecends 相机移动过场动画时间（单位秒，默认值1）
 
 > **flyTo**: (`camera`, `bySecends?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:2693
+Defined in: index.d.ts:2657
 
 相机移动
 Camera移动到的目标相机
@@ -219,7 +217,7 @@ bySecends 相机移动过场动画时间（单位秒，默认值1）
 
 > **flyUp**: (`byDistance`, `bySecends?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:2686
+Defined in: index.d.ts:2650
 
 相机平移（沿相机上方）
 byDistance 平移距离（单位米，正表示上，负表示下）
@@ -247,7 +245,7 @@ bySecends 相机移动过场动画时间（单位秒，默认值1）
 
 > **getCameraParam**: () => [`Camera`](../interfaces/Camera.md) \| `null`
 
-Defined in: index.d.ts:2745
+Defined in: index.d.ts:2709
 
 获取相机位置参数
 
@@ -263,7 +261,7 @@ Defined in: index.d.ts:2745
 
 > **getPositionInCameraSpace**: (`position`) => [`Vector3`](../interfaces/Vector3.md)
 
-Defined in: index.d.ts:2767
+Defined in: index.d.ts:2731
 
 获取世界点在相机坐标系下的坐标
 
@@ -287,7 +285,7 @@ Defined in: index.d.ts:2767
 
 > **getRelativePosition**: (`param`) => [`Vector3`](../interfaces/Vector3.md) \| `null`
 
-Defined in: index.d.ts:2750
+Defined in: index.d.ts:2714
 
 获取相机相对位置参数
 
@@ -319,7 +317,7 @@ Defined in: index.d.ts:2750
 
 > **getViewBounds**: () => [`Bounds`](../interfaces/Bounds.md) \| `undefined`
 
-Defined in: index.d.ts:2819
+Defined in: index.d.ts:2783
 
 获取当前视角下地球可视的经纬度范围
 若地球不可见，则返回 undefined
@@ -334,7 +332,7 @@ Defined in: index.d.ts:2819
 
 > **heading**: (`angle`, `bySecends?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:2720
+Defined in: index.d.ts:2684
 
 相机朝向
 angle与北夹角角度
@@ -362,7 +360,7 @@ bySecond转向时间
 
 > **headingAt**: (`angle`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:2713
+Defined in: index.d.ts:2677
 
 罗盘指向（视野焦点不变，若无焦点转向失败）
 angle与北夹角角度
@@ -385,7 +383,7 @@ angle与北夹角角度
 
 > **isEnableRotate**: () => `boolean`
 
-Defined in: index.d.ts:2799
+Defined in: index.d.ts:2763
 
 是否开启相机旋转
 
@@ -401,7 +399,7 @@ Defined in: index.d.ts:2799
 
 > **isEnableTilt**: () => `boolean`
 
-Defined in: index.d.ts:2804
+Defined in: index.d.ts:2768
 
 是否开启相机俯仰
 
@@ -417,7 +415,7 @@ Defined in: index.d.ts:2804
 
 > **isEnableTranslate**: () => `boolean`
 
-Defined in: index.d.ts:2809
+Defined in: index.d.ts:2773
 
 是否开启相机移动
 
@@ -433,7 +431,7 @@ Defined in: index.d.ts:2809
 
 > **isEnableZoom**: () => `boolean`
 
-Defined in: index.d.ts:2814
+Defined in: index.d.ts:2778
 
 是否开启相机缩放
 
@@ -449,7 +447,7 @@ Defined in: index.d.ts:2814
 
 > **pitch**: (`angle`, `bySecends?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:2733
+Defined in: index.d.ts:2697
 
 相机俯仰
 angle角度，0为平视，-90为top-down视角
@@ -477,7 +475,7 @@ bySecond转向时间
 
 > **pitchAt**: (`angle`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:2726
+Defined in: index.d.ts:2690
 
 俯仰角（视野焦点不变，若无焦点转向失败）
 angle角度，0为平视，-90为top-down视角
@@ -500,7 +498,7 @@ angle角度，0为平视，-90为top-down视角
 
 > **setCameraRadian**: (`camera`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:2699
+Defined in: index.d.ts:2663
 
 相机弧度
 Camera弧度
@@ -529,7 +527,7 @@ Camera弧度
 
 > **translateRelativeCamera**: (`position`, `right`, `forward`) => [`Vector3`](../interfaces/Vector3.md) \| `null`
 
-Defined in: index.d.ts:2761
+Defined in: index.d.ts:2725
 
 相对相机在球面移动
 
@@ -559,7 +557,7 @@ Defined in: index.d.ts:2761
 
 > **viewEntire**: (`bySecends?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:2658
+Defined in: index.d.ts:2622
 
 全幅显示球
 bySecends 当前相机到全幅相机过场动画时间（单位秒，默认值1）
@@ -582,7 +580,7 @@ bySecends 当前相机到全幅相机过场动画时间（单位秒，默认值1
 
 > **viewEntireCurrent**: (`duration?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:2664
+Defined in: index.d.ts:2628
 
 飞行到当前位置的上空，使地球全幅
 
@@ -606,7 +604,7 @@ Defined in: index.d.ts:2664
 
 > **zoom**: (`byRatio`, `bySecends?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:2740
+Defined in: index.d.ts:2704
 
 放大/缩小（按倍数拉近/拉远相机）
 byRatio 放大倍数（正表示放大，负表示缩小）

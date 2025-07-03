@@ -6,7 +6,7 @@
 
 # Enumeration: ScreenPosition
 
-Defined in: index.d.ts:215
+Defined in: index.d.ts:203
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:215
 
 > **BOTTOM\_CENTER**: `7`
 
-Defined in: index.d.ts:223
+Defined in: index.d.ts:211
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:223
 
 > **BOTTOM\_LEFTL**: `6`
 
-Defined in: index.d.ts:222
+Defined in: index.d.ts:210
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:222
 
 > **BOTTOM\_RIGHT**: `8`
 
-Defined in: index.d.ts:224
+Defined in: index.d.ts:212
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:224
 
 > **CENTER**: `4`
 
-Defined in: index.d.ts:220
+Defined in: index.d.ts:208
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:220
 
 > **CENTER\_LEFT**: `3`
 
-Defined in: index.d.ts:219
+Defined in: index.d.ts:207
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:219
 
 > **CENTER\_RIGHT**: `5`
 
-Defined in: index.d.ts:221
+Defined in: index.d.ts:209
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: index.d.ts:221
 
 > **TOP\_CENTER**: `1`
 
-Defined in: index.d.ts:217
+Defined in: index.d.ts:205
 
 ***
 
@@ -70,7 +70,7 @@ Defined in: index.d.ts:217
 
 > **TOP\_LEFT**: `0`
 
-Defined in: index.d.ts:216
+Defined in: index.d.ts:204
 
 ***
 
@@ -78,4 +78,4 @@ Defined in: index.d.ts:216
 
 > **TOP\_RIGHT**: `2`
 
-Defined in: index.d.ts:218
+Defined in: index.d.ts:206

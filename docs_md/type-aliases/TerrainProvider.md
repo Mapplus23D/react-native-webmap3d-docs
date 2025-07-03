@@ -8,4 +8,4 @@
 
 > **TerrainProvider** = [`SuperMapTerrainProvider`](../interfaces/SuperMapTerrainProvider.md) \| [`TiandituTerrainProvider`](../interfaces/TiandituTerrainProvider.md) \| [`SCTTerrainProvider`](../interfaces/SCTTerrainProvider.md) \| [`LocalProvider`](../interfaces/LocalProvider.md)
 
-Defined in: index.d.ts:278
+Defined in: index.d.ts:266

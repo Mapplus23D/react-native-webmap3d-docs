@@ -6,7 +6,7 @@
 
 # Interface: MeasureResultDVHparam
 
-Defined in: index.d.ts:2852
+Defined in: index.d.ts:2807
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:2852
 
 > **distance**: `number`
 
-Defined in: index.d.ts:2854
+Defined in: index.d.ts:2809
 
 空间距离
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:2854
 
 > **hDistance**: `number`
 
-Defined in: index.d.ts:2858
+Defined in: index.d.ts:2813
 
 水平距离
 
@@ -34,6 +34,6 @@ Defined in: index.d.ts:2858
 
 > **vDistance**: `number`
 
-Defined in: index.d.ts:2856
+Defined in: index.d.ts:2811
 
 垂直距离

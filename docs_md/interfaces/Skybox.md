@@ -6,7 +6,7 @@
 
 # Interface: Skybox
 
-Defined in: index.d.ts:271
+Defined in: index.d.ts:259
 
 天空盒
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:271
 
 > **sources**: [`SkyboxResource`](SkyboxResource.md)
 
-Defined in: index.d.ts:275
+Defined in: index.d.ts:263
 
 天空盒的图片资源
 
@@ -26,6 +26,6 @@ Defined in: index.d.ts:275
 
 > **visible**: `boolean`
 
-Defined in: index.d.ts:273
+Defined in: index.d.ts:261
 
 是否可见

@@ -6,7 +6,7 @@
 
 # Interface: Clouds
 
-Defined in: index.d.ts:641
+Defined in: index.d.ts:621
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:641
 
 > **url**: `string`
 
-Defined in: index.d.ts:645
+Defined in: index.d.ts:625
 
 云层纹理地址
 
@@ -24,6 +24,6 @@ Defined in: index.d.ts:645
 
 > **visible**: `boolean`
 
-Defined in: index.d.ts:643
+Defined in: index.d.ts:623
 
 是否可见

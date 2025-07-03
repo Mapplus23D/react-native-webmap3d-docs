@@ -8,13 +8,9 @@
 
 > **IMeasure** = `object`
 
-Defined in: index.d.ts:2867
+Defined in: index.d.ts:2818
 
 量算
-
-可测量距离，面积，高度
-
-可显示标签，等高线
 
 ## Properties
 
@@ -22,7 +18,7 @@ Defined in: index.d.ts:2867
 
 > **addPoint**: (`position`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:2895
+Defined in: index.d.ts:2846
 
 添加测量点
 
@@ -46,7 +42,7 @@ Promise<void>
 
 > **beginMeasure**: (`measureTypeParam`, `Param`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:2874
+Defined in: index.d.ts:2825
 
 开始测量
 
@@ -76,7 +72,7 @@ boolean 是否执行完成
 
 > **clear**: () => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:2889
+Defined in: index.d.ts:2840
 
 清空所有测量
 
@@ -92,7 +88,7 @@ Promise<void>
 
 > **completed**: () => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:2884
+Defined in: index.d.ts:2835
 
 提交测量 （结束当前测量，可开始下一测量）
 
@@ -108,7 +104,7 @@ Promise<void>
 
 > **getPreviewMeasureResult**: () => `Promise`\<`number` \| [`MeasureResultDVHparam`](../interfaces/MeasureResultDVHparam.md)\>
 
-Defined in: index.d.ts:2907
+Defined in: index.d.ts:2858
 
 获取预览的量算结果， 调用之前需要先调用updatePreviewPoint方法
 
@@ -124,7 +120,7 @@ Defined in: index.d.ts:2907
 
 > **undo**: () => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:2879
+Defined in: index.d.ts:2830
 
 撤销当前测量（已提交的测量，不可撤销)
 
@@ -140,7 +136,7 @@ Promise<void>
 
 > **updatePreviewPoint**: (`position`, `isShowPreview`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:2902
+Defined in: index.d.ts:2853
 
 添加预览点
 

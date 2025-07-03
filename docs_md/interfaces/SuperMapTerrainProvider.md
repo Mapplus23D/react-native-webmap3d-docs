@@ -6,7 +6,7 @@
 
 # Interface: SuperMapTerrainProvider
 
-Defined in: index.d.ts:409
+Defined in: index.d.ts:397
 
 SuperMap 地形图层参数
 
@@ -16,7 +16,7 @@ SuperMap 地形图层参数
 
 > `optional` **credential**: [`SuperMapCredential`](SuperMapCredential.md)
 
-Defined in: index.d.ts:422
+Defined in: index.d.ts:410
 
 认证信息
 
@@ -26,7 +26,7 @@ Defined in: index.d.ts:422
 
 > `optional` **invisibility**: `boolean`
 
-Defined in: index.d.ts:416
+Defined in: index.d.ts:404
 
 受否开启显影功能，开始后才能设置地形显影, 默认 false
 
@@ -36,7 +36,7 @@ Defined in: index.d.ts:416
 
 > `optional` **isSct**: `boolean`
 
-Defined in: index.d.ts:414
+Defined in: index.d.ts:402
 
 是否为iServer发布的TIN地形服务,stk地形设置为false。 默认 true
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:414
 
 > `optional` **requestVertexNormals**: `boolean`
 
-Defined in: index.d.ts:420
+Defined in: index.d.ts:408
 
 指示客户端是否应该从服务器请求额外的照明信息，如果可用，以每个顶点法线的形式.
 
@@ -56,7 +56,7 @@ Defined in: index.d.ts:420
 
 > `optional` **requestWaterMask**: `boolean`
 
-Defined in: index.d.ts:418
+Defined in: index.d.ts:406
 
 指示客户端是否应该向服务器请求每个瓦片水掩码(如果可用的话)
 
@@ -66,7 +66,7 @@ Defined in: index.d.ts:418
 
 > **type**: [`SUPERMAP`](../enumerations/ProviderType.md#supermap)
 
-Defined in: index.d.ts:410
+Defined in: index.d.ts:398
 
 ***
 
@@ -74,6 +74,6 @@ Defined in: index.d.ts:410
 
 > **url**: `string`
 
-Defined in: index.d.ts:412
+Defined in: index.d.ts:400
 
 SuperMap terrain server的url.

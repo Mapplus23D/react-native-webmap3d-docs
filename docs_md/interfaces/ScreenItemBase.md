@@ -6,7 +6,7 @@
 
 # Interface: ScreenItemBase
 
-Defined in: index.d.ts:773
+Defined in: index.d.ts:753
 
 ## Extended by
 
@@ -20,7 +20,7 @@ Defined in: index.d.ts:773
 
 > `optional` **anchor**: [`TAnchor`](../type-aliases/TAnchor.md)
 
-Defined in: index.d.ts:777
+Defined in: index.d.ts:757
 
 对象锚点 默认 top-left
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:777
 
 > **animations**: [`IScreenAnimation`](../type-aliases/IScreenAnimation.md)[]
 
-Defined in: index.d.ts:787
+Defined in: index.d.ts:767
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:787
 
 > **name**: `string`
 
-Defined in: index.d.ts:775
+Defined in: index.d.ts:755
 
 屏幕动画名字
 
@@ -48,7 +48,7 @@ Defined in: index.d.ts:775
 
 > **position**: `object`
 
-Defined in: index.d.ts:779
+Defined in: index.d.ts:759
 
 图片相对屏幕的位置 范围 0 - 100
 
@@ -66,7 +66,7 @@ Defined in: index.d.ts:779
 
 > `optional` **size**: `object`
 
-Defined in: index.d.ts:783
+Defined in: index.d.ts:763
 
 #### width?
 

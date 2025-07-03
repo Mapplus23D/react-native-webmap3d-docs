@@ -6,7 +6,7 @@
 
 # Interface: BingMapsImageProvider
 
-Defined in: index.d.ts:459
+Defined in: index.d.ts:447
 
 bing 影像图层参数
 
@@ -16,7 +16,7 @@ bing 影像图层参数
 
 > **key**: `string`
 
-Defined in: index.d.ts:466
+Defined in: index.d.ts:454
 
 bing 地图服务访问 key
 
@@ -26,7 +26,7 @@ bing 地图服务访问 key
 
 > **mapStyle**: [`BingMapsStyle`](../enumerations/BingMapsStyle.md)
 
-Defined in: index.d.ts:464
+Defined in: index.d.ts:452
 
 bing 地图服务类型
 
@@ -36,7 +36,7 @@ bing 地图服务类型
 
 > `optional` **maximumLevel**: `number`
 
-Defined in: index.d.ts:470
+Defined in: index.d.ts:458
 
 最大层级 默认 不限制
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:470
 
 > `optional` **minimumLevel**: `number`
 
-Defined in: index.d.ts:468
+Defined in: index.d.ts:456
 
 最小层级 默认 0
 
@@ -56,7 +56,7 @@ Defined in: index.d.ts:468
 
 > **type**: [`BING`](../enumerations/ProviderType.md#bing)
 
-Defined in: index.d.ts:460
+Defined in: index.d.ts:448
 
 ***
 
@@ -64,6 +64,6 @@ Defined in: index.d.ts:460
 
 > **url**: `string`
 
-Defined in: index.d.ts:462
+Defined in: index.d.ts:450
 
 服务 url

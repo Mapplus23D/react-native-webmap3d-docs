@@ -6,7 +6,7 @@
 
 # Interface: MultiPolygon
 
-Defined in: index.d.ts:3051
+Defined in: index.d.ts:3002
 
 MultiPolygon Geometry Object
 
@@ -22,7 +22,7 @@ https://tools.ietf.org/html/rfc7946#section-3.1.7
 
 > `optional` **bbox**: [`BBox`](../type-aliases/BBox.md)
 
-Defined in: index.d.ts:2983
+Defined in: index.d.ts:2934
 
 Bounding box of the coordinate range of the object's Geometries, Features, or Feature Collections.
 https://tools.ietf.org/html/rfc7946#section-5
@@ -37,7 +37,7 @@ https://tools.ietf.org/html/rfc7946#section-5
 
 > **coordinates**: [`Position`](../type-aliases/Position.md)[][][]
 
-Defined in: index.d.ts:3053
+Defined in: index.d.ts:3004
 
 ***
 
@@ -45,7 +45,7 @@ Defined in: index.d.ts:3053
 
 > **type**: `"MultiPolygon"`
 
-Defined in: index.d.ts:3052
+Defined in: index.d.ts:3003
 
 Specifies the type of GeoJSON object.
 

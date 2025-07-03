@@ -6,7 +6,7 @@
 
 # Enumeration: TiandituMapsStyle
 
-Defined in: index.d.ts:583
+Defined in: index.d.ts:571
 
 天地图服务类型常量
 
@@ -16,9 +16,9 @@ Defined in: index.d.ts:583
 
 > **CIA\_C**: `"cia_c"`
 
-Defined in: index.d.ts:585
+Defined in: index.d.ts:573
 
-全球中文影像注记服务（经纬度）
+全球中文注记服务（经纬度）
 
 ***
 
@@ -26,49 +26,9 @@ Defined in: index.d.ts:585
 
 > **CIA\_W**: `"cia_w"`
 
-Defined in: index.d.ts:587
+Defined in: index.d.ts:575
 
-全球中文影像注记服务（墨卡托
-
-***
-
-### CTA\_C
-
-> **CTA\_C**: `"cta_c"`
-
-Defined in: index.d.ts:593
-
-全球中文地形注记服务（经纬度）
-
-***
-
-### CTA\_W
-
-> **CTA\_W**: `"cta_w"`
-
-Defined in: index.d.ts:595
-
-全球中文地形注记服务（墨卡托
-
-***
-
-### CVA\_C
-
-> **CVA\_C**: `"cva_c"`
-
-Defined in: index.d.ts:589
-
-全球中文矢量注记服务（经纬度）
-
-***
-
-### CVA\_W
-
-> **CVA\_W**: `"cva_w"`
-
-Defined in: index.d.ts:591
-
-全球中文矢量注记服务（墨卡托
+全球中文注记服务（墨卡托
 
 ***
 
@@ -76,7 +36,7 @@ Defined in: index.d.ts:591
 
 > **IMG\_C**: `"img_c"`
 
-Defined in: index.d.ts:597
+Defined in: index.d.ts:577
 
 全球影像地图服务(经纬度)
 
@@ -86,7 +46,7 @@ Defined in: index.d.ts:597
 
 > **IMG\_W**: `"img_w"`
 
-Defined in: index.d.ts:599
+Defined in: index.d.ts:579
 
 全球矢量地图服务(墨卡托)
 
@@ -96,7 +56,7 @@ Defined in: index.d.ts:599
 
 > **TER\_C**: `"ter_c"`
 
-Defined in: index.d.ts:601
+Defined in: index.d.ts:581
 
 全球地形晕渲服务(经纬度)
 
@@ -106,7 +66,7 @@ Defined in: index.d.ts:601
 
 > **TER\_W**: `"ter_w"`
 
-Defined in: index.d.ts:603
+Defined in: index.d.ts:583
 
 全球地形晕渲服务(墨卡托)
 
@@ -116,7 +76,7 @@ Defined in: index.d.ts:603
 
 > **VEC\_C**: `"vec_c"`
 
-Defined in: index.d.ts:605
+Defined in: index.d.ts:585
 
 全球矢量地图服务(经纬度)
 
@@ -126,6 +86,6 @@ Defined in: index.d.ts:605
 
 > **VEC\_W**: `"vec_w"`
 
-Defined in: index.d.ts:607
+Defined in: index.d.ts:587
 
 全球矢量地图服务(墨卡托)

@@ -8,7 +8,7 @@
 
 > **GeometryTypes** = `"Point"` \| `"LineString"` \| `"Polygon"` \| `"MultiPoint"` \| `"MultiLineString"` \| `"MultiPolygon"` \| `"GeometryCollection"`
 
-Defined in: index.d.ts:2915
+Defined in: index.d.ts:2866
 
 GeometryTypes
 

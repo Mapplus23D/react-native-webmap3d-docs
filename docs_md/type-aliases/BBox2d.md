@@ -8,7 +8,7 @@
 
 > **BBox2d** = \[`number`, `number`, `number`, `number`\]
 
-Defined in: index.d.ts:2925
+Defined in: index.d.ts:2876
 
 Bounding box
 

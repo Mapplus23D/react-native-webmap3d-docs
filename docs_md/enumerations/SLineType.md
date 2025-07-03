@@ -6,7 +6,7 @@
 
 # Enumeration: SLineType
 
-Defined in: index.d.ts:1526
+Defined in: index.d.ts:1506
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1526
 
 > **CatmullRom**: `1`
 
-Defined in: index.d.ts:1527
+Defined in: index.d.ts:1507
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: index.d.ts:1527
 
 > **Hermite**: `2`
 
-Defined in: index.d.ts:1528
+Defined in: index.d.ts:1508

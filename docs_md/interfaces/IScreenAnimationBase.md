@@ -6,7 +6,7 @@
 
 # Interface: IScreenAnimationBase
 
-Defined in: index.d.ts:790
+Defined in: index.d.ts:770
 
 ## Extended by
 
@@ -20,7 +20,7 @@ Defined in: index.d.ts:790
 
 > **duration**: `number`
 
-Defined in: index.d.ts:792
+Defined in: index.d.ts:772
 
 ***
 
@@ -28,4 +28,4 @@ Defined in: index.d.ts:792
 
 > **startTime**: `number`
 
-Defined in: index.d.ts:791
+Defined in: index.d.ts:771

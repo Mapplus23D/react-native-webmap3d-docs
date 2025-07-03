@@ -6,7 +6,7 @@
 
 # Interface: ~~ViewStyle~~
 
-Defined in: index.d.ts:139
+Defined in: index.d.ts:127
 
 ## Deprecated
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:139
 
 > `optional` **backfaceVisibility**: `"visible"` \| `"hidden"`
 
-Defined in: index.d.ts:140
+Defined in: index.d.ts:128
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:140
 
 > `optional` **backgroundColor**: [`ColorValue`](../type-aliases/ColorValue.md)
 
-Defined in: index.d.ts:141
+Defined in: index.d.ts:129
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: index.d.ts:141
 
 > `optional` **borderBottomColor**: [`ColorValue`](../type-aliases/ColorValue.md)
 
-Defined in: index.d.ts:142
+Defined in: index.d.ts:130
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: index.d.ts:142
 
 > `optional` **borderBottomEndRadius**: `number`
 
-Defined in: index.d.ts:143
+Defined in: index.d.ts:131
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: index.d.ts:143
 
 > `optional` **borderBottomLeftRadius**: `number`
 
-Defined in: index.d.ts:144
+Defined in: index.d.ts:132
 
 ***
 
@@ -56,7 +56,7 @@ Defined in: index.d.ts:144
 
 > `optional` **borderBottomRightRadius**: `number`
 
-Defined in: index.d.ts:145
+Defined in: index.d.ts:133
 
 ***
 
@@ -64,7 +64,7 @@ Defined in: index.d.ts:145
 
 > `optional` **borderBottomStartRadius**: `number`
 
-Defined in: index.d.ts:146
+Defined in: index.d.ts:134
 
 ***
 
@@ -72,7 +72,7 @@ Defined in: index.d.ts:146
 
 > `optional` **borderBottomWidth**: `number`
 
-Defined in: index.d.ts:147
+Defined in: index.d.ts:135
 
 ***
 
@@ -80,7 +80,7 @@ Defined in: index.d.ts:147
 
 > `optional` **borderColor**: [`ColorValue`](../type-aliases/ColorValue.md)
 
-Defined in: index.d.ts:148
+Defined in: index.d.ts:136
 
 ***
 
@@ -88,7 +88,7 @@ Defined in: index.d.ts:148
 
 > `optional` **borderEndColor**: [`ColorValue`](../type-aliases/ColorValue.md)
 
-Defined in: index.d.ts:149
+Defined in: index.d.ts:137
 
 ***
 
@@ -96,7 +96,7 @@ Defined in: index.d.ts:149
 
 > `optional` **borderLeftColor**: [`ColorValue`](../type-aliases/ColorValue.md)
 
-Defined in: index.d.ts:150
+Defined in: index.d.ts:138
 
 ***
 
@@ -104,7 +104,7 @@ Defined in: index.d.ts:150
 
 > `optional` **borderLeftWidth**: `number`
 
-Defined in: index.d.ts:151
+Defined in: index.d.ts:139
 
 ***
 
@@ -112,7 +112,7 @@ Defined in: index.d.ts:151
 
 > `optional` **borderRadius**: `number`
 
-Defined in: index.d.ts:152
+Defined in: index.d.ts:140
 
 ***
 
@@ -120,7 +120,7 @@ Defined in: index.d.ts:152
 
 > `optional` **borderRightColor**: [`ColorValue`](../type-aliases/ColorValue.md)
 
-Defined in: index.d.ts:153
+Defined in: index.d.ts:141
 
 ***
 
@@ -128,7 +128,7 @@ Defined in: index.d.ts:153
 
 > `optional` **borderRightWidth**: `number`
 
-Defined in: index.d.ts:154
+Defined in: index.d.ts:142
 
 ***
 
@@ -136,7 +136,7 @@ Defined in: index.d.ts:154
 
 > `optional` **borderStartColor**: [`ColorValue`](../type-aliases/ColorValue.md)
 
-Defined in: index.d.ts:155
+Defined in: index.d.ts:143
 
 ***
 
@@ -144,7 +144,7 @@ Defined in: index.d.ts:155
 
 > `optional` **borderStyle**: `"solid"` \| `"dotted"` \| `"dashed"`
 
-Defined in: index.d.ts:156
+Defined in: index.d.ts:144
 
 ***
 
@@ -152,7 +152,7 @@ Defined in: index.d.ts:156
 
 > `optional` **borderTopColor**: [`ColorValue`](../type-aliases/ColorValue.md)
 
-Defined in: index.d.ts:157
+Defined in: index.d.ts:145
 
 ***
 
@@ -160,7 +160,7 @@ Defined in: index.d.ts:157
 
 > `optional` **borderTopEndRadius**: `number`
 
-Defined in: index.d.ts:158
+Defined in: index.d.ts:146
 
 ***
 
@@ -168,7 +168,7 @@ Defined in: index.d.ts:158
 
 > `optional` **borderTopLeftRadius**: `number`
 
-Defined in: index.d.ts:159
+Defined in: index.d.ts:147
 
 ***
 
@@ -176,7 +176,7 @@ Defined in: index.d.ts:159
 
 > `optional` **borderTopRightRadius**: `number`
 
-Defined in: index.d.ts:160
+Defined in: index.d.ts:148
 
 ***
 
@@ -184,7 +184,7 @@ Defined in: index.d.ts:160
 
 > `optional` **borderTopStartRadius**: `number`
 
-Defined in: index.d.ts:161
+Defined in: index.d.ts:149
 
 ***
 
@@ -192,7 +192,7 @@ Defined in: index.d.ts:161
 
 > `optional` **borderTopWidth**: `number`
 
-Defined in: index.d.ts:162
+Defined in: index.d.ts:150
 
 ***
 
@@ -200,7 +200,7 @@ Defined in: index.d.ts:162
 
 > `optional` **borderWidth**: `number`
 
-Defined in: index.d.ts:163
+Defined in: index.d.ts:151
 
 ***
 
@@ -208,4 +208,4 @@ Defined in: index.d.ts:163
 
 > `optional` **opacity**: `number`
 
-Defined in: index.d.ts:164
+Defined in: index.d.ts:152

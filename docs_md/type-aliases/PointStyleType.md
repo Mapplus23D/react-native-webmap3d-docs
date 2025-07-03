@@ -8,4 +8,4 @@
 
 > **PointStyleType** = `"point"` \| `"image"` \| `"model"` \| `"glow"` \| `"breath"`
 
-Defined in: index.d.ts:3134
+Defined in: index.d.ts:3085

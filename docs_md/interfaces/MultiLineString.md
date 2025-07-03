@@ -6,7 +6,7 @@
 
 # Interface: MultiLineString
 
-Defined in: index.d.ts:3033
+Defined in: index.d.ts:2984
 
 MultiLineString Geometry Object
 
@@ -22,7 +22,7 @@ https://tools.ietf.org/html/rfc7946#section-3.1.5
 
 > `optional` **bbox**: [`BBox`](../type-aliases/BBox.md)
 
-Defined in: index.d.ts:2983
+Defined in: index.d.ts:2934
 
 Bounding box of the coordinate range of the object's Geometries, Features, or Feature Collections.
 https://tools.ietf.org/html/rfc7946#section-5
@@ -37,7 +37,7 @@ https://tools.ietf.org/html/rfc7946#section-5
 
 > **coordinates**: [`Position`](../type-aliases/Position.md)[][]
 
-Defined in: index.d.ts:3035
+Defined in: index.d.ts:2986
 
 ***
 
@@ -45,7 +45,7 @@ Defined in: index.d.ts:3035
 
 > **type**: `"MultiLineString"`
 
-Defined in: index.d.ts:3034
+Defined in: index.d.ts:2985
 
 Specifies the type of GeoJSON object.
 

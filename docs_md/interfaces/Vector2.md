@@ -6,7 +6,7 @@
 
 # Interface: Vector2
 
-Defined in: index.d.ts:1205
+Defined in: index.d.ts:1185
 
 二维点
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:1205
 
 > **x**: `number`
 
-Defined in: index.d.ts:1207
+Defined in: index.d.ts:1187
 
 横坐标，x对应longitude
 
@@ -26,6 +26,6 @@ Defined in: index.d.ts:1207
 
 > **y**: `number`
 
-Defined in: index.d.ts:1209
+Defined in: index.d.ts:1189
 
 纵坐标，y对应latitude

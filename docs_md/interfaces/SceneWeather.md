@@ -6,7 +6,7 @@
 
 # Interface: SceneWeather
 
-Defined in: index.d.ts:849
+Defined in: index.d.ts:829
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:849
 
 > **name**: `string`
 
-Defined in: index.d.ts:852
+Defined in: index.d.ts:832
 
 场景动画标题
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:852
 
 > **startTime**: `number`
 
-Defined in: index.d.ts:854
+Defined in: index.d.ts:834
 
 开始时间 单位 秒
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:854
 
 > **type**: [`WEATHER`](../enumerations/SceneAnimationType.md#weather)
 
-Defined in: index.d.ts:850
+Defined in: index.d.ts:830
 
 ***
 
@@ -42,6 +42,6 @@ Defined in: index.d.ts:850
 
 > **weatherStyle**: `null` \| [`Rain`](Rain.md) \| [`Snow`](Snow.md)
 
-Defined in: index.d.ts:856
+Defined in: index.d.ts:836
 
 天气状态

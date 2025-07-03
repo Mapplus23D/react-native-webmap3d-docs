@@ -8,15 +8,13 @@
 
 > **Client** = *typeof* `enums` & `object` & [`ClientModule`](../interfaces/ClientModule.md)
 
-Defined in: index.d.ts:5022
+Defined in: index.d.ts:4935
 
 ## Type declaration
 
 ### addListener()
 
 > **addListener**: \<`key`\>(`event`, `listener`) => `void`
-
-添加监听
 
 #### Type Parameters
 
@@ -42,8 +40,6 @@ Defined in: index.d.ts:5022
 
 > **destroy**: () => `Promise`\<`void`\>
 
-销毁client
-
 #### Returns
 
 `Promise`\<`void`\>
@@ -51,8 +47,6 @@ Defined in: index.d.ts:5022
 ### handleMessage()
 
 > **handleMessage**: (`messageStr`) => `void`
-
-webview与js通信
 
 #### Parameters
 
@@ -67,12 +61,6 @@ webview与js通信
 ### init()
 
 > **init**: (`container?`, `option?`) => `Promise`\<`void`\>
-
-初始化 client 对象
-
-与 webview 中的 webmap3d sdk 建立联系
-
-初始化完成后才可以调用 sdk 中的各个方法
 
 #### Parameters
 
@@ -91,8 +79,6 @@ webview与js通信
 ### removeListener()
 
 > **removeListener**: \<`key`\>(`event`, `listener?`) => `void`
-
-移除监听
 
 #### Type Parameters
 

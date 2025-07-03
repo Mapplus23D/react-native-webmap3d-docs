@@ -6,7 +6,7 @@
 
 # Interface: ChangGuangProvider
 
-Defined in: index.d.ts:506
+Defined in: index.d.ts:494
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:506
 
 > `optional` **maximumLevel**: `number`
 
-Defined in: index.d.ts:513
+Defined in: index.d.ts:501
 
 最大层级 默认 不限制
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:513
 
 > `optional` **minimumLevel**: `number`
 
-Defined in: index.d.ts:511
+Defined in: index.d.ts:499
 
 最小层级 默认 0
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:511
 
 > `optional` **subdomains**: `string`[]
 
-Defined in: index.d.ts:515
+Defined in: index.d.ts:503
 
 url中用于 {s} 占位符的子域
 
@@ -44,7 +44,7 @@ url中用于 {s} 占位符的子域
 
 > `optional` **tilingSchemeType**: [`TilingSchemeType`](../enumerations/TilingSchemeType.md)
 
-Defined in: index.d.ts:517
+Defined in: index.d.ts:505
 
 球面影像平铺方案
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:517
 
 > **type**: [`CHANGGUANG`](../enumerations/ProviderType.md#changguang)
 
-Defined in: index.d.ts:507
+Defined in: index.d.ts:495
 
 ***
 
@@ -62,6 +62,6 @@ Defined in: index.d.ts:507
 
 > **url**: `string`
 
-Defined in: index.d.ts:509
+Defined in: index.d.ts:497
 
 服务 url

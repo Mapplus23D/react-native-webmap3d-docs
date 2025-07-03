@@ -8,6 +8,6 @@
 
 > **ObjectAnimation** = [`TranslationAnimation`](../interfaces/TranslationAnimation.md) \| [`LineGrowAnimation`](../interfaces/LineGrowAnimation.md) \| [`ColorAnimation`](../interfaces/ColorAnimation.md) \| [`RotationAnimation`](../interfaces/RotationAnimation.md) \| [`VisibilityAnimation`](../interfaces/VisibilityAnimation.md) \| [`PolygonGrowAnimation`](../interfaces/PolygonGrowAnimation.md)
 
-Defined in: index.d.ts:1094
+Defined in: index.d.ts:1074
 
 对象动画

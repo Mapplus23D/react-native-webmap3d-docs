@@ -6,7 +6,7 @@
 
 # Interface: S3MTilesLayer
 
-Defined in: index.d.ts:358
+Defined in: index.d.ts:346
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:358
 
 > `optional` **bottomAltitude**: `number`
 
-Defined in: index.d.ts:375
+Defined in: index.d.ts:363
 
 底部高程
 
@@ -28,7 +28,7 @@ Defined in: index.d.ts:375
 
 > `optional` **iconRelatedTextLayer**: `string`
 
-Defined in: index.d.ts:373
+Defined in: index.d.ts:361
 
 与图标图层对应的文本图层名
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:373
 
 > `optional` **ignoreNormal**: `boolean`
 
-Defined in: index.d.ts:377
+Defined in: index.d.ts:365
 
 是否重新计算法线,默认否
 
@@ -48,7 +48,7 @@ Defined in: index.d.ts:377
 
 > `optional` **isOverlapDisplayed**: `boolean`
 
-Defined in: index.d.ts:371
+Defined in: index.d.ts:359
 
 是否遮挡
 
@@ -58,7 +58,7 @@ Defined in: index.d.ts:371
 
 > `optional` **isRGBTOBGR**: `boolean`
 
-Defined in: index.d.ts:365
+Defined in: index.d.ts:353
 
 纹理压缩格式为webp的情况下，当纹理红绿反转时，使用颜色通道RGB转BGR
 
@@ -68,7 +68,7 @@ Defined in: index.d.ts:365
 
 > `optional` **isSceneLayer**: `boolean`
 
-Defined in: index.d.ts:361
+Defined in: index.d.ts:349
 
 ***
 
@@ -76,7 +76,7 @@ Defined in: index.d.ts:361
 
 > `optional` **lodRangeScale**: `number`
 
-Defined in: index.d.ts:367
+Defined in: index.d.ts:355
 
 图层的LOD层级切换距离缩放系数
 
@@ -86,7 +86,7 @@ Defined in: index.d.ts:367
 
 > **name**: `string`
 
-Defined in: index.d.ts:326
+Defined in: index.d.ts:314
 
 图层名
 
@@ -100,7 +100,7 @@ Defined in: index.d.ts:326
 
 > `optional` **orderIndependentTranslucency**: `boolean`
 
-Defined in: index.d.ts:369
+Defined in: index.d.ts:357
 
 获取或者设置是否开启透明排序功能（OIT），默认是true
 
@@ -110,7 +110,7 @@ Defined in: index.d.ts:369
 
 > **s3mLayerType**: [`S3M`](../enumerations/S3MLayerType.md#s3m)
 
-Defined in: index.d.ts:359
+Defined in: index.d.ts:347
 
 ***
 
@@ -118,7 +118,7 @@ Defined in: index.d.ts:359
 
 > **url**: `string`
 
-Defined in: index.d.ts:360
+Defined in: index.d.ts:348
 
 ***
 
@@ -126,7 +126,7 @@ Defined in: index.d.ts:360
 
 > **visible**: `boolean`
 
-Defined in: index.d.ts:328
+Defined in: index.d.ts:316
 
 图层是否可见,默认可见
 
@@ -140,6 +140,6 @@ Defined in: index.d.ts:328
 
 > `optional` **waterStyle**: [`S3MWaterStyle`](S3MWaterStyle.md)
 
-Defined in: index.d.ts:363
+Defined in: index.d.ts:351
 
 水面特效

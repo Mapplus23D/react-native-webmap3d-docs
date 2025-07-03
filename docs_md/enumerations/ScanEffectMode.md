@@ -6,7 +6,7 @@
 
 # Enumeration: ScanEffectMode
 
-Defined in: index.d.ts:1968
+Defined in: index.d.ts:1948
 
 扫描线模式
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:1968
 
 > **CIRCLE**: `1`
 
-Defined in: index.d.ts:1972
+Defined in: index.d.ts:1952
 
 扫描圈
 
@@ -26,6 +26,6 @@ Defined in: index.d.ts:1972
 
 > **LINE**: `0`
 
-Defined in: index.d.ts:1970
+Defined in: index.d.ts:1950
 
 扫描线

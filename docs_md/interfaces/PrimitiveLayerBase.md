@@ -6,7 +6,7 @@
 
 # Interface: PrimitiveLayerBase
 
-Defined in: index.d.ts:2054
+Defined in: index.d.ts:2034
 
 ## Extended by
 
@@ -19,7 +19,7 @@ Defined in: index.d.ts:2054
 
 > **name**: `string`
 
-Defined in: index.d.ts:2056
+Defined in: index.d.ts:2036
 
 ***
 
@@ -27,4 +27,4 @@ Defined in: index.d.ts:2056
 
 > **visible**: `boolean`
 
-Defined in: index.d.ts:2055
+Defined in: index.d.ts:2035

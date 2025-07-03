@@ -8,7 +8,7 @@
 
 > **ParticleLayerAnimation** = `Omit`\<[`VisibilityAnimation`](../interfaces/VisibilityAnimation.md), `"target"`\> & `object`
 
-Defined in: index.d.ts:1099
+Defined in: index.d.ts:1079
 
 ## Type declaration
 

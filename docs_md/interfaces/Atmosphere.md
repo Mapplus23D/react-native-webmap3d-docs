@@ -6,7 +6,7 @@
 
 # Interface: Atmosphere
 
-Defined in: index.d.ts:631
+Defined in: index.d.ts:611
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:631
 
 > `optional` **brightnessShift**: `number`
 
-Defined in: index.d.ts:635
+Defined in: index.d.ts:615
 
 亮度 默认值 0, 当值为 -1 时显示为完全黑色
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:635
 
 > `optional` **hueShift**: `number`
 
-Defined in: index.d.ts:637
+Defined in: index.d.ts:617
 
 色调 默认值 0
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:637
 
 > `optional` **saturationShift**: `number`
 
-Defined in: index.d.ts:639
+Defined in: index.d.ts:619
 
 饱和度 默认值 0, 当值为 -1 时为单色显示
 
@@ -44,6 +44,6 @@ Defined in: index.d.ts:639
 
 > **visible**: `boolean`
 
-Defined in: index.d.ts:633
+Defined in: index.d.ts:613
 
 是否可见

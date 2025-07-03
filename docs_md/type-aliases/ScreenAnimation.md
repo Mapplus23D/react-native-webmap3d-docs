@@ -8,6 +8,6 @@
 
 > **ScreenAnimation** = [`IScreenImage`](../interfaces/IScreenImage.md) \| [`IScreenText`](../interfaces/IScreenText.md) \| [`IScreenVideo`](../interfaces/IScreenVideo.md)
 
-Defined in: index.d.ts:167
+Defined in: index.d.ts:155
 
 ## Deprecated

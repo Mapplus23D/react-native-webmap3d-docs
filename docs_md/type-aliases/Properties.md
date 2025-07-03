@@ -8,7 +8,7 @@
 
 > **Properties** = \{[`name`: `string`]: `any`; \} \| `null`
 
-Defined in: index.d.ts:2964
+Defined in: index.d.ts:2915
 
 Properties
 

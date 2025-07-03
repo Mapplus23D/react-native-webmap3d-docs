@@ -6,7 +6,7 @@
 
 # Interface: EntityAdditionType
 
-Defined in: index.d.ts:1685
+Defined in: index.d.ts:1665
 
 entity附加属性
 
@@ -20,7 +20,7 @@ entity附加属性
 
 > **key**: `string`
 
-Defined in: index.d.ts:1687
+Defined in: index.d.ts:1667
 
 ***
 
@@ -28,4 +28,4 @@ Defined in: index.d.ts:1687
 
 > **value**: `string`
 
-Defined in: index.d.ts:1688
+Defined in: index.d.ts:1668

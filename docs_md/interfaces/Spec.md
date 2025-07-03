@@ -6,7 +6,7 @@
 
 # Interface: Spec
 
-Defined in: index.d.ts:5090
+Defined in: index.d.ts:4965
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:5090
 
 > **activate**(`serialNo`): `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:5112
+Defined in: index.d.ts:4987
 
 通过序列号激活
 
@@ -40,7 +40,7 @@ Defined in: index.d.ts:5112
 
 > **getClientUrl**(): `string`
 
-Defined in: index.d.ts:5107
+Defined in: index.d.ts:4982
 
 获取 client web 服务地址
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:5107
 
 > **getLicenseInfo**(): `Promise`\<`undefined` \| [`ILicenseInfo`](ILicenseInfo.md)\>
 
-Defined in: index.d.ts:5117
+Defined in: index.d.ts:4992
 
 获取当前许可信息
 
@@ -70,7 +70,7 @@ Defined in: index.d.ts:5117
 
 > **getResourceBase**(): `string`
 
-Defined in: index.d.ts:5103
+Defined in: index.d.ts:4978
 
 获取资源地址
 
@@ -84,7 +84,7 @@ Defined in: index.d.ts:5103
 
 > **getServiceBase**(): `string`
 
-Defined in: index.d.ts:5099
+Defined in: index.d.ts:4974
 
 获取 client 服务地址
 
@@ -98,7 +98,7 @@ Defined in: index.d.ts:5099
 
 > **initEnvironment**(`clientPort?`): `void`
 
-Defined in: index.d.ts:5095
+Defined in: index.d.ts:4970
 
 初始化环境
 

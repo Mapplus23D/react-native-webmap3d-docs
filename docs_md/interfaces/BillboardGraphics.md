@@ -6,7 +6,7 @@
 
 # Interface: BillboardGraphics
 
-Defined in: index.d.ts:1394
+Defined in: index.d.ts:1374
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1394
 
 > `optional` **disableDepthTestDistance**: `number`
 
-Defined in: index.d.ts:1402
+Defined in: index.d.ts:1382
 
 遮挡深度
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:1402
 
 > `optional` **distanceDisplayCondition**: [`DistanceDisplayCondition`](DistanceDisplayCondition.md)
 
-Defined in: index.d.ts:1412
+Defined in: index.d.ts:1392
 
 可见范围
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:1412
 
 > `optional` **eyeOffset**: [`Vector3`](Vector3.md)
 
-Defined in: index.d.ts:1414
+Defined in: index.d.ts:1394
 
 局部坐标系偏移量，单位米
 
@@ -44,7 +44,7 @@ Defined in: index.d.ts:1414
 
 > `optional` **height**: `number`
 
-Defined in: index.d.ts:1406
+Defined in: index.d.ts:1386
 
 图片高，单位px
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:1406
 
 > `optional` **heightReference**: [`HeightReference`](../enumerations/HeightReference.md)
 
-Defined in: index.d.ts:1418
+Defined in: index.d.ts:1398
 
 相对地形的位置
 
@@ -64,7 +64,7 @@ Defined in: index.d.ts:1418
 
 > `optional` **horizontalOrigin**: [`HorizontalOrigin`](../enumerations/HorizontalOrigin.md)
 
-Defined in: index.d.ts:1398
+Defined in: index.d.ts:1378
 
 水平对齐方式 , 默认center
 
@@ -74,7 +74,7 @@ Defined in: index.d.ts:1398
 
 > `optional` **image**: `string`
 
-Defined in: index.d.ts:1396
+Defined in: index.d.ts:1376
 
 图片路径
 
@@ -84,7 +84,7 @@ Defined in: index.d.ts:1396
 
 > `optional` **pixelOffset**: [`Vector2`](Vector2.md)
 
-Defined in: index.d.ts:1416
+Defined in: index.d.ts:1396
 
 屏幕偏移量，单位px
 
@@ -94,7 +94,7 @@ Defined in: index.d.ts:1416
 
 > `optional` **scaleByDistance**: [`NearFarScalar`](NearFarScalar.md)
 
-Defined in: index.d.ts:1404
+Defined in: index.d.ts:1384
 
 随距离缩放参数，默认undefine表示不随距离缩放
 
@@ -104,7 +104,7 @@ Defined in: index.d.ts:1404
 
 > `optional` **show**: `boolean` \| [`PropertyAnimation`](PropertyAnimation.md)\<`boolean`\>
 
-Defined in: index.d.ts:1410
+Defined in: index.d.ts:1390
 
 显隐
 
@@ -114,7 +114,7 @@ Defined in: index.d.ts:1410
 
 > `optional` **verticalOrigin**: [`VerticalOrigin`](../enumerations/VerticalOrigin.md)
 
-Defined in: index.d.ts:1400
+Defined in: index.d.ts:1380
 
 竖直对齐方式 , 默认center
 
@@ -124,6 +124,6 @@ Defined in: index.d.ts:1400
 
 > `optional` **width**: `number`
 
-Defined in: index.d.ts:1408
+Defined in: index.d.ts:1388
 
 图片宽，单位px

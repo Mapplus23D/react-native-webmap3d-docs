@@ -8,4 +8,4 @@
 
 > **EffectType** = `"None"` \| `"FadeRight"` \| `"Split"` \| `"Box"` \| `"Wheel"` \| `"Diamond"` \| `"Blinds"`
 
-Defined in: index.d.ts:214
+Defined in: index.d.ts:202

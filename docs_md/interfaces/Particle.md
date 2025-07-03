@@ -6,7 +6,7 @@
 
 # Interface: Particle
 
-Defined in: index.d.ts:1774
+Defined in: index.d.ts:1754
 
 粒子特效
 
@@ -20,7 +20,7 @@ Defined in: index.d.ts:1774
 
 > `optional` **angularSpeedGradients**: [`ParticleGradient`](ParticleGradient.md)[]
 
-Defined in: index.d.ts:1854
+Defined in: index.d.ts:1834
 
 #### Inherited from
 
@@ -32,7 +32,7 @@ Defined in: index.d.ts:1854
 
 > `optional` **blendMode**: [`ParticleBlendMode`](../enumerations/ParticleBlendMode.md)
 
-Defined in: index.d.ts:1797
+Defined in: index.d.ts:1777
 
 #### Inherited from
 
@@ -44,7 +44,7 @@ Defined in: index.d.ts:1797
 
 > `optional` **color1**: \[`number`, `number`, `number`, `number`\]
 
-Defined in: index.d.ts:1824
+Defined in: index.d.ts:1804
 
 #### Inherited from
 
@@ -56,7 +56,7 @@ Defined in: index.d.ts:1824
 
 > `optional` **color2**: \[`number`, `number`, `number`, `number`\]
 
-Defined in: index.d.ts:1830
+Defined in: index.d.ts:1810
 
 #### Inherited from
 
@@ -68,7 +68,7 @@ Defined in: index.d.ts:1830
 
 > `optional` **colorDead**: \[`number`, `number`, `number`, `number`\]
 
-Defined in: index.d.ts:1836
+Defined in: index.d.ts:1816
 
 #### Inherited from
 
@@ -80,7 +80,7 @@ Defined in: index.d.ts:1836
 
 > `optional` **colorGradients**: [`ParticleColorGradient`](ParticleColorGradient.md)[]
 
-Defined in: index.d.ts:1853
+Defined in: index.d.ts:1833
 
 #### Inherited from
 
@@ -92,7 +92,7 @@ Defined in: index.d.ts:1853
 
 > `optional` **dragGradients**: [`ParticleGradient`](ParticleGradient.md)[]
 
-Defined in: index.d.ts:1847
+Defined in: index.d.ts:1827
 
 #### Inherited from
 
@@ -104,7 +104,7 @@ Defined in: index.d.ts:1847
 
 > `optional` **emitRate**: `number`
 
-Defined in: index.d.ts:1799
+Defined in: index.d.ts:1779
 
 #### Inherited from
 
@@ -116,7 +116,7 @@ Defined in: index.d.ts:1799
 
 > `optional` **emitRateGradients**: [`ParticleGradient`](ParticleGradient.md)[]
 
-Defined in: index.d.ts:1843
+Defined in: index.d.ts:1823
 
 需要设置  targetStopDuration
 
@@ -130,7 +130,7 @@ Defined in: index.d.ts:1843
 
 > `optional` **emitter**: \[`number`, `number`, `number`\]
 
-Defined in: index.d.ts:1784
+Defined in: index.d.ts:1764
 
 粒子发射对象。可以是坐标，或者一个entity，或者相机。
 todo 目前仅支持坐标
@@ -145,7 +145,7 @@ todo 目前仅支持坐标
 
 > `optional` **gravity**: \[`number`, `number`, `number`\]
 
-Defined in: index.d.ts:1818
+Defined in: index.d.ts:1798
 
 粒子在三个轴上受到的力
 
@@ -159,7 +159,7 @@ Defined in: index.d.ts:1818
 
 > **id**: `string`
 
-Defined in: index.d.ts:1775
+Defined in: index.d.ts:1755
 
 ***
 
@@ -167,7 +167,7 @@ Defined in: index.d.ts:1775
 
 > `optional` **isBillboardBased**: `boolean`
 
-Defined in: index.d.ts:1796
+Defined in: index.d.ts:1776
 
 #### Inherited from
 
@@ -179,7 +179,7 @@ Defined in: index.d.ts:1796
 
 > `optional` **isLocal**: `boolean`
 
-Defined in: index.d.ts:1795
+Defined in: index.d.ts:1775
 
 #### Inherited from
 
@@ -191,7 +191,7 @@ Defined in: index.d.ts:1795
 
 > `optional` **lifeTimeGradients**: [`ParticleGradient`](ParticleGradient.md)[]
 
-Defined in: index.d.ts:1852
+Defined in: index.d.ts:1832
 
 需要设置  targetStopDuration
 
@@ -205,7 +205,7 @@ Defined in: index.d.ts:1852
 
 > `optional` **limitVelocityDamping**: `number`
 
-Defined in: index.d.ts:1816
+Defined in: index.d.ts:1796
 
 #### Inherited from
 
@@ -217,7 +217,7 @@ Defined in: index.d.ts:1816
 
 > `optional` **limitVelocityGradients**: [`ParticleGradient`](ParticleGradient.md)[]
 
-Defined in: index.d.ts:1846
+Defined in: index.d.ts:1826
 
 需要设置 limitVelocityDamping
 
@@ -231,7 +231,7 @@ Defined in: index.d.ts:1846
 
 > `optional` **maxAngularSpeed**: `number`
 
-Defined in: index.d.ts:1813
+Defined in: index.d.ts:1793
 
 #### Inherited from
 
@@ -243,7 +243,7 @@ Defined in: index.d.ts:1813
 
 > `optional` **maxEmitPower**: `number`
 
-Defined in: index.d.ts:1801
+Defined in: index.d.ts:1781
 
 #### Inherited from
 
@@ -255,7 +255,7 @@ Defined in: index.d.ts:1801
 
 > `optional` **maxInitialRotation**: `number`
 
-Defined in: index.d.ts:1815
+Defined in: index.d.ts:1795
 
 #### Inherited from
 
@@ -267,7 +267,7 @@ Defined in: index.d.ts:1815
 
 > `optional` **maxLifeTime**: `number`
 
-Defined in: index.d.ts:1809
+Defined in: index.d.ts:1789
 
 #### Inherited from
 
@@ -279,7 +279,7 @@ Defined in: index.d.ts:1809
 
 > `optional` **maxScaleX**: `number`
 
-Defined in: index.d.ts:1806
+Defined in: index.d.ts:1786
 
 #### Inherited from
 
@@ -291,7 +291,7 @@ Defined in: index.d.ts:1806
 
 > `optional` **maxScaleY**: `number`
 
-Defined in: index.d.ts:1807
+Defined in: index.d.ts:1787
 
 #### Inherited from
 
@@ -303,7 +303,7 @@ Defined in: index.d.ts:1807
 
 > `optional` **maxSize**: `number`
 
-Defined in: index.d.ts:1803
+Defined in: index.d.ts:1783
 
 #### Inherited from
 
@@ -315,7 +315,7 @@ Defined in: index.d.ts:1803
 
 > `optional` **minAngularSpeed**: `number`
 
-Defined in: index.d.ts:1812
+Defined in: index.d.ts:1792
 
 #### Inherited from
 
@@ -327,7 +327,7 @@ Defined in: index.d.ts:1812
 
 > `optional` **minEmitPower**: `number`
 
-Defined in: index.d.ts:1800
+Defined in: index.d.ts:1780
 
 #### Inherited from
 
@@ -339,7 +339,7 @@ Defined in: index.d.ts:1800
 
 > `optional` **minInitialRotation**: `number`
 
-Defined in: index.d.ts:1814
+Defined in: index.d.ts:1794
 
 #### Inherited from
 
@@ -351,7 +351,7 @@ Defined in: index.d.ts:1814
 
 > `optional` **minLifeTime**: `number`
 
-Defined in: index.d.ts:1808
+Defined in: index.d.ts:1788
 
 #### Inherited from
 
@@ -363,7 +363,7 @@ Defined in: index.d.ts:1808
 
 > `optional` **minScaleX**: `number`
 
-Defined in: index.d.ts:1804
+Defined in: index.d.ts:1784
 
 #### Inherited from
 
@@ -375,7 +375,7 @@ Defined in: index.d.ts:1804
 
 > `optional` **minScaleY**: `number`
 
-Defined in: index.d.ts:1805
+Defined in: index.d.ts:1785
 
 #### Inherited from
 
@@ -387,7 +387,7 @@ Defined in: index.d.ts:1805
 
 > `optional` **minSize**: `number`
 
-Defined in: index.d.ts:1802
+Defined in: index.d.ts:1782
 
 #### Inherited from
 
@@ -399,7 +399,7 @@ Defined in: index.d.ts:1802
 
 > **name**: `string`
 
-Defined in: index.d.ts:1776
+Defined in: index.d.ts:1756
 
 ***
 
@@ -407,7 +407,7 @@ Defined in: index.d.ts:1776
 
 > `optional` **orientation**: \[`number`, `number`, `number`\]
 
-Defined in: index.d.ts:1790
+Defined in: index.d.ts:1770
 
 旋转角度
 
@@ -421,7 +421,7 @@ Defined in: index.d.ts:1790
 
 > `optional` **particleEmitterType**: [`ParticleEmitterType`](../type-aliases/ParticleEmitterType.md)
 
-Defined in: index.d.ts:1823
+Defined in: index.d.ts:1803
 
 #### Inherited from
 
@@ -433,7 +433,7 @@ Defined in: index.d.ts:1823
 
 > `optional` **sizeGradients**: [`ParticleGradient`](ParticleGradient.md)[]
 
-Defined in: index.d.ts:1850
+Defined in: index.d.ts:1830
 
 #### Inherited from
 
@@ -445,7 +445,7 @@ Defined in: index.d.ts:1850
 
 > `optional` **startSizeGradients**: [`ParticleGradient`](ParticleGradient.md)[]
 
-Defined in: index.d.ts:1849
+Defined in: index.d.ts:1829
 
 需要设置  targetStopDuration
 
@@ -459,7 +459,7 @@ Defined in: index.d.ts:1849
 
 > `optional` **targetStopDuration**: `number`
 
-Defined in: index.d.ts:1811
+Defined in: index.d.ts:1791
 
 时长
 
@@ -473,7 +473,7 @@ Defined in: index.d.ts:1811
 
 > `optional` **updateSpeed**: `number`
 
-Defined in: index.d.ts:1798
+Defined in: index.d.ts:1778
 
 #### Inherited from
 
@@ -485,7 +485,7 @@ Defined in: index.d.ts:1798
 
 > **url**: `string`
 
-Defined in: index.d.ts:1777
+Defined in: index.d.ts:1757
 
 ***
 
@@ -493,7 +493,7 @@ Defined in: index.d.ts:1777
 
 > `optional` **velocityGradients**: [`ParticleGradient`](ParticleGradient.md)[]
 
-Defined in: index.d.ts:1844
+Defined in: index.d.ts:1824
 
 #### Inherited from
 

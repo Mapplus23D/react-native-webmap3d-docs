@@ -6,7 +6,7 @@
 
 # Interface: TerrainLayer
 
-Defined in: index.d.ts:291
+Defined in: index.d.ts:279
 
 地形图层
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:291
 
 > **name**: `string`
 
-Defined in: index.d.ts:293
+Defined in: index.d.ts:281
 
 图层名
 
@@ -26,7 +26,7 @@ Defined in: index.d.ts:293
 
 > **provider**: [`TerrainProvider`](../type-aliases/TerrainProvider.md)
 
-Defined in: index.d.ts:295
+Defined in: index.d.ts:283
 
 地形服务参数
 
@@ -36,6 +36,6 @@ Defined in: index.d.ts:295
 
 > **visible**: `boolean`
 
-Defined in: index.d.ts:297
+Defined in: index.d.ts:285
 
 图层是否可见

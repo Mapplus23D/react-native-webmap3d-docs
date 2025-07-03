@@ -8,7 +8,7 @@
 
 > **OpaqueColorValue** = `symbol` & `object`
 
-Defined in: index.d.ts:133
+Defined in: index.d.ts:121
 
 ## Type declaration
 

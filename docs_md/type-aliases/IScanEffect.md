@@ -8,7 +8,7 @@
 
 > **IScanEffect** = `object`
 
-Defined in: index.d.ts:4709
+Defined in: index.d.ts:4629
 
 扫描线效果
 使用时需要开启深度检测
@@ -19,7 +19,7 @@ Defined in: index.d.ts:4709
 
 > **addCenter**: (`point`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4725
+Defined in: index.d.ts:4645
 
 添加起点或中心点
 
@@ -41,7 +41,7 @@ Defined in: index.d.ts:4725
 
 > **getCount**: () => `Promise`\<`number`\>
 
-Defined in: index.d.ts:4719
+Defined in: index.d.ts:4639
 
 获取扫描线个数
 
@@ -57,7 +57,7 @@ Defined in: index.d.ts:4719
 
 > **getEffect**: () => `Promise`\<[`ScanEffect`](../interfaces/ScanEffect.md)\>
 
-Defined in: index.d.ts:4778
+Defined in: index.d.ts:4698
 
 获取当前扫描线参数
 
@@ -73,7 +73,7 @@ Defined in: index.d.ts:4778
 
 > **remove**: (`index`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4737
+Defined in: index.d.ts:4657
 
 移除指定位置的扫描线
 
@@ -97,7 +97,7 @@ Defined in: index.d.ts:4737
 
 > **reset**: () => `Promise`\<`void`\>
 
-Defined in: index.d.ts:4780
+Defined in: index.d.ts:4700
 
 重置扫描线参数
 
@@ -111,7 +111,7 @@ Defined in: index.d.ts:4780
 
 > **setColor**: (`color`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:4748
+Defined in: index.d.ts:4668
 
 设置线颜色
 
@@ -133,7 +133,7 @@ Defined in: index.d.ts:4748
 
 > **setEffectMode**: (`mode`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:4742
+Defined in: index.d.ts:4662
 
 设置扫描线模式
 
@@ -155,7 +155,7 @@ Defined in: index.d.ts:4742
 
 > **setMoveDirection**: (`direction`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4731
+Defined in: index.d.ts:4651
 
 设置线模式下最后一条线的运动方向上的一个点
 
@@ -179,7 +179,7 @@ Defined in: index.d.ts:4731
 
 > **setPeriod**: (`period`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:4768
+Defined in: index.d.ts:4688
 
 设置扫描一次的时长
 
@@ -201,7 +201,7 @@ Defined in: index.d.ts:4768
 
 > **setSpeed**: (`speed`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:4773
+Defined in: index.d.ts:4693
 
 设置扫描速度
 
@@ -223,7 +223,7 @@ Defined in: index.d.ts:4773
 
 > **setTextureUrl**: (`url`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:4758
+Defined in: index.d.ts:4678
 
 设置扫描线纹理
 
@@ -245,7 +245,7 @@ Defined in: index.d.ts:4758
 
 > **setWidth**: (`width`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:4763
+Defined in: index.d.ts:4683
 
 设置线宽
 
@@ -267,7 +267,7 @@ Defined in: index.d.ts:4763
 
 > **show**: (`show`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:4714
+Defined in: index.d.ts:4634
 
 设置扫描线显隐
 

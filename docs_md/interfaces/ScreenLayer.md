@@ -6,7 +6,7 @@
 
 # Interface: ScreenLayer
 
-Defined in: index.d.ts:90
+Defined in: index.d.ts:78
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:90
 
 > `optional` **image**: `object`
 
-Defined in: index.d.ts:98
+Defined in: index.d.ts:86
 
 #### images?
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:98
 
 > `optional` **subtitle**: `object`
 
-Defined in: index.d.ts:91
+Defined in: index.d.ts:79
 
 #### subtitles?
 
@@ -50,7 +50,7 @@ Defined in: index.d.ts:91
 
 > `optional` **text**: `object`
 
-Defined in: index.d.ts:102
+Defined in: index.d.ts:90
 
 #### texts?
 
@@ -66,7 +66,7 @@ Defined in: index.d.ts:102
 
 > `optional` **video**: `object`
 
-Defined in: index.d.ts:106
+Defined in: index.d.ts:94
 
 #### videos?
 
@@ -82,4 +82,4 @@ Defined in: index.d.ts:106
 
 > **visible**: `boolean`
 
-Defined in: index.d.ts:110
+Defined in: index.d.ts:98

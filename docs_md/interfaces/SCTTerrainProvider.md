@@ -6,7 +6,7 @@
 
 # Interface: SCTTerrainProvider
 
-Defined in: index.d.ts:431
+Defined in: index.d.ts:419
 
 SCT地形图层参数
 
@@ -16,7 +16,7 @@ SCT地形图层参数
 
 > **type**: [`SCT`](../enumerations/ProviderType.md#sct)
 
-Defined in: index.d.ts:432
+Defined in: index.d.ts:420
 
 ***
 
@@ -24,6 +24,6 @@ Defined in: index.d.ts:432
 
 > **urls**: `string`[]
 
-Defined in: index.d.ts:434
+Defined in: index.d.ts:422
 
 SCT 地形的 url 数组

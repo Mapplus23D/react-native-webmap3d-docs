@@ -6,7 +6,7 @@
 
 # Interface: Rain
 
-Defined in: index.d.ts:1755
+Defined in: index.d.ts:1735
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1755
 
 > `optional` **angle**: `number`
 
-Defined in: index.d.ts:1757
+Defined in: index.d.ts:1737
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:1757
 
 > `optional` **density**: `number`
 
-Defined in: index.d.ts:1759
+Defined in: index.d.ts:1739
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:1759
 
 > `optional` **speed**: `number`
 
-Defined in: index.d.ts:1758
+Defined in: index.d.ts:1738
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: index.d.ts:1758
 
 > **type**: [`RAIN`](../enumerations/WeatherType.md#rain)
 
-Defined in: index.d.ts:1756
+Defined in: index.d.ts:1736

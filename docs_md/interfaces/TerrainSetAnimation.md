@@ -6,7 +6,7 @@
 
 # Interface: TerrainSetAnimation
 
-Defined in: index.d.ts:835
+Defined in: index.d.ts:815
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:835
 
 > **layerName**: `string`
 
-Defined in: index.d.ts:837
+Defined in: index.d.ts:817
 
 动画来自的图层名，可以为空
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:837
 
 > **name**: `string`
 
-Defined in: index.d.ts:839
+Defined in: index.d.ts:819
 
 动画名称
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:839
 
 > **startTime**: `number`
 
-Defined in: index.d.ts:843
+Defined in: index.d.ts:823
 
 开始时间 单位 秒
 
@@ -44,6 +44,6 @@ Defined in: index.d.ts:843
 
 > **terrian**: `null` \| [`TerrainProvider`](../type-aliases/TerrainProvider.md)
 
-Defined in: index.d.ts:841
+Defined in: index.d.ts:821
 
 地形参数

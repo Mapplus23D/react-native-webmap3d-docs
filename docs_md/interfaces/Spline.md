@@ -6,7 +6,7 @@
 
 # Interface: Spline
 
-Defined in: index.d.ts:1530
+Defined in: index.d.ts:1510
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1530
 
 > **controlPoints**: `number`[] \| [`Vector3`](Vector3.md)[]
 
-Defined in: index.d.ts:1532
+Defined in: index.d.ts:1512
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:1532
 
 > `optional` **pointCount**: `number`
 
-Defined in: index.d.ts:1533
+Defined in: index.d.ts:1513
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: index.d.ts:1533
 
 > `optional` **splineType**: [`SLineType`](../enumerations/SLineType.md)
 
-Defined in: index.d.ts:1531
+Defined in: index.d.ts:1511

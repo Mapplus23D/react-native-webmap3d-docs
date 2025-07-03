@@ -6,7 +6,7 @@
 
 # Interface: ArrowLine
 
-Defined in: index.d.ts:1480
+Defined in: index.d.ts:1460
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:1480
 
 > `optional` **classificationType**: [`ClassificationType`](../enumerations/ClassificationType.md)
 
-Defined in: index.d.ts:1442
+Defined in: index.d.ts:1422
 
 贴地方式 undefined === ClassificationType.NONE
 
@@ -32,7 +32,7 @@ Defined in: index.d.ts:1442
 
 > `optional` **depthFailShow**: `boolean`
 
-Defined in: index.d.ts:1450
+Defined in: index.d.ts:1430
 
 是否被地形遮挡 默认false被遮挡
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:1450
 
 > `optional` **distanceDisplayCondition**: [`DistanceDisplayCondition`](DistanceDisplayCondition.md)
 
-Defined in: index.d.ts:1446
+Defined in: index.d.ts:1426
 
 可见范围
 
@@ -60,7 +60,7 @@ Defined in: index.d.ts:1446
 
 > `optional` **growAnimation**: `null` \| [`PositionsGrowAnimation`](PositionsGrowAnimation.md)
 
-Defined in: index.d.ts:1438
+Defined in: index.d.ts:1418
 
 #### Inherited from
 
@@ -72,7 +72,7 @@ Defined in: index.d.ts:1438
 
 > `optional` **hMax**: `number`
 
-Defined in: index.d.ts:1448
+Defined in: index.d.ts:1428
 
 离地高度
 
@@ -86,7 +86,7 @@ Defined in: index.d.ts:1448
 
 > **lineType**: [`arrow`](../enumerations/LineType.md#arrow)
 
-Defined in: index.d.ts:1481
+Defined in: index.d.ts:1461
 
 ***
 
@@ -94,7 +94,7 @@ Defined in: index.d.ts:1481
 
 > `optional` **material**: `string` \| [`PropertyAnimation`](PropertyAnimation.md)\<`string`\>
 
-Defined in: index.d.ts:1482
+Defined in: index.d.ts:1462
 
 ***
 
@@ -102,7 +102,7 @@ Defined in: index.d.ts:1482
 
 > `optional` **positions**: `number`[] \| [`Vector3`](Vector3.md)[] \| [`Circle`](Circle.md) \| [`Rectangle`](Rectangle.md) \| [`Spline`](Spline.md)
 
-Defined in: index.d.ts:1437
+Defined in: index.d.ts:1417
 
 #### Inherited from
 
@@ -114,7 +114,7 @@ Defined in: index.d.ts:1437
 
 > `optional` **show**: `boolean` \| [`PropertyAnimation`](PropertyAnimation.md)\<`boolean`\>
 
-Defined in: index.d.ts:1444
+Defined in: index.d.ts:1424
 
 显隐
 
@@ -128,7 +128,7 @@ Defined in: index.d.ts:1444
 
 > `optional` **width**: `number`
 
-Defined in: index.d.ts:1440
+Defined in: index.d.ts:1420
 
 线宽
 

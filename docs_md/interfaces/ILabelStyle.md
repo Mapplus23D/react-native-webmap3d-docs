@@ -6,7 +6,7 @@
 
 # Interface: ILabelStyle
 
-Defined in: index.d.ts:3102
+Defined in: index.d.ts:3053
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:3102
 
 > **alwaysVisible**: `boolean`
 
-Defined in: index.d.ts:3112
+Defined in: index.d.ts:3063
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:3112
 
 > **angle**: `number`
 
-Defined in: index.d.ts:3108
+Defined in: index.d.ts:3059
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:3108
 
 > **backgroundColor**: `string`
 
-Defined in: index.d.ts:3110
+Defined in: index.d.ts:3061
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:3110
 
 > **color**: `string`
 
-Defined in: index.d.ts:3105
+Defined in: index.d.ts:3056
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:3105
 
 > **depthDistance**: `number`
 
-Defined in: index.d.ts:3114
+Defined in: index.d.ts:3065
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:3114
 
 > **isFixSize**: `boolean`
 
-Defined in: index.d.ts:3109
+Defined in: index.d.ts:3060
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: index.d.ts:3109
 
 > **isTerrain**: `boolean`
 
-Defined in: index.d.ts:3115
+Defined in: index.d.ts:3066
 
 ***
 
@@ -70,7 +70,7 @@ Defined in: index.d.ts:3115
 
 > **label**: `string`
 
-Defined in: index.d.ts:3104
+Defined in: index.d.ts:3055
 
 ***
 
@@ -78,7 +78,7 @@ Defined in: index.d.ts:3104
 
 > **outlineColor**: `string`
 
-Defined in: index.d.ts:3111
+Defined in: index.d.ts:3062
 
 ***
 
@@ -86,7 +86,7 @@ Defined in: index.d.ts:3111
 
 > **scale**: `number`
 
-Defined in: index.d.ts:3107
+Defined in: index.d.ts:3058
 
 ***
 
@@ -94,7 +94,7 @@ Defined in: index.d.ts:3107
 
 > **size**: `number`
 
-Defined in: index.d.ts:3106
+Defined in: index.d.ts:3057
 
 ***
 
@@ -102,7 +102,7 @@ Defined in: index.d.ts:3106
 
 > **type**: `"normal"` \| `"outline"` \| `"background"` \| `"backgroundAndOutline"`
 
-Defined in: index.d.ts:3103
+Defined in: index.d.ts:3054
 
 ***
 
@@ -110,4 +110,4 @@ Defined in: index.d.ts:3103
 
 > **visibleDistance**: `number`
 
-Defined in: index.d.ts:3113
+Defined in: index.d.ts:3064

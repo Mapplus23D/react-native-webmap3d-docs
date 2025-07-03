@@ -8,9 +8,7 @@
 
 > **IMagnifier** = `object`
 
-Defined in: index.d.ts:4374
-
-放大镜组件
+Defined in: index.d.ts:4306
 
 ## Properties
 
@@ -18,7 +16,7 @@ Defined in: index.d.ts:4374
 
 > **isShow**: () => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:4379
+Defined in: index.d.ts:4311
 
 放大镜是否显示
 
@@ -34,7 +32,7 @@ Defined in: index.d.ts:4379
 
 > **setShow**: (`isShow`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:4385
+Defined in: index.d.ts:4317
 
 放大镜显隐
 
@@ -56,7 +54,7 @@ Defined in: index.d.ts:4385
 
 > **update**: (`option?`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:4394
+Defined in: index.d.ts:4326
 
 更新放大镜（option===undefine时采用上次设置的参数）
 

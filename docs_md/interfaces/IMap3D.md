@@ -6,7 +6,7 @@
 
 # Interface: IMap3D
 
-Defined in: index.d.ts:21
+Defined in: index.d.ts:9
 
 地图渲染信息
 
@@ -20,7 +20,7 @@ Defined in: index.d.ts:21
 
 > `optional` **animation**: [`AnimationParam`](../type-aliases/AnimationParam.md)
 
-Defined in: index.d.ts:64
+Defined in: index.d.ts:52
 
 动画
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:64
 
 > `optional` **annotation3D**: `object`
 
-Defined in: index.d.ts:37
+Defined in: index.d.ts:25
 
 天地图3维注记
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:37
 
 > `optional` **atmosphere**: [`Atmosphere`](Atmosphere.md)
 
-Defined in: index.d.ts:232
+Defined in: index.d.ts:220
 
 大气
 
@@ -68,7 +68,7 @@ Defined in: index.d.ts:232
 
 > `optional` **bloomEffect**: [`BloomEffect`](BloomEffect.md)
 
-Defined in: index.d.ts:250
+Defined in: index.d.ts:238
 
 泛光设置
 
@@ -82,7 +82,7 @@ Defined in: index.d.ts:250
 
 > **camera**: [`Camera`](Camera.md)
 
-Defined in: index.d.ts:35
+Defined in: index.d.ts:23
 
 相机参数，指定相机位置和方向
 
@@ -92,7 +92,7 @@ Defined in: index.d.ts:35
 
 > `optional` **clouds**: [`Clouds`](Clouds.md)
 
-Defined in: index.d.ts:234
+Defined in: index.d.ts:222
 
 云层
 
@@ -106,7 +106,7 @@ Defined in: index.d.ts:234
 
 > `optional` **colorCorrection**: [`ColorCorrectionType`](ColorCorrectionType.md)
 
-Defined in: index.d.ts:238
+Defined in: index.d.ts:226
 
 颜色校正
 
@@ -120,7 +120,7 @@ Defined in: index.d.ts:238
 
 > `optional` **depthTestAgainstTerrain**: `boolean`
 
-Defined in: index.d.ts:246
+Defined in: index.d.ts:234
 
 深度检测
 
@@ -134,7 +134,7 @@ Defined in: index.d.ts:246
 
 > `optional` **entitiesLayers**: [`EntitiesLayer`](EntitiesLayer.md)[]
 
-Defined in: index.d.ts:58
+Defined in: index.d.ts:46
 
 矢量图层
 
@@ -144,7 +144,7 @@ Defined in: index.d.ts:58
 
 > `optional` **fog**: [`Fog`](Fog.md)
 
-Defined in: index.d.ts:244
+Defined in: index.d.ts:232
 
 雾化
 
@@ -158,7 +158,7 @@ Defined in: index.d.ts:244
 
 > `optional` **graticuleParam**: [`GraticuleParam`](GraticuleParam.md)
 
-Defined in: index.d.ts:44
+Defined in: index.d.ts:32
 
 经纬网参数
 
@@ -168,7 +168,7 @@ Defined in: index.d.ts:44
 
 > `optional` **graticuleVisible**: `boolean`
 
-Defined in: index.d.ts:46
+Defined in: index.d.ts:34
 
 是否显示经纬网
 
@@ -178,7 +178,7 @@ Defined in: index.d.ts:46
 
 > `optional` **hdrEnable**: `boolean`
 
-Defined in: index.d.ts:248
+Defined in: index.d.ts:236
 
 hdr(高动态光照渲染，一种提高影像亮度和对比度的处理技术)
 
@@ -192,7 +192,7 @@ hdr(高动态光照渲染，一种提高影像亮度和对比度的处理技术)
 
 > **id**: `number`
 
-Defined in: index.d.ts:25
+Defined in: index.d.ts:13
 
 地图id
 
@@ -202,7 +202,7 @@ Defined in: index.d.ts:25
 
 > `optional` **imageLayers**: [`ImageLayer`](ImageLayer.md)[]
 
-Defined in: index.d.ts:50
+Defined in: index.d.ts:38
 
 影像图层
 
@@ -212,7 +212,7 @@ Defined in: index.d.ts:50
 
 > `optional` **lighting**: [`GlobeLighting`](GlobeLighting.md)
 
-Defined in: index.d.ts:240
+Defined in: index.d.ts:228
 
 地球光照阴影
 
@@ -226,7 +226,7 @@ Defined in: index.d.ts:240
 
 > `optional` **particleLayers**: [`ParticleLayer`](ParticleLayer.md)[]
 
-Defined in: index.d.ts:54
+Defined in: index.d.ts:42
 
 粒子特效图层
 
@@ -236,7 +236,7 @@ Defined in: index.d.ts:54
 
 > `optional` **primitiveLayers**: [`PrimitiveLayer`](../type-aliases/PrimitiveLayer.md)[]
 
-Defined in: index.d.ts:56
+Defined in: index.d.ts:44
 
 primitive图层
 
@@ -246,7 +246,7 @@ primitive图层
 
 > `optional` **quality**: `number`
 
-Defined in: index.d.ts:228
+Defined in: index.d.ts:216
 
 画质
 
@@ -260,7 +260,7 @@ Defined in: index.d.ts:228
 
 > `optional` **s3mTilesLayers**: [`S3MTilesLayer`](S3MTilesLayer.md)[]
 
-Defined in: index.d.ts:60
+Defined in: index.d.ts:48
 
 切片图层
 
@@ -270,7 +270,7 @@ Defined in: index.d.ts:60
 
 > `optional` **scanEffect**: [`ScanEffect`](ScanEffect.md)
 
-Defined in: index.d.ts:48
+Defined in: index.d.ts:36
 
 扫描线效果
 
@@ -280,7 +280,7 @@ Defined in: index.d.ts:48
 
 > `optional` **scene**: `object`
 
-Defined in: index.d.ts:27
+Defined in: index.d.ts:15
 
 iserver 发布的三维场景
 
@@ -306,7 +306,7 @@ iserver 发布的场景 url
 
 > `optional` **screenLayer**: [`ScreenLayer`](ScreenLayer.md)
 
-Defined in: index.d.ts:62
+Defined in: index.d.ts:50
 
 屏幕图层
 
@@ -318,7 +318,7 @@ Defined in: index.d.ts:62
 
 > `optional` **shadow**: [`Shadow`](Shadow.md)
 
-Defined in: index.d.ts:242
+Defined in: index.d.ts:230
 
 对象阴影
 
@@ -332,7 +332,7 @@ Defined in: index.d.ts:242
 
 > `optional` **skybox**: [`Skybox`](Skybox.md)
 
-Defined in: index.d.ts:230
+Defined in: index.d.ts:218
 
 天空盒
 
@@ -346,7 +346,7 @@ Defined in: index.d.ts:230
 
 > `optional` **slideShow**: [`Slide`](Slide.md)[]
 
-Defined in: index.d.ts:68
+Defined in: index.d.ts:56
 
 幻灯片
 
@@ -356,7 +356,7 @@ Defined in: index.d.ts:68
 
 > `optional` **sun**: [`Sun`](Sun.md)
 
-Defined in: index.d.ts:236
+Defined in: index.d.ts:224
 
 太阳
 
@@ -370,7 +370,7 @@ Defined in: index.d.ts:236
 
 > `optional` **terrainExaggeration**: `number`
 
-Defined in: index.d.ts:252
+Defined in: index.d.ts:240
 
 地形夸张系数。默认为 1
 
@@ -384,7 +384,7 @@ Defined in: index.d.ts:252
 
 > `optional` **terrainLayer**: [`TerrainLayer`](TerrainLayer.md)
 
-Defined in: index.d.ts:52
+Defined in: index.d.ts:40
 
 地形图层
 
@@ -394,7 +394,7 @@ Defined in: index.d.ts:52
 
 > **version**: `number`
 
-Defined in: index.d.ts:23
+Defined in: index.d.ts:11
 
 版本号
 
@@ -404,6 +404,6 @@ Defined in: index.d.ts:23
 
 > `optional` **weather**: `null` \| [`Rain`](Rain.md) \| [`Snow`](Snow.md)
 
-Defined in: index.d.ts:66
+Defined in: index.d.ts:54
 
 天气特效

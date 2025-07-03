@@ -6,7 +6,7 @@
 
 # Interface: SoundAnimation
 
-Defined in: index.d.ts:897
+Defined in: index.d.ts:877
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:897
 
 > `optional` **duration**: `number`
 
-Defined in: index.d.ts:905
+Defined in: index.d.ts:885
 
 播放时长，不设置(undefined)则播放一次,-1表示循环播放
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:905
 
 > `optional` **name**: `string`
 
-Defined in: index.d.ts:898
+Defined in: index.d.ts:878
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: index.d.ts:898
 
 > **startTime**: `number`
 
-Defined in: index.d.ts:901
+Defined in: index.d.ts:881
 
 开始时间  单位 秒
 
@@ -42,7 +42,7 @@ Defined in: index.d.ts:901
 
 > **url**: `string`
 
-Defined in: index.d.ts:899
+Defined in: index.d.ts:879
 
 ***
 
@@ -50,6 +50,6 @@ Defined in: index.d.ts:899
 
 > `optional` **volume**: `number`
 
-Defined in: index.d.ts:903
+Defined in: index.d.ts:883
 
 音量0-1 默认1

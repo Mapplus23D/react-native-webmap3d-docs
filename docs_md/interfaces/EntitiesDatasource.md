@@ -6,7 +6,7 @@
 
 # Interface: EntitiesDatasource
 
-Defined in: index.d.ts:312
+Defined in: index.d.ts:300
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:312
 
 > **content**: `string`
 
-Defined in: index.d.ts:316
+Defined in: index.d.ts:304
 
 图层数据
 
@@ -24,6 +24,6 @@ Defined in: index.d.ts:316
 
 > **contentType**: `"json"` \| `"kml"`
 
-Defined in: index.d.ts:314
+Defined in: index.d.ts:302
 
 数据类型，默认json

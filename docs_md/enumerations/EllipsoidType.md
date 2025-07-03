@@ -6,7 +6,7 @@
 
 # Enumeration: EllipsoidType
 
-Defined in: index.d.ts:1212
+Defined in: index.d.ts:1192
 
 椭球体类型
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:1212
 
 > **CGCS2000**: `"CGCS2000"`
 
-Defined in: index.d.ts:1214
+Defined in: index.d.ts:1194
 
 CGCS2000椭球体，其x,y,z方向的半径分别为6378137.0, 6378137.0, 6356752.31
 
@@ -26,7 +26,7 @@ CGCS2000椭球体，其x,y,z方向的半径分别为6378137.0, 6378137.0, 635675
 
 > **WGS84**: `"WGS84"`
 
-Defined in: index.d.ts:1216
+Defined in: index.d.ts:1196
 
 一个球的实例，默认是圆球模式，其x,y,z方向半径都为6378137.0
 
@@ -36,6 +36,6 @@ Defined in: index.d.ts:1216
 
 > **XIAN80**: `"XIAN80"`
 
-Defined in: index.d.ts:1218
+Defined in: index.d.ts:1198
 
 西安80椭球体，其x,y,z方向的半径分别为6378140.0, 6378140.0, 6356755.29

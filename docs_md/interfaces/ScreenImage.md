@@ -6,7 +6,7 @@
 
 # Interface: ScreenImage
 
-Defined in: index.d.ts:112
+Defined in: index.d.ts:100
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:112
 
 > **content**: `string`
 
-Defined in: index.d.ts:118
+Defined in: index.d.ts:106
 
 图片url
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:118
 
 > **endTime**: `number`
 
-Defined in: index.d.ts:116
+Defined in: index.d.ts:104
 
 结束时间。单位 秒
 
@@ -34,6 +34,6 @@ Defined in: index.d.ts:116
 
 > **startTime**: `number`
 
-Defined in: index.d.ts:114
+Defined in: index.d.ts:102
 
 开始时间。单位 秒

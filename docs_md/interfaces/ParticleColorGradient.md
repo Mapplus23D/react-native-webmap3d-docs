@@ -6,7 +6,7 @@
 
 # Interface: ParticleColorGradient
 
-Defined in: index.d.ts:1868
+Defined in: index.d.ts:1848
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1868
 
 > **color1**: \[`number`, `number`, `number`, `number`\]
 
-Defined in: index.d.ts:1870
+Defined in: index.d.ts:1850
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:1870
 
 > **color2**: \[`number`, `number`, `number`, `number`\]
 
-Defined in: index.d.ts:1876
+Defined in: index.d.ts:1856
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: index.d.ts:1876
 
 > **gradient**: `number`
 
-Defined in: index.d.ts:1869
+Defined in: index.d.ts:1849

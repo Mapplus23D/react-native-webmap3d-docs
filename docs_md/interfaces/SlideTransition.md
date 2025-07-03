@@ -6,7 +6,7 @@
 
 # Interface: SlideTransition
 
-Defined in: index.d.ts:695
+Defined in: index.d.ts:675
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:695
 
 > **duration**: `number`
 
-Defined in: index.d.ts:697
+Defined in: index.d.ts:677
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: index.d.ts:697
 
 > **type**: [`SlideTransitionType`](../enumerations/SlideTransitionType.md)
 
-Defined in: index.d.ts:696
+Defined in: index.d.ts:676

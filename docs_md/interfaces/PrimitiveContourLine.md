@@ -6,7 +6,7 @@
 
 # Interface: PrimitiveContourLine
 
-Defined in: index.d.ts:2322
+Defined in: index.d.ts:2302
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:2322
 
 > `optional` **classificationType**: [`ClassificationType`](../enumerations/ClassificationType.md)
 
-Defined in: index.d.ts:2336
+Defined in: index.d.ts:2316
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: index.d.ts:2336
 
 > `optional` **color**: `string`
 
-Defined in: index.d.ts:2329
+Defined in: index.d.ts:2309
 
 填充颜色
 
@@ -36,7 +36,7 @@ Defined in: index.d.ts:2329
 
 > `optional` **depthFailShow**: `boolean`
 
-Defined in: index.d.ts:2335
+Defined in: index.d.ts:2315
 
 是否被地形遮挡 默认false被遮挡
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:2335
 
 > `optional` **distanceDisplayCondition**: [`DistanceDisplayCondition`](DistanceDisplayCondition.md)
 
-Defined in: index.d.ts:2155
+Defined in: index.d.ts:2135
 
 可见范围
 
@@ -60,7 +60,7 @@ Defined in: index.d.ts:2155
 
 > `optional` **name**: `string`
 
-Defined in: index.d.ts:2158
+Defined in: index.d.ts:2138
 
 primitive 名称
 
@@ -74,7 +74,7 @@ primitive 名称
 
 > `optional` **outlineColor**: `string`
 
-Defined in: index.d.ts:2333
+Defined in: index.d.ts:2313
 
 轮廓颜色outlineOuterColor
 
@@ -84,7 +84,7 @@ Defined in: index.d.ts:2333
 
 > `optional` **outlineWidth**: `number`
 
-Defined in: index.d.ts:2331
+Defined in: index.d.ts:2311
 
 轮廓宽outlineOuterWidth
 
@@ -94,7 +94,7 @@ Defined in: index.d.ts:2331
 
 > **positions**: `number`[] \| [`Vector3`](Vector3.md)[] \| [`Circle`](Circle.md) \| [`Rectangle`](Rectangle.md) \| [`Spline`](Spline.md)
 
-Defined in: index.d.ts:2325
+Defined in: index.d.ts:2305
 
 节点位置
 
@@ -104,7 +104,7 @@ Defined in: index.d.ts:2325
 
 > `optional` **properties**: `object`
 
-Defined in: index.d.ts:2160
+Defined in: index.d.ts:2140
 
 属性字段
 
@@ -122,7 +122,7 @@ Defined in: index.d.ts:2160
 
 > `optional` **show**: `boolean`
 
-Defined in: index.d.ts:2153
+Defined in: index.d.ts:2133
 
 是否显示，默认true
 
@@ -136,7 +136,7 @@ Defined in: index.d.ts:2153
 
 > **type**: [`ContourLine`](../enumerations/PrimitiveType.md#contourline)
 
-Defined in: index.d.ts:2323
+Defined in: index.d.ts:2303
 
 类型
 
@@ -150,6 +150,6 @@ Defined in: index.d.ts:2323
 
 > `optional` **width**: `number`
 
-Defined in: index.d.ts:2327
+Defined in: index.d.ts:2307
 
 线宽度

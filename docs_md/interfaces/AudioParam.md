@@ -6,7 +6,7 @@
 
 # Interface: AudioParam
 
-Defined in: index.d.ts:878
+Defined in: index.d.ts:858
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:878
 
 > `optional` **speed**: `number`
 
-Defined in: index.d.ts:884
+Defined in: index.d.ts:864
 
 语速 默认 1
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:884
 
 > **text**: `string`
 
-Defined in: index.d.ts:880
+Defined in: index.d.ts:860
 
 语音文本内容
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:880
 
 > `optional` **voice**: `string`
 
-Defined in: index.d.ts:882
+Defined in: index.d.ts:862
 
 发音人
 
@@ -44,6 +44,6 @@ Defined in: index.d.ts:882
 
 > `optional` **volume**: `number`
 
-Defined in: index.d.ts:886
+Defined in: index.d.ts:866
 
 音量 默认 1

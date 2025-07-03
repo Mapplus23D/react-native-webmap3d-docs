@@ -6,7 +6,7 @@
 
 # Interface: FlyPresetStop
 
-Defined in: index.d.ts:1011
+Defined in: index.d.ts:991
 
 预制飞行轨迹
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:1011
 
 > **duration**: `number`
 
-Defined in: index.d.ts:1019
+Defined in: index.d.ts:999
 
 预制飞行后到下一站点的时间
 
@@ -26,7 +26,7 @@ Defined in: index.d.ts:1019
 
 > **flyTime**: `number`
 
-Defined in: index.d.ts:1017
+Defined in: index.d.ts:997
 
 预制飞行耗时
 
@@ -36,7 +36,7 @@ Defined in: index.d.ts:1017
 
 > **presetParam**: [`FlyPresetParam`](../type-aliases/FlyPresetParam.md)
 
-Defined in: index.d.ts:1021
+Defined in: index.d.ts:1001
 
 预制飞行路线参数
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:1021
 
 > **stopName**: `string`
 
-Defined in: index.d.ts:1013
+Defined in: index.d.ts:993
 
 站点名
 
@@ -56,6 +56,6 @@ Defined in: index.d.ts:1013
 
 > **waitTime**: `number`
 
-Defined in: index.d.ts:1015
+Defined in: index.d.ts:995
 
 飞行前停留的时间

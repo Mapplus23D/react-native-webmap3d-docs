@@ -6,7 +6,7 @@
 
 # Interface: PrimitiveDashedLine
 
-Defined in: index.d.ts:2306
+Defined in: index.d.ts:2286
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:2306
 
 > `optional` **classificationType**: [`ClassificationType`](../enumerations/ClassificationType.md)
 
-Defined in: index.d.ts:2320
+Defined in: index.d.ts:2300
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: index.d.ts:2320
 
 > `optional` **color**: `string`
 
-Defined in: index.d.ts:2313
+Defined in: index.d.ts:2293
 
 填充颜色
 
@@ -36,7 +36,7 @@ Defined in: index.d.ts:2313
 
 > `optional` **dashLength**: `number`
 
-Defined in: index.d.ts:2317
+Defined in: index.d.ts:2297
 
 间隔
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:2317
 
 > `optional` **depthFailShow**: `boolean`
 
-Defined in: index.d.ts:2319
+Defined in: index.d.ts:2299
 
 是否被地形遮挡 默认false被遮挡
 
@@ -56,7 +56,7 @@ Defined in: index.d.ts:2319
 
 > `optional` **distanceDisplayCondition**: [`DistanceDisplayCondition`](DistanceDisplayCondition.md)
 
-Defined in: index.d.ts:2155
+Defined in: index.d.ts:2135
 
 可见范围
 
@@ -70,7 +70,7 @@ Defined in: index.d.ts:2155
 
 > `optional` **gapColor**: `string`
 
-Defined in: index.d.ts:2315
+Defined in: index.d.ts:2295
 
 背景色
 
@@ -80,7 +80,7 @@ Defined in: index.d.ts:2315
 
 > `optional` **name**: `string`
 
-Defined in: index.d.ts:2158
+Defined in: index.d.ts:2138
 
 primitive 名称
 
@@ -94,7 +94,7 @@ primitive 名称
 
 > **positions**: `number`[] \| [`Vector3`](Vector3.md)[] \| [`Circle`](Circle.md) \| [`Rectangle`](Rectangle.md) \| [`Spline`](Spline.md)
 
-Defined in: index.d.ts:2309
+Defined in: index.d.ts:2289
 
 节点位置
 
@@ -104,7 +104,7 @@ Defined in: index.d.ts:2309
 
 > `optional` **properties**: `object`
 
-Defined in: index.d.ts:2160
+Defined in: index.d.ts:2140
 
 属性字段
 
@@ -122,7 +122,7 @@ Defined in: index.d.ts:2160
 
 > `optional` **show**: `boolean`
 
-Defined in: index.d.ts:2153
+Defined in: index.d.ts:2133
 
 是否显示，默认true
 
@@ -136,7 +136,7 @@ Defined in: index.d.ts:2153
 
 > **type**: [`DashedLine`](../enumerations/PrimitiveType.md#dashedline)
 
-Defined in: index.d.ts:2307
+Defined in: index.d.ts:2287
 
 类型
 
@@ -150,6 +150,6 @@ Defined in: index.d.ts:2307
 
 > `optional` **width**: `number`
 
-Defined in: index.d.ts:2311
+Defined in: index.d.ts:2291
 
 线宽度

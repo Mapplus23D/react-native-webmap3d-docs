@@ -6,7 +6,7 @@
 
 # Interface: ~~IScreenText~~
 
-Defined in: index.d.ts:174
+Defined in: index.d.ts:162
 
 ## Deprecated
 
@@ -20,7 +20,7 @@ Defined in: index.d.ts:174
 
 > **endTime**: `number`
 
-Defined in: index.d.ts:203
+Defined in: index.d.ts:191
 
 #### Inherited from
 
@@ -32,7 +32,7 @@ Defined in: index.d.ts:203
 
 > **entering**: [`ScreenEffect`](ScreenEffect.md)
 
-Defined in: index.d.ts:205
+Defined in: index.d.ts:193
 
 #### Inherited from
 
@@ -44,7 +44,7 @@ Defined in: index.d.ts:205
 
 > **exiting**: [`ScreenEffect`](ScreenEffect.md)
 
-Defined in: index.d.ts:206
+Defined in: index.d.ts:194
 
 #### Inherited from
 
@@ -56,7 +56,7 @@ Defined in: index.d.ts:206
 
 > **name**: `string`
 
-Defined in: index.d.ts:200
+Defined in: index.d.ts:188
 
 屏幕动画名字
 
@@ -70,7 +70,7 @@ Defined in: index.d.ts:200
 
 > **position**: [`ScreenPosition`](../enumerations/ScreenPosition.md)
 
-Defined in: index.d.ts:204
+Defined in: index.d.ts:192
 
 #### Inherited from
 
@@ -82,7 +82,7 @@ Defined in: index.d.ts:204
 
 > **startTime**: `number`
 
-Defined in: index.d.ts:202
+Defined in: index.d.ts:190
 
 开始时间。单位 秒
 
@@ -96,7 +96,7 @@ Defined in: index.d.ts:202
 
 > `optional` **style**: [`ViewStyle`](ViewStyle.md)
 
-Defined in: index.d.ts:176
+Defined in: index.d.ts:164
 
 ***
 
@@ -104,7 +104,7 @@ Defined in: index.d.ts:176
 
 > **text**: `string`
 
-Defined in: index.d.ts:175
+Defined in: index.d.ts:163
 
 ***
 
@@ -112,4 +112,4 @@ Defined in: index.d.ts:175
 
 > `optional` **textStyle**: [`TextStyle`](TextStyle.md)
 
-Defined in: index.d.ts:177
+Defined in: index.d.ts:165

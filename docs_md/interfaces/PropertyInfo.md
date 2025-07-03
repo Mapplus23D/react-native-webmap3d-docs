@@ -6,7 +6,7 @@
 
 # Interface: PropertyInfo
 
-Defined in: index.d.ts:2081
+Defined in: index.d.ts:2061
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:2081
 
 > **defualtValue**: `unknown`
 
-Defined in: index.d.ts:2085
+Defined in: index.d.ts:2065
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:2085
 
 > **propertyName**: `string`
 
-Defined in: index.d.ts:2082
+Defined in: index.d.ts:2062
 
 ***
 
@@ -30,6 +30,6 @@ Defined in: index.d.ts:2082
 
 > **valueType**: `"string"` \| `"number"` \| `"boolean"` \| `"const"`
 
-Defined in: index.d.ts:2084
+Defined in: index.d.ts:2064
 
 const为常量类型所有值为defaultValue

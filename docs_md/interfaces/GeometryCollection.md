@@ -6,7 +6,7 @@
 
 # Interface: GeometryCollection
 
-Defined in: index.d.ts:3065
+Defined in: index.d.ts:3016
 
 GeometryCollection
 
@@ -27,7 +27,7 @@ It is possible for this array to be empty.
 
 > `optional` **bbox**: [`BBox`](../type-aliases/BBox.md)
 
-Defined in: index.d.ts:2983
+Defined in: index.d.ts:2934
 
 Bounding box of the coordinate range of the object's Geometries, Features, or Feature Collections.
 https://tools.ietf.org/html/rfc7946#section-5
@@ -42,7 +42,7 @@ https://tools.ietf.org/html/rfc7946#section-5
 
 > **geometries**: ([`Point`](Point.md) \| [`MultiPoint`](MultiPoint.md) \| [`LineString`](LineString.md) \| [`MultiLineString`](MultiLineString.md) \| [`Polygon`](Polygon.md) \| [`MultiPolygon`](MultiPolygon.md))[]
 
-Defined in: index.d.ts:3067
+Defined in: index.d.ts:3018
 
 ***
 
@@ -50,7 +50,7 @@ Defined in: index.d.ts:3067
 
 > **type**: `"GeometryCollection"`
 
-Defined in: index.d.ts:3066
+Defined in: index.d.ts:3017
 
 Specifies the type of GeoJSON object.
 

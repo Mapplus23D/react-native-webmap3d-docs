@@ -6,7 +6,7 @@
 
 # Enumeration: TilingSchemeType
 
-Defined in: index.d.ts:484
+Defined in: index.d.ts:472
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:484
 
 > **GCJ02TilingScheme**: `2`
 
-Defined in: index.d.ts:490
+Defined in: index.d.ts:478
 
 基于火星坐标系的投影转换
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:490
 
 > **GeographicTilingScheme**: `1`
 
-Defined in: index.d.ts:488
+Defined in: index.d.ts:476
 
 基于简单等距矩形的投影转换
 
@@ -34,6 +34,6 @@ Defined in: index.d.ts:488
 
 > **WebMercatorTilingScheme**: `0`
 
-Defined in: index.d.ts:486
+Defined in: index.d.ts:474
 
 基于Web墨卡托的投影转换

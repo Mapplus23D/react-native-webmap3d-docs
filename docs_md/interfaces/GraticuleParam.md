@@ -6,7 +6,7 @@
 
 # Interface: GraticuleParam
 
-Defined in: index.d.ts:70
+Defined in: index.d.ts:58
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:70
 
 > `optional` **color**: `string`
 
-Defined in: index.d.ts:72
+Defined in: index.d.ts:60
 
 The line color. Defaults to Color.WHITE.withAlpha(.5)
 
@@ -24,7 +24,7 @@ The line color. Defaults to Color.WHITE.withAlpha(.5)
 
 > `optional` **debounce**: `number`
 
-Defined in: index.d.ts:76
+Defined in: index.d.ts:64
 
 The render debounce value, defaults to 500ms
 
@@ -34,7 +34,7 @@ The render debounce value, defaults to 500ms
 
 > `optional` **gridCount**: `number`
 
-Defined in: index.d.ts:78
+Defined in: index.d.ts:66
 
 Lines in screen, defaults to 15
 
@@ -44,7 +44,7 @@ Lines in screen, defaults to 15
 
 > `optional` **labelColor**: `string`
 
-Defined in: index.d.ts:84
+Defined in: index.d.ts:72
 
 defaults to Color.WHITE
 
@@ -54,7 +54,7 @@ defaults to Color.WHITE
 
 > `optional` **labelFont**: `string`
 
-Defined in: index.d.ts:82
+Defined in: index.d.ts:70
 
 font css, defaults to `bold 1rem Arial`
 
@@ -64,7 +64,7 @@ font css, defaults to `bold 1rem Arial`
 
 > `optional` **labelOutlineColor**: `string`
 
-Defined in: index.d.ts:86
+Defined in: index.d.ts:74
 
 defaults to Color.BLACK
 
@@ -74,7 +74,7 @@ defaults to Color.BLACK
 
 > `optional` **labelOutlineWidth**: `number`
 
-Defined in: index.d.ts:88
+Defined in: index.d.ts:76
 
 defualts to 4
 
@@ -84,7 +84,7 @@ defualts to 4
 
 > `optional` **meridians**: `boolean`
 
-Defined in: index.d.ts:80
+Defined in: index.d.ts:68
 
 If show the colored meridians, defaults to true
 
@@ -94,6 +94,6 @@ If show the colored meridians, defaults to true
 
 > `optional` **meridiansColor**: `string`
 
-Defined in: index.d.ts:74
+Defined in: index.d.ts:62
 
 The meridians line color, show only meridians option is true. Defaults to Color.YELLOW

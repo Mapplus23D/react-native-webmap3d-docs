@@ -6,7 +6,7 @@
 
 # Interface: PrimitiveWaterRegion
 
-Defined in: index.d.ts:2457
+Defined in: index.d.ts:2437
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:2457
 
 > `optional` **amplitude**: `number`
 
-Defined in: index.d.ts:2483
+Defined in: index.d.ts:2463
 
 amplitude: Number that controls the amplitude of water waves.振幅5
 
@@ -28,7 +28,7 @@ amplitude: Number that controls the amplitude of water waves.振幅5
 
 > `optional` **animationSpeed**: `number`
 
-Defined in: index.d.ts:2481
+Defined in: index.d.ts:2461
 
 animationSpeed: Number that controls the animations speed of the water.0.01
 
@@ -38,7 +38,7 @@ animationSpeed: Number that controls the animations speed of the water.0.01
 
 > `optional` **baseHeight**: `number`
 
-Defined in: index.d.ts:2467
+Defined in: index.d.ts:2447
 
 底部高度，贴地时无效
 
@@ -48,7 +48,7 @@ Defined in: index.d.ts:2467
 
 > `optional` **baseWaterColor**: `string`
 
-Defined in: index.d.ts:2471
+Defined in: index.d.ts:2451
 
 baseWaterColor: rgba color object base color of the water.
 
@@ -58,7 +58,7 @@ baseWaterColor: rgba color object base color of the water.
 
 > `optional` **blendColor**: `string`
 
-Defined in: index.d.ts:2473
+Defined in: index.d.ts:2453
 
 blendColor: rgba color object used when blending from water to non-water areas.
 
@@ -68,7 +68,7 @@ blendColor: rgba color object used when blending from water to non-water areas.
 
 > `optional` **clampToGround**: `boolean`
 
-Defined in: index.d.ts:2463
+Defined in: index.d.ts:2443
 
 deprecated 废弃的贴地接口 当classificationType未定义时生效
 
@@ -78,7 +78,7 @@ deprecated 废弃的贴地接口 当classificationType未定义时生效
 
 > `optional` **classificationType**: [`ClassificationType`](../enumerations/ClassificationType.md)
 
-Defined in: index.d.ts:2461
+Defined in: index.d.ts:2441
 
 ***
 
@@ -86,7 +86,7 @@ Defined in: index.d.ts:2461
 
 > `optional` **distanceDisplayCondition**: [`DistanceDisplayCondition`](DistanceDisplayCondition.md)
 
-Defined in: index.d.ts:2155
+Defined in: index.d.ts:2135
 
 可见范围
 
@@ -100,7 +100,7 @@ Defined in: index.d.ts:2155
 
 > `optional` **frequency**: `number`
 
-Defined in: index.d.ts:2477
+Defined in: index.d.ts:2457
 
 frequency: Number that controls the number of waves.500
 
@@ -110,7 +110,7 @@ frequency: Number that controls the number of waves.500
 
 > **hierarchy**: [`Circle`](Circle.md) \| [`Rectangle`](Rectangle.md) \| [`PolygonHierarchy`](PolygonHierarchy.md)
 
-Defined in: index.d.ts:2460
+Defined in: index.d.ts:2440
 
 面节点
 
@@ -120,7 +120,7 @@ Defined in: index.d.ts:2460
 
 > `optional` **name**: `string`
 
-Defined in: index.d.ts:2158
+Defined in: index.d.ts:2138
 
 primitive 名称
 
@@ -134,7 +134,7 @@ primitive 名称
 
 > `optional` **normalMap**: `string`
 
-Defined in: index.d.ts:2479
+Defined in: index.d.ts:2459
 
 normalMap: Normal map for water normal perturbation.扰动
 
@@ -144,7 +144,7 @@ normalMap: Normal map for water normal perturbation.扰动
 
 > `optional` **properties**: `object`
 
-Defined in: index.d.ts:2160
+Defined in: index.d.ts:2140
 
 属性字段
 
@@ -162,7 +162,7 @@ Defined in: index.d.ts:2160
 
 > `optional` **show**: `boolean`
 
-Defined in: index.d.ts:2153
+Defined in: index.d.ts:2133
 
 是否显示，默认true
 
@@ -176,7 +176,7 @@ Defined in: index.d.ts:2153
 
 > `optional` **specularIntensity**: `number`
 
-Defined in: index.d.ts:2485
+Defined in: index.d.ts:2465
 
 specularIntensity: Number that controls the intensity of specular reflections.
 
@@ -186,7 +186,7 @@ specularIntensity: Number that controls the intensity of specular reflections.
 
 > `optional` **specularMap**: `string`
 
-Defined in: index.d.ts:2475
+Defined in: index.d.ts:2455
 
 specularMap: Single channel texture used to indicate areas of water.
 
@@ -196,7 +196,7 @@ specularMap: Single channel texture used to indicate areas of water.
 
 > `optional` **stRotation**: `number`
 
-Defined in: index.d.ts:2469
+Defined in: index.d.ts:2449
 
 贴图旋转角度
 
@@ -206,7 +206,7 @@ Defined in: index.d.ts:2469
 
 > `optional` **topHeight**: `number`
 
-Defined in: index.d.ts:2465
+Defined in: index.d.ts:2445
 
 水面高度,贴地时无效
 
@@ -216,7 +216,7 @@ Defined in: index.d.ts:2465
 
 > **type**: [`WaterRegion`](../enumerations/PrimitiveType.md#waterregion)
 
-Defined in: index.d.ts:2458
+Defined in: index.d.ts:2438
 
 类型
 

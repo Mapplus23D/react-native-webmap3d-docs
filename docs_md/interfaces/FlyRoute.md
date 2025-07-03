@@ -6,7 +6,7 @@
 
 # Interface: FlyRoute
 
-Defined in: index.d.ts:914
+Defined in: index.d.ts:894
 
 相机飞行路线
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:914
 
 > **routeName**: `string`
 
-Defined in: index.d.ts:916
+Defined in: index.d.ts:896
 
 路径名
 
@@ -26,6 +26,6 @@ Defined in: index.d.ts:916
 
 > **stops**: ([`FlyRouteStop`](FlyRouteStop.md) \| [`FlyCircleStop`](FlyCircleStop.md) \| [`FlyAlongLine`](FlyAlongLine.md) \| [`FlyPresetStop`](FlyPresetStop.md))[]
 
-Defined in: index.d.ts:920
+Defined in: index.d.ts:900
 
 飞行站点

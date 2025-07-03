@@ -6,7 +6,7 @@
 
 # Interface: PrimitiveColumnModel
 
-Defined in: index.d.ts:2505
+Defined in: index.d.ts:2485
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:2505
 
 > `optional` **baseHeight**: `number`
 
-Defined in: index.d.ts:2512
+Defined in: index.d.ts:2492
 
 底面高度
 
@@ -28,7 +28,7 @@ Defined in: index.d.ts:2512
 
 > `optional` **color**: `string`
 
-Defined in: index.d.ts:2510
+Defined in: index.d.ts:2490
 
 填充颜色
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:2510
 
 > `optional` **distanceDisplayCondition**: [`DistanceDisplayCondition`](DistanceDisplayCondition.md)
 
-Defined in: index.d.ts:2155
+Defined in: index.d.ts:2135
 
 可见范围
 
@@ -52,7 +52,7 @@ Defined in: index.d.ts:2155
 
 > **hierarchy**: [`Circle`](Circle.md) \| [`Rectangle`](Rectangle.md) \| [`PolygonHierarchy`](PolygonHierarchy.md)
 
-Defined in: index.d.ts:2508
+Defined in: index.d.ts:2488
 
 底面节点
 
@@ -62,7 +62,7 @@ Defined in: index.d.ts:2508
 
 > `optional` **name**: `string`
 
-Defined in: index.d.ts:2158
+Defined in: index.d.ts:2138
 
 primitive 名称
 
@@ -76,7 +76,7 @@ primitive 名称
 
 > `optional` **outlineColor**: `string`
 
-Defined in: index.d.ts:2523
+Defined in: index.d.ts:2503
 
 轮廓线颜色
 
@@ -86,7 +86,7 @@ Defined in: index.d.ts:2523
 
 > `optional` **properties**: `object`
 
-Defined in: index.d.ts:2160
+Defined in: index.d.ts:2140
 
 属性字段
 
@@ -104,7 +104,7 @@ Defined in: index.d.ts:2160
 
 > `optional` **show**: `boolean`
 
-Defined in: index.d.ts:2153
+Defined in: index.d.ts:2133
 
 是否显示，默认true
 
@@ -118,7 +118,7 @@ Defined in: index.d.ts:2153
 
 > `optional` **sideImage**: `string`
 
-Defined in: index.d.ts:2518
+Defined in: index.d.ts:2498
 
 侧面贴图
 
@@ -128,7 +128,7 @@ Defined in: index.d.ts:2518
 
 > `optional` **sideRepeate**: `number`
 
-Defined in: index.d.ts:2520
+Defined in: index.d.ts:2500
 
 侧面重复
 
@@ -138,7 +138,7 @@ Defined in: index.d.ts:2520
 
 > `optional` **topHeight**: `number`
 
-Defined in: index.d.ts:2514
+Defined in: index.d.ts:2494
 
 顶面高度
 
@@ -148,7 +148,7 @@ Defined in: index.d.ts:2514
 
 > `optional` **topImage**: `string`
 
-Defined in: index.d.ts:2516
+Defined in: index.d.ts:2496
 
 顶面贴图
 
@@ -158,7 +158,7 @@ Defined in: index.d.ts:2516
 
 > **type**: [`ColumnModel`](../enumerations/PrimitiveType.md#columnmodel)
 
-Defined in: index.d.ts:2506
+Defined in: index.d.ts:2486
 
 类型
 

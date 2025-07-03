@@ -6,7 +6,7 @@
 
 # Interface: ImageLayer
 
-Defined in: index.d.ts:280
+Defined in: index.d.ts:268
 
 影像图层
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:280
 
 > `optional` **alpha**: `number`
 
-Defined in: index.d.ts:288
+Defined in: index.d.ts:276
 
 透明度 0～1 默认1
 
@@ -26,7 +26,7 @@ Defined in: index.d.ts:288
 
 > **name**: `string`
 
-Defined in: index.d.ts:282
+Defined in: index.d.ts:270
 
 图层名
 
@@ -36,7 +36,7 @@ Defined in: index.d.ts:282
 
 > **provider**: [`ImageProvider`](../type-aliases/ImageProvider.md)
 
-Defined in: index.d.ts:284
+Defined in: index.d.ts:272
 
 影像服务参数
 
@@ -46,6 +46,6 @@ Defined in: index.d.ts:284
 
 > **visible**: `boolean`
 
-Defined in: index.d.ts:286
+Defined in: index.d.ts:274
 
 图层是否可见

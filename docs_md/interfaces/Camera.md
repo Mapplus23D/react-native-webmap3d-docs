@@ -6,7 +6,7 @@
 
 # Interface: Camera
 
-Defined in: index.d.ts:609
+Defined in: index.d.ts:589
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:609
 
 > **altitude**: `number`
 
-Defined in: index.d.ts:611
+Defined in: index.d.ts:591
 
 相机高度，单位：米。
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:611
 
 > **heading**: `number`
 
-Defined in: index.d.ts:617
+Defined in: index.d.ts:597
 
 方位角（上方向，即和北方的夹角），方位角的范围是0-360度。
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:617
 
 > **latitude**: `number`
 
-Defined in: index.d.ts:613
+Defined in: index.d.ts:593
 
 相机的纬度，单位为度。
 
@@ -44,7 +44,7 @@ Defined in: index.d.ts:613
 
 > **longitude**: `number`
 
-Defined in: index.d.ts:615
+Defined in: index.d.ts:595
 
 相机的经度，单位为度。
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:615
 
 > **pitch**: `number`
 
-Defined in: index.d.ts:619
+Defined in: index.d.ts:599
 
 俯仰角,角度
 
@@ -64,6 +64,6 @@ Defined in: index.d.ts:619
 
 > **roll**: `number`
 
-Defined in: index.d.ts:621
+Defined in: index.d.ts:601
 
 滚动角，角度

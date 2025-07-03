@@ -6,7 +6,7 @@
 
 # Enumeration: MeasureType
 
-Defined in: index.d.ts:2834
+Defined in: index.d.ts:2789
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:2834
 
 > **Area**: `"Area"`
 
-Defined in: index.d.ts:2836
+Defined in: index.d.ts:2791
 
 测面积模式
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:2836
 
 > **Distance**: `"Distance"`
 
-Defined in: index.d.ts:2838
+Defined in: index.d.ts:2793
 
 测距离模式
 
@@ -34,6 +34,6 @@ Defined in: index.d.ts:2838
 
 > **DVH**: `"DVH"`
 
-Defined in: index.d.ts:2840
+Defined in: index.d.ts:2795
 
 空间距离、水平距离、垂直距离三分量量算模式（测高模式）

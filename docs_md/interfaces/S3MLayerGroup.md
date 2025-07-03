@@ -6,7 +6,7 @@
 
 # Interface: S3MLayerGroup
 
-Defined in: index.d.ts:379
+Defined in: index.d.ts:367
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:379
 
 > **name**: `string`
 
-Defined in: index.d.ts:326
+Defined in: index.d.ts:314
 
 图层名
 
@@ -32,7 +32,7 @@ Defined in: index.d.ts:326
 
 > **s3mLayerType**: [`S3MGroup`](../enumerations/S3MLayerType.md#s3mgroup)
 
-Defined in: index.d.ts:380
+Defined in: index.d.ts:368
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: index.d.ts:380
 
 > **subLayers**: [`S3MLayer`](../type-aliases/S3MLayer.md)[]
 
-Defined in: index.d.ts:381
+Defined in: index.d.ts:369
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: index.d.ts:381
 
 > **visible**: `boolean`
 
-Defined in: index.d.ts:328
+Defined in: index.d.ts:316
 
 图层是否可见,默认可见
 

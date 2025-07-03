@@ -6,7 +6,7 @@
 
 # Interface: ~~IScreenItem~~
 
-Defined in: index.d.ts:198
+Defined in: index.d.ts:186
 
 ## Deprecated
 
@@ -21,7 +21,7 @@ Defined in: index.d.ts:198
 
 > **endTime**: `number`
 
-Defined in: index.d.ts:203
+Defined in: index.d.ts:191
 
 ***
 
@@ -29,7 +29,7 @@ Defined in: index.d.ts:203
 
 > **entering**: [`ScreenEffect`](ScreenEffect.md)
 
-Defined in: index.d.ts:205
+Defined in: index.d.ts:193
 
 ***
 
@@ -37,7 +37,7 @@ Defined in: index.d.ts:205
 
 > **exiting**: [`ScreenEffect`](ScreenEffect.md)
 
-Defined in: index.d.ts:206
+Defined in: index.d.ts:194
 
 ***
 
@@ -45,7 +45,7 @@ Defined in: index.d.ts:206
 
 > **name**: `string`
 
-Defined in: index.d.ts:200
+Defined in: index.d.ts:188
 
 屏幕动画名字
 
@@ -55,7 +55,7 @@ Defined in: index.d.ts:200
 
 > **position**: [`ScreenPosition`](../enumerations/ScreenPosition.md)
 
-Defined in: index.d.ts:204
+Defined in: index.d.ts:192
 
 ***
 
@@ -63,6 +63,6 @@ Defined in: index.d.ts:204
 
 > **startTime**: `number`
 
-Defined in: index.d.ts:202
+Defined in: index.d.ts:190
 
 开始时间。单位 秒

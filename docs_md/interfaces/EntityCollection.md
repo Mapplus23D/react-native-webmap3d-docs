@@ -6,7 +6,7 @@
 
 # Interface: EntityCollection
 
-Defined in: index.d.ts:309
+Defined in: index.d.ts:297
 
 ## Properties
 
@@ -14,4 +14,4 @@ Defined in: index.d.ts:309
 
 > **entities**: [`Entity`](Entity.md)[]
 
-Defined in: index.d.ts:310
+Defined in: index.d.ts:298

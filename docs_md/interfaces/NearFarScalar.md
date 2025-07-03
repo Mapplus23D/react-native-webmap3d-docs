@@ -6,7 +6,7 @@
 
 # Interface: NearFarScalar
 
-Defined in: index.d.ts:1249
+Defined in: index.d.ts:1229
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1249
 
 > **far**: `number`
 
-Defined in: index.d.ts:1252
+Defined in: index.d.ts:1232
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:1252
 
 > **farValue**: `number`
 
-Defined in: index.d.ts:1253
+Defined in: index.d.ts:1233
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:1253
 
 > **near**: `number`
 
-Defined in: index.d.ts:1250
+Defined in: index.d.ts:1230
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: index.d.ts:1250
 
 > **nearValue**: `number`
 
-Defined in: index.d.ts:1251
+Defined in: index.d.ts:1231

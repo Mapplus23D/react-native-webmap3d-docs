@@ -8,4 +8,4 @@
 
 > **IScreenAnimation** = [`ScreenEnterAnimation`](../interfaces/ScreenEnterAnimation.md) \| [`ScreenExitAnimation`](../interfaces/ScreenExitAnimation.md) \| [`ScreenMediaAnimation`](../interfaces/ScreenMediaAnimation.md)
 
-Defined in: index.d.ts:789
+Defined in: index.d.ts:769

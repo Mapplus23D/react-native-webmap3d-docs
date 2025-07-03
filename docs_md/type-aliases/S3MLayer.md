@@ -8,4 +8,4 @@
 
 > **S3MLayer** = [`S3MTilesLayer`](../interfaces/S3MTilesLayer.md) \| [`S3MLayerGroup`](../interfaces/S3MLayerGroup.md)
 
-Defined in: index.d.ts:383
+Defined in: index.d.ts:371

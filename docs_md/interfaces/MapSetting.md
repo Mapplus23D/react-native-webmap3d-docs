@@ -6,7 +6,7 @@
 
 # Interface: MapSetting
 
-Defined in: index.d.ts:226
+Defined in: index.d.ts:214
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:226
 
 > **atmosphere**: [`Atmosphere`](Atmosphere.md)
 
-Defined in: index.d.ts:232
+Defined in: index.d.ts:220
 
 大气
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:232
 
 > `optional` **bloomEffect**: [`BloomEffect`](BloomEffect.md)
 
-Defined in: index.d.ts:250
+Defined in: index.d.ts:238
 
 泛光设置
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:250
 
 > **clouds**: [`Clouds`](Clouds.md)
 
-Defined in: index.d.ts:234
+Defined in: index.d.ts:222
 
 云层
 
@@ -44,7 +44,7 @@ Defined in: index.d.ts:234
 
 > **colorCorrection**: [`ColorCorrectionType`](ColorCorrectionType.md)
 
-Defined in: index.d.ts:238
+Defined in: index.d.ts:226
 
 颜色校正
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:238
 
 > `optional` **depthTestAgainstTerrain**: `boolean`
 
-Defined in: index.d.ts:246
+Defined in: index.d.ts:234
 
 深度检测
 
@@ -64,7 +64,7 @@ Defined in: index.d.ts:246
 
 > `optional` **fog**: [`Fog`](Fog.md)
 
-Defined in: index.d.ts:244
+Defined in: index.d.ts:232
 
 雾化
 
@@ -74,7 +74,7 @@ Defined in: index.d.ts:244
 
 > `optional` **hdrEnable**: `boolean`
 
-Defined in: index.d.ts:248
+Defined in: index.d.ts:236
 
 hdr(高动态光照渲染，一种提高影像亮度和对比度的处理技术)
 
@@ -84,7 +84,7 @@ hdr(高动态光照渲染，一种提高影像亮度和对比度的处理技术)
 
 > `optional` **lighting**: [`GlobeLighting`](GlobeLighting.md)
 
-Defined in: index.d.ts:240
+Defined in: index.d.ts:228
 
 地球光照阴影
 
@@ -94,7 +94,7 @@ Defined in: index.d.ts:240
 
 > **quality**: `number`
 
-Defined in: index.d.ts:228
+Defined in: index.d.ts:216
 
 画质
 
@@ -104,7 +104,7 @@ Defined in: index.d.ts:228
 
 > `optional` **shadow**: [`Shadow`](Shadow.md)
 
-Defined in: index.d.ts:242
+Defined in: index.d.ts:230
 
 对象阴影
 
@@ -114,7 +114,7 @@ Defined in: index.d.ts:242
 
 > **skybox**: [`Skybox`](Skybox.md)
 
-Defined in: index.d.ts:230
+Defined in: index.d.ts:218
 
 天空盒
 
@@ -124,7 +124,7 @@ Defined in: index.d.ts:230
 
 > **sun**: [`Sun`](Sun.md)
 
-Defined in: index.d.ts:236
+Defined in: index.d.ts:224
 
 太阳
 
@@ -134,6 +134,6 @@ Defined in: index.d.ts:236
 
 > `optional` **terrainExaggeration**: `number`
 
-Defined in: index.d.ts:252
+Defined in: index.d.ts:240
 
 地形夸张系数。默认为 1

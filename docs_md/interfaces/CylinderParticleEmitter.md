@@ -6,7 +6,7 @@
 
 # Interface: CylinderParticleEmitter
 
-Defined in: index.d.ts:1916
+Defined in: index.d.ts:1896
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1916
 
 > **directionRandomizer**: `number`
 
-Defined in: index.d.ts:1921
+Defined in: index.d.ts:1901
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:1921
 
 > **height**: `number`
 
-Defined in: index.d.ts:1919
+Defined in: index.d.ts:1899
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:1919
 
 > **radius**: `number`
 
-Defined in: index.d.ts:1918
+Defined in: index.d.ts:1898
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:1918
 
 > **radiusRange**: `number`
 
-Defined in: index.d.ts:1920
+Defined in: index.d.ts:1900
 
 ***
 
@@ -46,4 +46,4 @@ Defined in: index.d.ts:1920
 
 > **type**: `"CylinderParticleEmitter"`
 
-Defined in: index.d.ts:1917
+Defined in: index.d.ts:1897

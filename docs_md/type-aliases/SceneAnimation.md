@@ -8,4 +8,4 @@
 
 > **SceneAnimation** = [`SceneWeather`](../interfaces/SceneWeather.md)
 
-Defined in: index.d.ts:845
+Defined in: index.d.ts:825

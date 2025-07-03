@@ -6,7 +6,7 @@
 
 # Interface: PrimitiveGridRegion
 
-Defined in: index.d.ts:2391
+Defined in: index.d.ts:2371
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:2391
 
 > `optional` **baseHeight**: `number`
 
-Defined in: index.d.ts:2411
+Defined in: index.d.ts:2391
 
 底部高度，贴地时无效
 
@@ -28,7 +28,7 @@ Defined in: index.d.ts:2411
 
 > `optional` **cellAlpha**: `number`
 
-Defined in: index.d.ts:2398
+Defined in: index.d.ts:2378
 
 polygonSymbolGridCellAlpha, 0～1.0,defualt 0.1
 
@@ -38,7 +38,7 @@ polygonSymbolGridCellAlpha, 0～1.0,defualt 0.1
 
 > `optional` **clampToGround**: `boolean`
 
-Defined in: index.d.ts:2407
+Defined in: index.d.ts:2387
 
 deprecated 废弃的贴地接口 当classificationType未定义时生效
 
@@ -48,7 +48,7 @@ deprecated 废弃的贴地接口 当classificationType未定义时生效
 
 > `optional` **classificationType**: [`ClassificationType`](../enumerations/ClassificationType.md)
 
-Defined in: index.d.ts:2405
+Defined in: index.d.ts:2385
 
 ***
 
@@ -56,7 +56,7 @@ Defined in: index.d.ts:2405
 
 > `optional` **color**: `string`
 
-Defined in: index.d.ts:2396
+Defined in: index.d.ts:2376
 
 填充颜色 defualt white
 
@@ -66,7 +66,7 @@ Defined in: index.d.ts:2396
 
 > `optional` **distanceDisplayCondition**: [`DistanceDisplayCondition`](DistanceDisplayCondition.md)
 
-Defined in: index.d.ts:2155
+Defined in: index.d.ts:2135
 
 可见范围
 
@@ -80,7 +80,7 @@ Defined in: index.d.ts:2155
 
 > **hierarchy**: [`Circle`](Circle.md) \| [`Rectangle`](Rectangle.md) \| [`PolygonHierarchy`](PolygonHierarchy.md)
 
-Defined in: index.d.ts:2394
+Defined in: index.d.ts:2374
 
 面节点
 
@@ -90,7 +90,7 @@ Defined in: index.d.ts:2394
 
 > `optional` **lineCount**: `number`
 
-Defined in: index.d.ts:2400
+Defined in: index.d.ts:2380
 
 polygonSymbolGridLineCount,defualt 8
 
@@ -100,7 +100,7 @@ polygonSymbolGridLineCount,defualt 8
 
 > `optional` **lineOffset**: `number`
 
-Defined in: index.d.ts:2404
+Defined in: index.d.ts:2384
 
 polygonSymbolGridLineOffset,0
 
@@ -110,7 +110,7 @@ polygonSymbolGridLineOffset,0
 
 > `optional` **lineThickness**: `number`
 
-Defined in: index.d.ts:2402
+Defined in: index.d.ts:2382
 
 polygonSymbolGridLineThickness,defualt 1.0
 
@@ -120,7 +120,7 @@ polygonSymbolGridLineThickness,defualt 1.0
 
 > `optional` **name**: `string`
 
-Defined in: index.d.ts:2158
+Defined in: index.d.ts:2138
 
 primitive 名称
 
@@ -134,7 +134,7 @@ primitive 名称
 
 > `optional` **properties**: `object`
 
-Defined in: index.d.ts:2160
+Defined in: index.d.ts:2140
 
 属性字段
 
@@ -152,7 +152,7 @@ Defined in: index.d.ts:2160
 
 > `optional` **show**: `boolean`
 
-Defined in: index.d.ts:2153
+Defined in: index.d.ts:2133
 
 是否显示，默认true
 
@@ -166,7 +166,7 @@ Defined in: index.d.ts:2153
 
 > `optional` **stRotation**: `number`
 
-Defined in: index.d.ts:2413
+Defined in: index.d.ts:2393
 
 贴图旋转角度
 
@@ -176,7 +176,7 @@ Defined in: index.d.ts:2413
 
 > `optional` **topHeight**: `number`
 
-Defined in: index.d.ts:2409
+Defined in: index.d.ts:2389
 
 水面高度,贴地时无效
 
@@ -186,7 +186,7 @@ Defined in: index.d.ts:2409
 
 > **type**: [`GridRegion`](../enumerations/PrimitiveType.md#gridregion)
 
-Defined in: index.d.ts:2392
+Defined in: index.d.ts:2372
 
 类型
 

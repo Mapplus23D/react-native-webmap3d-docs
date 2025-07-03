@@ -6,7 +6,7 @@
 
 # Enumeration: WaveStrength
 
-Defined in: index.d.ts:338
+Defined in: index.d.ts:326
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:338
 
 > **CALM**: `0`
 
-Defined in: index.d.ts:340
+Defined in: index.d.ts:328
 
 平静水面，枚举值0
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:340
 
 > **MILD**: `2`
 
-Defined in: index.d.ts:344
+Defined in: index.d.ts:332
 
 中等波纹，枚举值2
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:344
 
 > **MODERATE**: `3`
 
-Defined in: index.d.ts:346
+Defined in: index.d.ts:334
 
 较大波纹，枚举值3
 
@@ -44,6 +44,6 @@ Defined in: index.d.ts:346
 
 > **SLIGHT**: `1`
 
-Defined in: index.d.ts:342
+Defined in: index.d.ts:330
 
 轻微波纹，枚举值1

@@ -6,7 +6,7 @@
 
 # Interface: Rectangle
 
-Defined in: index.d.ts:1520
+Defined in: index.d.ts:1500
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1520
 
 > **center**: [`Vector3`](Vector3.md)
 
-Defined in: index.d.ts:1521
+Defined in: index.d.ts:1501
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:1521
 
 > **h**: `number`
 
-Defined in: index.d.ts:1523
+Defined in: index.d.ts:1503
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:1523
 
 > **heading**: `number`
 
-Defined in: index.d.ts:1524
+Defined in: index.d.ts:1504
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: index.d.ts:1524
 
 > **w**: `number`
 
-Defined in: index.d.ts:1522
+Defined in: index.d.ts:1502

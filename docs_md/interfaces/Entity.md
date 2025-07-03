@@ -6,7 +6,7 @@
 
 # Interface: Entity
 
-Defined in: index.d.ts:1657
+Defined in: index.d.ts:1637
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1657
 
 > `optional` **billboard**: [`BillboardGraphics`](BillboardGraphics.md)
 
-Defined in: index.d.ts:1664
+Defined in: index.d.ts:1644
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:1664
 
 > `optional` **description**: `string`
 
-Defined in: index.d.ts:1675
+Defined in: index.d.ts:1655
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:1675
 
 > `optional` **id**: `string`
 
-Defined in: index.d.ts:1658
+Defined in: index.d.ts:1638
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:1658
 
 > `optional` **label**: [`LabelGraphics`](LabelGraphics.md)
 
-Defined in: index.d.ts:1663
+Defined in: index.d.ts:1643
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:1663
 
 > `optional` **mediaID**: `object`[]
 
-Defined in: index.d.ts:1679
+Defined in: index.d.ts:1659
 
 多媒体对象ID
 
@@ -64,7 +64,7 @@ Defined in: index.d.ts:1679
 
 > `optional` **model**: [`ModelGraphics`](ModelGraphics.md)
 
-Defined in: index.d.ts:1665
+Defined in: index.d.ts:1645
 
 ***
 
@@ -72,7 +72,7 @@ Defined in: index.d.ts:1665
 
 > `optional` **name**: `string`
 
-Defined in: index.d.ts:1674
+Defined in: index.d.ts:1654
 
 ***
 
@@ -80,7 +80,7 @@ Defined in: index.d.ts:1674
 
 > `optional` **orientation**: [`HeadingPitchRoll`](HeadingPitchRoll.md) \| [`PropertyAnimation`](PropertyAnimation.md)\<[`HeadingPitchRoll`](HeadingPitchRoll.md)\>
 
-Defined in: index.d.ts:1660
+Defined in: index.d.ts:1640
 
 ***
 
@@ -88,7 +88,7 @@ Defined in: index.d.ts:1660
 
 > `optional` **orientationAlongVelocity**: `boolean`
 
-Defined in: index.d.ts:1662
+Defined in: index.d.ts:1642
 
 朝向设置是否沿速度方向，默认否（朝向设置基于正北方向）
 
@@ -98,7 +98,7 @@ Defined in: index.d.ts:1662
 
 > `optional` **parent**: `string`
 
-Defined in: index.d.ts:1677
+Defined in: index.d.ts:1657
 
 父亲的id
 
@@ -108,7 +108,7 @@ Defined in: index.d.ts:1677
 
 > `optional` **point**: [`PointGraphics`](PointGraphics.md)
 
-Defined in: index.d.ts:1666
+Defined in: index.d.ts:1646
 
 ***
 
@@ -116,7 +116,7 @@ Defined in: index.d.ts:1666
 
 > `optional` **polygon**: [`PolygonGraphics`](../type-aliases/PolygonGraphics.md)
 
-Defined in: index.d.ts:1668
+Defined in: index.d.ts:1648
 
 ***
 
@@ -124,7 +124,7 @@ Defined in: index.d.ts:1668
 
 > `optional` **polyline**: [`PolylineGraphics`](../type-aliases/PolylineGraphics.md)
 
-Defined in: index.d.ts:1667
+Defined in: index.d.ts:1647
 
 ***
 
@@ -132,7 +132,7 @@ Defined in: index.d.ts:1667
 
 > `optional` **position**: [`Vector3`](Vector3.md) \| [`PropertyAnimation`](PropertyAnimation.md)\<[`Vector3`](Vector3.md)\>
 
-Defined in: index.d.ts:1659
+Defined in: index.d.ts:1639
 
 ***
 
@@ -140,7 +140,7 @@ Defined in: index.d.ts:1659
 
 > `optional` **rainbowline**: [`RainbowLine`](RainbowLine.md)
 
-Defined in: index.d.ts:1671
+Defined in: index.d.ts:1651
 
 ***
 
@@ -148,7 +148,7 @@ Defined in: index.d.ts:1671
 
 > `optional` **show**: `boolean`
 
-Defined in: index.d.ts:1673
+Defined in: index.d.ts:1653
 
 !!updateModify时show和其他属性更改互斥，否则导致界面卡死
 
@@ -158,7 +158,7 @@ Defined in: index.d.ts:1673
 
 > `optional` **terrainlabel**: [`TerrainLabel`](TerrainLabel.md)
 
-Defined in: index.d.ts:1670
+Defined in: index.d.ts:1650
 
 ***
 
@@ -166,4 +166,4 @@ Defined in: index.d.ts:1670
 
 > `optional` **wall**: [`WallGraphics`](WallGraphics.md)
 
-Defined in: index.d.ts:1669
+Defined in: index.d.ts:1649

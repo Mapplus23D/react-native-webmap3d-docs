@@ -6,7 +6,7 @@
 
 # Interface: IRegionStyle
 
-Defined in: index.d.ts:3165
+Defined in: index.d.ts:3116
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:3165
 
 > **alwaysVisible**: `boolean`
 
-Defined in: index.d.ts:3180
+Defined in: index.d.ts:3131
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:3180
 
 > **breathFrenquency**: `number`
 
-Defined in: index.d.ts:3179
+Defined in: index.d.ts:3130
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:3179
 
 > **clampGroundType**: `"s3m"` \| `"none"` \| `"ground"` \| `"both"`
 
-Defined in: index.d.ts:3167
+Defined in: index.d.ts:3118
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:3167
 
 > **color**: `string`
 
-Defined in: index.d.ts:3168
+Defined in: index.d.ts:3119
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:3168
 
 > **glowFactor**: `number`
 
-Defined in: index.d.ts:3178
+Defined in: index.d.ts:3129
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:3178
 
 > **gridbackgroundOpacity**: `number`
 
-Defined in: index.d.ts:3169
+Defined in: index.d.ts:3120
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: index.d.ts:3169
 
 > **gridWidth**: `number`
 
-Defined in: index.d.ts:3170
+Defined in: index.d.ts:3121
 
 ***
 
@@ -70,7 +70,7 @@ Defined in: index.d.ts:3170
 
 > **imageContent**: `string`
 
-Defined in: index.d.ts:3174
+Defined in: index.d.ts:3125
 
 ***
 
@@ -78,7 +78,7 @@ Defined in: index.d.ts:3174
 
 > **imageRepeatX**: `number`
 
-Defined in: index.d.ts:3175
+Defined in: index.d.ts:3126
 
 ***
 
@@ -86,7 +86,7 @@ Defined in: index.d.ts:3175
 
 > **imageRepeatY**: `number`
 
-Defined in: index.d.ts:3176
+Defined in: index.d.ts:3127
 
 ***
 
@@ -94,7 +94,7 @@ Defined in: index.d.ts:3176
 
 > **relativeHeight**: `number`
 
-Defined in: index.d.ts:3182
+Defined in: index.d.ts:3133
 
 ***
 
@@ -102,7 +102,7 @@ Defined in: index.d.ts:3182
 
 > **stripeOddColor**: `string`
 
-Defined in: index.d.ts:3173
+Defined in: index.d.ts:3124
 
 ***
 
@@ -110,7 +110,7 @@ Defined in: index.d.ts:3173
 
 > **stripeRepete**: `number`
 
-Defined in: index.d.ts:3172
+Defined in: index.d.ts:3123
 
 ***
 
@@ -118,7 +118,7 @@ Defined in: index.d.ts:3172
 
 > **stripeType**: `1` \| `2`
 
-Defined in: index.d.ts:3171
+Defined in: index.d.ts:3122
 
 ***
 
@@ -126,7 +126,7 @@ Defined in: index.d.ts:3171
 
 > **textureRotation**: `number`
 
-Defined in: index.d.ts:3177
+Defined in: index.d.ts:3128
 
 ***
 
@@ -134,7 +134,7 @@ Defined in: index.d.ts:3177
 
 > **type**: `"solid"` \| `"image"` \| `"glow"` \| `"breath"` \| `"grid"` \| `"stripe"`
 
-Defined in: index.d.ts:3166
+Defined in: index.d.ts:3117
 
 ***
 
@@ -142,4 +142,4 @@ Defined in: index.d.ts:3166
 
 > **visibleDistance**: `number`
 
-Defined in: index.d.ts:3181
+Defined in: index.d.ts:3132

@@ -6,7 +6,7 @@
 
 # Interface: UniformPrimitiveData
 
-Defined in: index.d.ts:2066
+Defined in: index.d.ts:2046
 
 统一风格型
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:2066
 
 > **baseHeight**: `number`
 
-Defined in: index.d.ts:2072
+Defined in: index.d.ts:2052
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:2072
 
 > **hierarchy**: [`Circle`](Circle.md) \| [`Rectangle`](Rectangle.md) \| [`PolygonHierarchy`](PolygonHierarchy.md)
 
-Defined in: index.d.ts:2071
+Defined in: index.d.ts:2051
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: index.d.ts:2071
 
 > **name**: `string`
 
-Defined in: index.d.ts:2068
+Defined in: index.d.ts:2048
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: index.d.ts:2068
 
 > **orientation**: [`HeadingPitchRoll`](HeadingPitchRoll.md)
 
-Defined in: index.d.ts:2076
+Defined in: index.d.ts:2056
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: index.d.ts:2076
 
 > **position**: [`Vector3`](Vector3.md)
 
-Defined in: index.d.ts:2069
+Defined in: index.d.ts:2049
 
 ***
 
@@ -56,7 +56,7 @@ Defined in: index.d.ts:2069
 
 > **positions**: `number`[] \| [`Vector3`](Vector3.md)[] \| [`Circle`](Circle.md) \| [`Rectangle`](Rectangle.md) \| [`Spline`](Spline.md)
 
-Defined in: index.d.ts:2070
+Defined in: index.d.ts:2050
 
 ***
 
@@ -64,7 +64,7 @@ Defined in: index.d.ts:2070
 
 > **properties**: `object`
 
-Defined in: index.d.ts:2077
+Defined in: index.d.ts:2057
 
 #### Index Signature
 
@@ -76,7 +76,7 @@ Defined in: index.d.ts:2077
 
 > **show**: `boolean`
 
-Defined in: index.d.ts:2067
+Defined in: index.d.ts:2047
 
 ***
 
@@ -84,7 +84,7 @@ Defined in: index.d.ts:2067
 
 > **stRotation**: `number`
 
-Defined in: index.d.ts:2075
+Defined in: index.d.ts:2055
 
 ***
 
@@ -92,7 +92,7 @@ Defined in: index.d.ts:2075
 
 > **text**: `string`
 
-Defined in: index.d.ts:2074
+Defined in: index.d.ts:2054
 
 ***
 
@@ -100,4 +100,4 @@ Defined in: index.d.ts:2074
 
 > **topHeight**: `number`
 
-Defined in: index.d.ts:2073
+Defined in: index.d.ts:2053

@@ -6,7 +6,7 @@
 
 # Interface: HemisphericParticleEmitter
 
-Defined in: index.d.ts:1923
+Defined in: index.d.ts:1903
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1923
 
 > **directionRandomizer**: `number`
 
-Defined in: index.d.ts:1927
+Defined in: index.d.ts:1907
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:1927
 
 > **radius**: `number`
 
-Defined in: index.d.ts:1925
+Defined in: index.d.ts:1905
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:1925
 
 > **radiusRange**: `number`
 
-Defined in: index.d.ts:1926
+Defined in: index.d.ts:1906
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: index.d.ts:1926
 
 > **type**: `"HemisphericParticleEmitter"`
 
-Defined in: index.d.ts:1924
+Defined in: index.d.ts:1904

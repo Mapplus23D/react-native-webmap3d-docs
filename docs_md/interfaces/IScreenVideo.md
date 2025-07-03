@@ -6,7 +6,7 @@
 
 # Interface: ~~IScreenVideo~~
 
-Defined in: index.d.ts:180
+Defined in: index.d.ts:168
 
 ## Deprecated
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:180
 
 > **endTime**: `number`
 
-Defined in: index.d.ts:191
+Defined in: index.d.ts:179
 
 视频时长
 
@@ -26,7 +26,7 @@ Defined in: index.d.ts:191
 
 > **entering**: [`ScreenEffect`](ScreenEffect.md)
 
-Defined in: index.d.ts:194
+Defined in: index.d.ts:182
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:194
 
 > **exiting**: [`ScreenEffect`](ScreenEffect.md)
 
-Defined in: index.d.ts:195
+Defined in: index.d.ts:183
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: index.d.ts:195
 
 > **height**: `number`
 
-Defined in: index.d.ts:189
+Defined in: index.d.ts:177
 
 视频原始高度
 
@@ -52,7 +52,7 @@ Defined in: index.d.ts:189
 
 > `optional` **isFull**: `boolean`
 
-Defined in: index.d.ts:192
+Defined in: index.d.ts:180
 
 ***
 
@@ -60,7 +60,7 @@ Defined in: index.d.ts:192
 
 > **name**: `string`
 
-Defined in: index.d.ts:182
+Defined in: index.d.ts:170
 
 屏幕动画名字
 
@@ -70,7 +70,7 @@ Defined in: index.d.ts:182
 
 > **position**: [`ScreenPosition`](../enumerations/ScreenPosition.md)
 
-Defined in: index.d.ts:193
+Defined in: index.d.ts:181
 
 ***
 
@@ -78,7 +78,7 @@ Defined in: index.d.ts:193
 
 > **startTime**: `number`
 
-Defined in: index.d.ts:185
+Defined in: index.d.ts:173
 
 开始时间。单位 秒
 
@@ -88,7 +88,7 @@ Defined in: index.d.ts:185
 
 > **videoUrl**: `string`
 
-Defined in: index.d.ts:183
+Defined in: index.d.ts:171
 
 ***
 
@@ -96,6 +96,6 @@ Defined in: index.d.ts:183
 
 > **width**: `number`
 
-Defined in: index.d.ts:187
+Defined in: index.d.ts:175
 
 视频原始宽度

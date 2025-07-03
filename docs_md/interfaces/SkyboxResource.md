@@ -6,7 +6,7 @@
 
 # Interface: SkyboxResource
 
-Defined in: index.d.ts:623
+Defined in: index.d.ts:603
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:623
 
 > **negativeX**: `string`
 
-Defined in: index.d.ts:625
+Defined in: index.d.ts:605
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:625
 
 > **negativeY**: `string`
 
-Defined in: index.d.ts:627
+Defined in: index.d.ts:607
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:627
 
 > **negativeZ**: `string`
 
-Defined in: index.d.ts:629
+Defined in: index.d.ts:609
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:629
 
 > **positiveX**: `string`
 
-Defined in: index.d.ts:624
+Defined in: index.d.ts:604
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:624
 
 > **positiveY**: `string`
 
-Defined in: index.d.ts:626
+Defined in: index.d.ts:606
 
 ***
 
@@ -54,4 +54,4 @@ Defined in: index.d.ts:626
 
 > **positiveZ**: `string`
 
-Defined in: index.d.ts:628
+Defined in: index.d.ts:608

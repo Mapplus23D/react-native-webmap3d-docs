@@ -8,4 +8,4 @@
 
 > **LayerAnimation** = [`LayerVisibilityAnimation`](../interfaces/LayerVisibilityAnimation.md) \| [`TerrainSetAnimation`](../interfaces/TerrainSetAnimation.md)
 
-Defined in: index.d.ts:822
+Defined in: index.d.ts:802

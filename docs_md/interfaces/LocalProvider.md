@@ -6,7 +6,7 @@
 
 # Interface: LocalProvider
 
-Defined in: index.d.ts:395
+Defined in: index.d.ts:383
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:395
 
 > **path**: `string`
 
-Defined in: index.d.ts:397
+Defined in: index.d.ts:385
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: index.d.ts:397
 
 > **type**: [`LOCAL`](../enumerations/ProviderType.md#local)
 
-Defined in: index.d.ts:396
+Defined in: index.d.ts:384

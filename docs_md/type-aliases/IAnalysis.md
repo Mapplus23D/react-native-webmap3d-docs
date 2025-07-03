@@ -8,11 +8,7 @@
 
 > **IAnalysis** = `object`
 
-Defined in: index.d.ts:2533
-
-地形分析模块
-
-在有地形的情况下，根据点生成线；根据经纬度获取地形坐标点；获取多个经纬度点的总距离
+Defined in: index.d.ts:2508
 
 ## Properties
 
@@ -20,7 +16,7 @@ Defined in: index.d.ts:2533
 
 > **distanceOfPoints**: (`points`) => `Promise`\<`number`\>
 
-Defined in: index.d.ts:2553
+Defined in: index.d.ts:2528
 
 获取指定经纬度点间距离
 
@@ -42,7 +38,7 @@ Defined in: index.d.ts:2553
 
 > **pickTerrainLine**: (`start`, `end`, `tolerance?`, `classificationType?`) => `Promise`\<[`Vector3`](../interfaces/Vector3.md)[]\>
 
-Defined in: index.d.ts:2541
+Defined in: index.d.ts:2516
 
 根据起点终点生成一条贴地形的线
 
@@ -82,7 +78,7 @@ Defined in: index.d.ts:2541
 
 > **pickTerrainPoint**: (`point`) => `Promise`\<[`Vector3`](../interfaces/Vector3.md) \| `undefined`\>
 
-Defined in: index.d.ts:2547
+Defined in: index.d.ts:2522
 
 获取指定经纬度点在地形上的点坐标
 

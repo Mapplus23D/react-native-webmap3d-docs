@@ -6,7 +6,7 @@
 
 # Enumeration: ProviderType
 
-Defined in: index.d.ts:385
+Defined in: index.d.ts:373
 
 地形影像等 provider 的类型
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:385
 
 > **BING**: `2`
 
-Defined in: index.d.ts:388
+Defined in: index.d.ts:376
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:388
 
 > **CHANGGUANG**: `6`
 
-Defined in: index.d.ts:392
+Defined in: index.d.ts:380
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: index.d.ts:392
 
 > **GRID**: `5`
 
-Defined in: index.d.ts:391
+Defined in: index.d.ts:379
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: index.d.ts:391
 
 > **LOCAL**: `10`
 
-Defined in: index.d.ts:393
+Defined in: index.d.ts:381
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: index.d.ts:393
 
 > **SCT**: `4`
 
-Defined in: index.d.ts:390
+Defined in: index.d.ts:378
 
 ***
 
@@ -56,7 +56,7 @@ Defined in: index.d.ts:390
 
 > **SUPERMAP**: `0`
 
-Defined in: index.d.ts:386
+Defined in: index.d.ts:374
 
 ***
 
@@ -64,7 +64,7 @@ Defined in: index.d.ts:386
 
 > **TEMPLATE**: `3`
 
-Defined in: index.d.ts:389
+Defined in: index.d.ts:377
 
 ***
 
@@ -72,4 +72,4 @@ Defined in: index.d.ts:389
 
 > **TIANDITU**: `1`
 
-Defined in: index.d.ts:387
+Defined in: index.d.ts:375

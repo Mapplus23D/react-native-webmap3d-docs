@@ -6,7 +6,7 @@
 
 # Interface: ParticleLayer
 
-Defined in: index.d.ts:1768
+Defined in: index.d.ts:1748
 
 粒子特效图层
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:1768
 
 > **name**: `string`
 
-Defined in: index.d.ts:1770
+Defined in: index.d.ts:1750
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:1770
 
 > **particles**: [`Particle`](Particle.md)[]
 
-Defined in: index.d.ts:1771
+Defined in: index.d.ts:1751
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: index.d.ts:1771
 
 > **visible**: `boolean`
 
-Defined in: index.d.ts:1769
+Defined in: index.d.ts:1749

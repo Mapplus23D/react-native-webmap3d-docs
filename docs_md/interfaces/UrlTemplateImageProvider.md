@@ -6,7 +6,7 @@
 
 # Interface: UrlTemplateImageProvider
 
-Defined in: index.d.ts:493
+Defined in: index.d.ts:481
 
 基于url的影像图层服务
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:493
 
 > `optional` **maximumLevel**: `number`
 
-Defined in: index.d.ts:500
+Defined in: index.d.ts:488
 
 最大层级 默认 不限制
 
@@ -26,7 +26,7 @@ Defined in: index.d.ts:500
 
 > `optional` **minimumLevel**: `number`
 
-Defined in: index.d.ts:498
+Defined in: index.d.ts:486
 
 最小层级 默认 0
 
@@ -36,7 +36,7 @@ Defined in: index.d.ts:498
 
 > `optional` **subdomains**: `string`[]
 
-Defined in: index.d.ts:502
+Defined in: index.d.ts:490
 
 url中用于 {s} 占位符的子域
 
@@ -46,7 +46,7 @@ url中用于 {s} 占位符的子域
 
 > `optional` **tilingSchemeType**: [`TilingSchemeType`](../enumerations/TilingSchemeType.md)
 
-Defined in: index.d.ts:504
+Defined in: index.d.ts:492
 
 球面影像平铺方案
 
@@ -56,7 +56,7 @@ Defined in: index.d.ts:504
 
 > **type**: [`TEMPLATE`](../enumerations/ProviderType.md#template)
 
-Defined in: index.d.ts:494
+Defined in: index.d.ts:482
 
 ***
 
@@ -64,6 +64,6 @@ Defined in: index.d.ts:494
 
 > **url**: `string`
 
-Defined in: index.d.ts:496
+Defined in: index.d.ts:484
 
 服务 url

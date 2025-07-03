@@ -6,7 +6,7 @@
 
 # Enumeration: FillType
 
-Defined in: index.d.ts:1539
+Defined in: index.d.ts:1519
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1539
 
 > **feather**: `5`
 
-Defined in: index.d.ts:1551
+Defined in: index.d.ts:1531
 
 羽化
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:1551
 
 > **gridding**: `2`
 
-Defined in: index.d.ts:1545
+Defined in: index.d.ts:1525
 
 网格
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:1545
 
 > **image**: `4`
 
-Defined in: index.d.ts:1549
+Defined in: index.d.ts:1529
 
 图片
 
@@ -44,7 +44,7 @@ Defined in: index.d.ts:1549
 
 > **nofill**: `0`
 
-Defined in: index.d.ts:1541
+Defined in: index.d.ts:1521
 
 无填充
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:1541
 
 > **solid**: `1`
 
-Defined in: index.d.ts:1543
+Defined in: index.d.ts:1523
 
 纯色面
 
@@ -64,6 +64,6 @@ Defined in: index.d.ts:1543
 
 > **stripe**: `3`
 
-Defined in: index.d.ts:1547
+Defined in: index.d.ts:1527
 
 条纹

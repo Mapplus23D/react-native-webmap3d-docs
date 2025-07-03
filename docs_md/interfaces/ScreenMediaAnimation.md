@@ -6,7 +6,7 @@
 
 # Interface: ScreenMediaAnimation
 
-Defined in: index.d.ts:802
+Defined in: index.d.ts:782
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:802
 
 > **action**: `"play"`
 
-Defined in: index.d.ts:804
+Defined in: index.d.ts:784
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: index.d.ts:804
 
 > **duration**: `number`
 
-Defined in: index.d.ts:792
+Defined in: index.d.ts:772
 
 #### Inherited from
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:792
 
 > **startTime**: `number`
 
-Defined in: index.d.ts:791
+Defined in: index.d.ts:771
 
 #### Inherited from
 
@@ -50,4 +50,4 @@ Defined in: index.d.ts:791
 
 > **type**: `"media"`
 
-Defined in: index.d.ts:803
+Defined in: index.d.ts:783

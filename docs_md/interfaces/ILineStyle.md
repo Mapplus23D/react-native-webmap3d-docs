@@ -6,7 +6,7 @@
 
 # Interface: ILineStyle
 
-Defined in: index.d.ts:3117
+Defined in: index.d.ts:3068
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:3117
 
 > **alwaysVisible**: `boolean`
 
-Defined in: index.d.ts:3129
+Defined in: index.d.ts:3080
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:3129
 
 > **breathFrenquency**: `number`
 
-Defined in: index.d.ts:3127
+Defined in: index.d.ts:3078
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:3127
 
 > **clampGroundType**: `"s3m"` \| `"none"` \| `"ground"` \| `"both"`
 
-Defined in: index.d.ts:3119
+Defined in: index.d.ts:3070
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:3119
 
 > **color**: `string`
 
-Defined in: index.d.ts:3120
+Defined in: index.d.ts:3071
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:3120
 
 > **dashColor**: `string`
 
-Defined in: index.d.ts:3122
+Defined in: index.d.ts:3073
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:3122
 
 > **dashGap**: `number`
 
-Defined in: index.d.ts:3124
+Defined in: index.d.ts:3075
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: index.d.ts:3124
 
 > **glowFactor**: `number`
 
-Defined in: index.d.ts:3126
+Defined in: index.d.ts:3077
 
 ***
 
@@ -70,7 +70,7 @@ Defined in: index.d.ts:3126
 
 > **keepFront**: `boolean`
 
-Defined in: index.d.ts:3131
+Defined in: index.d.ts:3082
 
 ***
 
@@ -78,7 +78,7 @@ Defined in: index.d.ts:3131
 
 > **outlieWidth**: `number`
 
-Defined in: index.d.ts:3125
+Defined in: index.d.ts:3076
 
 ***
 
@@ -86,7 +86,7 @@ Defined in: index.d.ts:3125
 
 > **outlineColor**: `string`
 
-Defined in: index.d.ts:3123
+Defined in: index.d.ts:3074
 
 ***
 
@@ -94,7 +94,7 @@ Defined in: index.d.ts:3123
 
 > **tailDuration**: `number`
 
-Defined in: index.d.ts:3128
+Defined in: index.d.ts:3079
 
 ***
 
@@ -102,7 +102,7 @@ Defined in: index.d.ts:3128
 
 > **type**: `"solid"` \| `"outline"` \| `"dash"` \| `"arrow"` \| `"glow"` \| `"breath"` \| `"tail"` \| `"wall"`
 
-Defined in: index.d.ts:3118
+Defined in: index.d.ts:3069
 
 ***
 
@@ -110,7 +110,7 @@ Defined in: index.d.ts:3118
 
 > **visibleDistance**: `number`
 
-Defined in: index.d.ts:3130
+Defined in: index.d.ts:3081
 
 ***
 
@@ -118,7 +118,7 @@ Defined in: index.d.ts:3130
 
 > **wallHeight**: `number`
 
-Defined in: index.d.ts:3132
+Defined in: index.d.ts:3083
 
 ***
 
@@ -126,4 +126,4 @@ Defined in: index.d.ts:3132
 
 > **width**: `number`
 
-Defined in: index.d.ts:3121
+Defined in: index.d.ts:3072

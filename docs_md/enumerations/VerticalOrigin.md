@@ -6,7 +6,7 @@
 
 # Enumeration: VerticalOrigin
 
-Defined in: index.d.ts:1312
+Defined in: index.d.ts:1292
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1312
 
 > **baseline**: `3`
 
-Defined in: index.d.ts:1315
+Defined in: index.d.ts:1295
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:1315
 
 > **bottom**: `4`
 
-Defined in: index.d.ts:1316
+Defined in: index.d.ts:1296
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:1316
 
 > **center**: `2`
 
-Defined in: index.d.ts:1314
+Defined in: index.d.ts:1294
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: index.d.ts:1314
 
 > **top**: `1`
 
-Defined in: index.d.ts:1313
+Defined in: index.d.ts:1293

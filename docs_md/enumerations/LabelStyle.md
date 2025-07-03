@@ -6,7 +6,7 @@
 
 # Enumeration: LabelStyle
 
-Defined in: index.d.ts:1323
+Defined in: index.d.ts:1303
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1323
 
 > **FILL**: `1`
 
-Defined in: index.d.ts:1324
+Defined in: index.d.ts:1304
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:1324
 
 > **FILL\_AND\_OUTLINE**: `2`
 
-Defined in: index.d.ts:1325
+Defined in: index.d.ts:1305
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: index.d.ts:1325
 
 > **OUTLINE**: `3`
 
-Defined in: index.d.ts:1326
+Defined in: index.d.ts:1306

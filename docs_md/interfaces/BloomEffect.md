@@ -6,7 +6,7 @@
 
 # Interface: BloomEffect
 
-Defined in: index.d.ts:263
+Defined in: index.d.ts:251
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:263
 
 > `optional` **bloomIntensity**: `number`
 
-Defined in: index.d.ts:266
+Defined in: index.d.ts:254
 
 泛光强度值
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:266
 
 > `optional` **enable**: `boolean`
 
-Defined in: index.d.ts:264
+Defined in: index.d.ts:252
 
 ***
 
@@ -32,6 +32,6 @@ Defined in: index.d.ts:264
 
 > `optional` **threshold**: `number`
 
-Defined in: index.d.ts:268
+Defined in: index.d.ts:256
 
 泛光亮度阈值

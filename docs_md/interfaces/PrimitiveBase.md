@@ -6,7 +6,7 @@
 
 # Interface: PrimitiveBase
 
-Defined in: index.d.ts:2149
+Defined in: index.d.ts:2129
 
 ## Extended by
 
@@ -35,7 +35,7 @@ Defined in: index.d.ts:2149
 
 > `optional` **distanceDisplayCondition**: [`DistanceDisplayCondition`](DistanceDisplayCondition.md)
 
-Defined in: index.d.ts:2155
+Defined in: index.d.ts:2135
 
 可见范围
 
@@ -45,7 +45,7 @@ Defined in: index.d.ts:2155
 
 > `optional` **name**: `string`
 
-Defined in: index.d.ts:2158
+Defined in: index.d.ts:2138
 
 primitive 名称
 
@@ -55,7 +55,7 @@ primitive 名称
 
 > `optional` **properties**: `object`
 
-Defined in: index.d.ts:2160
+Defined in: index.d.ts:2140
 
 属性字段
 
@@ -69,7 +69,7 @@ Defined in: index.d.ts:2160
 
 > `optional` **show**: `boolean`
 
-Defined in: index.d.ts:2153
+Defined in: index.d.ts:2133
 
 是否显示，默认true
 
@@ -79,6 +79,6 @@ Defined in: index.d.ts:2153
 
 > **type**: [`PrimitiveType`](../enumerations/PrimitiveType.md)
 
-Defined in: index.d.ts:2151
+Defined in: index.d.ts:2131
 
 类型

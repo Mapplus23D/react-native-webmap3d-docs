@@ -6,7 +6,7 @@
 
 # Interface: S3MTilesLayerBase
 
-Defined in: index.d.ts:324
+Defined in: index.d.ts:312
 
 ## Extended by
 
@@ -19,7 +19,7 @@ Defined in: index.d.ts:324
 
 > **name**: `string`
 
-Defined in: index.d.ts:326
+Defined in: index.d.ts:314
 
 图层名
 
@@ -29,6 +29,6 @@ Defined in: index.d.ts:326
 
 > **visible**: `boolean`
 
-Defined in: index.d.ts:328
+Defined in: index.d.ts:316
 
 图层是否可见,默认可见

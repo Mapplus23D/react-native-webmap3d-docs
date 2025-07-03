@@ -6,7 +6,7 @@
 
 # Enumeration: WeatherType
 
-Defined in: index.d.ts:1747
+Defined in: index.d.ts:1727
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1747
 
 > **NONE**: `1`
 
-Defined in: index.d.ts:1749
+Defined in: index.d.ts:1729
 
 没有天气特效
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:1749
 
 > **RAIN**: `2`
 
-Defined in: index.d.ts:1751
+Defined in: index.d.ts:1731
 
 雨
 
@@ -34,6 +34,6 @@ Defined in: index.d.ts:1751
 
 > **SNOW**: `3`
 
-Defined in: index.d.ts:1753
+Defined in: index.d.ts:1733
 
 雪

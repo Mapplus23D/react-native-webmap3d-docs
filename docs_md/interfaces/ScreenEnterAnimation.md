@@ -6,7 +6,7 @@
 
 # Interface: ScreenEnterAnimation
 
-Defined in: index.d.ts:794
+Defined in: index.d.ts:774
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:794
 
 > **duration**: `number`
 
-Defined in: index.d.ts:792
+Defined in: index.d.ts:772
 
 #### Inherited from
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:792
 
 > **effect**: [`ScreenEnterFly`](ScreenEnterFly.md) \| [`ScreenEnterAppear`](ScreenEnterAppear.md)
 
-Defined in: index.d.ts:796
+Defined in: index.d.ts:776
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:796
 
 > **startTime**: `number`
 
-Defined in: index.d.ts:791
+Defined in: index.d.ts:771
 
 #### Inherited from
 
@@ -50,4 +50,4 @@ Defined in: index.d.ts:791
 
 > **type**: `"enter"`
 
-Defined in: index.d.ts:795
+Defined in: index.d.ts:775

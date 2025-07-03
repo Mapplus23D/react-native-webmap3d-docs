@@ -6,7 +6,7 @@
 
 # Interface: ScreenEffect
 
-Defined in: index.d.ts:208
+Defined in: index.d.ts:196
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:208
 
 > **duration**: `number`
 
-Defined in: index.d.ts:212
+Defined in: index.d.ts:200
 
 时长，单位 毫秒
 
@@ -24,6 +24,6 @@ Defined in: index.d.ts:212
 
 > **effect**: [`EffectType`](../type-aliases/EffectType.md)
 
-Defined in: index.d.ts:210
+Defined in: index.d.ts:198
 
 效果

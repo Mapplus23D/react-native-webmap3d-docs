@@ -6,7 +6,7 @@
 
 # Interface: FlyForwardParam
 
-Defined in: index.d.ts:1051
+Defined in: index.d.ts:1031
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1051
 
 > **focus**: [`Vector3`](Vector3.md)
 
-Defined in: index.d.ts:1057
+Defined in: index.d.ts:1037
 
 焦点
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:1057
 
 > `optional` **forwardDistanceRatio**: `number`
 
-Defined in: index.d.ts:1059
+Defined in: index.d.ts:1039
 
 推进比率(推进距离占起点焦点间距比率)，默认0.8
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:1059
 
 > `optional` **heading**: `number`
 
-Defined in: index.d.ts:1061
+Defined in: index.d.ts:1041
 
 站点朝向角度
 
@@ -44,7 +44,7 @@ Defined in: index.d.ts:1061
 
 > **presetType**: [`forward`](../enumerations/FlyPresetType.md#forward)
 
-Defined in: index.d.ts:1053
+Defined in: index.d.ts:1033
 
 预制类型
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:1053
 
 > **start**: [`Vector3`](Vector3.md)
 
-Defined in: index.d.ts:1055
+Defined in: index.d.ts:1035
 
 飞行起点
 
@@ -64,6 +64,6 @@ Defined in: index.d.ts:1055
 
 > `optional` **tilt**: `number`
 
-Defined in: index.d.ts:1063
+Defined in: index.d.ts:1043
 
 站点俯仰角度

@@ -6,7 +6,7 @@
 
 # Interface: ScreenShot
 
-Defined in: index.d.ts:2034
+Defined in: index.d.ts:2014
 
 截图参数
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:2034
 
 > **fileName**: `string`
 
-Defined in: index.d.ts:2050
+Defined in: index.d.ts:2030
 
 图片名称
 
@@ -26,7 +26,7 @@ Defined in: index.d.ts:2050
 
 > **format**: `"jpg"` \| `"png"` \| `"jpeg"`
 
-Defined in: index.d.ts:2046
+Defined in: index.d.ts:2026
 
 图片格式
 
@@ -36,7 +36,7 @@ Defined in: index.d.ts:2046
 
 > **height**: `number`
 
-Defined in: index.d.ts:2042
+Defined in: index.d.ts:2022
 
 图片高度
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:2042
 
 > **quality**: `number`
 
-Defined in: index.d.ts:2052
+Defined in: index.d.ts:2032
 
 图片质量 0-1，默认1
 
@@ -56,7 +56,7 @@ Defined in: index.d.ts:2052
 
 > **radio**: `number`
 
-Defined in: index.d.ts:2044
+Defined in: index.d.ts:2024
 
 图片高宽比例
 
@@ -66,7 +66,7 @@ Defined in: index.d.ts:2044
 
 > **toPath**: `string`
 
-Defined in: index.d.ts:2048
+Defined in: index.d.ts:2028
 
 图片保存地址
 
@@ -76,7 +76,7 @@ Defined in: index.d.ts:2048
 
 > **width**: `number`
 
-Defined in: index.d.ts:2040
+Defined in: index.d.ts:2020
 
 图片宽度
 
@@ -86,7 +86,7 @@ Defined in: index.d.ts:2040
 
 > **x**: `number`
 
-Defined in: index.d.ts:2036
+Defined in: index.d.ts:2016
 
 裁剪起始点x
 
@@ -96,6 +96,6 @@ Defined in: index.d.ts:2036
 
 > **y**: `number`
 
-Defined in: index.d.ts:2038
+Defined in: index.d.ts:2018
 
 裁剪起始点y

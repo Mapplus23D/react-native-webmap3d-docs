@@ -8,15 +8,7 @@
 
 > **IGeometrist** = `object`
 
-Defined in: index.d.ts:4262
-
-矢量数据管理
-
-点串转换为箭头线、矩形、圆
-
-根据两点计算朝向
-
-重采样，相交，合并，平滑，擦出，样条
+Defined in: index.d.ts:4197
 
 ## Properties
 
@@ -24,7 +16,7 @@ Defined in: index.d.ts:4262
 
 > **arrowWithLineSegment**: (`start`, `end`, `lineWidth?`, `lineLength?`, `byPercent?`) => `number`[]
 
-Defined in: index.d.ts:4286
+Defined in: index.d.ts:4221
 
 由直线段生成箭头
 
@@ -72,7 +64,7 @@ Defined in: index.d.ts:4286
 
 > **headingCompute**: (`center`, `point`) => `number`
 
-Defined in: index.d.ts:4320
+Defined in: index.d.ts:4255
 
 heading
 
@@ -98,7 +90,7 @@ heading
 
 > **pointsOfCatmullRomSpline**: (`controlPoints`, `count`) => `number`[]
 
-Defined in: index.d.ts:4269
+Defined in: index.d.ts:4204
 
 Catmull-ROM样条
 
@@ -126,7 +118,7 @@ Catmull-ROM样条
 
 > **pointsOfCircle**: (`center`, `radius`, `count?`) => `number`[]
 
-Defined in: index.d.ts:4294
+Defined in: index.d.ts:4229
 
 圆形
 
@@ -162,7 +154,7 @@ Defined in: index.d.ts:4294
 
 > **pointsOfHermiteSpline**: (`controlPoints`, `count`) => `number`[]
 
-Defined in: index.d.ts:4276
+Defined in: index.d.ts:4211
 
 埃尔米特样条
 
@@ -190,7 +182,7 @@ Defined in: index.d.ts:4276
 
 > **pointsOfRectangle**: (`center`, `w`, `h`, `heading`) => `number`[]
 
-Defined in: index.d.ts:4308
+Defined in: index.d.ts:4243
 
 矩形
 
@@ -232,7 +224,7 @@ Defined in: index.d.ts:4308
 
 > **polygonErase**: (`erase`, `srcPolygon`) => [`PolygonHierarchy`](../interfaces/PolygonHierarchy.md)[]
 
-Defined in: index.d.ts:4341
+Defined in: index.d.ts:4276
 
 面擦除
 
@@ -256,7 +248,7 @@ Defined in: index.d.ts:4341
 
 > **polygonIntersect**: (`polygon1`, `polygon2`) => [`PolygonHierarchy`](../interfaces/PolygonHierarchy.md)[]
 
-Defined in: index.d.ts:4327
+Defined in: index.d.ts:4262
 
 面相交
 
@@ -280,7 +272,7 @@ Defined in: index.d.ts:4327
 
 > **polygonUnion**: (`polygon1`, `polygon2`) => [`PolygonHierarchy`](../interfaces/PolygonHierarchy.md)[]
 
-Defined in: index.d.ts:4334
+Defined in: index.d.ts:4269
 
 面合并
 
@@ -304,7 +296,7 @@ Defined in: index.d.ts:4334
 
 > **resampleLine**: (`line`, `tolerance?`) => `number`[]
 
-Defined in: index.d.ts:4348
+Defined in: index.d.ts:4283
 
 线重采样
 
@@ -330,7 +322,7 @@ Defined in: index.d.ts:4348
 
 > **resamplePolygon**: (`polygon`, `tolerance?`) => [`PolygonHierarchy`](../interfaces/PolygonHierarchy.md) \| `undefined`
 
-Defined in: index.d.ts:4355
+Defined in: index.d.ts:4290
 
 面重采样
 
@@ -356,7 +348,7 @@ Defined in: index.d.ts:4355
 
 > **smoothLine**: (`line`, `smoothness?`) => `number`[]
 
-Defined in: index.d.ts:4362
+Defined in: index.d.ts:4297
 
 线平滑
 
@@ -382,7 +374,7 @@ Defined in: index.d.ts:4362
 
 > **smoothPolygon**: (`polygon`, `smoothness?`) => [`PolygonHierarchy`](../interfaces/PolygonHierarchy.md) \| `undefined`
 
-Defined in: index.d.ts:4369
+Defined in: index.d.ts:4304
 
 面平滑
 

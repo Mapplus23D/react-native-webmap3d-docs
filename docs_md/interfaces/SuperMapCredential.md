@@ -6,7 +6,7 @@
 
 # Interface: SuperMapCredential
 
-Defined in: index.d.ts:400
+Defined in: index.d.ts:388
 
 SuperMap IServer 发布的服务的认证信息
 
@@ -16,7 +16,7 @@ SuperMap IServer 发布的服务的认证信息
 
 > **rootUrl**: `string`
 
-Defined in: index.d.ts:402
+Defined in: index.d.ts:390
 
 服务地址
 
@@ -26,7 +26,7 @@ Defined in: index.d.ts:402
 
 > **type**: `"key"` \| `"token"`
 
-Defined in: index.d.ts:404
+Defined in: index.d.ts:392
 
 类型
 
@@ -36,6 +36,6 @@ Defined in: index.d.ts:404
 
 > **value**: `string`
 
-Defined in: index.d.ts:406
+Defined in: index.d.ts:394
 
 token 或 key 的值

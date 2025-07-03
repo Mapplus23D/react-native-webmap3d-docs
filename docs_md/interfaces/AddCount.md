@@ -6,7 +6,7 @@
 
 # Interface: AddCount
 
-Defined in: index.d.ts:666
+Defined in: index.d.ts:646
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:666
 
 > **audioCount**: `number`
 
-Defined in: index.d.ts:669
+Defined in: index.d.ts:649
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:669
 
 > **flyCount**: `number`
 
-Defined in: index.d.ts:667
+Defined in: index.d.ts:647
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:667
 
 > **layerCount**: `number`
 
-Defined in: index.d.ts:674
+Defined in: index.d.ts:654
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:674
 
 > **objectCount**: `number`
 
-Defined in: index.d.ts:668
+Defined in: index.d.ts:648
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:668
 
 > **objectLayerCount**: `number`
 
-Defined in: index.d.ts:671
+Defined in: index.d.ts:651
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:671
 
 > **particleLayerCount**: `number`
 
-Defined in: index.d.ts:673
+Defined in: index.d.ts:653
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: index.d.ts:673
 
 > **sceneCount**: `number`
 
-Defined in: index.d.ts:675
+Defined in: index.d.ts:655
 
 ***
 
@@ -70,7 +70,7 @@ Defined in: index.d.ts:675
 
 > **screenLayerCount**: `number`
 
-Defined in: index.d.ts:672
+Defined in: index.d.ts:652
 
 ***
 
@@ -78,4 +78,4 @@ Defined in: index.d.ts:672
 
 > **soundCount**: `number`
 
-Defined in: index.d.ts:670
+Defined in: index.d.ts:650

@@ -6,7 +6,7 @@
 
 # Interface: TiandituImageProvider
 
-Defined in: index.d.ts:473
+Defined in: index.d.ts:461
 
 天地图影像图层参数
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:473
 
 > **mapStyle**: [`TiandituMapsStyle`](../enumerations/TiandituMapsStyle.md)
 
-Defined in: index.d.ts:476
+Defined in: index.d.ts:464
 
 天地图服务类型
 
@@ -26,7 +26,7 @@ Defined in: index.d.ts:476
 
 > `optional` **maximumLevel**: `number`
 
-Defined in: index.d.ts:482
+Defined in: index.d.ts:470
 
 最大层级 默认 不限制
 
@@ -36,7 +36,7 @@ Defined in: index.d.ts:482
 
 > `optional` **minimumLevel**: `number`
 
-Defined in: index.d.ts:480
+Defined in: index.d.ts:468
 
 最小层级 默认 0
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:480
 
 > **token**: `string`
 
-Defined in: index.d.ts:478
+Defined in: index.d.ts:466
 
 天地图访问 token
 
@@ -56,4 +56,4 @@ Defined in: index.d.ts:478
 
 > **type**: [`TIANDITU`](../enumerations/ProviderType.md#tianditu)
 
-Defined in: index.d.ts:474
+Defined in: index.d.ts:462

@@ -8,4 +8,4 @@
 
 > **BBox** = [`BBox2d`](BBox2d.md) \| [`BBox3d`](BBox3d.md)
 
-Defined in: index.d.ts:2939
+Defined in: index.d.ts:2890

@@ -8,7 +8,7 @@
 
 > **Id** = `string` \| `number`
 
-Defined in: index.d.ts:2947
+Defined in: index.d.ts:2898
 
 Id
 

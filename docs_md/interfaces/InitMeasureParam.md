@@ -6,7 +6,7 @@
 
 # Interface: InitMeasureParam
 
-Defined in: index.d.ts:2842
+Defined in: index.d.ts:2797
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:2842
 
 > `optional` **clampMode**: [`ClampType`](../enumerations/ClampType.md)
 
-Defined in: index.d.ts:2844
+Defined in: index.d.ts:2799
 
 绘制，量算几何对象风格类型
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:2844
 
 > `optional` **ellipsoidType**: [`EllipsoidType`](../enumerations/EllipsoidType.md)
 
-Defined in: index.d.ts:2846
+Defined in: index.d.ts:2801
 
 椭球类型
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:2846
 
 > `optional` **isShowContourLine**: `boolean`
 
-Defined in: index.d.ts:2850
+Defined in: index.d.ts:2805
 
 是否显示等高线
 
@@ -44,6 +44,6 @@ Defined in: index.d.ts:2850
 
 > `optional` **isShowLabel**: `boolean`
 
-Defined in: index.d.ts:2848
+Defined in: index.d.ts:2803
 
 是否显示标签

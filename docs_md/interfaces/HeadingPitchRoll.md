@@ -6,7 +6,7 @@
 
 # Interface: HeadingPitchRoll
 
-Defined in: index.d.ts:1240
+Defined in: index.d.ts:1220
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1240
 
 > **heading**: `number`
 
-Defined in: index.d.ts:1241
+Defined in: index.d.ts:1221
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:1241
 
 > **pitch**: `number`
 
-Defined in: index.d.ts:1242
+Defined in: index.d.ts:1222
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: index.d.ts:1242
 
 > **roll**: `number`
 
-Defined in: index.d.ts:1243
+Defined in: index.d.ts:1223

@@ -6,7 +6,7 @@
 
 # Interface: SphereParticleEmitter
 
-Defined in: index.d.ts:1942
+Defined in: index.d.ts:1922
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1942
 
 > **directionRandomizer**: `number`
 
-Defined in: index.d.ts:1946
+Defined in: index.d.ts:1926
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:1946
 
 > **radius**: `number`
 
-Defined in: index.d.ts:1944
+Defined in: index.d.ts:1924
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:1944
 
 > **radiusRange**: `number`
 
-Defined in: index.d.ts:1945
+Defined in: index.d.ts:1925
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: index.d.ts:1945
 
 > **type**: `"SphereParticleEmitter"`
 
-Defined in: index.d.ts:1943
+Defined in: index.d.ts:1923

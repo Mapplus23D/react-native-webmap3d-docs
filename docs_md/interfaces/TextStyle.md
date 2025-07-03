@@ -6,7 +6,7 @@
 
 # Interface: ~~TextStyle~~
 
-Defined in: index.d.ts:121
+Defined in: index.d.ts:109
 
 ## Deprecated
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:121
 
 > `optional` **color**: `string`
 
-Defined in: index.d.ts:122
+Defined in: index.d.ts:110
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:122
 
 > `optional` **fontFamily**: `string`
 
-Defined in: index.d.ts:124
+Defined in: index.d.ts:112
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: index.d.ts:124
 
 > `optional` **fontSize**: `number`
 
-Defined in: index.d.ts:123
+Defined in: index.d.ts:111
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: index.d.ts:123
 
 > `optional` **textShadowColor**: `string`
 
-Defined in: index.d.ts:125
+Defined in: index.d.ts:113
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: index.d.ts:125
 
 > `optional` **textShadowOffset**: `object`
 
-Defined in: index.d.ts:126
+Defined in: index.d.ts:114
 
 #### ~~height~~
 
@@ -64,4 +64,4 @@ Defined in: index.d.ts:126
 
 > `optional` **textShadowRadius**: `number`
 
-Defined in: index.d.ts:130
+Defined in: index.d.ts:118

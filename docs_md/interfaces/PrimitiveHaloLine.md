@@ -6,7 +6,7 @@
 
 # Interface: PrimitiveHaloLine
 
-Defined in: index.d.ts:2350
+Defined in: index.d.ts:2330
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:2350
 
 > `optional` **classificationType**: [`ClassificationType`](../enumerations/ClassificationType.md)
 
-Defined in: index.d.ts:2362
+Defined in: index.d.ts:2342
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: index.d.ts:2362
 
 > `optional` **color**: `string`
 
-Defined in: index.d.ts:2357
+Defined in: index.d.ts:2337
 
 填充颜色
 
@@ -36,7 +36,7 @@ Defined in: index.d.ts:2357
 
 > `optional` **depthFailShow**: `boolean`
 
-Defined in: index.d.ts:2361
+Defined in: index.d.ts:2341
 
 是否被地形遮挡 默认false被遮挡
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:2361
 
 > `optional` **distanceDisplayCondition**: [`DistanceDisplayCondition`](DistanceDisplayCondition.md)
 
-Defined in: index.d.ts:2155
+Defined in: index.d.ts:2135
 
 可见范围
 
@@ -60,7 +60,7 @@ Defined in: index.d.ts:2155
 
 > `optional` **glowPower**: `number`
 
-Defined in: index.d.ts:2359
+Defined in: index.d.ts:2339
 
 光晕强度glowLinePower
 
@@ -70,7 +70,7 @@ Defined in: index.d.ts:2359
 
 > `optional` **name**: `string`
 
-Defined in: index.d.ts:2158
+Defined in: index.d.ts:2138
 
 primitive 名称
 
@@ -84,7 +84,7 @@ primitive 名称
 
 > **positions**: `number`[] \| [`Vector3`](Vector3.md)[] \| [`Circle`](Circle.md) \| [`Rectangle`](Rectangle.md) \| [`Spline`](Spline.md)
 
-Defined in: index.d.ts:2353
+Defined in: index.d.ts:2333
 
 节点位置
 
@@ -94,7 +94,7 @@ Defined in: index.d.ts:2353
 
 > `optional` **properties**: `object`
 
-Defined in: index.d.ts:2160
+Defined in: index.d.ts:2140
 
 属性字段
 
@@ -112,7 +112,7 @@ Defined in: index.d.ts:2160
 
 > `optional` **show**: `boolean`
 
-Defined in: index.d.ts:2153
+Defined in: index.d.ts:2133
 
 是否显示，默认true
 
@@ -126,7 +126,7 @@ Defined in: index.d.ts:2153
 
 > **type**: [`HaloLine`](../enumerations/PrimitiveType.md#haloline)
 
-Defined in: index.d.ts:2351
+Defined in: index.d.ts:2331
 
 类型
 
@@ -140,6 +140,6 @@ Defined in: index.d.ts:2351
 
 > `optional` **width**: `number`
 
-Defined in: index.d.ts:2355
+Defined in: index.d.ts:2335
 
 线宽度

@@ -6,7 +6,7 @@
 
 # Interface: PrimitiveSolidPoint
 
-Defined in: index.d.ts:2166
+Defined in: index.d.ts:2146
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:2166
 
 > `optional` **color**: `string`
 
-Defined in: index.d.ts:2173
+Defined in: index.d.ts:2153
 
 填充颜色
 
@@ -28,7 +28,7 @@ Defined in: index.d.ts:2173
 
 > `optional` **disableDepthTestDistance**: `number`
 
-Defined in: index.d.ts:2179
+Defined in: index.d.ts:2159
 
 遮挡深度
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:2179
 
 > `optional` **distanceDisplayCondition**: [`DistanceDisplayCondition`](DistanceDisplayCondition.md)
 
-Defined in: index.d.ts:2155
+Defined in: index.d.ts:2135
 
 可见范围
 
@@ -52,7 +52,7 @@ Defined in: index.d.ts:2155
 
 > `optional` **heightReference**: [`HeightReference`](../enumerations/HeightReference.md)
 
-Defined in: index.d.ts:2183
+Defined in: index.d.ts:2163
 
 相对地形的位置
 
@@ -62,7 +62,7 @@ Defined in: index.d.ts:2183
 
 > `optional` **name**: `string`
 
-Defined in: index.d.ts:2158
+Defined in: index.d.ts:2138
 
 primitive 名称
 
@@ -76,7 +76,7 @@ primitive 名称
 
 > `optional` **outlineColor**: `string`
 
-Defined in: index.d.ts:2175
+Defined in: index.d.ts:2155
 
 轮廓颜色，默认黑色
 
@@ -86,7 +86,7 @@ Defined in: index.d.ts:2175
 
 > `optional` **outlineWidth**: `number`
 
-Defined in: index.d.ts:2177
+Defined in: index.d.ts:2157
 
 轮廓宽度，默认0
 
@@ -96,7 +96,7 @@ Defined in: index.d.ts:2177
 
 > **position**: [`Vector3`](Vector3.md)
 
-Defined in: index.d.ts:2169
+Defined in: index.d.ts:2149
 
 位置
 
@@ -106,7 +106,7 @@ Defined in: index.d.ts:2169
 
 > `optional` **properties**: `object`
 
-Defined in: index.d.ts:2160
+Defined in: index.d.ts:2140
 
 属性字段
 
@@ -124,7 +124,7 @@ Defined in: index.d.ts:2160
 
 > `optional` **scaleByDistance**: [`NearFarScalar`](NearFarScalar.md)
 
-Defined in: index.d.ts:2181
+Defined in: index.d.ts:2161
 
 随距离缩放参数，默认undefine表示不随距离缩放
 
@@ -134,7 +134,7 @@ Defined in: index.d.ts:2181
 
 > `optional` **show**: `boolean`
 
-Defined in: index.d.ts:2153
+Defined in: index.d.ts:2133
 
 是否显示，默认true
 
@@ -148,7 +148,7 @@ Defined in: index.d.ts:2153
 
 > `optional` **size**: `number`
 
-Defined in: index.d.ts:2171
+Defined in: index.d.ts:2151
 
 大小pixelSize
 
@@ -158,7 +158,7 @@ Defined in: index.d.ts:2171
 
 > **type**: [`SolidPoint`](../enumerations/PrimitiveType.md#solidpoint)
 
-Defined in: index.d.ts:2167
+Defined in: index.d.ts:2147
 
 类型
 

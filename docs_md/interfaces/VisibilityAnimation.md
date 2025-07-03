@@ -6,7 +6,7 @@
 
 # Interface: VisibilityAnimation
 
-Defined in: index.d.ts:1168
+Defined in: index.d.ts:1148
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:1168
 
 > **duration**: `number`
 
-Defined in: index.d.ts:1107
+Defined in: index.d.ts:1087
 
 动画持续时间，单位秒
 
@@ -32,7 +32,7 @@ Defined in: index.d.ts:1107
 
 > **initialShow**: `boolean`
 
-Defined in: index.d.ts:1171
+Defined in: index.d.ts:1151
 
 开始动画时是否显示
 
@@ -42,7 +42,7 @@ Defined in: index.d.ts:1171
 
 > **interval**: `number`
 
-Defined in: index.d.ts:1173
+Defined in: index.d.ts:1153
 
 切换一次显隐的时间，单位 秒。若和duration一样，则整个动画显隐切换一次
 
@@ -52,7 +52,7 @@ Defined in: index.d.ts:1173
 
 > `optional` **layerName**: `string`
 
-Defined in: index.d.ts:1111
+Defined in: index.d.ts:1091
 
 矢量图层名
 
@@ -66,7 +66,7 @@ Defined in: index.d.ts:1111
 
 > **name**: `string`
 
-Defined in: index.d.ts:1103
+Defined in: index.d.ts:1083
 
 #### Inherited from
 
@@ -78,7 +78,7 @@ Defined in: index.d.ts:1103
 
 > `optional` **repeatCount**: `number`
 
-Defined in: index.d.ts:1109
+Defined in: index.d.ts:1089
 
 重复次数
 
@@ -92,7 +92,7 @@ Defined in: index.d.ts:1109
 
 > **startTime**: `number`
 
-Defined in: index.d.ts:1105
+Defined in: index.d.ts:1085
 
 开始时间，单位秒
 
@@ -106,7 +106,7 @@ Defined in: index.d.ts:1105
 
 > **target**: `string`
 
-Defined in: index.d.ts:1113
+Defined in: index.d.ts:1093
 
 对象 id
 
@@ -120,4 +120,4 @@ Defined in: index.d.ts:1113
 
 > **type**: [`VISIBILITY`](../enumerations/AnimatorType.md#visibility)
 
-Defined in: index.d.ts:1169
+Defined in: index.d.ts:1149

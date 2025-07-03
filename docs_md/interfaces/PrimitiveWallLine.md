@@ -6,7 +6,7 @@
 
 # Interface: PrimitiveWallLine
 
-Defined in: index.d.ts:2364
+Defined in: index.d.ts:2344
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:2364
 
 > `optional` **baseHeight**: `number`
 
-Defined in: index.d.ts:2371
+Defined in: index.d.ts:2351
 
 底面高度
 
@@ -28,7 +28,7 @@ Defined in: index.d.ts:2371
 
 > `optional` **color**: `string`
 
-Defined in: index.d.ts:2369
+Defined in: index.d.ts:2349
 
 填充颜色
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:2369
 
 > `optional` **distanceDisplayCondition**: [`DistanceDisplayCondition`](DistanceDisplayCondition.md)
 
-Defined in: index.d.ts:2155
+Defined in: index.d.ts:2135
 
 可见范围
 
@@ -52,7 +52,7 @@ Defined in: index.d.ts:2155
 
 > `optional` **name**: `string`
 
-Defined in: index.d.ts:2158
+Defined in: index.d.ts:2138
 
 primitive 名称
 
@@ -66,7 +66,7 @@ primitive 名称
 
 > **positions**: `number`[] \| [`Vector3`](Vector3.md)[] \| [`Circle`](Circle.md) \| [`Rectangle`](Rectangle.md) \| [`Spline`](Spline.md)
 
-Defined in: index.d.ts:2367
+Defined in: index.d.ts:2347
 
 节点位置(墙顶的顶点数组)
 
@@ -76,7 +76,7 @@ Defined in: index.d.ts:2367
 
 > `optional` **properties**: `object`
 
-Defined in: index.d.ts:2160
+Defined in: index.d.ts:2140
 
 属性字段
 
@@ -94,7 +94,7 @@ Defined in: index.d.ts:2160
 
 > `optional` **show**: `boolean`
 
-Defined in: index.d.ts:2153
+Defined in: index.d.ts:2133
 
 是否显示，默认true
 
@@ -108,7 +108,7 @@ Defined in: index.d.ts:2153
 
 > `optional` **topHeight**: `number`
 
-Defined in: index.d.ts:2373
+Defined in: index.d.ts:2353
 
 顶面高度
 
@@ -118,7 +118,7 @@ Defined in: index.d.ts:2373
 
 > **type**: [`WallLine`](../enumerations/PrimitiveType.md#wallline)
 
-Defined in: index.d.ts:2365
+Defined in: index.d.ts:2345
 
 类型
 

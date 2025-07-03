@@ -6,7 +6,7 @@
 
 # Interface: ClientOption
 
-Defined in: index.d.ts:5018
+Defined in: index.d.ts:4931
 
 ## Properties
 
@@ -14,4 +14,4 @@ Defined in: index.d.ts:5018
 
 > `optional` **clientPort**: `number`
 
-Defined in: index.d.ts:5019
+Defined in: index.d.ts:4932

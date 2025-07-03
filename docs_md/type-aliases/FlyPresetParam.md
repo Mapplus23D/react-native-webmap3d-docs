@@ -8,4 +8,4 @@
 
 > **FlyPresetParam** = [`FlyForwardAroundBackwardParam`](../interfaces/FlyForwardAroundBackwardParam.md) \| [`FlyForwardParam`](../interfaces/FlyForwardParam.md) \| [`FlyBackwardParam`](../interfaces/FlyBackwardParam.md)
 
-Defined in: index.d.ts:1079
+Defined in: index.d.ts:1059

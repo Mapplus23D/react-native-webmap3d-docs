@@ -6,7 +6,7 @@
 
 # Interface: PrimitiveModel
 
-Defined in: index.d.ts:2274
+Defined in: index.d.ts:2254
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:2274
 
 > `optional` **distanceDisplayCondition**: [`DistanceDisplayCondition`](DistanceDisplayCondition.md)
 
-Defined in: index.d.ts:2155
+Defined in: index.d.ts:2135
 
 可见范围
 
@@ -32,7 +32,7 @@ Defined in: index.d.ts:2155
 
 > `optional` **heightReference**: [`HeightReference`](../enumerations/HeightReference.md)
 
-Defined in: index.d.ts:2287
+Defined in: index.d.ts:2267
 
 相对地形的位置
 
@@ -42,7 +42,7 @@ Defined in: index.d.ts:2287
 
 > `optional` **minimumPixelSize**: `number`
 
-Defined in: index.d.ts:2285
+Defined in: index.d.ts:2265
 
 最小可见像素大小
 
@@ -52,7 +52,7 @@ Defined in: index.d.ts:2285
 
 > `optional` **name**: `string`
 
-Defined in: index.d.ts:2158
+Defined in: index.d.ts:2138
 
 primitive 名称
 
@@ -66,7 +66,7 @@ primitive 名称
 
 > `optional` **orientation**: [`HeadingPitchRoll`](HeadingPitchRoll.md)
 
-Defined in: index.d.ts:2279
+Defined in: index.d.ts:2259
 
 模型姿态
 
@@ -76,7 +76,7 @@ Defined in: index.d.ts:2279
 
 > **position**: [`Vector3`](Vector3.md)
 
-Defined in: index.d.ts:2277
+Defined in: index.d.ts:2257
 
 位置
 
@@ -86,7 +86,7 @@ Defined in: index.d.ts:2277
 
 > `optional` **properties**: `object`
 
-Defined in: index.d.ts:2160
+Defined in: index.d.ts:2140
 
 属性字段
 
@@ -104,7 +104,7 @@ Defined in: index.d.ts:2160
 
 > `optional` **runAnimations**: `boolean`
 
-Defined in: index.d.ts:2289
+Defined in: index.d.ts:2269
 
 是否播放骨骼动画
 
@@ -114,7 +114,7 @@ Defined in: index.d.ts:2289
 
 > `optional` **scale**: `number`
 
-Defined in: index.d.ts:2283
+Defined in: index.d.ts:2263
 
 缩放
 
@@ -124,7 +124,7 @@ Defined in: index.d.ts:2283
 
 > `optional` **show**: `boolean`
 
-Defined in: index.d.ts:2153
+Defined in: index.d.ts:2133
 
 是否显示，默认true
 
@@ -138,7 +138,7 @@ Defined in: index.d.ts:2153
 
 > `optional` **silhouetteColor**: `string`
 
-Defined in: index.d.ts:2292
+Defined in: index.d.ts:2272
 
 ***
 
@@ -146,7 +146,7 @@ Defined in: index.d.ts:2292
 
 > `optional` **silhouetteSize**: `number`
 
-Defined in: index.d.ts:2291
+Defined in: index.d.ts:2271
 
 模型轮廓
 
@@ -156,7 +156,7 @@ Defined in: index.d.ts:2291
 
 > **type**: [`Model`](../enumerations/PrimitiveType.md#model)
 
-Defined in: index.d.ts:2275
+Defined in: index.d.ts:2255
 
 类型
 
@@ -170,6 +170,6 @@ Defined in: index.d.ts:2275
 
 > **uri**: `string`
 
-Defined in: index.d.ts:2281
+Defined in: index.d.ts:2261
 
 gltf uri

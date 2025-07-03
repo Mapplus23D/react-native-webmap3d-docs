@@ -8,4 +8,4 @@
 
 > **TAnchor** = [`TDirection`](TDirection.md) \| `"center"`
 
-Defined in: index.d.ts:820
+Defined in: index.d.ts:800

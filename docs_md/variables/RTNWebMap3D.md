@@ -8,4 +8,4 @@
 
 > `const` **RTNWebMap3D**: [`Spec`](../interfaces/Spec.md)
 
-Defined in: index.d.ts:5119
+Defined in: index.d.ts:4994

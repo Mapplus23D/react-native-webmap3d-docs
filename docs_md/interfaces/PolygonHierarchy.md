@@ -6,7 +6,7 @@
 
 # Interface: PolygonHierarchy
 
-Defined in: index.d.ts:1535
+Defined in: index.d.ts:1515
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1535
 
 > `optional` **holes**: `PolygonHierarchy`[]
 
-Defined in: index.d.ts:1537
+Defined in: index.d.ts:1517
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: index.d.ts:1537
 
 > **positions**: `number`[] \| [`Vector3`](Vector3.md)[]
 
-Defined in: index.d.ts:1536
+Defined in: index.d.ts:1516

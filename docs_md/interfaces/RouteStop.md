@@ -6,7 +6,7 @@
 
 # Interface: RouteStop
 
-Defined in: index.d.ts:4173
+Defined in: index.d.ts:4122
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:4173
 
 > **duration**: `number`
 
-Defined in: index.d.ts:4179
+Defined in: index.d.ts:4128
 
 到下一站点时长
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:4179
 
 > **index**: `number`
 
-Defined in: index.d.ts:4177
+Defined in: index.d.ts:4126
 
 站点序号
 
@@ -34,6 +34,6 @@ Defined in: index.d.ts:4177
 
 > **name**: `string`
 
-Defined in: index.d.ts:4175
+Defined in: index.d.ts:4124
 
 站点名称

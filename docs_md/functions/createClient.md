@@ -8,7 +8,7 @@
 
 > **createClient**(`handlers`): [`Client`](../type-aliases/Client.md)
 
-Defined in: index.d.ts:5021
+Defined in: index.d.ts:4934
 
 ## Parameters
 

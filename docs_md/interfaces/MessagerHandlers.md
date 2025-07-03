@@ -6,7 +6,7 @@
 
 # Interface: MessagerHandlers
 
-Defined in: index.d.ts:4784
+Defined in: index.d.ts:4704
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:4784
 
 > `optional` **decodeLargeMessage**: (`base64`) => `string`
 
-Defined in: index.d.ts:4790
+Defined in: index.d.ts:4710
 
 #### Parameters
 
@@ -32,7 +32,7 @@ Defined in: index.d.ts:4790
 
 > `optional` **handleLargeMessage**: (`str`, `limit`) => `object`
 
-Defined in: index.d.ts:4786
+Defined in: index.d.ts:4706
 
 #### Parameters
 
@@ -62,4 +62,4 @@ Defined in: index.d.ts:4786
 
 > **sendHandler**: [`MessagerSendHandler`](../type-aliases/MessagerSendHandler.md)
 
-Defined in: index.d.ts:4785
+Defined in: index.d.ts:4705

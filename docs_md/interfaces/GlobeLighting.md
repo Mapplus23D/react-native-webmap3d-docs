@@ -6,7 +6,7 @@
 
 # Interface: GlobeLighting
 
-Defined in: index.d.ts:254
+Defined in: index.d.ts:242
 
 ## Properties
 
@@ -14,4 +14,4 @@ Defined in: index.d.ts:254
 
 > **enable**: `boolean`
 
-Defined in: index.d.ts:255
+Defined in: index.d.ts:243

@@ -6,7 +6,7 @@
 
 # Interface: Shadow
 
-Defined in: index.d.ts:257
+Defined in: index.d.ts:245
 
 ## Properties
 
@@ -14,4 +14,4 @@ Defined in: index.d.ts:257
 
 > **enable**: `boolean`
 
-Defined in: index.d.ts:258
+Defined in: index.d.ts:246

@@ -6,7 +6,7 @@
 
 # Interface: TranslationAnimation
 
-Defined in: index.d.ts:1141
+Defined in: index.d.ts:1121
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:1141
 
 > **duration**: `number`
 
-Defined in: index.d.ts:1107
+Defined in: index.d.ts:1087
 
 动画持续时间，单位秒
 
@@ -32,7 +32,7 @@ Defined in: index.d.ts:1107
 
 > `optional` **isReverse**: `boolean`
 
-Defined in: index.d.ts:1150
+Defined in: index.d.ts:1130
 
 反向位移，默认false
 
@@ -42,7 +42,7 @@ Defined in: index.d.ts:1150
 
 > `optional` **layerName**: `string`
 
-Defined in: index.d.ts:1111
+Defined in: index.d.ts:1091
 
 矢量图层名
 
@@ -56,7 +56,7 @@ Defined in: index.d.ts:1111
 
 > **name**: `string`
 
-Defined in: index.d.ts:1103
+Defined in: index.d.ts:1083
 
 #### Inherited from
 
@@ -68,7 +68,7 @@ Defined in: index.d.ts:1103
 
 > `optional` **repeatCount**: `number`
 
-Defined in: index.d.ts:1109
+Defined in: index.d.ts:1089
 
 重复次数
 
@@ -82,7 +82,7 @@ Defined in: index.d.ts:1109
 
 > **startTime**: `number`
 
-Defined in: index.d.ts:1105
+Defined in: index.d.ts:1085
 
 开始时间，单位秒
 
@@ -96,7 +96,7 @@ Defined in: index.d.ts:1105
 
 > **target**: `string`
 
-Defined in: index.d.ts:1113
+Defined in: index.d.ts:1093
 
 对象 id
 
@@ -110,7 +110,7 @@ Defined in: index.d.ts:1113
 
 > **translations**: `number`[]
 
-Defined in: index.d.ts:1148
+Defined in: index.d.ts:1128
 
 经纬度高度点串数组
 
@@ -122,4 +122,4 @@ Defined in: index.d.ts:1148
 
 > **type**: [`TRANSLATION`](../enumerations/AnimatorType.md#translation)
 
-Defined in: index.d.ts:1142
+Defined in: index.d.ts:1122

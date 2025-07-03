@@ -6,7 +6,7 @@
 
 # Interface: TiandituTerrainProvider
 
-Defined in: index.d.ts:425
+Defined in: index.d.ts:413
 
 天地图地形图层参数
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:425
 
 > **token**: `string`
 
-Defined in: index.d.ts:428
+Defined in: index.d.ts:416
 
 天地图访问 token
 
@@ -26,4 +26,4 @@ Defined in: index.d.ts:428
 
 > **type**: [`TIANDITU`](../enumerations/ProviderType.md#tianditu)
 
-Defined in: index.d.ts:426
+Defined in: index.d.ts:414

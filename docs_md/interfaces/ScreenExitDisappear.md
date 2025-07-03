@@ -6,7 +6,7 @@
 
 # Interface: ScreenExitDisappear
 
-Defined in: index.d.ts:817
+Defined in: index.d.ts:797
 
 ## Properties
 
@@ -14,4 +14,4 @@ Defined in: index.d.ts:817
 
 > **type**: `"disappear"`
 
-Defined in: index.d.ts:818
+Defined in: index.d.ts:798

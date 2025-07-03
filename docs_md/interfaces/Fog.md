@@ -6,7 +6,7 @@
 
 # Interface: Fog
 
-Defined in: index.d.ts:260
+Defined in: index.d.ts:248
 
 ## Properties
 
@@ -14,4 +14,4 @@ Defined in: index.d.ts:260
 
 > **enable**: `boolean`
 
-Defined in: index.d.ts:261
+Defined in: index.d.ts:249

@@ -6,7 +6,7 @@
 
 # Interface: RotationAnimation
 
-Defined in: index.d.ts:1175
+Defined in: index.d.ts:1155
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:1175
 
 > **duration**: `number`
 
-Defined in: index.d.ts:1107
+Defined in: index.d.ts:1087
 
 动画持续时间，单位秒
 
@@ -32,7 +32,7 @@ Defined in: index.d.ts:1107
 
 > `optional` **layerName**: `string`
 
-Defined in: index.d.ts:1111
+Defined in: index.d.ts:1091
 
 矢量图层名
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:1111
 
 > **name**: `string`
 
-Defined in: index.d.ts:1103
+Defined in: index.d.ts:1083
 
 #### Inherited from
 
@@ -58,7 +58,7 @@ Defined in: index.d.ts:1103
 
 > `optional` **orientationAlongVelocity**: `boolean`
 
-Defined in: index.d.ts:1180
+Defined in: index.d.ts:1160
 
 旋转是否沿速度方向
 
@@ -68,7 +68,7 @@ Defined in: index.d.ts:1180
 
 > `optional` **repeatCount**: `number`
 
-Defined in: index.d.ts:1109
+Defined in: index.d.ts:1089
 
 重复次数
 
@@ -82,7 +82,7 @@ Defined in: index.d.ts:1109
 
 > `optional` **rotationIncremental**: `boolean`
 
-Defined in: index.d.ts:1178
+Defined in: index.d.ts:1158
 
 增量旋转,默认false
 
@@ -92,7 +92,7 @@ Defined in: index.d.ts:1178
 
 > `optional` **rotations**: [`HeadingPitchRoll`](HeadingPitchRoll.md) \| [`HeadingPitchRoll`](HeadingPitchRoll.md)[]
 
-Defined in: index.d.ts:1181
+Defined in: index.d.ts:1161
 
 ***
 
@@ -100,7 +100,7 @@ Defined in: index.d.ts:1181
 
 > **startTime**: `number`
 
-Defined in: index.d.ts:1105
+Defined in: index.d.ts:1085
 
 开始时间，单位秒
 
@@ -114,7 +114,7 @@ Defined in: index.d.ts:1105
 
 > **target**: `string`
 
-Defined in: index.d.ts:1113
+Defined in: index.d.ts:1093
 
 对象 id
 
@@ -128,4 +128,4 @@ Defined in: index.d.ts:1113
 
 > **type**: [`ROTATION`](../enumerations/AnimatorType.md#rotation)
 
-Defined in: index.d.ts:1176
+Defined in: index.d.ts:1156

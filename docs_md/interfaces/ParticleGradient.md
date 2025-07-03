@@ -6,7 +6,7 @@
 
 # Interface: ParticleGradient
 
-Defined in: index.d.ts:1863
+Defined in: index.d.ts:1843
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1863
 
 > **factor1**: `number`
 
-Defined in: index.d.ts:1865
+Defined in: index.d.ts:1845
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:1865
 
 > **factor2**: `number`
 
-Defined in: index.d.ts:1866
+Defined in: index.d.ts:1846
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: index.d.ts:1866
 
 > **gradient**: `number`
 
-Defined in: index.d.ts:1864
+Defined in: index.d.ts:1844

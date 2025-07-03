@@ -6,7 +6,7 @@
 
 # Interface: GridImageProvider
 
-Defined in: index.d.ts:520
+Defined in: index.d.ts:508
 
 网格（经纬线）
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:520
 
 > `optional` **backgroundColor**: `string`
 
-Defined in: index.d.ts:533
+Defined in: index.d.ts:521
 
 backgroundColor 网格填充色 默认Color(0.0, 0.5, 0.0, 0.2)
 
@@ -26,7 +26,7 @@ backgroundColor 网格填充色 默认Color(0.0, 0.5, 0.0, 0.2)
 
 > `optional` **cells**: `number`
 
-Defined in: index.d.ts:525
+Defined in: index.d.ts:513
 
 网格单元的数量  默认8
 
@@ -36,7 +36,7 @@ Defined in: index.d.ts:525
 
 > `optional` **color**: `string`
 
-Defined in: index.d.ts:527
+Defined in: index.d.ts:515
 
 Color(1.0, 1.0, 1.0, 0.4)	绘制网格线的颜色
 
@@ -46,7 +46,7 @@ Color(1.0, 1.0, 1.0, 0.4)	绘制网格线的颜色
 
 > `optional` **glowColor**: `string`
 
-Defined in: index.d.ts:529
+Defined in: index.d.ts:517
 
 Color(0.0, 1.0, 0.0, 0.05)	绘制网格线发光的颜色。
 
@@ -56,7 +56,7 @@ Color(0.0, 1.0, 0.0, 0.05)	绘制网格线发光的颜色。
 
 > `optional` **glowWidth**: `number`
 
-Defined in: index.d.ts:531
+Defined in: index.d.ts:519
 
 用于渲染线条发光效果的线条宽度 默认6
 
@@ -66,7 +66,7 @@ Defined in: index.d.ts:531
 
 > `optional` **tilingSchemeType**: [`TilingSchemeType`](../enumerations/TilingSchemeType.md)
 
-Defined in: index.d.ts:523
+Defined in: index.d.ts:511
 
 默认GeographicTilingScheme
 
@@ -76,4 +76,4 @@ Defined in: index.d.ts:523
 
 > **type**: [`GRID`](../enumerations/ProviderType.md#grid)
 
-Defined in: index.d.ts:521
+Defined in: index.d.ts:509

@@ -6,7 +6,7 @@
 
 # Enumeration: SceneAction
 
-Defined in: index.d.ts:3184
+Defined in: index.d.ts:3135
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:3184
 
 > **MAGNIFIER**: `4`
 
-Defined in: index.d.ts:3194
+Defined in: index.d.ts:3145
 
 放大镜
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:3194
 
 > **NONE**: `0`
 
-Defined in: index.d.ts:3186
+Defined in: index.d.ts:3137
 
 NONE
 
@@ -34,7 +34,7 @@ NONE
 
 > **SELECT**: `1`
 
-Defined in: index.d.ts:3188
+Defined in: index.d.ts:3139
 
 选择
 
@@ -44,7 +44,7 @@ Defined in: index.d.ts:3188
 
 > **TOUCH**: `2`
 
-Defined in: index.d.ts:3190
+Defined in: index.d.ts:3141
 
 手势监听
 
@@ -54,6 +54,6 @@ Defined in: index.d.ts:3190
 
 > **TRANSLATION**: `3`
 
-Defined in: index.d.ts:3192
+Defined in: index.d.ts:3143
 
 球面平移

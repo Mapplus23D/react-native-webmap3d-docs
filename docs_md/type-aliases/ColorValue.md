@@ -8,6 +8,6 @@
 
 > **ColorValue** = `string` \| [`OpaqueColorValue`](OpaqueColorValue.md)
 
-Defined in: index.d.ts:137
+Defined in: index.d.ts:125
 
 ## Deprecated

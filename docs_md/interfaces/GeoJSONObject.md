@@ -6,7 +6,7 @@
 
 # Interface: GeoJSONObject
 
-Defined in: index.d.ts:2974
+Defined in: index.d.ts:2925
 
 GeoJSON Object
 
@@ -27,7 +27,7 @@ Developers should use "&" type in TypeScript or extend the interface to add thes
 
 > `optional` **bbox**: [`BBox`](../type-aliases/BBox.md)
 
-Defined in: index.d.ts:2983
+Defined in: index.d.ts:2934
 
 Bounding box of the coordinate range of the object's Geometries, Features, or Feature Collections.
 https://tools.ietf.org/html/rfc7946#section-5
@@ -38,6 +38,6 @@ https://tools.ietf.org/html/rfc7946#section-5
 
 > **type**: `string`
 
-Defined in: index.d.ts:2978
+Defined in: index.d.ts:2929
 
 Specifies the type of GeoJSON object.

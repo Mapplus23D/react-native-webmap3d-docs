@@ -6,7 +6,7 @@
 
 # Interface: SolidPolygon
 
-Defined in: index.d.ts:1578
+Defined in: index.d.ts:1558
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:1578
 
 > `optional` **classificationType**: [`ClassificationType`](../enumerations/ClassificationType.md)
 
-Defined in: index.d.ts:1557
+Defined in: index.d.ts:1537
 
 贴地方式 undefined === ClassificationType.NONE
 
@@ -32,7 +32,7 @@ Defined in: index.d.ts:1557
 
 > `optional` **distanceDisplayCondition**: [`DistanceDisplayCondition`](DistanceDisplayCondition.md)
 
-Defined in: index.d.ts:1567
+Defined in: index.d.ts:1547
 
 可见范围
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:1567
 
 > `optional` **extrudedHeight**: `number`
 
-Defined in: index.d.ts:1571
+Defined in: index.d.ts:1551
 
 白膜高度
 
@@ -60,7 +60,7 @@ Defined in: index.d.ts:1571
 
 > **fillType**: [`solid`](../enumerations/FillType.md#solid)
 
-Defined in: index.d.ts:1579
+Defined in: index.d.ts:1559
 
 ***
 
@@ -68,7 +68,7 @@ Defined in: index.d.ts:1579
 
 > `optional` **height**: `number`
 
-Defined in: index.d.ts:1569
+Defined in: index.d.ts:1549
 
 离地高度
 
@@ -82,7 +82,7 @@ Defined in: index.d.ts:1569
 
 > `optional` **hierarchy**: [`Circle`](Circle.md) \| [`Rectangle`](Rectangle.md) \| [`PolygonHierarchy`](PolygonHierarchy.md)
 
-Defined in: index.d.ts:1555
+Defined in: index.d.ts:1535
 
 positions
 
@@ -96,7 +96,7 @@ positions
 
 > `optional` **material**: `string` \| [`PropertyAnimation`](PropertyAnimation.md)\<`string`\>
 
-Defined in: index.d.ts:1580
+Defined in: index.d.ts:1560
 
 ***
 
@@ -104,7 +104,7 @@ Defined in: index.d.ts:1580
 
 > `optional` **outline**: `boolean`
 
-Defined in: index.d.ts:1559
+Defined in: index.d.ts:1539
 
 是否描边
 
@@ -118,7 +118,7 @@ Defined in: index.d.ts:1559
 
 > `optional` **outlineColor**: `string`
 
-Defined in: index.d.ts:1563
+Defined in: index.d.ts:1543
 
 描边色，默认BLACK	*
 
@@ -132,7 +132,7 @@ Defined in: index.d.ts:1563
 
 > `optional` **outlineWidth**: `number`
 
-Defined in: index.d.ts:1561
+Defined in: index.d.ts:1541
 
 描边宽度，默认1.0
 
@@ -146,7 +146,7 @@ Defined in: index.d.ts:1561
 
 > `optional` **show**: `boolean` \| [`PropertyAnimation`](PropertyAnimation.md)\<`boolean`\>
 
-Defined in: index.d.ts:1565
+Defined in: index.d.ts:1545
 
 显隐
 
@@ -160,7 +160,7 @@ Defined in: index.d.ts:1565
 
 > `optional` **stRotation**: `number`
 
-Defined in: index.d.ts:1573
+Defined in: index.d.ts:1553
 
 贴图旋转角度
 

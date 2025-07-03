@@ -6,7 +6,7 @@
 
 # Enumeration: HorizontalOrigin
 
-Defined in: index.d.ts:1318
+Defined in: index.d.ts:1298
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1318
 
 > **center**: `2`
 
-Defined in: index.d.ts:1320
+Defined in: index.d.ts:1300
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:1320
 
 > **left**: `1`
 
-Defined in: index.d.ts:1319
+Defined in: index.d.ts:1299
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: index.d.ts:1319
 
 > **right**: `3`
 
-Defined in: index.d.ts:1321
+Defined in: index.d.ts:1301

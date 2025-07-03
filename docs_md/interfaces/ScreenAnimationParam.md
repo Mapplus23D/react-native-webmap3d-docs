@@ -6,7 +6,7 @@
 
 # Interface: ScreenAnimationParam
 
-Defined in: index.d.ts:742
+Defined in: index.d.ts:722
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:742
 
 > **items**: ([`ScreenImageItem`](ScreenImageItem.md) \| [`ScreenVideoItem`](ScreenVideoItem.md) \| [`ScreenTextItem`](ScreenTextItem.md))[]
 
-Defined in: index.d.ts:745
+Defined in: index.d.ts:725
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:745
 
 > **type**: `"screen"`
 
-Defined in: index.d.ts:743
+Defined in: index.d.ts:723
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: index.d.ts:743
 
 > `optional` **version**: `number`
 
-Defined in: index.d.ts:744
+Defined in: index.d.ts:724

@@ -6,7 +6,7 @@
 
 # Enumeration: WaterbodySize
 
-Defined in: index.d.ts:330
+Defined in: index.d.ts:318
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:330
 
 > **LARGE**: `2`
 
-Defined in: index.d.ts:336
+Defined in: index.d.ts:324
 
 适用于较广水域范围为1000*1000 单位米，枚举值2
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:336
 
 > **MEDIUM**: `1`
 
-Defined in: index.d.ts:334
+Defined in: index.d.ts:322
 
 适用于中等水域范围为100*100 单位米，枚举值1
 
@@ -34,6 +34,6 @@ Defined in: index.d.ts:334
 
 > **SMALL**: `0`
 
-Defined in: index.d.ts:332
+Defined in: index.d.ts:320
 
 适用于较小水域范围为50*50 单位米，枚举值0

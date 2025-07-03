@@ -8,4 +8,4 @@
 
 > **ImageProvider** = [`SuperMapImageProvider`](../interfaces/SuperMapImageProvider.md) \| [`BingMapsImageProvider`](../interfaces/BingMapsImageProvider.md) \| [`TiandituImageProvider`](../interfaces/TiandituImageProvider.md) \| [`UrlTemplateImageProvider`](../interfaces/UrlTemplateImageProvider.md) \| [`GridImageProvider`](../interfaces/GridImageProvider.md) \| [`ChangGuangProvider`](../interfaces/ChangGuangProvider.md) \| [`LocalProvider`](../interfaces/LocalProvider.md)
 
-Defined in: index.d.ts:277
+Defined in: index.d.ts:265

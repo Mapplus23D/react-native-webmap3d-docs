@@ -6,7 +6,7 @@
 
 # Interface: PrimitiveLabel
 
-Defined in: index.d.ts:2210
+Defined in: index.d.ts:2190
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:2210
 
 > `optional` **backgroundColor**: `string`
 
-Defined in: index.d.ts:2233
+Defined in: index.d.ts:2213
 
 背景色，不设置表示没有背景
 
@@ -28,7 +28,7 @@ Defined in: index.d.ts:2233
 
 > `optional` **backgroundPaddingSize**: `number`
 
-Defined in: index.d.ts:2235
+Defined in: index.d.ts:2215
 
 背景边框宽度 , 默认0
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:2235
 
 > `optional` **disableDepthTestDistance**: `number`
 
-Defined in: index.d.ts:2237
+Defined in: index.d.ts:2217
 
 文字遮挡深度
 
@@ -48,7 +48,7 @@ Defined in: index.d.ts:2237
 
 > `optional` **distanceDisplayCondition**: [`DistanceDisplayCondition`](DistanceDisplayCondition.md)
 
-Defined in: index.d.ts:2155
+Defined in: index.d.ts:2135
 
 可见范围
 
@@ -62,7 +62,7 @@ Defined in: index.d.ts:2155
 
 > `optional` **eyeOffset**: [`Vector3`](Vector3.md)
 
-Defined in: index.d.ts:2243
+Defined in: index.d.ts:2223
 
 局部坐标系偏移量，单位米
 
@@ -72,7 +72,7 @@ Defined in: index.d.ts:2243
 
 > `optional` **fillColor**: `string`
 
-Defined in: index.d.ts:2225
+Defined in: index.d.ts:2205
 
 文字填充色
 
@@ -82,7 +82,7 @@ Defined in: index.d.ts:2225
 
 > `optional` **font**: `string`
 
-Defined in: index.d.ts:2221
+Defined in: index.d.ts:2201
 
 字体样式，默认字体'10px sans-serif'
 
@@ -92,7 +92,7 @@ Defined in: index.d.ts:2221
 
 > `optional` **heightReference**: [`HeightReference`](../enumerations/HeightReference.md)
 
-Defined in: index.d.ts:2247
+Defined in: index.d.ts:2227
 
 相对地形的位置
 
@@ -102,7 +102,7 @@ Defined in: index.d.ts:2247
 
 > `optional` **horizontalOrigin**: [`HorizontalOrigin`](../enumerations/HorizontalOrigin.md)
 
-Defined in: index.d.ts:2217
+Defined in: index.d.ts:2197
 
 水平对齐方式 , 默认center
 
@@ -112,7 +112,7 @@ Defined in: index.d.ts:2217
 
 > `optional` **name**: `string`
 
-Defined in: index.d.ts:2158
+Defined in: index.d.ts:2138
 
 primitive 名称
 
@@ -126,7 +126,7 @@ primitive 名称
 
 > `optional` **outlineColor**: `string`
 
-Defined in: index.d.ts:2227
+Defined in: index.d.ts:2207
 
 文字填轮廓色
 
@@ -136,7 +136,7 @@ Defined in: index.d.ts:2227
 
 > `optional` **outlineWidth**: `number`
 
-Defined in: index.d.ts:2229
+Defined in: index.d.ts:2209
 
 描边宽度 ，默认1.0
 
@@ -146,7 +146,7 @@ Defined in: index.d.ts:2229
 
 > `optional` **pixelOffset**: [`Vector2`](Vector2.md)
 
-Defined in: index.d.ts:2245
+Defined in: index.d.ts:2225
 
 屏幕偏移量，单位px
 
@@ -156,7 +156,7 @@ Defined in: index.d.ts:2245
 
 > **position**: [`Vector3`](Vector3.md)
 
-Defined in: index.d.ts:2213
+Defined in: index.d.ts:2193
 
 位置
 
@@ -166,7 +166,7 @@ Defined in: index.d.ts:2213
 
 > `optional` **properties**: `object`
 
-Defined in: index.d.ts:2160
+Defined in: index.d.ts:2140
 
 属性字段
 
@@ -184,7 +184,7 @@ Defined in: index.d.ts:2160
 
 > `optional` **scale**: `number`
 
-Defined in: index.d.ts:2241
+Defined in: index.d.ts:2221
 
 缩放比例，默认1.0
 
@@ -194,7 +194,7 @@ Defined in: index.d.ts:2241
 
 > `optional` **scaleByDistance**: [`NearFarScalar`](NearFarScalar.md)
 
-Defined in: index.d.ts:2239
+Defined in: index.d.ts:2219
 
 随距离缩放参数，默认undefine表示不随距离缩放
 
@@ -204,7 +204,7 @@ Defined in: index.d.ts:2239
 
 > `optional` **show**: `boolean`
 
-Defined in: index.d.ts:2153
+Defined in: index.d.ts:2133
 
 是否显示，默认true
 
@@ -218,7 +218,7 @@ Defined in: index.d.ts:2153
 
 > `optional` **showBackground**: `boolean`
 
-Defined in: index.d.ts:2231
+Defined in: index.d.ts:2211
 
 背景显示否，默认false
 
@@ -228,7 +228,7 @@ Defined in: index.d.ts:2231
 
 > `optional` **style**: [`LabelStyle`](../enumerations/LabelStyle.md)
 
-Defined in: index.d.ts:2223
+Defined in: index.d.ts:2203
 
 默认FILL
 
@@ -238,7 +238,7 @@ Defined in: index.d.ts:2223
 
 > **text**: `string`
 
-Defined in: index.d.ts:2215
+Defined in: index.d.ts:2195
 
 文本内容
 
@@ -248,7 +248,7 @@ Defined in: index.d.ts:2215
 
 > **type**: [`Label`](../enumerations/PrimitiveType.md#label)
 
-Defined in: index.d.ts:2211
+Defined in: index.d.ts:2191
 
 类型
 
@@ -262,6 +262,6 @@ Defined in: index.d.ts:2211
 
 > `optional` **verticalOrigin**: [`VerticalOrigin`](../enumerations/VerticalOrigin.md)
 
-Defined in: index.d.ts:2219
+Defined in: index.d.ts:2199
 
 竖直对齐方式 , 默认center
