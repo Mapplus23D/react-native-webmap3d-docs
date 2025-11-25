@@ -8,7 +8,7 @@
 
 <img src="assets/description.png" width="60%" />
 
-可参考完整[SDK Demo](https://github.com/Mapplus23D/web3dsdk-rn/tree/main)
+可参考完整[Gitlab SDK Demo](http://sc.supermap.com/mapplus/web3dsdk-rn)或[Github SDK Demo](https://github.com/Mapplus23D/web3dsdk-rn/tree/main)
 
 ## 前提
 
